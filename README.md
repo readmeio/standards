@@ -25,3 +25,8 @@ Create a `.eslintrc` file with the following contents:
 ## Configs
 * `@readme/eslint-config`
 * `@readme/eslint-config/testing`
+
+## Contributing
+To assist in cleaner commit logs and a better changelog, all commit messages must be formatted against the https://commitlint.js.org/ standards.
+
+See [@commitlint/config-conventional](https://www.npmjs.com/package/@commitlint/config-conventional) for some more information.
