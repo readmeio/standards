@@ -5,6 +5,7 @@ module.exports = {
     "plugin:eslint-comments/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:sonarjs/recommended",
     "prettier"
   ],
   plugins: ["node", "unicorn"],
@@ -28,6 +29,13 @@ module.exports = {
     "node/no-extraneous-require": "error",
 
     "prefer-destructuring": "off",
+
+    "sonarjs/cognitive-complexity": "off",
+    "sonarjs/no-collapsible-if": "off",
+    "sonarjs/no-duplicate-string": "off",
+    "sonarjs/no-duplicated-branches": "off",
+    "sonarjs/no-identical-functions": "off", // @todo We should fix these.
+    "sonarjs/prefer-immediate-return": "off", // @todo We should fix these.
 
     "unicorn/catch-error-name": [
       "error",
