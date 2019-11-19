@@ -8,7 +8,7 @@ module.exports = {
     "plugin:sonarjs/recommended",
     "prettier"
   ],
-  plugins: ["node", "unicorn"],
+  plugins: ["node", "prettier", "unicorn"],
   rules: {
     "arrow-body-style": "off",
 
@@ -29,6 +29,8 @@ module.exports = {
     "node/no-extraneous-require": "error",
 
     "prefer-destructuring": "off",
+
+    "prettier/prettier": "error",
 
     "sonarjs/cognitive-complexity": "off",
     "sonarjs/no-collapsible-if": "off",
