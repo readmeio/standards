@@ -14,6 +14,8 @@ module.exports = {
     "jest/prefer-hooks-on-top": "warn",
     "jest/prefer-strict-equal": "error",
     "jest/valid-describe": "error",
-    "jest/valid-title": "warn"
+    "jest/valid-title": "warn",
+
+    "sonarjs/no-identical-functions": "off"
   }
 };
