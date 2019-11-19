@@ -12,6 +12,7 @@ module.exports = {
     "arrow-body-style": "off",
 
     "eslint-comments/disable-enable-pair": ["error", { allowWholeFile: true }],
+    "eslint-comments/no-unused-disable": "error",
 
     "func-names": "off",
 
