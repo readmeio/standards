@@ -23,7 +23,10 @@ Create a `.eslintrc` file with the following contents:
 ```
 
 ## Configs
+> **Note:** `@readme/eslint-config/*` subconfigs must be loaded alongside `@readme/eslint-config`, or at least take advantage of a root `.eslintrc` config that has `root` set to `true`.
+
 * `@readme/eslint-config`
+* `@readme/eslint-config/react`
 * `@readme/eslint-config/testing`
 
 ## Contributing

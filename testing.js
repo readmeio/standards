@@ -16,6 +16,9 @@ module.exports = {
     "jest/valid-describe": "error",
     "jest/valid-title": "warn",
 
+    "import/no-extraneous-dependencies": "off",
+    "node/no-extraneous-require": "off",
+
     "sonarjs/no-identical-functions": "off"
   }
 };
