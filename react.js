@@ -28,7 +28,10 @@ module.exports = {
     ],
 
     "react/jsx-sort-default-props": ["error", { ignoreCase: true }],
-    "react/jsx-sort-props": ["error", { reservedFirst: true }],
+    "react/jsx-sort-props": [
+      "error",
+      { ignoreCase: true, reservedFirst: true }
+    ],
     "react/sort-prop-types": [
       "error",
       {
