@@ -4,6 +4,7 @@
   "description": "ReadMe coding standards",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
     "test": "eslint ."
   },
@@ -14,6 +15,7 @@
     "url": "git@github.com:readmeio/eslint-config.git"
   },
   "dependencies": {
+    "eslint": "^6.7.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-eslint-comments": "^3.1.2",
@@ -21,10 +23,10 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-unicorn": "^13.0.0"
+    "eslint-plugin-unicorn": "^13.0.0",
+    "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "eslint": "^6.6.0",
     "eslint-plugin-jest": "^23.0.3",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3"
@@ -32,9 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "eslint": "^6.6.0",
-    "husky": "^3.0.9",
-    "prettier": "^1.19.1"
+    "husky": "^3.0.9"
   },
   "husky": {
     "hooks": {
