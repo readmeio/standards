@@ -15,7 +15,6 @@
     "url": "git@github.com:readmeio/eslint-config.git"
   },
   "dependencies": {
-    "eslint": "^6.7.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-eslint-comments": "^3.1.2",
@@ -23,22 +22,33 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-unicorn": "^13.0.0",
-    "prettier": "^1.19.1"
+    "eslint-plugin-unicorn": "^13.0.0"
   },
   "peerDependencies": {
+    "eslint": "^6.7.1",
     "eslint-plugin-jest": "^23.0.3",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.19.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "husky": "^3.0.9"
+    "eslint": "^6.7.1",
+    "husky": "^3.0.9",
+    "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
   }
 }
