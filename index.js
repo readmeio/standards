@@ -21,9 +21,11 @@ module.exports = {
     "import/named": "off", // @fixme Disabling this for now, but there are some weird callouts with it.
     "import/order": "off",
 
+    "no-constructor-return": "error",
+    "no-dupe-else-if": "error",
     "no-else-return": ["error", { allowElseIf: true }],
 
-    // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable
+    // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable.
     "no-shadow": ["error", { allow: ["err"] }],
 
     "node/no-deprecated-api": "error",
