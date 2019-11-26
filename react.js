@@ -1,43 +1,40 @@
 module.exports = {
-  extends: ["plugin:jsx-a11y/recommended", "plugin:react/recommended"],
+  extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended'],
   env: {
-    browser: true
+    browser: true,
   },
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        extensions: [".js", ".jsx"]
-      }
+        extensions: ['.js', '.jsx'],
+      },
     },
     react: {
-      version: "detect"
-    }
+      version: 'detect',
+    },
   },
   rules: {
-    "jsx-a11y/no-onchange": "off", // @todo We should fix these.
+    'jsx-a11y/no-onchange': 'off', // @todo We should fix these.
 
-    "no-param-reassign": ["error", { props: false }],
+    'no-param-reassign': ['error', { props: false }],
 
-    "react/destructuring-assignment": "off",
-    "react/jsx-props-no-spreading": [
-      "error",
+    'react/destructuring-assignment': 'off',
+    'react/jsx-props-no-spreading': [
+      'error',
       {
-        html: "enforce",
-        custom: "ignore"
-      }
+        html: 'enforce',
+        custom: 'ignore',
+      },
     ],
 
-    "react/jsx-sort-default-props": ["error", { ignoreCase: true }],
-    "react/jsx-sort-props": [
-      "error",
-      { ignoreCase: true, reservedFirst: true }
-    ],
-    "react/sort-prop-types": [
-      "error",
+    'react/jsx-sort-default-props': ['error', { ignoreCase: true }],
+    'react/jsx-sort-props': ['error', { ignoreCase: true, reservedFirst: true }],
+    'react/sort-prop-types': [
+      'error',
       {
         ignoreCase: true,
-        sortShapeProp: true
-      }
-    ]
-  }
+        sortShapeProp: true,
+      },
+    ],
+  },
 };
