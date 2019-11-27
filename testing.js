@@ -13,7 +13,7 @@ module.exports = {
     'jest/no-if': 'error',
     'jest/prefer-hooks-on-top': 'warn',
     'jest/prefer-strict-equal': 'error',
-    'jest/require-tothrow-message': 'error',
+    'jest/require-to-throw-message': 'error',
     'jest/valid-describe': 'error',
     'jest/valid-title': 'warn',
 
