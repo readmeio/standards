@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+  extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
   plugins: ['jest'],
   env: {
     'jest/globals': true,
