@@ -14,7 +14,7 @@ npm install --save @readme/eslint-config
 
 Create a `.eslintrc` file with the following contents:
 
-```
+```js
 {
   "extends": [
     "@readme/eslint-config"
