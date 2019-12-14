@@ -1,3 +1,11 @@
+## 1.8.0 (2019-12-14)
+
+* docs: adding a changelog (#17) ([e6bc615](https://github.com/readmeio/eslint-config/commit/e6bc615)), closes [#17](https://github.com/readmeio/eslint-config/issues/17)
+* docs: minor update to the readme code sample ([c614163](https://github.com/readmeio/eslint-config/commit/c614163))
+* feat: enforcing consistent formatting of Jest tests (#16) ([6d50dbb](https://github.com/readmeio/eslint-config/commit/6d50dbb)), closes [#16](https://github.com/readmeio/eslint-config/issues/16)
+
+
+
 ## <small>1.7.2 (2019-12-09)</small>
 
 * chore: 1.7.2 release ([39a1831](https://github.com/readmeio/eslint-config/commit/39a1831))
