@@ -6,6 +6,7 @@
   "scripts": {
     "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
+    "release": "conventional-changelog -i CHANGELOG.md -s",
     "test": "eslint ."
   },
   "author": "Jon Ursenbach <jon@ursenba.ch>",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
+    "conventional-changelog-cli": "^2.0.28",
     "eslint": "^6.7.1",
     "husky": "^3.0.9",
     "prettier": "^1.19.1"
