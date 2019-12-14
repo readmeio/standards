@@ -1,12 +1,12 @@
 module.exports = {
-  extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+  extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
   plugins: ['jest'],
   env: {
     'jest/globals': true,
   },
   rules: {
     'jest/consistent-test-it': 'warn',
-    'jest/expect-expect': 'warn',
+    'jest/expect-expect': 'error',
     'jest/no-disabled-tests': 'off',
     'jest/no-duplicate-hooks': 'warn',
     'jest/no-expect-resolves': 'warn',
