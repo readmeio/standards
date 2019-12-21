@@ -1,3 +1,11 @@
+## <small>1.8.1 (2019-12-21)</small>
+
+* chore(deps-dev): bump conventional-changelog-cli from 2.0.28 to 2.0.31 (#18) ([1da5bd6](https://github.com/readmeio/eslint-config/commit/1da5bd6)), closes [#18](https://github.com/readmeio/eslint-config/issues/18)
+* chore(deps-dev): bump eslint from 6.7.2 to 6.8.0 (#20) ([c172bdb](https://github.com/readmeio/eslint-config/commit/c172bdb)), closes [#20](https://github.com/readmeio/eslint-config/issues/20)
+* chore(deps): bump eslint-plugin-prettier from 3.1.1 to 3.1.2 (#19) ([e39633e](https://github.com/readmeio/eslint-config/commit/e39633e)), closes [#19](https://github.com/readmeio/eslint-config/issues/19)
+
+
+
 ## 1.8.0 (2019-12-14)
 
 * docs: adding a changelog (#17) ([e6bc615](https://github.com/readmeio/eslint-config/commit/e6bc615)), closes [#17](https://github.com/readmeio/eslint-config/issues/17)
