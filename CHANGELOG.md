@@ -1,3 +1,14 @@
+## 1.9.0 (2019-12-30)
+
+* chore(deps): bump eslint-config-prettier from 6.7.0 to 6.8.0 (#23) ([a68e9a6](https://github.com/readmeio/eslint-config/commit/a68e9a6)), closes [#23](https://github.com/readmeio/eslint-config/issues/23)
+* chore(deps): bump eslint-config-prettier from 6.8.0 to 6.9.0 (#25) ([2eee0d0](https://github.com/readmeio/eslint-config/commit/2eee0d0)), closes [#25](https://github.com/readmeio/eslint-config/issues/25)
+* chore(deps): bump eslint-plugin-jest from 23.1.1 to 23.2.0 (#26) ([b666feb](https://github.com/readmeio/eslint-config/commit/b666feb)), closes [#26](https://github.com/readmeio/eslint-config/issues/26)
+* chore(deps): bump eslint-plugin-node from 10.0.0 to 11.0.0 (#24) ([f4d3c3c](https://github.com/readmeio/eslint-config/commit/f4d3c3c)), closes [#24](https://github.com/readmeio/eslint-config/issues/24)
+* chore(deps): bump eslint-plugin-unicorn from 14.0.1 to 15.0.0 (#21) ([8127cdb](https://github.com/readmeio/eslint-config/commit/8127cdb)), closes [#21](https://github.com/readmeio/eslint-config/issues/21)
+* chore(deps): bump eslint-plugin-unicorn from 15.0.0 to 15.0.1 (#22) ([9fae763](https://github.com/readmeio/eslint-config/commit/9fae763)), closes [#22](https://github.com/readmeio/eslint-config/issues/22)
+
+
+
 ## <small>1.8.1 (2019-12-21)</small>
 
 * chore(deps-dev): bump conventional-changelog-cli from 2.0.28 to 2.0.31 (#18) ([1da5bd6](https://github.com/readmeio/eslint-config/commit/1da5bd6)), closes [#18](https://github.com/readmeio/eslint-config/issues/18)
