@@ -1,3 +1,13 @@
+## 1.10.0 (2020-01-13)
+
+* chore(deps-dev): bump husky from 4.0.1 to 4.0.3 (#32) ([6878860](https://github.com/readmeio/eslint-config/commit/6878860)), closes [#32](https://github.com/readmeio/eslint-config/issues/32)
+* chore(deps-dev): bump husky from 4.0.3 to 4.0.5 (#33) ([83df916](https://github.com/readmeio/eslint-config/commit/83df916)), closes [#33](https://github.com/readmeio/eslint-config/issues/33)
+* chore(deps-dev): bump husky from 4.0.5 to 4.0.7 (#36) ([df84f46](https://github.com/readmeio/eslint-config/commit/df84f46)), closes [#36](https://github.com/readmeio/eslint-config/issues/36)
+* chore(deps): bump eslint-plugin-import from 2.19.1 to 2.20.0 (#35) ([6d5fc99](https://github.com/readmeio/eslint-config/commit/6d5fc99)), closes [#35](https://github.com/readmeio/eslint-config/issues/35)
+* chore(deps): bump eslint-plugin-jest from 23.3.0 to 23.6.0 (#34) ([b070af3](https://github.com/readmeio/eslint-config/commit/b070af3)), closes [#34](https://github.com/readmeio/eslint-config/issues/34)
+
+
+
 ## <small>1.9.1 (2020-01-08)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 8.2.0 to 8.3.4 (#28) ([7dc1313](https://github.com/readmeio/eslint-config/commit/7dc1313)), closes [#28](https://github.com/readmeio/eslint-config/issues/28)
