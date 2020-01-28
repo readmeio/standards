@@ -1,3 +1,13 @@
+## 1.11.0 (2020-01-28)
+
+* feat: including our standard prettier config so it can be shared (#41) ([3ec3f0b](https://github.com/readmeio/eslint-config/commit/3ec3f0b)), closes [#41](https://github.com/readmeio/eslint-config/issues/41)
+* chore(deps-dev): bump @commitlint/cli from 8.3.4 to 8.3.5 (#38) ([286dcd9](https://github.com/readmeio/eslint-config/commit/286dcd9)), closes [#38](https://github.com/readmeio/eslint-config/issues/38)
+* chore(deps-dev): bump husky from 4.0.10 to 4.2.1 (#40) ([6eda276](https://github.com/readmeio/eslint-config/commit/6eda276)), closes [#40](https://github.com/readmeio/eslint-config/issues/40)
+* chore(deps-dev): bump husky from 4.0.7 to 4.0.10 (#37) ([b80dee8](https://github.com/readmeio/eslint-config/commit/b80dee8)), closes [#37](https://github.com/readmeio/eslint-config/issues/37)
+* chore(deps): bump eslint-plugin-react from 7.17.0 to 7.18.0 (#39) ([890d37a](https://github.com/readmeio/eslint-config/commit/890d37a)), closes [#39](https://github.com/readmeio/eslint-config/issues/39)
+
+
+
 ## 1.10.0 (2020-01-13)
 
 * chore(deps-dev): bump husky from 4.0.1 to 4.0.3 (#32) ([6878860](https://github.com/readmeio/eslint-config/commit/6878860)), closes [#32](https://github.com/readmeio/eslint-config/issues/32)
