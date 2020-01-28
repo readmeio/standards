@@ -34,7 +34,14 @@ module.exports = {
 
     'prefer-destructuring': 'off',
 
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        singleQuote: true,
+        trailingComma: 'es5',
+      },
+    ],
 
     'sonarjs/cognitive-complexity': 'off',
     'sonarjs/no-collapsible-if': 'off',
