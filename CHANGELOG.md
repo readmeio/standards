@@ -1,3 +1,12 @@
+## 1.12.0 (2020-02-09)
+
+* chore(deps): bump eslint-config-prettier from 6.9.0 to 6.10.0 (#45) ([4bdd43f](https://github.com/readmeio/eslint-config/commit/4bdd43f)), closes [#45](https://github.com/readmeio/eslint-config/issues/45)
+* chore(deps): bump eslint-plugin-import from 2.20.0 to 2.20.1 (#42) ([f059b20](https://github.com/readmeio/eslint-config/commit/f059b20)), closes [#42](https://github.com/readmeio/eslint-config/issues/42)
+* chore(deps): bump eslint-plugin-react from 7.18.0 to 7.18.3 (#43) ([f3fc642](https://github.com/readmeio/eslint-config/commit/f3fc642)), closes [#43](https://github.com/readmeio/eslint-config/issues/43)
+* chore(deps): bump eslint-plugin-unicorn from 15.0.1 to 16.0.0 (#44) ([ce79ff5](https://github.com/readmeio/eslint-config/commit/ce79ff5)), closes [#44](https://github.com/readmeio/eslint-config/issues/44)
+
+
+
 ## 1.11.0 (2020-01-28)
 
 * feat: including our standard prettier config so it can be shared (#41) ([3ec3f0b](https://github.com/readmeio/eslint-config/commit/3ec3f0b)), closes [#41](https://github.com/readmeio/eslint-config/issues/41)
