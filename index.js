@@ -61,7 +61,7 @@ module.exports = {
     'no-nested-ternary': 'off', // Disabled in favor of `unicorn/no-nested-ternary` which has better nesting detection.
     'unicorn/no-nested-ternary': 'error',
     'unicorn/no-unreadable-array-destructuring': 'error',
-    // "unicorn/no-unsafe-regex": "error", // @todo We should resolve these.
+    'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
     // "unicorn/prefer-includes": "error", // Maybe?
     // "unicorn/prefer-query-selector": "error", // Maybe?
