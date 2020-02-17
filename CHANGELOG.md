@@ -1,3 +1,12 @@
+## 1.13.0 (2020-02-17)
+
+* feat: enabling `unicorn/no-unsafe-regex` ([5a7e1b6](https://github.com/readmeio/eslint-config/commit/5a7e1b6))
+* chore(deps-dev): bump husky from 4.2.1 to 4.2.3 (#47) ([2797fa0](https://github.com/readmeio/eslint-config/commit/2797fa0)), closes [#47](https://github.com/readmeio/eslint-config/issues/47)
+* chore(deps): bump eslint-plugin-jest from 23.6.0 to 23.7.0 (#46) ([eaf605e](https://github.com/readmeio/eslint-config/commit/eaf605e)), closes [#46](https://github.com/readmeio/eslint-config/issues/46)
+* chore(deps): bump eslint-plugin-unicorn from 16.0.0 to 16.1.1 (#48) ([d614400](https://github.com/readmeio/eslint-config/commit/d614400)), closes [#48](https://github.com/readmeio/eslint-config/issues/48)
+
+
+
 ## 1.12.0 (2020-02-09)
 
 * chore(deps): bump eslint-config-prettier from 6.9.0 to 6.10.0 (#45) ([4bdd43f](https://github.com/readmeio/eslint-config/commit/4bdd43f)), closes [#45](https://github.com/readmeio/eslint-config/issues/45)
