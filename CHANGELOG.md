@@ -1,3 +1,10 @@
+## 1.14.0 (2020-02-25)
+
+* fix: remove `unicorn/escape-case`, enable `jest/prefer-todo` (#50) ([d2d53b6](https://github.com/readmeio/eslint-config/commit/d2d53b6)), closes [#50](https://github.com/readmeio/eslint-config/issues/50)
+* chore(deps): bump eslint-plugin-jest from 23.7.0 to 23.8.0 (#49) ([714778c](https://github.com/readmeio/eslint-config/commit/714778c)), closes [#49](https://github.com/readmeio/eslint-config/issues/49)
+
+
+
 ## 1.13.0 (2020-02-17)
 
 * feat: enabling `unicorn/no-unsafe-regex` ([5a7e1b6](https://github.com/readmeio/eslint-config/commit/5a7e1b6))
