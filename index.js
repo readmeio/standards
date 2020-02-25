@@ -54,7 +54,6 @@ module.exports = {
     // "unicorn/consistent-function-scoping": "error", // Maybe?
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
-    'unicorn/escape-case': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-array-instanceof': 'error',
     // "unicorn/no-for-loop": "error", // Maybe?
