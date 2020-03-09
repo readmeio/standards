@@ -1,3 +1,12 @@
+## 1.15.0 (2020-03-09)
+
+* chore(deps): bump eslint-plugin-jest from 23.8.0 to 23.8.1 (#51) ([75ee12d](https://github.com/readmeio/eslint-config/commit/75ee12d)), closes [#51](https://github.com/readmeio/eslint-config/issues/51)
+* chore(deps): bump eslint-plugin-jest from 23.8.1 to 23.8.2 (#52) ([b1fd089](https://github.com/readmeio/eslint-config/commit/b1fd089)), closes [#52](https://github.com/readmeio/eslint-config/issues/52)
+* chore(deps): bump eslint-plugin-react from 7.18.3 to 7.19.0 (#53) ([0d3718f](https://github.com/readmeio/eslint-config/commit/0d3718f)), closes [#53](https://github.com/readmeio/eslint-config/issues/53)
+* chore(deps): bump eslint-plugin-unicorn from 16.1.1 to 17.0.1 (#54) ([1b371cd](https://github.com/readmeio/eslint-config/commit/1b371cd)), closes [#54](https://github.com/readmeio/eslint-config/issues/54)
+
+
+
 ## 1.14.0 (2020-02-25)
 
 * fix: remove `unicorn/escape-case`, enable `jest/prefer-todo` (#50) ([d2d53b6](https://github.com/readmeio/eslint-config/commit/d2d53b6)), closes [#50](https://github.com/readmeio/eslint-config/issues/50)
