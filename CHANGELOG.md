@@ -1,3 +1,11 @@
+## 1.16.0 (2020-03-16)
+
+* chore(deps): [security] bump acorn from 7.1.0 to 7.1.1 (#55) ([f8bf59f](https://github.com/readmeio/eslint-config/commit/f8bf59f)), closes [#55](https://github.com/readmeio/eslint-config/issues/55)
+* chore(deps): bump eslint-config-airbnb-base from 14.0.0 to 14.1.0 (#57) ([3ef2129](https://github.com/readmeio/eslint-config/commit/3ef2129)), closes [#57](https://github.com/readmeio/eslint-config/issues/57)
+* chore(deps): bump eslint-plugin-unicorn from 17.0.1 to 17.2.0 (#56) ([d005d29](https://github.com/readmeio/eslint-config/commit/d005d29)), closes [#56](https://github.com/readmeio/eslint-config/issues/56)
+
+
+
 ## 1.15.0 (2020-03-09)
 
 * chore(deps): bump eslint-plugin-jest from 23.8.0 to 23.8.1 (#51) ([75ee12d](https://github.com/readmeio/eslint-config/commit/75ee12d)), closes [#51](https://github.com/readmeio/eslint-config/issues/51)
