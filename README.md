@@ -29,6 +29,13 @@ Create a `.eslintrc` file with the following contents:
 * `@readme/eslint-config/react`
 * `@readme/eslint-config/testing`
 
+### Prettier
+Included in this is our shared Prettier config. You can use it in your application by adding the following to your `package.json`:
+
+```json
+"prettier": "@readme/eslint-config/prettier"
+```
+
 ## Contributing
 To assist in cleaner commit logs and a better changelog, all commit messages must be formatted against the https://commitlint.js.org/ standards.
 

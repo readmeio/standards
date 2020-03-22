@@ -1,3 +1,5 @@
+const prettierConfig = require('./prettier');
+
 module.exports = {
   extends: [
     'airbnb-base',
@@ -16,11 +18,7 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
 
     'func-names': 'off',
-
-    'import/default': 'off',
-    'import/named': 'off', // @fixme Disabling this for now, but there are some weird callouts with it.
     'import/order': 'off',
-
     'no-constructor-return': 'error',
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
@@ -34,21 +32,12 @@ module.exports = {
 
     'prefer-destructuring': 'off',
 
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 120,
-        singleQuote: true,
-        trailingComma: 'es5',
-      },
-    ],
+    'prettier/prettier': ['error', prettierConfig],
 
     'sonarjs/cognitive-complexity': 'off',
     'sonarjs/no-collapsible-if': 'off',
     'sonarjs/no-duplicate-string': 'off',
     'sonarjs/no-duplicated-branches': 'off',
-    'sonarjs/no-identical-functions': 'off', // @todo We should fix these.
-    'sonarjs/prefer-immediate-return': 'off', // @todo We should fix these.
 
     'unicorn/catch-error-name': ['error', { caughtErrorsIgnorePattern: '^(error|err|e)$' }],
     // "unicorn/consistent-function-scoping": "error", // Maybe?
@@ -56,15 +45,11 @@ module.exports = {
     'unicorn/error-message': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-array-instanceof': 'error',
-    // "unicorn/no-for-loop": "error", // Maybe?
     'no-nested-ternary': 'off', // Disabled in favor of `unicorn/no-nested-ternary` which has better nesting detection.
     'unicorn/no-nested-ternary': 'error',
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
-    // "unicorn/prefer-includes": "error", // Maybe?
-    // "unicorn/prefer-query-selector": "error", // Maybe?
-    'unicorn/prefer-starts-ends-with': 'off', // @todo We should resolve these.
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',
   },
