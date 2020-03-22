@@ -1,3 +1,9 @@
+## 2.0.0 (2020-03-22)
+
+* feat: exporting our prettier config (#58) ([8d3fa61](https://github.com/readmeio/eslint-config/commit/8d3fa61)), closes [#58](https://github.com/readmeio/eslint-config/issues/58)
+
+
+
 ## 1.16.0 (2020-03-16)
 
 * chore(deps): [security] bump acorn from 7.1.0 to 7.1.1 (#55) ([f8bf59f](https://github.com/readmeio/eslint-config/commit/f8bf59f)), closes [#55](https://github.com/readmeio/eslint-config/issues/55)
