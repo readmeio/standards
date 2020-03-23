@@ -1,3 +1,9 @@
+## <small>2.0.1 (2020-03-23)</small>
+
+* chore(deps): bump eslint-config-prettier from 6.10.0 to 6.10.1 (#59) ([8af0fc6](https://github.com/readmeio/eslint-config/commit/8af0fc6)), closes [#59](https://github.com/readmeio/eslint-config/issues/59)
+
+
+
 ## 2.0.0 (2020-03-22)
 
 * feat: exporting our prettier config (#58) ([8d3fa61](https://github.com/readmeio/eslint-config/commit/8d3fa61)), closes [#58](https://github.com/readmeio/eslint-config/issues/58)
