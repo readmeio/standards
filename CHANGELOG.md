@@ -1,3 +1,9 @@
+## <small>2.0.2 (2020-03-25)</small>
+
+* chore(deps): bumping the dev and peerDeps for prettier to 2.0 ([9695ae1](https://github.com/readmeio/eslint-config/commit/9695ae1))
+
+
+
 ## <small>2.0.1 (2020-03-23)</small>
 
 * chore(deps): bump eslint-config-prettier from 6.10.0 to 6.10.1 (#59) ([8af0fc6](https://github.com/readmeio/eslint-config/commit/8af0fc6)), closes [#59](https://github.com/readmeio/eslint-config/issues/59)
