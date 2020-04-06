@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
-  plugins: ['jest'],
+  plugins: ['import', 'jest', 'node', 'sonarjs'],
   env: {
     'jest/globals': true,
   },
