@@ -1,3 +1,12 @@
+## <small>2.0.3 (2020-04-06)</small>
+
+* chore(deps): bump eslint-plugin-import from 2.20.1 to 2.20.2 (#60) ([5306f99](https://github.com/readmeio/eslint-config/commit/5306f99)), closes [#60](https://github.com/readmeio/eslint-config/issues/60)
+* chore(deps): bump eslint-plugin-unicorn from 17.2.0 to 18.0.1 (#62) ([7b47d30](https://github.com/readmeio/eslint-config/commit/7b47d30)), closes [#62](https://github.com/readmeio/eslint-config/issues/62)
+* chore(deps): upgrading eslint-plugin-node to 11.1.0 (#63) ([560aa50](https://github.com/readmeio/eslint-config/commit/560aa50)), closes [#63](https://github.com/readmeio/eslint-config/issues/63)
+* fix: adding missing eslint plugin imports in the react and test configs ([73bf2c2](https://github.com/readmeio/eslint-config/commit/73bf2c2))
+
+
+
 ## <small>2.0.2 (2020-03-25)</small>
 
 * chore(deps): bumping the dev and peerDeps for prettier to 2.0 ([9695ae1](https://github.com/readmeio/eslint-config/commit/9695ae1))
