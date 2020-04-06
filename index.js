@@ -10,7 +10,7 @@ module.exports = {
     'plugin:sonarjs/recommended',
     'prettier',
   ],
-  plugins: ['node', 'prettier', 'unicorn'],
+  plugins: ['eslint-comments', 'import', 'node', 'prettier', 'sonarjs', 'unicorn'],
   rules: {
     'arrow-body-style': 'off',
 
@@ -18,7 +18,9 @@ module.exports = {
     'eslint-comments/no-unused-disable': 'error',
 
     'func-names': 'off',
+
     'import/order': 'off',
+
     'no-constructor-return': 'error',
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
