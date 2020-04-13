@@ -1,3 +1,12 @@
+## <small>2.0.4 (2020-04-13)</small>
+
+* chore(deps-dev): bump husky from 4.2.3 to 4.2.5 (#66) ([42e242d](https://github.com/readmeio/eslint-config/commit/42e242d)), closes [#66](https://github.com/readmeio/eslint-config/issues/66)
+* chore(deps-dev): bump prettier from 2.0.2 to 2.0.3 (#64) ([313e50d](https://github.com/readmeio/eslint-config/commit/313e50d)), closes [#64](https://github.com/readmeio/eslint-config/issues/64)
+* chore(deps-dev): bump prettier from 2.0.3 to 2.0.4 (#67) ([60e12b4](https://github.com/readmeio/eslint-config/commit/60e12b4)), closes [#67](https://github.com/readmeio/eslint-config/issues/67)
+* chore(deps): bump eslint-plugin-prettier from 3.1.2 to 3.1.3 (#65) ([e68d7af](https://github.com/readmeio/eslint-config/commit/e68d7af)), closes [#65](https://github.com/readmeio/eslint-config/issues/65)
+
+
+
 ## <small>2.0.3 (2020-04-06)</small>
 
 * chore(deps): bump eslint-plugin-import from 2.20.1 to 2.20.2 (#60) ([5306f99](https://github.com/readmeio/eslint-config/commit/5306f99)), closes [#60](https://github.com/readmeio/eslint-config/issues/60)
