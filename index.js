@@ -41,7 +41,7 @@ module.exports = {
     'sonarjs/no-duplicate-string': 'off',
     'sonarjs/no-duplicated-branches': 'off',
 
-    'unicorn/catch-error-name': ['error', { caughtErrorsIgnorePattern: '^(error|err|e)$' }],
+    'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
     // "unicorn/consistent-function-scoping": "error", // Maybe?
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
