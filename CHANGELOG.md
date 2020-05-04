@@ -1,3 +1,16 @@
+## 2.1.0 (2020-05-04)
+
+* feat: enabling `jest/no-deprecated-functions` ([5f55aa6](https://github.com/readmeio/eslint-config/commit/5f55aa6))
+* chore(deps): bump eslint-plugin-jest from 23.8.2 to 23.9.0 (#71) ([4c8d734](https://github.com/readmeio/eslint-config/commit/4c8d734)), closes [#71](https://github.com/readmeio/eslint-config/issues/71)
+
+
+
+## <small>2.0.6 (2020-04-28)</small>
+
+* fix: updating our usage of the unicorn/catch-error-name rule ([e20e038](https://github.com/readmeio/eslint-config/commit/e20e038))
+
+
+
 ## <small>2.0.5 (2020-04-27)</small>
 
 * chore(deps-dev): bump prettier from 2.0.4 to 2.0.5 (#69) ([2f75689](https://github.com/readmeio/eslint-config/commit/2f75689)), closes [#69](https://github.com/readmeio/eslint-config/issues/69)
