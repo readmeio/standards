@@ -1,3 +1,10 @@
+## 2.2.0 (2020-05-08)
+
+* feat: quote JS object properties consistently (#72) ([7ba1883](https://github.com/readmeio/eslint-config/commit/7ba1883)), closes [#72](https://github.com/readmeio/eslint-config/issues/72) [api-explorer#e357013](https://github.com/api-explorer/issues/e357013)
+* docs: updating the changelog ([4410d0a](https://github.com/readmeio/eslint-config/commit/4410d0a))
+
+
+
 ## 2.1.0 (2020-05-04)
 
 * feat: enabling `jest/no-deprecated-functions` ([5f55aa6](https://github.com/readmeio/eslint-config/commit/5f55aa6))
