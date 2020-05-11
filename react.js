@@ -10,7 +10,7 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     },
-    react: {
+    'react': {
       version: 'detect',
     },
   },
