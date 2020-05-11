@@ -1,3 +1,11 @@
+## 3.0.0 (2020-05-11)
+
+* feat: upgrading our eslint peerDep to v7 (#75) ([e6aed29](https://github.com/readmeio/eslint-config/commit/e6aed29)), closes [#75](https://github.com/readmeio/eslint-config/issues/75)
+* chore(deps-dev): bump conventional-changelog-cli from 2.0.31 to 2.0.34 (#74) ([0329103](https://github.com/readmeio/eslint-config/commit/0329103)), closes [#74](https://github.com/readmeio/eslint-config/issues/74)
+* chore(deps): bump eslint-plugin-jest from 23.9.0 to 23.10.0 (#73) ([6795228](https://github.com/readmeio/eslint-config/commit/6795228)), closes [#73](https://github.com/readmeio/eslint-config/issues/73)
+
+
+
 ## 2.2.0 (2020-05-08)
 
 * feat: quote JS object properties consistently (#72) ([7ba1883](https://github.com/readmeio/eslint-config/commit/7ba1883)), closes [#72](https://github.com/readmeio/eslint-config/issues/72) [api-explorer#e357013](https://github.com/api-explorer/issues/e357013)
