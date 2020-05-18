@@ -52,6 +52,7 @@ module.exports = {
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
+    'unicorn/no-useless-undefined': 'error',
     'unicorn/prefer-set-has': 'off',
     'unicorn/prefer-number-properties': 'off',
     'unicorn/prefer-type-error': 'error',
