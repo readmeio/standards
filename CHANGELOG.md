@@ -1,3 +1,11 @@
+## 3.1.0 (2020-05-18)
+
+* chore(deps): bump eslint-plugin-jest from 23.10.0 to 23.13.1 (#77) ([5f495f8](https://github.com/readmeio/eslint-config/commit/5f495f8)), closes [#77](https://github.com/readmeio/eslint-config/issues/77)
+* chore(deps): bump eslint-plugin-react from 7.19.0 to 7.20.0 (#78) ([c447a1c](https://github.com/readmeio/eslint-config/commit/c447a1c)), closes [#78](https://github.com/readmeio/eslint-config/issues/78)
+* chore(deps): bump eslint-plugin-unicorn from 19.0.1 to 20.0.0 (#76) ([24dda66](https://github.com/readmeio/eslint-config/commit/24dda66)), closes [#76](https://github.com/readmeio/eslint-config/issues/76)
+
+
+
 ## 3.0.0 (2020-05-11)
 
 * feat: upgrading our eslint peerDep to v7 (#75) ([e6aed29](https://github.com/readmeio/eslint-config/commit/e6aed29)), closes [#75](https://github.com/readmeio/eslint-config/issues/75)
