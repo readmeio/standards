@@ -6,6 +6,14 @@ Core coding standards for ReadMe projects.
 
 ## Installation
 
+You'll need to install [`eslint`](https://www.npmjs.com/package/eslint) and [`prettier`](https://www.npmjs.com/package/prettier) into your project. Use this shortcut to install them alongside the config (if using **npm 5+**):
+
+```sh
+npx install-peerdeps --dev @readme/eslint-config
+```
+
+If you already have `eslint` and `prettier` installed in your project, just run this command to install the config:
+
 ```sh
 npm install --save @readme/eslint-config
 ```
