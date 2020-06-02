@@ -1,3 +1,13 @@
+## <small>3.1.1 (2020-06-02)</small>
+
+* chore(deps-dev): bump eslint from 7.0.0 to 7.1.0 (#80) ([909b9ad](https://github.com/readmeio/eslint-config/commit/909b9ad)), closes [#80](https://github.com/readmeio/eslint-config/issues/80)
+* chore(deps): bump eslint-plugin-eslint-comments from 3.1.2 to 3.2.0 (#83) ([4c89cc7](https://github.com/readmeio/eslint-config/commit/4c89cc7)), closes [#83](https://github.com/readmeio/eslint-config/issues/83)
+* chore(deps): bump eslint-plugin-jest from 23.13.1 to 23.13.2 (#82) ([34ad858](https://github.com/readmeio/eslint-config/commit/34ad858)), closes [#82](https://github.com/readmeio/eslint-config/issues/82)
+* chore(deps): bump eslint-plugin-unicorn from 20.0.0 to 20.1.0 (#81) ([e502194](https://github.com/readmeio/eslint-config/commit/e502194)), closes [#81](https://github.com/readmeio/eslint-config/issues/81)
+* docs: add command to install config and peer deps (#79) ([ad6b74c](https://github.com/readmeio/eslint-config/commit/ad6b74c)), closes [#79](https://github.com/readmeio/eslint-config/issues/79)
+
+
+
 ## 3.1.0 (2020-05-18)
 
 * chore(deps): bump eslint-plugin-jest from 23.10.0 to 23.13.1 (#77) ([5f495f8](https://github.com/readmeio/eslint-config/commit/5f495f8)), closes [#77](https://github.com/readmeio/eslint-config/issues/77)
