@@ -1,3 +1,9 @@
+## <small>3.1.2 (2020-06-02)</small>
+
+* fix: disabling jest/no-deprecated-functions ([a198df0](https://github.com/readmeio/eslint-config/commit/a198df0))
+
+
+
 ## <small>3.1.1 (2020-06-02)</small>
 
 * chore(deps-dev): bump eslint from 7.0.0 to 7.1.0 (#80) ([909b9ad](https://github.com/readmeio/eslint-config/commit/909b9ad)), closes [#80](https://github.com/readmeio/eslint-config/issues/80)
