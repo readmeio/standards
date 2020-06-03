@@ -1,3 +1,9 @@
+## <small>3.1.3 (2020-06-03)</small>
+
+* fix: disabling `unicorn/no-useless-undefined` ([bab154f](https://github.com/readmeio/eslint-config/commit/bab154f))
+
+
+
 ## <small>3.1.2 (2020-06-02)</small>
 
 * fix: disabling jest/no-deprecated-functions ([a198df0](https://github.com/readmeio/eslint-config/commit/a198df0))
