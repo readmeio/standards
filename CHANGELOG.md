@@ -1,3 +1,14 @@
+## 3.2.0 (2020-06-09)
+
+* feat: toggling `require-await` on the `testing` config ([283dfa3](https://github.com/readmeio/eslint-config/commit/283dfa3))
+* chore: setting up dependabot to keep an eye on our workflows ([56560ed](https://github.com/readmeio/eslint-config/commit/56560ed))
+* build(deps-dev): bump eslint from 7.1.0 to 7.2.0 (#86) ([2cab7f1](https://github.com/readmeio/eslint-config/commit/2cab7f1)), closes [#86](https://github.com/readmeio/eslint-config/issues/86)
+* build(deps): bump eslint-plugin-import from 2.20.2 to 2.21.1 (#85) ([8699711](https://github.com/readmeio/eslint-config/commit/8699711)), closes [#85](https://github.com/readmeio/eslint-config/issues/85)
+* ci: create Dependabot config file (#84) ([0063b20](https://github.com/readmeio/eslint-config/commit/0063b20)), closes [#84](https://github.com/readmeio/eslint-config/issues/84)
+* ci: running unit tests against node 14 ([9fa1603](https://github.com/readmeio/eslint-config/commit/9fa1603))
+
+
+
 ## <small>3.1.3 (2020-06-03)</small>
 
 * fix: disabling `unicorn/no-useless-undefined` ([bab154f](https://github.com/readmeio/eslint-config/commit/bab154f))
