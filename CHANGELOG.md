@@ -1,3 +1,12 @@
+## <small>3.2.1 (2020-06-15)</small>
+
+* chore(deps): bump actions/checkout from v1 to v2.2.0 (#88) ([36a4d85](https://github.com/readmeio/eslint-config/commit/36a4d85)), closes [#88](https://github.com/readmeio/eslint-config/issues/88)
+* chore(deps): bump actions/setup-node from v1 to v2.0.0 (#87) ([317a228](https://github.com/readmeio/eslint-config/commit/317a228)), closes [#87](https://github.com/readmeio/eslint-config/issues/87)
+* chore(deps): bump eslint-plugin-import from 2.21.1 to 2.21.2 (#89) ([edd4d82](https://github.com/readmeio/eslint-config/commit/edd4d82)), closes [#89](https://github.com/readmeio/eslint-config/issues/89)
+* chore(deps): bump eslint-plugin-prettier from 3.1.3 to 3.1.4 (#90) ([ade744c](https://github.com/readmeio/eslint-config/commit/ade744c)), closes [#90](https://github.com/readmeio/eslint-config/issues/90)
+
+
+
 ## 3.2.0 (2020-06-09)
 
 * feat: toggling `require-await` on the `testing` config ([283dfa3](https://github.com/readmeio/eslint-config/commit/283dfa3))
