@@ -9,6 +9,7 @@ module.exports = {
 
     'jest/consistent-test-it': 'warn',
     'jest/expect-expect': 'error',
+    'jest/no-conditional-expect': 'error',
     'jest/no-deprecated-functions': 'off',
     'jest/no-disabled-tests': 'off',
     'jest/no-duplicate-hooks': 'warn',
