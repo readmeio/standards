@@ -6,8 +6,8 @@
   "scripts": {
     "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
-    "release": "conventional-changelog -i CHANGELOG.md -s",
-    "test": "eslint ."
+    "test": "eslint .",
+    "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "license": "ISC",
