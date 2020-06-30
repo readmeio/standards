@@ -1,3 +1,28 @@
+## <small>3.3.1 (2020-06-30)</small>
+
+* chore(deps-dev): bump eslint from 7.2.0 to 7.3.1 (#98) ([475d615](https://github.com/readmeio/eslint-config/commit/475d615)), closes [#98](https://github.com/readmeio/eslint-config/issues/98)
+* chore(deps): bump actions/checkout from v2.2.0 to v2.3.1 (#103) ([c5a6b70](https://github.com/readmeio/eslint-config/commit/c5a6b70)), closes [#103](https://github.com/readmeio/eslint-config/issues/103)
+* chore(deps): bump actions/setup-node from v2.0.0 to v2.1.0 (#102) ([9e953e8](https://github.com/readmeio/eslint-config/commit/9e953e8)), closes [#102](https://github.com/readmeio/eslint-config/issues/102)
+* chore(deps): bump eslint-plugin-import from 2.21.2 to 2.22.0 (#99) ([b5bc4f1](https://github.com/readmeio/eslint-config/commit/b5bc4f1)), closes [#99](https://github.com/readmeio/eslint-config/issues/99)
+* chore(deps): bump eslint-plugin-jest from 23.16.0 to 23.17.1 (#97) ([720dca4](https://github.com/readmeio/eslint-config/commit/720dca4)), closes [#97](https://github.com/readmeio/eslint-config/issues/97)
+* chore(deps): bump eslint-plugin-jest-formatting from 1.2.0 to 2.0.0 (#101) ([736f508](https://github.com/readmeio/eslint-config/commit/736f508)), closes [#101](https://github.com/readmeio/eslint-config/issues/101)
+* chore(deps): bump eslint-plugin-react from 7.20.0 to 7.20.1 (#100) ([0d4757e](https://github.com/readmeio/eslint-config/commit/0d4757e)), closes [#100](https://github.com/readmeio/eslint-config/issues/100)
+* chore(deps): bump eslint-plugin-react from 7.20.0 to 7.20.2 (#104) ([38a3531](https://github.com/readmeio/eslint-config/commit/38a3531)), closes [#104](https://github.com/readmeio/eslint-config/issues/104)
+* ci: updating the label that dependabot uses ([ce11023](https://github.com/readmeio/eslint-config/commit/ce11023))
+
+
+
+## 3.3.0 (2020-06-22)
+
+* chore: setting up auto changelogs ([d80eff7](https://github.com/readmeio/eslint-config/commit/d80eff7))
+* chore(deps-dev): bump @commitlint/cli from 8.3.5 to 9.0.1 (#96) ([410a939](https://github.com/readmeio/eslint-config/commit/410a939)), closes [#96](https://github.com/readmeio/eslint-config/issues/96)
+* chore(deps-dev): bump @commitlint/config-conventional (#95) ([f988938](https://github.com/readmeio/eslint-config/commit/f988938)), closes [#95](https://github.com/readmeio/eslint-config/issues/95)
+* chore(deps): bump eslint-config-airbnb-base from 14.1.0 to 14.2.0 (#93) ([4601906](https://github.com/readmeio/eslint-config/commit/4601906)), closes [#93](https://github.com/readmeio/eslint-config/issues/93)
+* chore(deps): bump eslint-plugin-jest from 23.13.2 to 23.16.0 (#94) ([161135c](https://github.com/readmeio/eslint-config/commit/161135c)), closes [#94](https://github.com/readmeio/eslint-config/issues/94)
+* chore(deps): bump eslint-plugin-jsx-a11y from 6.2.3 to 6.3.1 (#91) ([d2b2de1](https://github.com/readmeio/eslint-config/commit/d2b2de1)), closes [#91](https://github.com/readmeio/eslint-config/issues/91)
+
+
+
 ## <small>3.2.1 (2020-06-15)</small>
 
 * chore(deps): bump actions/checkout from v1 to v2.2.0 (#88) ([36a4d85](https://github.com/readmeio/eslint-config/commit/36a4d85)), closes [#88](https://github.com/readmeio/eslint-config/issues/88)
