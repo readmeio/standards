@@ -1,3 +1,12 @@
+## <small>3.4.1 (2020-08-03)</small>
+
+* chore(deps-dev): bump eslint from 7.5.0 to 7.6.0 (#116) ([f31edf6](https://github.com/readmeio/eslint-config/commit/f31edf6)), closes [#116](https://github.com/readmeio/eslint-config/issues/116)
+* chore(deps): bump actions/setup-node from v2.1.0 to v2.1.1 (#115) ([0d64dcc](https://github.com/readmeio/eslint-config/commit/0d64dcc)), closes [#115](https://github.com/readmeio/eslint-config/issues/115)
+* chore(deps): bump eslint-plugin-jest from 23.18.2 to 23.20.0 (#118) ([8aad428](https://github.com/readmeio/eslint-config/commit/8aad428)), closes [#118](https://github.com/readmeio/eslint-config/issues/118)
+* chore(deps): bump eslint-plugin-react from 7.20.4 to 7.20.5 (#117) ([cb8a95c](https://github.com/readmeio/eslint-config/commit/cb8a95c)), closes [#117](https://github.com/readmeio/eslint-config/issues/117)
+
+
+
 ## 3.4.0 (2020-07-27)
 
 * chore(deps-dev): bump @commitlint/cli from 9.0.1 to 9.1.1 (#110) ([bdf1d9e](https://github.com/readmeio/eslint-config/commit/bdf1d9e)), closes [#110](https://github.com/readmeio/eslint-config/issues/110)
