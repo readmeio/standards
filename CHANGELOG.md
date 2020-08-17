@@ -1,3 +1,13 @@
+## <small>3.4.2 (2020-08-17)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 9.1.1 to 9.1.2 (#119) ([0c7ddf4](https://github.com/readmeio/eslint-config/commit/0c7ddf4)), closes [#119](https://github.com/readmeio/eslint-config/issues/119)
+* chore(deps-dev): bump @commitlint/config-conventional (#122) ([caba536](https://github.com/readmeio/eslint-config/commit/caba536)), closes [#122](https://github.com/readmeio/eslint-config/issues/122)
+* chore(deps-dev): bump conventional-changelog-cli from 2.0.34 to 2.1.0 (#121) ([78d4889](https://github.com/readmeio/eslint-config/commit/78d4889)), closes [#121](https://github.com/readmeio/eslint-config/issues/121)
+* chore(deps-dev): bump eslint from 7.6.0 to 7.7.0 (#123) ([11686e3](https://github.com/readmeio/eslint-config/commit/11686e3)), closes [#123](https://github.com/readmeio/eslint-config/issues/123)
+* chore(deps): bump eslint-plugin-react from 7.20.5 to 7.20.6 (#120) ([2a9f3f0](https://github.com/readmeio/eslint-config/commit/2a9f3f0)), closes [#120](https://github.com/readmeio/eslint-config/issues/120)
+
+
+
 ## <small>3.4.1 (2020-08-03)</small>
 
 * chore(deps-dev): bump eslint from 7.5.0 to 7.6.0 (#116) ([f31edf6](https://github.com/readmeio/eslint-config/commit/f31edf6)), closes [#116](https://github.com/readmeio/eslint-config/issues/116)
