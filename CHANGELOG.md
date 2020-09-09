@@ -1,3 +1,12 @@
+## <small>3.4.3 (2020-09-09)</small>
+
+* chore(deps-dev): bump eslint from 7.7.0 to 7.8.1 (#127) ([8f8d8a1](https://github.com/readmeio/eslint-config/commit/8f8d8a1)), closes [#127](https://github.com/readmeio/eslint-config/issues/127)
+* chore(deps-dev): bump prettier from 2.0.5 to 2.1.1 (#124) ([644dcae](https://github.com/readmeio/eslint-config/commit/644dcae)), closes [#124](https://github.com/readmeio/eslint-config/issues/124)
+* chore(deps): bump actions/checkout from v2.3.1 to v2.3.2 (#125) ([1d7c68e](https://github.com/readmeio/eslint-config/commit/1d7c68e)), closes [#125](https://github.com/readmeio/eslint-config/issues/125)
+* chore(deps): bump eslint-plugin-jest from 23.20.0 to 24.0.0 (#126) ([f6854df](https://github.com/readmeio/eslint-config/commit/f6854df)), closes [#126](https://github.com/readmeio/eslint-config/issues/126)
+
+
+
 ## <small>3.4.2 (2020-08-17)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 9.1.1 to 9.1.2 (#119) ([0c7ddf4](https://github.com/readmeio/eslint-config/commit/0c7ddf4)), closes [#119](https://github.com/readmeio/eslint-config/issues/119)
