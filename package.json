@@ -1,6 +1,6 @@
 {
   "name": "@readme/eslint-config",
-  "version": "3.4.3",
+  "version": "3.4.5",
   "description": "ReadMe coding standards",
   "main": "index.js",
   "scripts": {
