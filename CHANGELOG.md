@@ -1,3 +1,9 @@
+## 3.5.0 (2020-09-18)
+
+* feat: upgrading eslint-plugin-unicorn and enabling the import-style rule ([9bdbf1a](https://github.com/readmeio/eslint-config/commit/9bdbf1a))
+
+
+
 ## <small>3.4.5 (2020-09-14)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 9.1.2 to 11.0.0 (#132) ([550034a](https://github.com/readmeio/eslint-config/commit/550034a)), closes [#132](https://github.com/readmeio/eslint-config/issues/132)
