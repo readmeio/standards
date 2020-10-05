@@ -1,3 +1,15 @@
+## 3.6.0 (2020-10-05)
+
+* chore(deps-dev): bump eslint from 7.9.0 to 7.10.0 (#136) ([fc55452](https://github.com/readmeio/eslint-config/commit/fc55452)), closes [#136](https://github.com/readmeio/eslint-config/issues/136)
+* chore(deps-dev): bump prettier from 2.1.1 to 2.1.2 (#134) ([edada8d](https://github.com/readmeio/eslint-config/commit/edada8d)), closes [#134](https://github.com/readmeio/eslint-config/issues/134)
+* chore(deps): bump actions/checkout from v2.3.2 to v2.3.3 (#139) ([7b57d2e](https://github.com/readmeio/eslint-config/commit/7b57d2e)), closes [#139](https://github.com/readmeio/eslint-config/issues/139)
+* chore(deps): bump eslint-config-prettier from 6.11.0 to 6.12.0 (#135) ([c622d72](https://github.com/readmeio/eslint-config/commit/c622d72)), closes [#135](https://github.com/readmeio/eslint-config/issues/135)
+* chore(deps): bump eslint-plugin-import from 2.22.0 to 2.22.1 (#137) ([a2853a6](https://github.com/readmeio/eslint-config/commit/a2853a6)), closes [#137](https://github.com/readmeio/eslint-config/issues/137)
+* chore(deps): bump eslint-plugin-jest from 24.0.1 to 24.0.2 (#133) ([13472c0](https://github.com/readmeio/eslint-config/commit/13472c0)), closes [#133](https://github.com/readmeio/eslint-config/issues/133)
+* chore(deps): bump eslint-plugin-react from 7.20.6 to 7.21.3 (#140) ([e6dc527](https://github.com/readmeio/eslint-config/commit/e6dc527)), closes [#140](https://github.com/readmeio/eslint-config/issues/140)
+
+
+
 ## 3.5.0 (2020-09-18)
 
 * feat: upgrading eslint-plugin-unicorn and enabling the import-style rule ([9bdbf1a](https://github.com/readmeio/eslint-config/commit/9bdbf1a))
