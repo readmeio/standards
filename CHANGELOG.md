@@ -1,3 +1,10 @@
+## <small>3.6.2 (2020-10-19)</small>
+
+* chore(deps): bump eslint-config-prettier from 6.12.0 to 6.13.0 (#145) ([ae1db76](https://github.com/readmeio/eslint-config/commit/ae1db76)), closes [#145](https://github.com/readmeio/eslint-config/issues/145)
+* chore(deps): bump eslint-plugin-unicorn from 22.0.0 to 23.0.0 (#144) ([3766f90](https://github.com/readmeio/eslint-config/commit/3766f90)), closes [#144](https://github.com/readmeio/eslint-config/issues/144)
+
+
+
 ## <small>3.6.1 (2020-10-14)</small>
 
 * chore(deps-dev): bump eslint from 7.10.0 to 7.11.0 (#141) ([dd33437](https://github.com/readmeio/eslint-config/commit/dd33437)), closes [#141](https://github.com/readmeio/eslint-config/issues/141)
