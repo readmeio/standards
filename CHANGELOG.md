@@ -1,3 +1,16 @@
+## <small>3.6.3 (2020-11-02)</small>
+
+* chore(deps-dev): bump eslint from 7.11.0 to 7.12.0 (#148) ([576533a](https://github.com/readmeio/eslint-config/commit/576533a)), closes [#148](https://github.com/readmeio/eslint-config/issues/148)
+* chore(deps-dev): bump eslint from 7.12.0 to 7.12.1 (#151) ([eb9e162](https://github.com/readmeio/eslint-config/commit/eb9e162)), closes [#151](https://github.com/readmeio/eslint-config/issues/151)
+* chore(deps): bump actions/setup-node from v2.1.1 to v2.1.2 (#150) ([10e1829](https://github.com/readmeio/eslint-config/commit/10e1829)), closes [#150](https://github.com/readmeio/eslint-config/issues/150)
+* chore(deps): bump eslint-config-prettier from 6.13.0 to 6.14.0 (#147) ([34148f3](https://github.com/readmeio/eslint-config/commit/34148f3)), closes [#147](https://github.com/readmeio/eslint-config/issues/147)
+* chore(deps): bump eslint-config-prettier from 6.14.0 to 6.15.0 (#152) ([1b1df4a](https://github.com/readmeio/eslint-config/commit/1b1df4a)), closes [#152](https://github.com/readmeio/eslint-config/issues/152)
+* chore(deps): bump eslint-plugin-jsx-a11y from 6.3.1 to 6.4.0 (#149) ([650def4](https://github.com/readmeio/eslint-config/commit/650def4)), closes [#149](https://github.com/readmeio/eslint-config/issues/149)
+* chore(deps): bump eslint-plugin-jsx-a11y from 6.4.0 to 6.4.1 (#153) ([fa3b141](https://github.com/readmeio/eslint-config/commit/fa3b141)), closes [#153](https://github.com/readmeio/eslint-config/issues/153)
+* chore(deps): bump eslint-plugin-react from 7.21.4 to 7.21.5 (#146) ([d49a8d4](https://github.com/readmeio/eslint-config/commit/d49a8d4)), closes [#146](https://github.com/readmeio/eslint-config/issues/146)
+
+
+
 ## <small>3.6.2 (2020-10-19)</small>
 
 * chore(deps): bump eslint-config-prettier from 6.12.0 to 6.13.0 (#145) ([ae1db76](https://github.com/readmeio/eslint-config/commit/ae1db76)), closes [#145](https://github.com/readmeio/eslint-config/issues/145)
