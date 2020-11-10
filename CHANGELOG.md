@@ -1,3 +1,9 @@
+## <small>3.6.5 (2020-11-10)</small>
+
+* style: set 'no-cond-assign' back to 'except-parens' (#157) ([e16ae8e](https://github.com/readmeio/eslint-config/commit/e16ae8e)), closes [#157](https://github.com/readmeio/eslint-config/issues/157)
+
+
+
 ## <small>3.6.4 (2020-11-10)</small>
 
 * chore(deps-dev): bump conventional-changelog-cli from 2.1.0 to 2.1.1 (#155) ([dd9b0fc](https://github.com/readmeio/eslint-config/commit/dd9b0fc)), closes [#155](https://github.com/readmeio/eslint-config/issues/155)
