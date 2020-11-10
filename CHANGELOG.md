@@ -1,3 +1,11 @@
+## <small>3.6.4 (2020-11-10)</small>
+
+* chore(deps-dev): bump conventional-changelog-cli from 2.1.0 to 2.1.1 (#155) ([dd9b0fc](https://github.com/readmeio/eslint-config/commit/dd9b0fc)), closes [#155](https://github.com/readmeio/eslint-config/issues/155)
+* chore(deps-dev): bump eslint from 7.12.1 to 7.13.0 (#154) ([3a83b9b](https://github.com/readmeio/eslint-config/commit/3a83b9b)), closes [#154](https://github.com/readmeio/eslint-config/issues/154)
+* chore(deps): bump eslint-config-airbnb-base from 14.2.0 to 14.2.1 (#156) ([43fd69d](https://github.com/readmeio/eslint-config/commit/43fd69d)), closes [#156](https://github.com/readmeio/eslint-config/issues/156)
+
+
+
 ## <small>3.6.3 (2020-11-02)</small>
 
 * chore(deps-dev): bump eslint from 7.11.0 to 7.12.0 (#148) ([576533a](https://github.com/readmeio/eslint-config/commit/576533a)), closes [#148](https://github.com/readmeio/eslint-config/issues/148)
