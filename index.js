@@ -21,6 +21,7 @@ module.exports = {
 
     'import/order': 'off',
 
+    'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
     'no-constructor-return': 'error',
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
