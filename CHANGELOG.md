@@ -1,3 +1,9 @@
+## <small>3.7.1 (2020-11-27)</small>
+
+* fix: making eslint-plugin-react-hooks a hard dep ([caba016](https://github.com/readmeio/eslint-config/commit/caba016))
+
+
+
 ## 3.7.0 (2020-11-27)
 
 * feat: pulling eslint-plugin-react-hooks into our react config (#161) ([3f66c7d](https://github.com/readmeio/eslint-config/commit/3f66c7d)), closes [#161](https://github.com/readmeio/eslint-config/issues/161)
