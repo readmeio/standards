@@ -1,3 +1,12 @@
+## 3.7.0 (2020-11-27)
+
+* feat: pulling eslint-plugin-react-hooks into our react config (#161) ([3f66c7d](https://github.com/readmeio/eslint-config/commit/3f66c7d)), closes [#161](https://github.com/readmeio/eslint-config/issues/161)
+* chore(deps-dev): bump eslint from 7.13.0 to 7.14.0 (#160) ([4da1791](https://github.com/readmeio/eslint-config/commit/4da1791)), closes [#160](https://github.com/readmeio/eslint-config/issues/160)
+* chore(deps-dev): bump prettier from 2.1.2 to 2.2.0 (#159) ([128f0f1](https://github.com/readmeio/eslint-config/commit/128f0f1)), closes [#159](https://github.com/readmeio/eslint-config/issues/159)
+* chore(deps): bump eslint-plugin-jest from 24.1.0 to 24.1.3 (#158) ([2098540](https://github.com/readmeio/eslint-config/commit/2098540)), closes [#158](https://github.com/readmeio/eslint-config/issues/158)
+
+
+
 ## <small>3.6.5 (2020-11-10)</small>
 
 * style: set 'no-cond-assign' back to 'except-parens' (#157) ([e16ae8e](https://github.com/readmeio/eslint-config/commit/e16ae8e)), closes [#157](https://github.com/readmeio/eslint-config/issues/157)
