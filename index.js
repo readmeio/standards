@@ -13,7 +13,7 @@ module.exports = {
   plugins: ['eslint-comments', 'import', 'node', 'prettier', 'sonarjs', 'unicorn'],
   rules: {
     'arrow-body-style': 'off',
-    'no-restricted-imports': [2, { 'paths': ['lodash'] }],
+    'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
