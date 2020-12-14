@@ -1,3 +1,14 @@
+## 3.8.0 (2020-12-10)
+
+* style: fixing some style issues ([587ea4c](https://github.com/readmeio/eslint-config/commit/587ea4c))
+* add lodash scoped styling rule ([fc2043f](https://github.com/readmeio/eslint-config/commit/fc2043f))
+* chore(deps-dev): bump eslint from 7.14.0 to 7.15.0 (#166) ([cadf9d0](https://github.com/readmeio/eslint-config/commit/cadf9d0)), closes [#166](https://github.com/readmeio/eslint-config/issues/166)
+* chore(deps-dev): bump prettier from 2.2.0 to 2.2.1 (#162) ([ec2aca0](https://github.com/readmeio/eslint-config/commit/ec2aca0)), closes [#162](https://github.com/readmeio/eslint-config/issues/162)
+* chore(deps): bump actions/checkout from v2.3.3 to v2.3.4 (#163) ([0e2a3d3](https://github.com/readmeio/eslint-config/commit/0e2a3d3)), closes [#163](https://github.com/readmeio/eslint-config/issues/163)
+* chore(deps): bump eslint-plugin-prettier from 3.1.4 to 3.2.0 (#165) ([22a3aca](https://github.com/readmeio/eslint-config/commit/22a3aca)), closes [#165](https://github.com/readmeio/eslint-config/issues/165)
+
+
+
 ## <small>3.7.1 (2020-11-27)</small>
 
 * fix: making eslint-plugin-react-hooks a hard dep ([caba016](https://github.com/readmeio/eslint-config/commit/caba016))
