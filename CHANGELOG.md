@@ -1,3 +1,14 @@
+## 4.0.0 (2020-12-14)
+
+* feat: add testing-library plugins to testing config (#170) ([f523c98](https://github.com/readmeio/eslint-config/commit/f523c98)), closes [#170](https://github.com/readmeio/eslint-config/issues/170)
+* fix: issue where some prettier defaults got turned off ([57a23be](https://github.com/readmeio/eslint-config/commit/57a23be))
+* chore(deps-dev): bump husky from 4.3.0 to 4.3.6 (#169) ([28425ba](https://github.com/readmeio/eslint-config/commit/28425ba)), closes [#169](https://github.com/readmeio/eslint-config/issues/169)
+* chore(deps): bump eslint-config-prettier from 6.15.0 to 7.0.0 (#164) ([61dc4f8](https://github.com/readmeio/eslint-config/commit/61dc4f8)), closes [#164](https://github.com/readmeio/eslint-config/issues/164)
+* chore(deps): bump eslint-plugin-prettier from 3.2.0 to 3.3.0 (#168) ([49065f9](https://github.com/readmeio/eslint-config/commit/49065f9)), closes [#168](https://github.com/readmeio/eslint-config/issues/168)
+* chore(deps): bump ini from 1.3.5 to 1.3.7 (#167) ([f37093b](https://github.com/readmeio/eslint-config/commit/f37093b)), closes [#167](https://github.com/readmeio/eslint-config/issues/167)
+
+
+
 ## 3.8.0 (2020-12-10)
 
 * style: fixing some style issues ([587ea4c](https://github.com/readmeio/eslint-config/commit/587ea4c))

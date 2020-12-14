@@ -9,7 +9,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:sonarjs/recommended',
     'prettier',
-    'prettier/prettier'
+    'prettier/prettier',
   ],
   plugins: ['eslint-comments', 'import', 'node', 'prettier', 'sonarjs', 'unicorn'],
   rules: {
