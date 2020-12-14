@@ -21,6 +21,7 @@
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jest-dom": "^3.6.4",
     "eslint-plugin-jest-formatting": "^2.0.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-node": "^11.1.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-testing-library": "^3.10.1",
     "eslint-plugin-unicorn": "^23.0.0"
   },
   "peerDependencies": {
