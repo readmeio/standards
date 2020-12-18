@@ -14,7 +14,6 @@ module.exports = {
   plugins: ['eslint-comments', 'import', 'node', 'prettier', 'sonarjs', 'unicorn'],
   rules: {
     'arrow-body-style': 'off',
-    'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
@@ -27,6 +26,8 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
+    
+    'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
     // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable.
     'no-shadow': ['error', { allow: ['err'] }],
