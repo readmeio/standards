@@ -1,3 +1,16 @@
+## 4.1.0 (2021-01-04)
+
+* chore(deps-dev): bump eslint from 7.15.0 to 7.16.0 (#172) ([618f221](https://github.com/readmeio/eslint-config/commit/618f221)), closes [#172](https://github.com/readmeio/eslint-config/issues/172)
+* chore(deps-dev): bump eslint from 7.16.0 to 7.17.0 (#177) ([fd6fd42](https://github.com/readmeio/eslint-config/commit/fd6fd42)), closes [#177](https://github.com/readmeio/eslint-config/issues/177)
+* chore(deps): bump actions/setup-node from v2.1.2 to v2.1.4 (#174) ([31ca616](https://github.com/readmeio/eslint-config/commit/31ca616)), closes [#174](https://github.com/readmeio/eslint-config/issues/174)
+* chore(deps): bump eslint-config-prettier from 7.0.0 to 7.1.0 (#173) ([a484396](https://github.com/readmeio/eslint-config/commit/a484396)), closes [#173](https://github.com/readmeio/eslint-config/issues/173)
+* chore(deps): bump eslint-plugin-jest-dom from 3.6.4 to 3.6.5 (#176) ([4dfb12b](https://github.com/readmeio/eslint-config/commit/4dfb12b)), closes [#176](https://github.com/readmeio/eslint-config/issues/176)
+* chore(deps): bump eslint-plugin-react from 7.21.5 to 7.22.0 (#175) ([8f0259e](https://github.com/readmeio/eslint-config/commit/8f0259e)), closes [#175](https://github.com/readmeio/eslint-config/issues/175)
+* chore(deps): bump eslint-plugin-unicorn from 23.0.0 to 25.0.1 (#178) ([6baa3c4](https://github.com/readmeio/eslint-config/commit/6baa3c4)), closes [#178](https://github.com/readmeio/eslint-config/issues/178)
+* style: alphabetizing our ruleset ([ac5f2cd](https://github.com/readmeio/eslint-config/commit/ac5f2cd))
+
+
+
 ## 4.0.0 (2020-12-14)
 
 * feat: add testing-library plugins to testing config (#170) ([f523c98](https://github.com/readmeio/eslint-config/commit/f523c98)), closes [#170](https://github.com/readmeio/eslint-config/issues/170)
