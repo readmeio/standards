@@ -26,7 +26,9 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
-    
+
+    'no-nested-ternary': 'off', // Disabled in favor of `unicorn/no-nested-ternary` which has better nesting detection.
+
     'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
     // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable.
@@ -51,8 +53,7 @@ module.exports = {
     'unicorn/error-message': 'error',
     'unicorn/import-style': 'error',
     'unicorn/new-for-builtins': 'error',
-    'unicorn/no-array-instanceof': 'error',
-    'no-nested-ternary': 'off', // Disabled in favor of `unicorn/no-nested-ternary` which has better nesting detection.
+    'unicorn/no-instanceof-array': 'error',
     'unicorn/no-nested-ternary': 'error',
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
