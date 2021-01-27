@@ -1,3 +1,13 @@
+## <small>4.1.1 (2021-01-27)</small>
+
+* chore: update import rules (#182) ([73a809c](https://github.com/readmeio/eslint-config/commit/73a809c)), closes [#182](https://github.com/readmeio/eslint-config/issues/182)
+* chore(deps-dev): bump husky from 4.3.6 to 4.3.7 (#180) ([67e55de](https://github.com/readmeio/eslint-config/commit/67e55de)), closes [#180](https://github.com/readmeio/eslint-config/issues/180)
+* chore(deps): bump eslint-plugin-prettier from 3.3.0 to 3.3.1 (#179) ([5c496e6](https://github.com/readmeio/eslint-config/commit/5c496e6)), closes [#179](https://github.com/readmeio/eslint-config/issues/179)
+* chore(deps): bump eslint-plugin-unicorn from 25.0.1 to 26.0.0 (#181) ([5beb865](https://github.com/readmeio/eslint-config/commit/5beb865)), closes [#181](https://github.com/readmeio/eslint-config/issues/181)
+* ci: making dependabot run on a monthly schedule ([82cbc35](https://github.com/readmeio/eslint-config/commit/82cbc35))
+
+
+
 ## 4.1.0 (2021-01-04)
 
 * chore(deps-dev): bump eslint from 7.15.0 to 7.16.0 (#172) ([618f221](https://github.com/readmeio/eslint-config/commit/618f221)), closes [#172](https://github.com/readmeio/eslint-config/issues/172)
