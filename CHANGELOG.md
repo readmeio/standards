@@ -1,3 +1,19 @@
+## 5.0.0 (2021-02-24)
+
+* chore: promoting eslint and prettier to just be peerDeps ([a6d269e](https://github.com/readmeio/eslint-config/commit/a6d269e))
+* chore(deps-dev): bump eslint from 7.17.0 to 7.19.0 (#185) ([ead10ec](https://github.com/readmeio/eslint-config/commit/ead10ec)), closes [#185](https://github.com/readmeio/eslint-config/issues/185)
+* chore(deps-dev): bump husky from 4.3.7 to 4.3.8 (#186) ([1484e50](https://github.com/readmeio/eslint-config/commit/1484e50)), closes [#186](https://github.com/readmeio/eslint-config/issues/186)
+* chore(deps): bump eslint-config-prettier from 7.1.0 to 7.2.0 (#184) ([e32f3ca](https://github.com/readmeio/eslint-config/commit/e32f3ca)), closes [#184](https://github.com/readmeio/eslint-config/issues/184)
+* chore(deps): bump eslint-plugin-jest-formatting from 2.0.0 to 2.0.1 (#187) ([3edf677](https://github.com/readmeio/eslint-config/commit/3edf677)), closes [#187](https://github.com/readmeio/eslint-config/issues/187)
+* chore(deps): bump eslint-plugin-unicorn from 26.0.0 to 27.0.0 (#183) ([df03e60](https://github.com/readmeio/eslint-config/commit/df03e60)), closes [#183](https://github.com/readmeio/eslint-config/issues/183)
+* feat: bumping eslint-plugin-jest ([89a1a68](https://github.com/readmeio/eslint-config/commit/89a1a68))
+* feat: bumping eslint-plugin-jest-formatting ([6601bd9](https://github.com/readmeio/eslint-config/commit/6601bd9))
+* feat: bumping eslint-plugin-sonarjs ([c0eb5bd](https://github.com/readmeio/eslint-config/commit/c0eb5bd))
+* feat: bumping eslint-plugin-unicorn ([77aa67e](https://github.com/readmeio/eslint-config/commit/77aa67e))
+* ci: rebuild the lock file with npm7 (#189) ([654dc42](https://github.com/readmeio/eslint-config/commit/654dc42)), closes [#189](https://github.com/readmeio/eslint-config/issues/189)
+
+
+
 ## <small>4.1.1 (2021-01-27)</small>
 
 * chore: update import rules (#182) ([73a809c](https://github.com/readmeio/eslint-config/commit/73a809c)), closes [#182](https://github.com/readmeio/eslint-config/issues/182)
