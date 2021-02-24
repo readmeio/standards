@@ -15,6 +15,10 @@
     "type": "git",
     "url": "git@github.com:readmeio/eslint-config.git"
   },
+  "engines": {
+    "node": "14.15.1",
+    "npm": "^7"
+  },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^7.0.0",
