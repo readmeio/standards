@@ -13,7 +13,7 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': 'off',
 
-    'jest/consistent-test-it': 'warn',
+    'jest/consistent-test-it': ['warn', { fn: 'test', withinDescribe: 'it' }],
     'jest/expect-expect': 'error',
     'jest/no-conditional-expect': 'error',
     'jest/no-deprecated-functions': 'off',
