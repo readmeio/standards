@@ -1,3 +1,10 @@
+## <small>5.0.1 (2021-03-16)</small>
+
+* feat: prefer bare test and nested it (#195) ([f7aaca9](https://github.com/readmeio/eslint-config/commit/f7aaca9)), closes [#195](https://github.com/readmeio/eslint-config/issues/195)
+* chore(deps): bump eslint-config-prettier from 7.1.0 to 8.1.0 (#193) ([e5a8f75](https://github.com/readmeio/eslint-config/commit/e5a8f75)), closes [#193](https://github.com/readmeio/eslint-config/issues/193)
+
+
+
 ## 5.0.0 (2021-02-24)
 
 * chore: promoting eslint and prettier to just be peerDeps ([a6d269e](https://github.com/readmeio/eslint-config/commit/a6d269e))
