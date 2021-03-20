@@ -1,3 +1,9 @@
+## <small>5.0.3 (2021-03-20)</small>
+
+* fix: allowing node 12 installs ([d75eded](https://github.com/readmeio/eslint-config/commit/d75eded))
+
+
+
 ## <small>5.0.2 (2021-03-20)</small>
 
 * fix: loosening up the node requirement ([447f08b](https://github.com/readmeio/eslint-config/commit/447f08b))
