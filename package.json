@@ -16,7 +16,7 @@
     "url": "git@github.com:readmeio/eslint-config.git"
   },
   "engines": {
-    "node": "14.15.1",
+    "node": "^14",
     "npm": "^7"
   },
   "dependencies": {
