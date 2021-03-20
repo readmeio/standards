@@ -1,3 +1,9 @@
+## <small>5.0.2 (2021-03-20)</small>
+
+* fix: loosening up the node requirement ([447f08b](https://github.com/readmeio/eslint-config/commit/447f08b))
+
+
+
 ## <small>5.0.1 (2021-03-16)</small>
 
 * feat: prefer bare test and nested it (#195) ([f7aaca9](https://github.com/readmeio/eslint-config/commit/f7aaca9)), closes [#195](https://github.com/readmeio/eslint-config/issues/195)
