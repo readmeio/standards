@@ -1,3 +1,20 @@
+## <small>5.0.4 (2021-04-30)</small>
+
+* chore: stop trying to upgrade husky ([d37dd53](https://github.com/readmeio/eslint-config/commit/d37dd53))
+* chore(deps-dev): bump @commitlint/cli from 11.0.0 to 12.1.1 (#211) ([bf8ae1b](https://github.com/readmeio/eslint-config/commit/bf8ae1b)), closes [#211](https://github.com/readmeio/eslint-config/issues/211)
+* chore(deps-dev): bump @commitlint/config-conventional (#205) ([c13790e](https://github.com/readmeio/eslint-config/commit/c13790e)), closes [#205](https://github.com/readmeio/eslint-config/issues/205)
+* chore(deps-dev): bump husky from 4.3.7 to 4.3.8 (#207) ([bb4fbb1](https://github.com/readmeio/eslint-config/commit/bb4fbb1)), closes [#207](https://github.com/readmeio/eslint-config/issues/207)
+* chore(deps): bump eslint-config-prettier from 8.1.0 to 8.3.0 (#208) ([0e2f8c4](https://github.com/readmeio/eslint-config/commit/0e2f8c4)), closes [#208](https://github.com/readmeio/eslint-config/issues/208)
+* chore(deps): bump eslint-plugin-jest from 24.1.5 to 24.3.6 (#203) ([a106cfd](https://github.com/readmeio/eslint-config/commit/a106cfd)), closes [#203](https://github.com/readmeio/eslint-config/issues/203)
+* chore(deps): bump eslint-plugin-jest-dom from 3.6.5 to 3.8.1 (#204) ([dcb9611](https://github.com/readmeio/eslint-config/commit/dcb9611)), closes [#204](https://github.com/readmeio/eslint-config/issues/204)
+* chore(deps): bump eslint-plugin-react from 7.22.0 to 7.23.1 (#200) ([3bb16ca](https://github.com/readmeio/eslint-config/commit/3bb16ca)), closes [#200](https://github.com/readmeio/eslint-config/issues/200)
+* chore(deps): bump eslint-plugin-react from 7.22.0 to 7.23.2 (#209) ([646f590](https://github.com/readmeio/eslint-config/commit/646f590)), closes [#209](https://github.com/readmeio/eslint-config/issues/209)
+* chore(deps): bump eslint-plugin-sonarjs from 0.6.0 to 0.7.0 (#210) ([ac35382](https://github.com/readmeio/eslint-config/commit/ac35382)), closes [#210](https://github.com/readmeio/eslint-config/issues/210)
+* chore(deps): bump eslint-plugin-testing-library from 3.10.1 to 4.1.2 (#206) ([03d6766](https://github.com/readmeio/eslint-config/commit/03d6766)), closes [#206](https://github.com/readmeio/eslint-config/issues/206)
+* chore(deps): bump eslint-plugin-unicorn from 28.0.2 to 31.0.0 (#212) ([30f6e74](https://github.com/readmeio/eslint-config/commit/30f6e74)), closes [#212](https://github.com/readmeio/eslint-config/issues/212)
+
+
+
 ## <small>5.0.3 (2021-03-20)</small>
 
 * fix: allowing node 12 installs ([d75eded](https://github.com/readmeio/eslint-config/commit/d75eded))
