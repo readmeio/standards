@@ -1,3 +1,9 @@
+## <small>5.0.5 (2021-05-03)</small>
+
+* chore(deps): bump eslint-plugin-prettier from 3.3.1 to 3.4.0 (#213) ([f7d993d](https://github.com/readmeio/eslint-config/commit/f7d993d)), closes [#213](https://github.com/readmeio/eslint-config/issues/213)
+
+
+
 ## <small>5.0.4 (2021-04-30)</small>
 
 * chore: stop trying to upgrade husky ([d37dd53](https://github.com/readmeio/eslint-config/commit/d37dd53))
