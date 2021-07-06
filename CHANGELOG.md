@@ -1,3 +1,11 @@
+## 5.2.0 (2021-07-06)
+
+* feat: enabling but commenting out `unicorn/no-array-method-this-argument` ([2f72321](https://github.com/readmeio/eslint-config/commit/2f72321))
+* chore(deps): bump actions/setup-node from 2.1.5 to 2.2.0 (#223) ([8049d9b](https://github.com/readmeio/eslint-config/commit/8049d9b)), closes [#223](https://github.com/readmeio/eslint-config/issues/223)
+* chore(deps): bump eslint-plugin-unicorn from 32.0.1 to 34.0.1 (#224) ([92bad8a](https://github.com/readmeio/eslint-config/commit/92bad8a)), closes [#224](https://github.com/readmeio/eslint-config/issues/224)
+
+
+
 ## <small>5.0.5 (2021-05-03)</small>
 
 * chore(deps): bump eslint-plugin-prettier from 3.3.1 to 3.4.0 (#213) ([f7d993d](https://github.com/readmeio/eslint-config/commit/f7d993d)), closes [#213](https://github.com/readmeio/eslint-config/issues/213)
