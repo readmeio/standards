@@ -54,6 +54,7 @@ module.exports = {
     'unicorn/error-message': 'error',
     'unicorn/import-style': 'error',
     'unicorn/new-for-builtins': 'error',
+    // 'unicorn/no-array-method-this-argument': 'error', // Maybe?
     'unicorn/no-instanceof-array': 'error',
     'unicorn/no-nested-ternary': 'error',
     'unicorn/no-unreadable-array-destructuring': 'error',
