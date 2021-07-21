@@ -1,3 +1,15 @@
+## 6.0.0 (2021-07-21)
+
+* chore: running npm audit fix ([b3f53a2](https://github.com/readmeio/eslint-config/commit/b3f53a2))
+* chore: update husky (#226) ([78c1d31](https://github.com/readmeio/eslint-config/commit/78c1d31)), closes [#226](https://github.com/readmeio/eslint-config/issues/226)
+* chore(deps): bump actions/setup-node from 2.2.0 to 2.3.0 (#227) ([93f8d84](https://github.com/readmeio/eslint-config/commit/93f8d84)), closes [#227](https://github.com/readmeio/eslint-config/issues/227)
+* chore(deps): bump eslint-plugin-jest from 24.3.6 to 24.3.7 (#228) ([27ba8ab](https://github.com/readmeio/eslint-config/commit/27ba8ab)), closes [#228](https://github.com/readmeio/eslint-config/issues/228)
+* chore(deps): bump eslint-plugin-sonarjs from 0.7.0 to 0.9.1 (#229) ([6017042](https://github.com/readmeio/eslint-config/commit/6017042)), closes [#229](https://github.com/readmeio/eslint-config/issues/229)
+* chore(deps): bump eslint-plugin-testing-library from 4.6.0 to 4.10.1 (#230) ([9fa38cd](https://github.com/readmeio/eslint-config/commit/9fa38cd)), closes [#230](https://github.com/readmeio/eslint-config/issues/230)
+* feat: adding a typescript config (#225) ([c0627aa](https://github.com/readmeio/eslint-config/commit/c0627aa)), closes [#225](https://github.com/readmeio/eslint-config/issues/225)
+
+
+
 ## 5.2.0 (2021-07-06)
 
 * feat: enabling but commenting out `unicorn/no-array-method-this-argument` ([2f72321](https://github.com/readmeio/eslint-config/commit/2f72321))

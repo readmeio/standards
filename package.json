@@ -1,6 +1,6 @@
 {
   "name": "@readme/eslint-config",
-  "version": "5.2.0",
+  "version": "6.0.0",
   "description": "ReadMe coding standards",
   "main": "index.js",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
@@ -18,7 +18,7 @@
     "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
     "test": "eslint .",
-    "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "release": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
