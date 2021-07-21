@@ -36,6 +36,8 @@ Create a `.eslintrc` file with the following contents:
 * `@readme/eslint-config`
 * `@readme/eslint-config/react`
 * `@readme/eslint-config/testing`
+* `@readme/eslint-config/typescript`
+  * When using this you should tandem extend your config with `@readme/eslint-config` also.
 
 ### Prettier
 Included in this is our shared Prettier config. You can use it in your application by adding the following to your `package.json`:
