@@ -50,11 +50,6 @@
     "conventional-changelog-cli": "^2.0.28",
     "husky": "^7.0.1"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
