@@ -45,7 +45,7 @@
     "prettier": "^2.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^12.1.1",
     "conventional-changelog-cli": "^2.0.28",
     "husky": "^7.0.1"
