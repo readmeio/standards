@@ -1,3 +1,28 @@
+## 6.1.0 (2021-09-01)
+
+* feat: enabling unicorn/no-useless-length-check and no-useless-spread ([83baae4](https://github.com/readmeio/eslint-config/commit/83baae4))
+* chore: removing an unused husky config ([125bb2a](https://github.com/readmeio/eslint-config/commit/125bb2a))
+* chore(deps-dev): bump @commitlint/cli from 12.1.4 to 13.1.0 (#231) ([6879775](https://github.com/readmeio/eslint-config/commit/6879775)), closes [#231](https://github.com/readmeio/eslint-config/issues/231)
+* chore(deps-dev): bump @commitlint/config-conventional (#232) ([f1dfb03](https://github.com/readmeio/eslint-config/commit/f1dfb03)), closes [#232](https://github.com/readmeio/eslint-config/issues/232)
+* chore(deps-dev): bump husky from 7.0.1 to 7.0.2 (#237) ([ca497ee](https://github.com/readmeio/eslint-config/commit/ca497ee)), closes [#237](https://github.com/readmeio/eslint-config/issues/237)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 4.28.4 to 4.28.5 (#233) ([187be12](https://github.com/readmeio/eslint-config/commit/187be12)), closes [#233](https://github.com/readmeio/eslint-config/issues/233)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 4.28.5 to 4.30.0 (#238) ([09476a1](https://github.com/readmeio/eslint-config/commit/09476a1)), closes [#238](https://github.com/readmeio/eslint-config/issues/238)
+* chore(deps): bump @typescript-eslint/parser from 4.28.4 to 4.28.5 (#234) ([51d4033](https://github.com/readmeio/eslint-config/commit/51d4033)), closes [#234](https://github.com/readmeio/eslint-config/issues/234)
+* chore(deps): bump @typescript-eslint/parser from 4.28.5 to 4.30.0 (#239) ([272bc27](https://github.com/readmeio/eslint-config/commit/272bc27)), closes [#239](https://github.com/readmeio/eslint-config/issues/239)
+* chore(deps): bump actions/setup-node from 2.3.0 to 2.4.0 (#236) ([73ebb96](https://github.com/readmeio/eslint-config/commit/73ebb96)), closes [#236](https://github.com/readmeio/eslint-config/issues/236)
+* chore(deps): bump eslint-plugin-import from 2.23.4 to 2.24.2 (#242) ([84b6b9d](https://github.com/readmeio/eslint-config/commit/84b6b9d)), closes [#242](https://github.com/readmeio/eslint-config/issues/242)
+* chore(deps): bump eslint-plugin-jest from 24.3.7 to 24.4.0 (#235) ([a3952c5](https://github.com/readmeio/eslint-config/commit/a3952c5)), closes [#235](https://github.com/readmeio/eslint-config/issues/235)
+* chore(deps): bump eslint-plugin-prettier from 3.4.0 to 4.0.0 (#244) ([48b995c](https://github.com/readmeio/eslint-config/commit/48b995c)), closes [#244](https://github.com/readmeio/eslint-config/issues/244)
+* chore(deps): bump eslint-plugin-react from 7.24.0 to 7.25.1 (#245) ([ade7bc8](https://github.com/readmeio/eslint-config/commit/ade7bc8)), closes [#245](https://github.com/readmeio/eslint-config/issues/245)
+* chore(deps): bump eslint-plugin-sonarjs from 0.9.1 to 0.10.0 (#243) ([2772438](https://github.com/readmeio/eslint-config/commit/2772438)), closes [#243](https://github.com/readmeio/eslint-config/issues/243)
+* chore(deps): bump eslint-plugin-testing-library from 4.10.1 to 4.12.0 (#240) ([78d07e4](https://github.com/readmeio/eslint-config/commit/78d07e4)), closes [#240](https://github.com/readmeio/eslint-config/issues/240)
+* chore(deps): bump eslint-plugin-unicorn from 34.0.1 to 35.0.0 (#241) ([94cafb8](https://github.com/readmeio/eslint-config/commit/94cafb8)), closes [#241](https://github.com/readmeio/eslint-config/issues/241)
+* chore(deps): removing conventional-changelog-cli in favor of using npx ([aeddb1e](https://github.com/readmeio/eslint-config/commit/aeddb1e))
+* chore(deps): running npm audit ([69b6bad](https://github.com/readmeio/eslint-config/commit/69b6bad))
+* ci: updating the dependabot label ([ccaf66e](https://github.com/readmeio/eslint-config/commit/ccaf66e))
+
+
+
 ## 6.0.0 (2021-07-21)
 
 * chore: running npm audit fix ([b3f53a2](https://github.com/readmeio/eslint-config/commit/b3f53a2))
