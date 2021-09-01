@@ -60,6 +60,8 @@ module.exports = {
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
+    'unicorn/no-useless-length-check': 'error',
+    'unicorn/no-useless-spread': 'error',
     // 'unicorn/no-useless-undefined': 'error',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-set-has': 'off',
