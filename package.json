@@ -17,8 +17,8 @@
     "prepare": "husky install",
     "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
-    "test": "eslint .",
-    "release": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md"
+    "release": "npx conventional-changelog-cli -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "test": "eslint ."
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
@@ -47,7 +47,6 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "conventional-changelog-cli": "^2.0.28",
     "husky": "^7.0.1"
   },
   "commitlint": {
