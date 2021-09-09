@@ -1,3 +1,9 @@
+## <small>7.0.1 (2021-09-09)</small>
+
+* fix: making eslint-plugin-you-dont-need-lodash-underscore a dep ([ad9ca8f](https://github.com/readmeio/eslint-config/commit/ad9ca8f))
+
+
+
 ## 7.0.0 (2021-09-09)
 
 * feat: loading in you-dont-need-lodash-underscore ([1a3b93a](https://github.com/readmeio/eslint-config/commit/1a3b93a))
