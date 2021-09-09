@@ -1,3 +1,9 @@
+## 7.0.0 (2021-09-09)
+
+* feat: loading in you-dont-need-lodash-underscore ([1a3b93a](https://github.com/readmeio/eslint-config/commit/1a3b93a))
+
+
+
 ## 6.1.0 (2021-09-01)
 
 * feat: enabling unicorn/no-useless-length-check and no-useless-spread ([83baae4](https://github.com/readmeio/eslint-config/commit/83baae4))
