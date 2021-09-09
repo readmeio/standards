@@ -7,6 +7,7 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:you-dont-need-lodash-underscore/compatible',
     'plugin:sonarjs/recommended',
     'prettier',
     'prettier/prettier',
