@@ -29,7 +29,7 @@ module.exports = {
     'no-dupe-else-if': 'error',
     'no-else-return': ['error', { allowElseIf: true }],
 
-    'no-nested-ternary': 'off', // Disabled in favor of `unicorn/no-nested-ternary` which has better nesting detection.
+    'no-nested-ternary': 'off', // See also: `unicorn/no-nested-ternary`
 
     'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
@@ -57,7 +57,7 @@ module.exports = {
     'unicorn/new-for-builtins': 'error',
     // 'unicorn/no-array-method-this-argument': 'error', // Maybe?
     'unicorn/no-instanceof-array': 'error',
-    'unicorn/no-nested-ternary': 'error',
+    'unicorn/no-nested-ternary': 'off', // See also: `no-nested-ternary`
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
