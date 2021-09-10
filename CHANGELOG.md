@@ -1,3 +1,16 @@
+## 7.1.0 (2021-09-10)
+
+* chore: allow nested ternary statements (#246) ([d2543a3](https://github.com/readmeio/eslint-config/commit/d2543a3)), closes [#246](https://github.com/readmeio/eslint-config/issues/246)
+
+
+
+## <small>7.0.1 (2021-09-09)</small>
+
+* build: 7.0.1 release ([b395c71](https://github.com/readmeio/eslint-config/commit/b395c71))
+* fix: making eslint-plugin-you-dont-need-lodash-underscore a dep ([953d9e2](https://github.com/readmeio/eslint-config/commit/953d9e2))
+
+
+
 ## <small>7.0.1 (2021-09-09)</small>
 
 * fix: making eslint-plugin-you-dont-need-lodash-underscore a dep ([ad9ca8f](https://github.com/readmeio/eslint-config/commit/ad9ca8f))
