@@ -1,3 +1,10 @@
+## <small>7.1.1 (2021-09-16)</small>
+
+* docs: adding a security policy ([a830f50](https://github.com/readmeio/eslint-config/commit/a830f50))
+* fix: allowing lodash.debounce and lodash.throttle ([94d6c34](https://github.com/readmeio/eslint-config/commit/94d6c34))
+
+
+
 ## 7.1.0 (2021-09-10)
 
 * chore: allow nested ternary statements (#246) ([d2543a3](https://github.com/readmeio/eslint-config/commit/d2543a3)), closes [#246](https://github.com/readmeio/eslint-config/issues/246)
