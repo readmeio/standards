@@ -69,5 +69,9 @@ module.exports = {
     'unicorn/prefer-number-properties': 'off',
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',
+
+    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with something else.
+    'you-dont-need-lodash-underscore/debounce': 'off',
+    'you-dont-need-lodash-underscore/throttle': 'off',
   },
 };
