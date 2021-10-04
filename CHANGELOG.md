@@ -1,3 +1,9 @@
+## <small>7.2.1 (2021-10-04)</small>
+
+* chore: upgrading eslint-plugin-jest again to fix some weird issues with the pkg ([36ad1c6](https://github.com/readmeio/eslint-config/commit/36ad1c6))
+
+
+
 ## 7.2.0 (2021-10-04)
 
 * chore(deps-dev): bump @commitlint/cli from 13.1.0 to 13.2.0 (#252) ([24022a6](https://github.com/readmeio/eslint-config/commit/24022a6)), closes [#252](https://github.com/readmeio/eslint-config/issues/252)
