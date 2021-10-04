@@ -1,3 +1,9 @@
+## <small>7.2.2 (2021-10-04)</small>
+
+* fix: removing `jest/no-expect-resolves` as its handled by `prefer-expect-resolves` now ([0a23416](https://github.com/readmeio/eslint-config/commit/0a23416))
+
+
+
 ## <small>7.2.1 (2021-10-04)</small>
 
 * chore: upgrading eslint-plugin-jest again to fix some weird issues with the pkg ([36ad1c6](https://github.com/readmeio/eslint-config/commit/36ad1c6))
