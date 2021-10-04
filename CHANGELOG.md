@@ -1,3 +1,23 @@
+## 7.2.0 (2021-10-04)
+
+* chore(deps-dev): bump @commitlint/cli from 13.1.0 to 13.2.0 (#252) ([24022a6](https://github.com/readmeio/eslint-config/commit/24022a6)), closes [#252](https://github.com/readmeio/eslint-config/issues/252)
+* chore(deps-dev): bump @commitlint/config-conventional (#250) ([8af13c6](https://github.com/readmeio/eslint-config/commit/8af13c6)), closes [#250](https://github.com/readmeio/eslint-config/issues/250)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 4.30.0 to 4.33.0 (#258) ([3f5e695](https://github.com/readmeio/eslint-config/commit/3f5e695)), closes [#258](https://github.com/readmeio/eslint-config/issues/258)
+* chore(deps): bump @typescript-eslint/parser from 4.30.0 to 4.33.0 (#259) ([14bb066](https://github.com/readmeio/eslint-config/commit/14bb066)), closes [#259](https://github.com/readmeio/eslint-config/issues/259)
+* chore(deps): bump actions/setup-node from 2.4.0 to 2.4.1 (#247) ([107a817](https://github.com/readmeio/eslint-config/commit/107a817)), closes [#247](https://github.com/readmeio/eslint-config/issues/247)
+* chore(deps): bump eslint-import-resolver-typescript from 2.4.0 to 2.5.0 (#257) ([72b029a](https://github.com/readmeio/eslint-config/commit/72b029a)), closes [#257](https://github.com/readmeio/eslint-config/issues/257)
+* chore(deps): bump eslint-plugin-jest from 24.4.0 to 24.5.0 (#253) ([27c9e17](https://github.com/readmeio/eslint-config/commit/27c9e17)), closes [#253](https://github.com/readmeio/eslint-config/issues/253)
+* chore(deps): bump eslint-plugin-jest-dom from 3.9.0 to 3.9.2 (#256) ([bfe9ff1](https://github.com/readmeio/eslint-config/commit/bfe9ff1)), closes [#256](https://github.com/readmeio/eslint-config/issues/256)
+* chore(deps): bump eslint-plugin-react from 7.25.1 to 7.26.1 (#254) ([afc0cc0](https://github.com/readmeio/eslint-config/commit/afc0cc0)), closes [#254](https://github.com/readmeio/eslint-config/issues/254)
+* chore(deps): bump eslint-plugin-testing-library from 4.12.0 to 4.12.4 (#255) ([d5a5715](https://github.com/readmeio/eslint-config/commit/d5a5715)), closes [#255](https://github.com/readmeio/eslint-config/issues/255)
+* chore(deps): bump eslint-plugin-unicorn from 35.0.0 to 36.0.0 (#248) ([9a9afe3](https://github.com/readmeio/eslint-config/commit/9a9afe3)), closes [#248](https://github.com/readmeio/eslint-config/issues/248)
+* feat: enabling `unicorn/no-useless-fallback-in-spread` ([50befd9](https://github.com/readmeio/eslint-config/commit/50befd9))
+* feat: enabling some new jest rules ([9e70e5d](https://github.com/readmeio/eslint-config/commit/9e70e5d))
+* docs: adding a code of conduct ([1e23d1c](https://github.com/readmeio/eslint-config/commit/1e23d1c))
+* docs: adding a pull request template ([69cc745](https://github.com/readmeio/eslint-config/commit/69cc745))
+
+
+
 ## <small>7.1.1 (2021-09-16)</small>
 
 * docs: adding a security policy ([a830f50](https://github.com/readmeio/eslint-config/commit/a830f50))
