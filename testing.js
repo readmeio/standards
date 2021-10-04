@@ -19,7 +19,6 @@ module.exports = {
     'jest/no-deprecated-functions': 'off',
     'jest/no-disabled-tests': 'off',
     'jest/no-duplicate-hooks': 'warn',
-    'jest/no-expect-resolves': 'warn',
     'jest/no-truthy-falsy': 'error',
     'jest/no-if': 'error',
     'jest/prefer-expect-resolves': 'warn',
