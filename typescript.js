@@ -6,6 +6,11 @@ module.exports = {
     'import/resolver': 'typescript',
   },
   rules: {
+    '@typescript-eslint/consistent-type-imports': 'error',
+
+    // Disable requiring return types because it's too easy to broaden them by accident.
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+
     'import/extensions': [
       'error',
       'ignorePackages',
