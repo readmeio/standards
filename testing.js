@@ -6,7 +6,14 @@ module.exports = {
     'plugin:jest-formatting/recommended',
     'plugin:testing-library/react',
   ],
-  plugins: ['import', 'jest', 'jest-dom', 'node', 'sonarjs', 'testing-library'],
+  plugins: [
+    'import',
+    'jest',
+    'jest-dom',
+    'node',
+    // 'sonarjs', // Temporarily disabling this rule until it gets ESLint 8 support
+    'testing-library',
+  ],
   env: {
     'jest/globals': true,
   },
@@ -37,6 +44,6 @@ module.exports = {
     // for tests where such a case isn't likely to be a thing.
     'require-await': 'error',
 
-    'sonarjs/no-identical-functions': 'off',
+    // 'sonarjs/no-identical-functions': 'off',
   },
 };

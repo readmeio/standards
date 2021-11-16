@@ -18,7 +18,7 @@ module.exports = {
     'node',
     'prettier',
     // 'sonarjs',
-    'unicorn'
+    'unicorn',
   ],
   rules: {
     'arrow-body-style': 'off',
