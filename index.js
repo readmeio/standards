@@ -8,11 +8,18 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:you-dont-need-lodash-underscore/compatible',
-    'plugin:sonarjs/recommended',
+    // 'plugin:sonarjs/recommended', // Temporarily disabling this rule until it gets ESLint 8 support
     'prettier',
     'prettier/prettier',
   ],
-  plugins: ['eslint-comments', 'import', 'node', 'prettier', 'sonarjs', 'unicorn'],
+  plugins: [
+    'eslint-comments',
+    'import',
+    'node',
+    'prettier',
+    // 'sonarjs',
+    'unicorn'
+  ],
   rules: {
     'arrow-body-style': 'off',
 
@@ -44,10 +51,10 @@ module.exports = {
 
     'prettier/prettier': ['error', prettierConfig],
 
-    'sonarjs/cognitive-complexity': 'off',
-    'sonarjs/no-collapsible-if': 'off',
-    'sonarjs/no-duplicate-string': 'off',
-    'sonarjs/no-duplicated-branches': 'off',
+    // 'sonarjs/cognitive-complexity': 'off',
+    // 'sonarjs/no-collapsible-if': 'off',
+    // 'sonarjs/no-duplicate-string': 'off',
+    // 'sonarjs/no-duplicated-branches': 'off',
 
     'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
     // "unicorn/consistent-function-scoping": "error", // Maybe?
