@@ -1,3 +1,9 @@
+## <small>8.0.1 (2021-11-16)</small>
+
+* fix: disabling sonarjs plugin in the testing config ([d19214f](https://github.com/readmeio/eslint-config/commit/d19214f))
+
+
+
 ## 8.0.0 (2021-11-16)
 
 * feat: enabling `react/no-invalid-html-attribute` ([def31f3](https://github.com/readmeio/eslint-config/commit/def31f3))
