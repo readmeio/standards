@@ -21,21 +21,14 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
 
     'jest/consistent-test-it': ['warn', { fn: 'test', withinDescribe: 'it' }],
-    'jest/expect-expect': 'error',
-    'jest/no-conditional-expect': 'error',
-    'jest/no-deprecated-functions': 'off',
     'jest/no-disabled-tests': 'off',
     'jest/no-duplicate-hooks': 'warn',
-    'jest/no-truthy-falsy': 'error',
     'jest/no-if': 'error',
     'jest/prefer-expect-resolves': 'warn',
     'jest/prefer-hooks-on-top': 'warn',
     'jest/prefer-strict-equal': 'error',
-    'jest/prefer-to-be': 'warn',
     'jest/prefer-todo': 'warn',
     'jest/require-to-throw-message': 'error',
-    'jest/valid-describe': 'error',
-    'jest/valid-title': 'warn',
 
     'node/no-extraneous-require': 'off',
 
