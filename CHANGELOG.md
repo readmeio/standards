@@ -1,3 +1,33 @@
+## 8.0.0 (2021-11-16)
+
+* feat: enabling `react/no-invalid-html-attribute` ([def31f3](https://github.com/readmeio/eslint-config/commit/def31f3))
+* feat: enabling consistent TS type imports and disabling requiring return types ([bc87240](https://github.com/readmeio/eslint-config/commit/bc87240))
+* feat: eslint 8 + temporarily disabling eslint-plugin-sonarjs ([e8b8998](https://github.com/readmeio/eslint-config/commit/e8b8998))
+* chore: running npm audit ([d8faa5c](https://github.com/readmeio/eslint-config/commit/d8faa5c))
+* chore(deps-dev): bump @commitlint/cli from 13.2.0 to 13.2.1 (#261) ([cfd921d](https://github.com/readmeio/eslint-config/commit/cfd921d)), closes [#261](https://github.com/readmeio/eslint-config/issues/261)
+* chore(deps-dev): bump @commitlint/cli from 13.2.1 to 14.1.0 (#268) ([46abb86](https://github.com/readmeio/eslint-config/commit/46abb86)), closes [#268](https://github.com/readmeio/eslint-config/issues/268)
+* chore(deps-dev): bump @commitlint/config-conventional (#270) ([6c2b0c0](https://github.com/readmeio/eslint-config/commit/6c2b0c0)), closes [#270](https://github.com/readmeio/eslint-config/issues/270)
+* chore(deps-dev): bump husky from 7.0.2 to 7.0.4 (#262) ([74b34b4](https://github.com/readmeio/eslint-config/commit/74b34b4)), closes [#262](https://github.com/readmeio/eslint-config/issues/262)
+* chore(deps): bump actions/checkout from 2.3.4 to 2.3.5 (#260) ([408f51e](https://github.com/readmeio/eslint-config/commit/408f51e)), closes [#260](https://github.com/readmeio/eslint-config/issues/260)
+* chore(deps): bump actions/checkout from 2.3.5 to 2.4.0 (#267) ([515996f](https://github.com/readmeio/eslint-config/commit/515996f)), closes [#267](https://github.com/readmeio/eslint-config/issues/267)
+* chore(deps): bump eslint-config-airbnb-base from 14.2.1 to 15.0.0 (#276) ([e0f4612](https://github.com/readmeio/eslint-config/commit/e0f4612)), closes [#276](https://github.com/readmeio/eslint-config/issues/276)
+* chore(deps): bump eslint-plugin-import from 2.24.2 to 2.25.2 (#264) ([6bd37a3](https://github.com/readmeio/eslint-config/commit/6bd37a3)), closes [#264](https://github.com/readmeio/eslint-config/issues/264)
+* chore(deps): bump eslint-plugin-import from 2.25.2 to 2.25.3 (#275) ([2815e88](https://github.com/readmeio/eslint-config/commit/2815e88)), closes [#275](https://github.com/readmeio/eslint-config/issues/275)
+* chore(deps): bump eslint-plugin-jest from 24.5.2 to 25.2.2 (#265) ([66fac58](https://github.com/readmeio/eslint-config/commit/66fac58)), closes [#265](https://github.com/readmeio/eslint-config/issues/265)
+* chore(deps): bump eslint-plugin-jest from 25.2.2 to 25.2.3 (#271) ([76fd7ce](https://github.com/readmeio/eslint-config/commit/76fd7ce)), closes [#271](https://github.com/readmeio/eslint-config/issues/271)
+* chore(deps): bump eslint-plugin-jest from 25.2.3 to 25.2.4 (#274) ([8ff5470](https://github.com/readmeio/eslint-config/commit/8ff5470)), closes [#274](https://github.com/readmeio/eslint-config/issues/274)
+* chore(deps): bump eslint-plugin-jsx-a11y from 6.4.1 to 6.5.1 (#272) ([b3ca0f5](https://github.com/readmeio/eslint-config/commit/b3ca0f5)), closes [#272](https://github.com/readmeio/eslint-config/issues/272)
+* chore(deps): bump eslint-plugin-react from 7.26.1 to 7.27.0 (#273) ([a9235d9](https://github.com/readmeio/eslint-config/commit/a9235d9)), closes [#273](https://github.com/readmeio/eslint-config/issues/273)
+* chore(deps): bump eslint-plugin-react-hooks from 4.2.0 to 4.3.0 (#277) ([15d9eb6](https://github.com/readmeio/eslint-config/commit/15d9eb6)), closes [#277](https://github.com/readmeio/eslint-config/issues/277)
+* chore(deps): bump eslint-plugin-testing-library from 4.12.4 to 5.0.0 (#263) ([ed7c2d3](https://github.com/readmeio/eslint-config/commit/ed7c2d3)), closes [#263](https://github.com/readmeio/eslint-config/issues/263)
+* chore(deps): bump eslint-plugin-unicorn from 36.0.0 to 37.0.1 (#266) ([3b618f8](https://github.com/readmeio/eslint-config/commit/3b618f8)), closes [#266](https://github.com/readmeio/eslint-config/issues/266)
+* chore(deps): bump eslint-plugin-unicorn from 37.0.1 to 38.0.0 (#269) ([d6c4fc1](https://github.com/readmeio/eslint-config/commit/d6c4fc1)), closes [#269](https://github.com/readmeio/eslint-config/issues/269)
+* chore(deps): bump eslint-plugin-unicorn from 38.0.0 to 38.0.1 (#278) ([55ec2b5](https://github.com/readmeio/eslint-config/commit/55ec2b5)), closes [#278](https://github.com/readmeio/eslint-config/issues/278)
+* chore(deps): upgrading the typescript plugins ([f67c428](https://github.com/readmeio/eslint-config/commit/f67c428))
+* ci: bumping dependabot up to run every week ([b4e8772](https://github.com/readmeio/eslint-config/commit/b4e8772))
+
+
+
 ## <small>7.2.2 (2021-10-04)</small>
 
 * fix: removing `jest/no-expect-resolves` as its handled by `prefer-expect-resolves` now ([0a23416](https://github.com/readmeio/eslint-config/commit/0a23416))
