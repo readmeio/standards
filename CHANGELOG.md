@@ -1,3 +1,9 @@
+## <small>8.0.2 (2021-11-16)</small>
+
+* fix: cleaning up the testing config ([cf6f82f](https://github.com/readmeio/eslint-config/commit/cf6f82f))
+
+
+
 ## <small>8.0.1 (2021-11-16)</small>
 
 * fix: disabling sonarjs plugin in the testing config ([d19214f](https://github.com/readmeio/eslint-config/commit/d19214f))
