@@ -1,3 +1,15 @@
+## <small>8.0.3 (2021-12-04)</small>
+
+* fix: `default-param-last` in airbnb-base  doesn't play with TS ([46b16ab](https://github.com/readmeio/eslint-config/commit/46b16ab))
+* chore(deps-dev): bump @commitlint/cli from 14.1.0 to 15.0.0 (#280) ([4db745e](https://github.com/readmeio/eslint-config/commit/4db745e)), closes [#280](https://github.com/readmeio/eslint-config/issues/280)
+* chore(deps-dev): bump @commitlint/config-conventional (#279) ([bba82cf](https://github.com/readmeio/eslint-config/commit/bba82cf)), closes [#279](https://github.com/readmeio/eslint-config/issues/279)
+* chore(deps): bump eslint-plugin-jest from 25.2.4 to 25.3.0 (#284) ([0393500](https://github.com/readmeio/eslint-config/commit/0393500)), closes [#284](https://github.com/readmeio/eslint-config/issues/284)
+* chore(deps): bump eslint-plugin-jest-formatting from 3.0.0 to 3.1.0 (#282) ([c16cd93](https://github.com/readmeio/eslint-config/commit/c16cd93)), closes [#282](https://github.com/readmeio/eslint-config/issues/282)
+* chore(deps): bump eslint-plugin-react from 7.27.0 to 7.27.1 (#281) ([58097cc](https://github.com/readmeio/eslint-config/commit/58097cc)), closes [#281](https://github.com/readmeio/eslint-config/issues/281)
+* chore(deps): bump eslint-plugin-unicorn from 38.0.1 to 39.0.0 (#283) ([8a01bec](https://github.com/readmeio/eslint-config/commit/8a01bec)), closes [#283](https://github.com/readmeio/eslint-config/issues/283)
+
+
+
 ## <small>8.0.2 (2021-11-16)</small>
 
 * fix: cleaning up the testing config ([cf6f82f](https://github.com/readmeio/eslint-config/commit/cf6f82f))
