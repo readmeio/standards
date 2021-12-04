@@ -11,6 +11,10 @@ module.exports = {
     // Disable requiring return types because it's too easy to broaden them by accident.
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
+    // The stock `default-param-last` ESlint rule doesn't play with TS.
+    'default-param-last': 'off',
+    '@typescript-eslint/default-param-last': ['error'],
+
     'import/extensions': [
       'error',
       'ignorePackages',
