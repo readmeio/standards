@@ -1,3 +1,16 @@
+## <small>8.0.4 (2021-12-14)</small>
+
+* feat: loosening up the npm engine requirements to easily allow npm@8 (#291) ([d5d44b3](https://github.com/readmeio/eslint-config/commit/d5d44b3)), closes [#291](https://github.com/readmeio/eslint-config/issues/291)
+* chore: toggling dependabot back to monthly updates ([1c872fd](https://github.com/readmeio/eslint-config/commit/1c872fd))
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.4.0 to 5.5.0 (#288) ([6090b47](https://github.com/readmeio/eslint-config/commit/6090b47)), closes [#288](https://github.com/readmeio/eslint-config/issues/288)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.5.0 to 5.6.0 (#290) ([0d48094](https://github.com/readmeio/eslint-config/commit/0d48094)), closes [#290](https://github.com/readmeio/eslint-config/issues/290)
+* chore(deps): bump @typescript-eslint/parser from 5.4.0 to 5.5.0 (#287) ([41624a1](https://github.com/readmeio/eslint-config/commit/41624a1)), closes [#287](https://github.com/readmeio/eslint-config/issues/287)
+* chore(deps): bump @typescript-eslint/parser from 5.5.0 to 5.6.0 (#289) ([e16bb79](https://github.com/readmeio/eslint-config/commit/e16bb79)), closes [#289](https://github.com/readmeio/eslint-config/issues/289)
+* chore(deps): bump actions/setup-node from 2.4.1 to 2.5.0 (#285) ([0815b09](https://github.com/readmeio/eslint-config/commit/0815b09)), closes [#285](https://github.com/readmeio/eslint-config/issues/285)
+* chore(deps): bump eslint-plugin-testing-library from 5.0.0 to 5.0.1 (#286) ([d537c20](https://github.com/readmeio/eslint-config/commit/d537c20)), closes [#286](https://github.com/readmeio/eslint-config/issues/286)
+
+
+
 ## <small>8.0.3 (2021-12-04)</small>
 
 * fix: `default-param-last` in airbnb-base  doesn't play with TS ([46b16ab](https://github.com/readmeio/eslint-config/commit/46b16ab))
