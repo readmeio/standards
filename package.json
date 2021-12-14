@@ -10,8 +10,7 @@
     "url": "git@github.com:readmeio/eslint-config.git"
   },
   "engines": {
-    "node": "^12 || ^14",
-    "npm": "^7"
+    "node": "^12 || ^14 || ^16"
   },
   "scripts": {
     "prepare": "husky install",

@@ -3,14 +3,21 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
 
     steps:
       - uses: actions/checkout@v2.4.0
 
       - uses: actions/setup-node@v2.5.0
         with:
-          node-version: 14.15.1
+          node-version: ${{ matrix.node-version }}
 
-      - run: npm install -g npm@7
+      # Node 16 still ships with npm@8 so for compatibility reasons we're upping this for everything else.
+      - name: Install npm@8
+        if: matrix.node-version != '16.x'
+        run: npm install -g npm@8
+
       - run: npm ci
       - run: npm test
