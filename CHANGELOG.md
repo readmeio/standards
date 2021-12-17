@@ -1,3 +1,9 @@
+## <small>8.1.1 (2021-12-17)</small>
+
+* fix: tweaking the `import/no-anonymous-default-export` rule ([82a133d](https://github.com/readmeio/eslint-config/commit/82a133d))
+
+
+
 ## 8.1.0 (2021-12-17)
 
 * feat: enabling `import/no-anonymous-default-export` (#292) ([eab7e5d](https://github.com/readmeio/eslint-config/commit/eab7e5d)), closes [#292](https://github.com/readmeio/eslint-config/issues/292)
