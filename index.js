@@ -28,6 +28,7 @@ module.exports = {
 
     'func-names': 'off',
 
+    'import/no-anonymous-default-export': 'error',
     'import/order': 'off',
     'import/prefer-default-export': 'off',
 
