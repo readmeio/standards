@@ -1,3 +1,9 @@
+## 8.1.0 (2021-12-17)
+
+* feat: enabling `import/no-anonymous-default-export` (#292) ([eab7e5d](https://github.com/readmeio/eslint-config/commit/eab7e5d)), closes [#292](https://github.com/readmeio/eslint-config/issues/292)
+
+
+
 ## <small>8.0.4 (2021-12-14)</small>
 
 * feat: loosening up the npm engine requirements to easily allow npm@8 (#291) ([d5d44b3](https://github.com/readmeio/eslint-config/commit/d5d44b3)), closes [#291](https://github.com/readmeio/eslint-config/issues/291)
