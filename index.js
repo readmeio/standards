@@ -28,7 +28,7 @@ module.exports = {
 
     'func-names': 'off',
 
-    'import/no-anonymous-default-export': 'error',
+    'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
     'import/order': 'off',
     'import/prefer-default-export': 'off',
 
