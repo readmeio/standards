@@ -6,14 +6,7 @@ module.exports = {
     'plugin:jest-formatting/recommended',
     'plugin:testing-library/react',
   ],
-  plugins: [
-    'import',
-    'jest',
-    'jest-dom',
-    'node',
-    // 'sonarjs', // Temporarily disabling this rule until it gets ESLint 8 support
-    'testing-library',
-  ],
+  plugins: ['import', 'jest', 'jest-dom', 'node', 'testing-library'],
   env: {
     'jest/globals': true,
   },
@@ -36,7 +29,5 @@ module.exports = {
     // having a function be async and not return or await a Promise, we're only running this rule
     // for tests where such a case isn't likely to be a thing.
     'require-await': 'error',
-
-    // 'sonarjs/no-identical-functions': 'off',
   },
 };
