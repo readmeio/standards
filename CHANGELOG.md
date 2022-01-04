@@ -1,3 +1,18 @@
+## <small>8.1.2 (2022-01-04)</small>
+
+* chore: removing remnants of the sonarjs plugin ([40b4694](https://github.com/readmeio/eslint-config/commit/40b4694))
+* chore(deps-dev): bump @commitlint/cli from 15.0.0 to 16.0.1 (#301) ([5fd2e90](https://github.com/readmeio/eslint-config/commit/5fd2e90)), closes [#301](https://github.com/readmeio/eslint-config/issues/301)
+* chore(deps-dev): bump @commitlint/config-conventional (#297) ([e629065](https://github.com/readmeio/eslint-config/commit/e629065)), closes [#297](https://github.com/readmeio/eslint-config/issues/297)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.6.0 to 5.8.1 (#299) ([8209b79](https://github.com/readmeio/eslint-config/commit/8209b79)), closes [#299](https://github.com/readmeio/eslint-config/issues/299)
+* chore(deps): bump @typescript-eslint/parser from 5.6.0 to 5.8.1 (#294) ([04e4cee](https://github.com/readmeio/eslint-config/commit/04e4cee)), closes [#294](https://github.com/readmeio/eslint-config/issues/294)
+* chore(deps): bump actions/setup-node from 2.5.0 to 2.5.1 (#293) ([49109a1](https://github.com/readmeio/eslint-config/commit/49109a1)), closes [#293](https://github.com/readmeio/eslint-config/issues/293)
+* chore(deps): bump eslint-plugin-jest from 25.3.0 to 25.3.3 (#295) ([edbde06](https://github.com/readmeio/eslint-config/commit/edbde06)), closes [#295](https://github.com/readmeio/eslint-config/issues/295)
+* chore(deps): bump eslint-plugin-jest-dom from 3.9.2 to 4.0.0 (#298) ([a0550cc](https://github.com/readmeio/eslint-config/commit/a0550cc)), closes [#298](https://github.com/readmeio/eslint-config/issues/298)
+* chore(deps): bump eslint-plugin-react from 7.27.1 to 7.28.0 (#300) ([95f83a9](https://github.com/readmeio/eslint-config/commit/95f83a9)), closes [#300](https://github.com/readmeio/eslint-config/issues/300)
+* chore(deps): bump eslint-plugin-unicorn from 39.0.0 to 40.0.0 (#296) ([25fa7f3](https://github.com/readmeio/eslint-config/commit/25fa7f3)), closes [#296](https://github.com/readmeio/eslint-config/issues/296)
+
+
+
 ## <small>8.1.1 (2021-12-17)</small>
 
 * fix: tweaking the `import/no-anonymous-default-export` rule ([82a133d](https://github.com/readmeio/eslint-config/commit/82a133d))

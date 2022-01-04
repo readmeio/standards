@@ -1,6 +1,6 @@
 {
   "name": "@readme/eslint-config",
-  "version": "8.1.1",
+  "version": "8.1.2",
   "description": "ReadMe coding standards",
   "main": "index.js",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
@@ -14,7 +14,6 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "pretest": "npm run prettier",
     "prettier": "prettier --list-different --write \"./**/**.js\"",
     "release": "npx conventional-changelog-cli -i CHANGELOG.md -s && git add CHANGELOG.md",
     "test": "eslint ."
