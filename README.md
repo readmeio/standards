@@ -36,6 +36,7 @@ Create a `.eslintrc` file with the following contents:
 * `@readme/eslint-config`
 * `@readme/eslint-config/react`
 * `@readme/eslint-config/testing`
+  * This config assumes you're using [Jest](https://jestjs.io/), but if you're using [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) you should use `@readme/eslint-config/testing-mocha` instead.
 * `@readme/eslint-config/typescript`
   * When using this you should tandem extend your config with `@readme/eslint-config` also.
 
