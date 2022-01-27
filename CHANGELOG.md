@@ -1,3 +1,18 @@
+## 8.2.0 (2022-01-27)
+
+* feat: mocha testing config (#310) ([d5d661f](https://github.com/readmeio/eslint-config/commit/d5d661f)), closes [#310](https://github.com/readmeio/eslint-config/issues/310)
+* chore(deps-dev): bumping dev deps (#302) ([2a2e934](https://github.com/readmeio/eslint-config/commit/2a2e934)), closes [#302](https://github.com/readmeio/eslint-config/issues/302)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.8.1 to 5.10.1 (#307) ([5c0fd4f](https://github.com/readmeio/eslint-config/commit/5c0fd4f)), closes [#307](https://github.com/readmeio/eslint-config/issues/307)
+* chore(deps): bump @typescript-eslint/parser from 5.8.1 to 5.10.1 (#309) ([358d67f](https://github.com/readmeio/eslint-config/commit/358d67f)), closes [#309](https://github.com/readmeio/eslint-config/issues/309)
+* chore(deps): bump eslint-plugin-import from 2.25.3 to 2.25.4 (#305) ([73d6580](https://github.com/readmeio/eslint-config/commit/73d6580)), closes [#305](https://github.com/readmeio/eslint-config/issues/305)
+* chore(deps): bump eslint-plugin-jest from 25.3.3 to 26.0.0 (#306) ([378ea34](https://github.com/readmeio/eslint-config/commit/378ea34)), closes [#306](https://github.com/readmeio/eslint-config/issues/306)
+* chore(deps): bump eslint-plugin-jest-dom from 4.0.0 to 4.0.1 (#308) ([fc97ebe](https://github.com/readmeio/eslint-config/commit/fc97ebe)), closes [#308](https://github.com/readmeio/eslint-config/issues/308)
+* chore(deps): bump eslint-plugin-testing-library from 5.0.1 to 5.0.4 (#303) ([0a65bfb](https://github.com/readmeio/eslint-config/commit/0a65bfb)), closes [#303](https://github.com/readmeio/eslint-config/issues/303)
+* chore(deps): bump eslint-plugin-unicorn from 40.0.0 to 40.1.0 (#304) ([5214aa4](https://github.com/readmeio/eslint-config/commit/5214aa4)), closes [#304](https://github.com/readmeio/eslint-config/issues/304)
+* ci: upping the dependabot cadence ([994626f](https://github.com/readmeio/eslint-config/commit/994626f))
+
+
+
 ## <small>8.1.2 (2022-01-04)</small>
 
 * chore: removing remnants of the sonarjs plugin ([40b4694](https://github.com/readmeio/eslint-config/commit/40b4694))
