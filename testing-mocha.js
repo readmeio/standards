@@ -1,11 +1,8 @@
 module.exports = {
-  extends: ['plugin:mocha/recommended'],
-  plugins: ['import', 'mocha', 'node'],
+  extends: ['plugin:chai-expect/recommended', 'plugin:chai-friendly/recommended', 'plugin:mocha/recommended'],
+  plugins: ['chai-expect', 'chai-friendly', 'import', 'mocha', 'node'],
   rules: {
     'import/no-extraneous-dependencies': 'off',
-
-    // Disabling this because some Chai assertions trigger it.
-    'no-unused-expressions': 'off',
 
     'node/no-extraneous-require': 'off',
 
