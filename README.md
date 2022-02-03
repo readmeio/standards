@@ -34,6 +34,8 @@ Create a `.eslintrc` file with the following contents:
 > **Note:** `@readme/eslint-config/*` subconfigs must be loaded alongside `@readme/eslint-config`, or at least take advantage of a root `.eslintrc` config that has `root` set to `true`.
 
 * `@readme/eslint-config`
+* `@readme/eslint-config/docs`
+  * Will enforce JSDoc blocks throughout a codebase.
 * `@readme/eslint-config/react`
 * `@readme/eslint-config/testing`
   * This config assumes you're using [Jest](https://jestjs.io/), but if you're using [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) you should use `@readme/eslint-config/testing-mocha` instead.
