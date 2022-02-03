@@ -1,3 +1,9 @@
+## 8.3.0 (2022-02-03)
+
+* feat: adding a config for enforcing code docs (#311) ([59eeab7](https://github.com/readmeio/eslint-config/commit/59eeab7)), closes [#311](https://github.com/readmeio/eslint-config/issues/311)
+
+
+
 ## 8.2.0 (2022-01-27)
 
 * feat: mocha testing config (#310) ([d5d661f](https://github.com/readmeio/eslint-config/commit/d5d661f)), closes [#310](https://github.com/readmeio/eslint-config/issues/310)
