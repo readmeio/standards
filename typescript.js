@@ -6,6 +6,7 @@ module.exports = {
     'import/resolver': 'typescript',
   },
   rules: {
+    '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/consistent-indexed-object-style': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
 
