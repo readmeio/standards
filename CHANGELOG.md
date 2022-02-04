@@ -1,3 +1,9 @@
+## <small>8.4.1 (2022-02-04)</small>
+
+* feat: requiring consistent typescript array definitions (#313) ([bddcea0](https://github.com/readmeio/eslint-config/commit/bddcea0)), closes [#313](https://github.com/readmeio/eslint-config/issues/313)
+
+
+
 ## 8.4.0 (2022-02-04)
 
 * fix: requiring consistency of typescript record types (#312) ([75f08be](https://github.com/readmeio/eslint-config/commit/75f08be)), closes [#312](https://github.com/readmeio/eslint-config/issues/312)
