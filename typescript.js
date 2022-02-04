@@ -6,6 +6,7 @@ module.exports = {
     'import/resolver': 'typescript',
   },
   rules: {
+    '@typescript-eslint/consistent-indexed-object-style': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
 
     // Disable requiring return types because it's too easy to broaden them by accident.
