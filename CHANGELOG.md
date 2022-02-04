@@ -1,3 +1,9 @@
+## 8.4.0 (2022-02-04)
+
+* fix: requiring consistency of typescript record types (#312) ([75f08be](https://github.com/readmeio/eslint-config/commit/75f08be)), closes [#312](https://github.com/readmeio/eslint-config/issues/312)
+
+
+
 ## 8.3.0 (2022-02-03)
 
 * feat: adding a config for enforcing code docs (#311) ([59eeab7](https://github.com/readmeio/eslint-config/commit/59eeab7)), closes [#311](https://github.com/readmeio/eslint-config/issues/311)
