@@ -1,3 +1,17 @@
+## <small>8.4.2 (2022-02-14)</small>
+
+* chore(deps-dev): bump @commitlint/cli from 16.1.0 to 16.2.1 (#322) ([5e0d7de](https://github.com/readmeio/eslint-config/commit/5e0d7de)), closes [#322](https://github.com/readmeio/eslint-config/issues/322)
+* chore(deps-dev): bump @commitlint/config-conventional (#318) ([c5c5f80](https://github.com/readmeio/eslint-config/commit/c5c5f80)), closes [#318](https://github.com/readmeio/eslint-config/issues/318)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.10.1 to 5.10.2 (#317) ([8f99821](https://github.com/readmeio/eslint-config/commit/8f99821)), closes [#317](https://github.com/readmeio/eslint-config/issues/317)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.10.2 to 5.11.0 (#321) ([3c9db0d](https://github.com/readmeio/eslint-config/commit/3c9db0d)), closes [#321](https://github.com/readmeio/eslint-config/issues/321)
+* chore(deps): bump @typescript-eslint/parser from 5.10.1 to 5.10.2 (#315) ([d538d36](https://github.com/readmeio/eslint-config/commit/d538d36)), closes [#315](https://github.com/readmeio/eslint-config/issues/315)
+* chore(deps): bump @typescript-eslint/parser from 5.10.2 to 5.11.0 (#320) ([6f6093b](https://github.com/readmeio/eslint-config/commit/6f6093b)), closes [#320](https://github.com/readmeio/eslint-config/issues/320)
+* chore(deps): bump eslint-plugin-jest from 26.0.0 to 26.1.0 (#314) ([5fd7bef](https://github.com/readmeio/eslint-config/commit/5fd7bef)), closes [#314](https://github.com/readmeio/eslint-config/issues/314)
+* chore(deps): bump eslint-plugin-jsdoc from 37.7.1 to 37.9.1 (#319) ([a608428](https://github.com/readmeio/eslint-config/commit/a608428)), closes [#319](https://github.com/readmeio/eslint-config/issues/319)
+* chore(deps): bump eslint-plugin-testing-library from 5.0.4 to 5.0.5 (#316) ([938796b](https://github.com/readmeio/eslint-config/commit/938796b)), closes [#316](https://github.com/readmeio/eslint-config/issues/316)
+
+
+
 ## <small>8.4.1 (2022-02-04)</small>
 
 * feat: requiring consistent typescript array definitions (#313) ([bddcea0](https://github.com/readmeio/eslint-config/commit/bddcea0)), closes [#313](https://github.com/readmeio/eslint-config/issues/313)
