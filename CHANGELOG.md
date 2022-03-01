@@ -1,3 +1,9 @@
+## <small>8.4.4 (2022-03-01)</small>
+
+* chore(deps): upgrading typescript plugins to support v4.6 ([7d7065f](https://github.com/readmeio/eslint-config/commit/7d7065f))
+
+
+
 ## <small>8.4.3 (2022-03-01)</small>
 
 * chore(deps): bump @typescript-eslint/eslint-plugin from 5.11.0 to 5.12.0 (#326) ([859fc0f](https://github.com/readmeio/eslint-config/commit/859fc0f)), closes [#326](https://github.com/readmeio/eslint-config/issues/326)
