@@ -1,3 +1,18 @@
+## <small>8.4.3 (2022-03-01)</small>
+
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.11.0 to 5.12.0 (#326) ([859fc0f](https://github.com/readmeio/eslint-config/commit/859fc0f)), closes [#326](https://github.com/readmeio/eslint-config/issues/326)
+* chore(deps): bump @typescript-eslint/eslint-plugin from 5.12.0 to 5.12.1 (#330) ([2e65632](https://github.com/readmeio/eslint-config/commit/2e65632)), closes [#330](https://github.com/readmeio/eslint-config/issues/330)
+* chore(deps): bump @typescript-eslint/parser from 5.11.0 to 5.12.0 (#323) ([0cb58ab](https://github.com/readmeio/eslint-config/commit/0cb58ab)), closes [#323](https://github.com/readmeio/eslint-config/issues/323)
+* chore(deps): bump @typescript-eslint/parser from 5.12.0 to 5.12.1 (#332) ([7063a59](https://github.com/readmeio/eslint-config/commit/7063a59)), closes [#332](https://github.com/readmeio/eslint-config/issues/332)
+* chore(deps): bump actions/setup-node from 2.5.1 to 3 (#329) ([af71efa](https://github.com/readmeio/eslint-config/commit/af71efa)), closes [#329](https://github.com/readmeio/eslint-config/issues/329)
+* chore(deps): bump eslint-config-prettier from 8.3.0 to 8.4.0 (#324) ([1cdb2bf](https://github.com/readmeio/eslint-config/commit/1cdb2bf)), closes [#324](https://github.com/readmeio/eslint-config/issues/324)
+* chore(deps): bump eslint-plugin-jest from 26.1.0 to 26.1.1 (#325) ([8904c0f](https://github.com/readmeio/eslint-config/commit/8904c0f)), closes [#325](https://github.com/readmeio/eslint-config/issues/325)
+* chore(deps): bump eslint-plugin-jsdoc from 37.9.1 to 37.9.4 (#328) ([c918f40](https://github.com/readmeio/eslint-config/commit/c918f40)), closes [#328](https://github.com/readmeio/eslint-config/issues/328)
+* chore(deps): bump eslint-plugin-react from 7.28.0 to 7.29.2 (#331) ([1431c02](https://github.com/readmeio/eslint-config/commit/1431c02)), closes [#331](https://github.com/readmeio/eslint-config/issues/331)
+* chore(deps): bump eslint-plugin-unicorn from 40.1.0 to 41.0.0 (#327) ([4a5039e](https://github.com/readmeio/eslint-config/commit/4a5039e)), closes [#327](https://github.com/readmeio/eslint-config/issues/327)
+
+
+
 ## <small>8.4.2 (2022-02-14)</small>
 
 * chore(deps-dev): bump @commitlint/cli from 16.1.0 to 16.2.1 (#322) ([5e0d7de](https://github.com/readmeio/eslint-config/commit/5e0d7de)), closes [#322](https://github.com/readmeio/eslint-config/issues/322)
