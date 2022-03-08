@@ -1,3 +1,16 @@
+## 8.5.0 (2022-03-08)
+
+* chore(deps): bump actions/checkout from 2.4.0 to 3 (#333) ([59365da](https://github.com/readmeio/eslint-config/commit/59365da)), closes [#333](https://github.com/readmeio/eslint-config/issues/333)
+* chore(deps): bump eslint-config-prettier from 8.4.0 to 8.5.0 (#336) ([7ffc5f2](https://github.com/readmeio/eslint-config/commit/7ffc5f2)), closes [#336](https://github.com/readmeio/eslint-config/issues/336)
+* chore(deps): bump eslint-plugin-jsdoc from 37.9.4 to 37.9.7 (#334) ([0f9a92d](https://github.com/readmeio/eslint-config/commit/0f9a92d)), closes [#334](https://github.com/readmeio/eslint-config/issues/334)
+* chore(deps): bump eslint-plugin-react from 7.29.2 to 7.29.3 (#337) ([1ae12a3](https://github.com/readmeio/eslint-config/commit/1ae12a3)), closes [#337](https://github.com/readmeio/eslint-config/issues/337)
+* chore(deps): bump eslint-plugin-testing-library from 5.0.5 to 5.0.6 (#335) ([ae70c56](https://github.com/readmeio/eslint-config/commit/ae70c56)), closes [#335](https://github.com/readmeio/eslint-config/issues/335)
+* chore(deps): upgrading typescript eslint deps ([fcc5c72](https://github.com/readmeio/eslint-config/commit/fcc5c72))
+* docs: adding some badges to the readme ([592c754](https://github.com/readmeio/eslint-config/commit/592c754))
+* docs: moving some meta docs into the .github/ directory ([34665b6](https://github.com/readmeio/eslint-config/commit/34665b6))
+
+
+
 ## <small>8.4.4 (2022-03-01)</small>
 
 * chore(deps): upgrading typescript plugins to support v4.6 ([7d7065f](https://github.com/readmeio/eslint-config/commit/7d7065f))
