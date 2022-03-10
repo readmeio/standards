@@ -1,3 +1,9 @@
+## <small>8.5.1 (2022-03-10)</small>
+
+* feat: tweaking our use of the `no-use-before-define` rule in TS (#338) ([fc82044](https://github.com/readmeio/eslint-config/commit/fc82044)), closes [#338](https://github.com/readmeio/eslint-config/issues/338)
+
+
+
 ## 8.5.0 (2022-03-08)
 
 * chore(deps): bump actions/checkout from 2.4.0 to 3 (#333) ([59365da](https://github.com/readmeio/eslint-config/commit/59365da)), closes [#333](https://github.com/readmeio/eslint-config/issues/333)
