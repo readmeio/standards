@@ -31,5 +31,10 @@ module.exports = {
     // The stock `no-unused-vars` ESlint rule doesn't play with TS.
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+
+    // The stock `no-use-before-define` ESLint rule throws errors when TS interfaces, types, and
+    // enums are used before they're defined -- eventhough in TS that's OK.
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
   },
 };
