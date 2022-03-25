@@ -1,6 +1,16 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): publish %s"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "ignoreChanges": ["*.md"],
+      "message": "chore(release): publish %s"
+    }
+  },
+  "packages": ["packages/*"],
   "version": "8.5.1"
 }

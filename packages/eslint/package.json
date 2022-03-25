@@ -16,6 +16,9 @@
     "prettier": "prettier --list-different --write \"./**/**.js\"",
     "test": "eslint ."
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
