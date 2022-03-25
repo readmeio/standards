@@ -1,0 +1,47 @@
+{
+  "name": "@readme/eslint-config",
+  "version": "8.5.1",
+  "description": "ReadMe coding standards",
+  "main": "index.js",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:readmeio/standards.git"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16"
+  },
+  "scripts": {
+    "prettier": "prettier --list-different --write \"./**/**.js\"",
+    "test": "eslint ."
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-chai-expect": "^3.0.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-jest-dom": "^4.0.0",
+    "eslint-plugin-jest-formatting": "^3.0.0",
+    "eslint-plugin-jsdoc": "^38.0.3",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-mocha": "^10.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^5.0.0",
+    "eslint-plugin-unicorn": "^41.0.0",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.2"
+  }
+}
