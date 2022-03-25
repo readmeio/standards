@@ -1,0 +1,31 @@
+{
+  "name": "@readme/stylelint-config",
+  "version": "1.0.0",
+  "description": "ReadMe coding standards for styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/readmeio/stylelint-config.git"
+  },
+  "author": "Engineers <engineers@readme.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/readmeio/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/readmeio/stylelint-config#readme",
+  "dependencies": {
+    "stylelint": "^14.6.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "devDependencies": {
+    "@readme/eslint-config": "^8.5.1",
+    "eslint": "^8.11.0"
+  }
+}
