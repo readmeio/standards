@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "eslint ."
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,6 @@
     "stylelint-prettier": "^2.0.0"
   },
   "devDependencies": {
-    "@readme/eslint-config": "^8.5.1",
-    "eslint": "^8.11.0"
+    "@readme/eslint-config": "^8.5.1"
   }
 }
