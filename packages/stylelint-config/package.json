@@ -16,7 +16,7 @@
   "author": "Engineers <engineers@readme.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/readmeio/stylelint-config/issues"
+    "url": "https://github.com/readmeio/standards/issues"
   },
   "homepage": "https://github.com/readmeio/stylelint-config#readme",
   "dependencies": {
