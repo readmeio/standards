@@ -26,11 +26,11 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-prettier": "^2.0.0"
   },
-  "devDependencies": {
-    "@readme/eslint-config": "file:packages/eslint"
-  },
   "peerDependencies": {
     "postcss": "^8.4.12",
     "stylelint": "^14.6.1"
+  },
+  "devDependencies": {
+    "@readme/eslint-config": "file:../eslint-config"
   }
 }
