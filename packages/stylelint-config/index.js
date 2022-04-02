@@ -9,27 +9,37 @@ module.exports = {
     // Stylelint config inspired by https://sass-guidelin.es
     'stylelint-config-sass-guidelines',
 
+    // Support CSS modules syntax
+    'stylelint-config-css-modules',
+
     // Enable prettier formatting for SCSS/CSS
     'stylelint-config-prettier',
     'stylelint-prettier/recommended',
   ],
   rules: {
-    // Rules not handled by pretty printers
-    'comment-whitespace-inside': 'always',
-    'function-name-case': 'lower',
-    'selector-type-case': 'lower',
-    'value-keyword-case': 'lower',
-
-    // Conflicting stylelint-config-sass-guidelines rules with readme styles
+    // ReadMe still uses color names as values in many places.
     'color-named': null,
+
+    // ReadMe breaks this rule in many places.
     'max-nesting-depth': null,
 
-    // Custom regex of our current BEM selector class pattern
+    // ReadMe still relies on "input[type='value']" selectors in too many
+    // places. Eventually, it would probably be beneficial to turn this on.
+    'selector-no-qualifying-type': null,
+
+    // ReadMe relies on legacy color functions (e.g. rgba(0, 0, 0, 0.5))
+    // everywhere in addition to Scss allowing this to be written with a color
+    // name (e.g. rgba(black, 0.5)). We may eventually want to consider moving
+    // to "modern" style with comma-free syntax (e.g. rgb(0 0 0 / 0.5)). But
+    // this won't be trivial.
+    'color-function-notation': 'legacy',
+
+    // Custom regex of ReadMe's current BEM selector class pattern.
     'selector-class-pattern': [
-      '^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(_[a-zA-Z0-9]+)*$',
+      '^[a-zA-Z0-9]+((_|-)([a-zA-Z0-9]+))*$',
       {
         message:
-          'Selector should start in CapitalCase or camelCase and optionally followed by kebab-lowercase with hyphens and end with snake_lowercase with underscores (e.g. BlockName-element-name_modifier-name)',
+          'Selector should start in CapitalCase or camelCase and optionally followed by either kebab-lowercase with hyphens or snake_lowercase with underscores (e.g. BlockName-element-name_modifier-name)',
       },
     ],
 
@@ -37,9 +47,9 @@ module.exports = {
     'function-no-unknown': null,
     'scss/function-no-unknown': true,
 
-    // TODO: Remove this when migrating to Dart Sass
+    // TODO: Remove this when migrating to Dart Sass.
     // Disallows the use of global function names, as these global functions are
-    // now located inside built-in Sass modules.
+    // now located inside built-in Dart Sass modules.
     'scss/no-global-function-names': null,
   },
 };

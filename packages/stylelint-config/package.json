@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
+    "stylelint-config-css-modules": "^4.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^25.0.0",
