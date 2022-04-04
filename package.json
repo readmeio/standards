@@ -10,9 +10,8 @@
   "scripts": {
     "lint": "npx lerna run lint --stream",
     "prepare": "husky install",
-    "publish": "npx lerna publish",
-    "test": "npx lerna run test --stream",
-    "version": "npx lerna version"
+    "release": "npx lerna publish",
+    "test": "npx lerna run test --stream"
   },
   "repository": {
     "type": "git",
