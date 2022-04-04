@@ -3,12 +3,12 @@
     "publish": {
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
-      "message": "chore(release): publish %s"
+      "message": "chore(release): publish"
     },
     "version": {
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
-      "message": "chore(release): publish %s"
+      "message": "chore(release): publish"
     }
   },
   "packages": ["packages/*"],
