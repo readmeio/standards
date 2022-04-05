@@ -10,6 +10,7 @@
   "scripts": {
     "lint": "npx lerna run lint --stream",
     "prepare": "husky install",
+    "version": "npm i && git add package-lock.json",
     "release": "npx lerna publish",
     "test": "npx lerna run test --stream"
   },
