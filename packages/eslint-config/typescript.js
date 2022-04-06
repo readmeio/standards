@@ -36,5 +36,10 @@ module.exports = {
     // enums are used before they're defined -- eventhough in TS that's OK.
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
+
+    // The stock `no-shadow` ESLint rule throws false positive with TS enums.
+    // https://github.com/typescript-eslint/typescript-eslint/issues/2483
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
 };
