@@ -33,7 +33,7 @@
     "eslint-plugin-jest": "^26.0.0",
     "eslint-plugin-jest-dom": "^4.0.0",
     "eslint-plugin-jest-formatting": "^3.0.0",
-    "eslint-plugin-jsdoc": "^38.1.6",
+    "eslint-plugin-jsdoc": "^39.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
