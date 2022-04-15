@@ -12,6 +12,14 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
   --brand-red: hsl(5deg 10% 40%);
 }
 
+#id-selector {
+  color: blue;
+
+  #another-id {
+    border: 0;
+  }
+}
+
 .selector-1,
 .selector-2,
 .selector-3[type=\\"text\\"] {

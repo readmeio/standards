@@ -23,6 +23,9 @@ module.exports = {
     // ReadMe breaks this rule in many places.
     'max-nesting-depth': null,
 
+    // ReadMe still references elements by #id. Allow at most one per selector.
+    'selector-max-id': 1,
+
     // ReadMe relies on "element[attr='value']" selectors in too many places.
     // Eventually, it may be beneficial to turn this on.
     'selector-no-qualifying-type': null,
