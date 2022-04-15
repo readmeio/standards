@@ -20,6 +20,14 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
   }
 }
 
+#ValidIdSelector {
+  padding: 0;
+}
+
+#badIdSelector {
+  border: 0;
+}
+
 .selector-1,
 .selector-2,
 .selector-3[type=\\"text\\"] {

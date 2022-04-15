@@ -37,6 +37,14 @@ module.exports = {
     // change however won't be trivial.
     'color-function-notation': 'legacy',
 
+    // Custom regex for ReadMe id patterns.
+    'selector-id-pattern': [
+      '^(([a-z][a-z0-9]*(-[a-z0-9]+)*)|([A-Z][a-z0-9]*)+)$',
+      {
+        message: 'Expected id selector to be kebab-case or TitleCase',
+      },
+    ],
+
     // Custom regex of ReadMe's current BEM selector class pattern.
     'selector-class-pattern': [
       '^[a-zA-Z0-9]+((_|-)([a-zA-Z0-9]+))*$',

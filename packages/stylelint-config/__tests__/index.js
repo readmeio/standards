@@ -46,11 +46,15 @@ describe('stylelint-config', () => {
     });
 
     it('flags warnings', () => {
-      expect(warnings).toHaveLength(5);
+      expect(warnings).toHaveLength(6);
     });
 
     it('expects no more than 1 id selector', () => {
       expect(warnings.some(w => w.rule === 'selector-max-id')).toBeTruthy();
+    });
+
+    it('expects id pattern to be either kebab-case or TitleCase', () => {
+      expect(warnings.some(w => w.rule === 'selector-id-pattern')).toBeTruthy();
     });
   });
 });
