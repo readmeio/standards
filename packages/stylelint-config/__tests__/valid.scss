@@ -9,6 +9,14 @@
   --brand-red: rgb(112, 94, 92);
 }
 
+#id-selector {
+  color: blue;
+}
+
+#ValidIdSelector {
+  padding: 0;
+}
+
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {

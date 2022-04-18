@@ -7,6 +7,7 @@ const validScss = fs.readFileSync('./__tests__/valid.scss', 'utf-8');
 
 describe('stylelint-config', () => {
   let data;
+  let warnings;
 
   describe('with a valid file', () => {
     beforeEach(async () => {
@@ -14,6 +15,7 @@ describe('stylelint-config', () => {
         code: validScss,
         config,
       });
+      ({ warnings } = data.results[0]);
     });
 
     it('has no errors', () => {
@@ -21,7 +23,7 @@ describe('stylelint-config', () => {
     });
 
     it('flags no warnings', () => {
-      expect(data.results[0].warnings).toHaveLength(0);
+      expect(warnings).toHaveLength(0);
     });
   });
 
@@ -32,6 +34,7 @@ describe('stylelint-config', () => {
         config,
         fix: true,
       });
+      ({ warnings } = data.results[0]);
     });
 
     it('matches the auto-fixed snapshot', () => {
@@ -43,7 +46,15 @@ describe('stylelint-config', () => {
     });
 
     it('flags warnings', () => {
-      expect(data.results[0].warnings).toHaveLength(4);
+      expect(warnings).toHaveLength(6);
+    });
+
+    it('expects no more than 1 id selector', () => {
+      expect(warnings.some(w => w.rule === 'selector-max-id')).toBeTruthy();
+    });
+
+    it('expects id pattern to be either kebab-case or TitleCase', () => {
+      expect(warnings.some(w => w.rule === 'selector-id-pattern')).toBeTruthy();
     });
   });
 });
