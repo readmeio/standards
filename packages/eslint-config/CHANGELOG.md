@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.7.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.6.0...@readme/eslint-config@8.7.0) (2022-04-20)
+
+
+### Bug Fixes
+
+* removing the upper engine boundary on the eslint-config pkg ([6c58072](https://github.com/readmeio/standards/commit/6c58072532ab9a7135e79c0e18a60109e7a6ad1e))
+
+
+### Features
+
+* adding support for node 18, dropping node 12 ([#372](https://github.com/readmeio/standards/issues/372)) ([25a59fa](https://github.com/readmeio/standards/commit/25a59faa73909f55003237b837c7f722feeec076))
+
+
+
+
+
 # [8.6.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.5.3...@readme/eslint-config@8.6.0) (2022-04-12)
 
 
