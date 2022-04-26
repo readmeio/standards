@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.7.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.7.2...@readme/eslint-config@8.7.3) (2022-04-26)
+
+
+### Bug Fixes
+
+* downgrading eslint-plugin-mocha ([86526f5](https://github.com/readmeio/standards/commit/86526f54b3fadd734c0676bf960ddb120674d6f5))
+
+
+
+
+
 ## [8.7.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.7.1...@readme/eslint-config@8.7.2) (2022-04-26)
 
 **Note:** Version bump only for package @readme/eslint-config
