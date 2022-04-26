@@ -1,6 +1,6 @@
 {
   "name": "@readme/stylelint-config",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "ReadMe coding standards for styles",
   "main": "index.js",
   "files": [
