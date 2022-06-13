@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`stylelint-config with an invalid file and auto-fix enabled matches the auto-fixed snapshot 1`] = `
-"@import url(\\"x.css\\");
-@import url(\\"y.css\\");
+"@import \\"x.css\\";
+@import \\"y.css\\";
 
 /**
  * Multi-line comment
