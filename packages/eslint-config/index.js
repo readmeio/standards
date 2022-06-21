@@ -44,6 +44,10 @@ module.exports = {
 
     'prettier/prettier': ['error', prettierConfig],
 
+    // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
+    // templated strings that aren't templates.
+    'quotes': ['error', 'single', { avoidEscape: true }],
+
     'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
     // "unicorn/consistent-function-scoping": "error", // Maybe?
     'unicorn/custom-error-definition': 'error',
