@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.8.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.7.6...@readme/eslint-config@8.8.0) (2022-06-21)
+
+
+### Features
+
+* preventing the use of templated strings on non-templates ([d6a7978](https://github.com/readmeio/standards/commit/d6a79786842e1e15ba01e21e10d9f188de0d9977))
+
+
+
+
+
 ## [8.7.6](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.7.5...@readme/eslint-config@8.7.6) (2022-06-13)
 
 **Note:** Version bump only for package @readme/eslint-config
