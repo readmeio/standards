@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.8.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.0...@readme/eslint-config@8.8.1) (2022-07-07)
+
+
+### Bug Fixes
+
+* various issues with dependabot not actually updating deps ([c4f11ec](https://github.com/readmeio/standards/commit/c4f11ecf323d650d7577cb025e5372507b866813))
+
+
+
+
+
 # [8.8.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.7.6...@readme/eslint-config@8.8.0) (2022-06-21)
 
 
