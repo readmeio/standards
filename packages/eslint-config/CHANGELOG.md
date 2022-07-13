@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.8.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.2...@readme/eslint-config@8.8.3) (2022-07-13)
+
+
+### Bug Fixes
+
+* downgrading `eslint-import-resolver-typescript` to v2 ([61ff5fa](https://github.com/readmeio/standards/commit/61ff5faa9cfed8332a7906b76ef60e3e295451dc))
+
+
+
+
+
 ## [8.8.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.1...@readme/eslint-config@8.8.2) (2022-07-13)
 
 
