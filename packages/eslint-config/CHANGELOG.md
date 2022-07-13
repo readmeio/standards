@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.8.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.1...@readme/eslint-config@8.8.2) (2022-07-13)
+
+
+### Bug Fixes
+
+* reverting the unicorn eslint plugin as v43 requires >=Node 14.18 ([#455](https://github.com/readmeio/standards/issues/455)) ([334a1b5](https://github.com/readmeio/standards/commit/334a1b58bdf72f4152529f29655d2d6411cb4d76))
+
+
+
+
+
 ## [8.8.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.0...@readme/eslint-config@8.8.1) (2022-07-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.13](https://github.com/readmeio/standards/compare/@readme/stylelint-config@1.1.12...@readme/stylelint-config@1.1.13) (2022-07-13)
+
+
+### Bug Fixes
+
+* reverting the unicorn eslint plugin as v43 requires >=Node 14.18 ([#455](https://github.com/readmeio/standards/issues/455)) ([334a1b5](https://github.com/readmeio/standards/commit/334a1b58bdf72f4152529f29655d2d6411cb4d76))
+
+
+
+
+
 ## [1.1.12](https://github.com/readmeio/standards/compare/@readme/stylelint-config@1.1.11...@readme/stylelint-config@1.1.12) (2022-07-07)
 
 **Note:** Version bump only for package @readme/stylelint-config
