@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 14
+          - 14.15.1 # We're targeting this release of Node because we aren't on >=14.18 yet.
           - 16
           - 18
 
@@ -19,7 +19,7 @@ jobs:
       # Node 14 still ships with npm@6 so for compatibility reasons we're upping
       # this to match everything else.
       - name: Install npm@8
-        if: matrix.node-version == '14'
+        if: matrix.node-version == '14.15.1'
         run: npm install -g npm@8
 
       - run: npm ci
