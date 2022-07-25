@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 14.15.1 # We're targeting this release of Node because we aren't on >=14.18 yet.
+          - 14
           - 16
           - 18
 
