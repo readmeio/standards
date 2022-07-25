@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/readmeio/standards/compare/@readme/stylelint-config@1.1.14...@readme/stylelint-config@2.0.0) (2022-07-25)
+
+
+### Features
+
+* requiring Node 14.18+ ([c5f5350](https://github.com/readmeio/standards/commit/c5f5350935fc6bed8b5bf27f0c7d92316a6b3cd0))
+
+
+
+
+
 ## [1.1.14](https://github.com/readmeio/standards/compare/@readme/stylelint-config@1.1.13...@readme/stylelint-config@1.1.14) (2022-07-13)
 
 **Note:** Version bump only for package @readme/stylelint-config

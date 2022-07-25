@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.3...@readme/eslint-config@9.0.0) (2022-07-25)
+
+
+### Features
+
+* requiring Node 14.18+ ([c5f5350](https://github.com/readmeio/standards/commit/c5f5350935fc6bed8b5bf27f0c7d92316a6b3cd0))
+
+
+
+
+
 ## [8.8.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.2...@readme/eslint-config@8.8.3) (2022-07-13)
 
 
