@@ -4,7 +4,7 @@
   "private": true,
   "description": "Core coding and style standards for all ReadMe technology.",
   "engines": {
-    "node": ">=14",
+    "node": ">=14.18",
     "npm": "^7 || ^8"
   },
   "scripts": {

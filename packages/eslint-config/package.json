@@ -10,7 +10,7 @@
     "url": "git@github.com:readmeio/standards.git"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=14.18"
   },
   "scripts": {
     "prettier": "prettier --list-different --write \"./**/**.js\"",
