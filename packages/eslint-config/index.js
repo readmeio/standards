@@ -21,7 +21,19 @@ module.exports = {
     'func-names': 'off',
 
     'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
-    'import/order': 'off',
+
+    'import/order': [
+      'error',
+      {
+        'alphabetize': {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        'groups': ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+        'newlines-between': 'always',
+      },
+    ],
+
     'import/prefer-default-export': 'off',
 
     'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
