@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@9.0.0...@readme/eslint-config@10.0.0) (2022-08-10)
+
+
+### Features
+
+* enabling `import/order` ([#486](https://github.com/readmeio/standards/issues/486)) ([edffdbe](https://github.com/readmeio/standards/commit/edffdbe631ca3927b882fd19d8f03dd49451d937))
+
+
+
+
+
 # [9.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@8.8.3...@readme/eslint-config@9.0.0) (2022-07-25)
 
 
