@@ -3,7 +3,7 @@ module.exports = {
   printWidth: 120,
   singleQuote: true,
 
-  importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
+  importOrder: ['@Hub/(.*)$', '^@core/(.*)$', '^@routes/(.*)$',  '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true
