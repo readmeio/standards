@@ -31,6 +31,7 @@ module.exports = {
         },
         'groups': ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
         'newlines-between': 'always',
+        'warnOnUnassignedImports': true,
       },
     ],
 
