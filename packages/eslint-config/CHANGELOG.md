@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.0.0...@readme/eslint-config@10.1.0) (2022-08-29)
+
+
+### Features
+
+* set `warnOnUnassignedImports` on `import/order` ([d9f8d36](https://github.com/readmeio/standards/commit/d9f8d361155e818f06e71742aa5e5028d5c91e90))
+
+
+
+
+
 # [10.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@9.0.0...@readme/eslint-config@10.0.0) (2022-08-10)
 
 
