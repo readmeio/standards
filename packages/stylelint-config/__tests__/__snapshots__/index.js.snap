@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`stylelint-config with an invalid file and auto-fix enabled matches the auto-fixed snapshot 1`] = `
-"@import \\"x.css\\";
-@import \\"y.css\\";
+"@import "x.css";
+@import "y.css";
 
 /**
  * Multi-line comment
@@ -30,7 +30,7 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
 
 .selector-1,
 .selector-2,
-.selector-3[type=\\"text\\"] {
+.selector-3[type="text"] {
   background: linear-gradient(#fff, rgb(0 0 0 / 80%));
   box-sizing: border-box;
   display: block;
@@ -67,7 +67,7 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
 @media (orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: hsl(20deg 25% 33%);
-    font-family: Helvetica, \\"Arial Black\\", sans-serif;
+    font-family: Helvetica, "Arial Black", sans-serif;
   }
 }
 
@@ -89,8 +89,8 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
 
   /* Flush nested single line comment */
   .selector::after {
-    content: \\"→\\";
-    background-image: url(\\"x.svg\\");
+    content: "→";
+    background-image: url("x.svg");
   }
 }
 
