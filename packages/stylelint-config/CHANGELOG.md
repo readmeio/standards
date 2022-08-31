@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.0.1...@readme/stylelint-config@3.1.0) (2022-08-31)
+
+
+### Features
+
+* **stylelint:** use "simple" selector-not-notation ([#514](https://github.com/readmeio/standards/issues/514)) ([0c83923](https://github.com/readmeio/standards/commit/0c8392345796ad6be41e4f2a862dbbc1c6921e62))
+
+
+
+
+
 ## [3.0.1](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.0.0...@readme/stylelint-config@3.0.1) (2022-08-29)
 
 **Note:** Version bump only for package @readme/stylelint-config
