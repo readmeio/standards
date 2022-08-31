@@ -93,3 +93,10 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+// Prefer "simple" selector-not-notation
+.selector-not-notation {
+  &:not(.one, .two, .three) {
+    display: block;
+  }
+}

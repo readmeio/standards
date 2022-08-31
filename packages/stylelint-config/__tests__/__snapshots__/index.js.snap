@@ -103,5 +103,12 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
     opacity: 1;
   }
 }
+
+// Prefer "simple" selector-not-notation
+.selector-not-notation {
+  &:not(.one):not(.two):not(.three) {
+    display: block;
+  }
+}
 "
 `;

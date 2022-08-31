@@ -54,6 +54,12 @@ module.exports = {
     // Eventually, it may be beneficial to turn this on.
     'selector-no-qualifying-type': null,
 
+    // Complex selectors are a level 4 spec that is not yet fully supported by
+    // all browsers, e.g. `:not(one, two, three)`. Until then, prefer the simple
+    // pattern that we use today, e.g. `:not(one):not(two):not(three)`.
+    // https://stylelint.io/user-guide/rules/list/selector-not-notation/
+    'selector-not-notation': 'simple',
+
     // TODO: Remove this when migrating to Dart Sass.
     // Disallows the use of global function names, as these global functions are
     // now located inside built-in Dart Sass modules.

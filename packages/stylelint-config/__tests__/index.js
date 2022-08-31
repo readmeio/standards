@@ -1,6 +1,8 @@
-const config = require('..');
 const fs = require('fs');
+
 const stylelint = require('stylelint');
+
+const config = require('..');
 
 const invalidScss = fs.readFileSync('./__tests__/invalid.scss', 'utf-8');
 const validScss = fs.readFileSync('./__tests__/valid.scss', 'utf-8');
@@ -55,6 +57,10 @@ describe('stylelint-config', () => {
 
     it('expects id pattern to be either kebab-case or TitleCase', () => {
       expect(warnings.some(w => w.rule === 'selector-id-pattern')).toBeTruthy();
+    });
+
+    it('auto-fixes "selector-not-notation" to "simple" pattern', () => {
+      expect(data.output).toContain('&:not(.one):not(.two):not(.three)');
     });
   });
 });
