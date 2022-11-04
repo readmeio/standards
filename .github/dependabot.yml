@@ -39,6 +39,19 @@ updates:
       prefix-development: chore(deps-dev)
 
   - package-ecosystem: npm
+    directory: "/packages/spectral-config"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 10
+    reviewers:
+      - erunion
+    labels:
+      - dependencies
+    commit-message:
+      prefix: chore(deps)
+      prefix-development: chore(deps-dev)
+
+  - package-ecosystem: npm
     directory: "/packages/stylelint-config"
     schedule:
       interval: monthly
