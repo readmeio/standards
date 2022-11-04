@@ -2,8 +2,6 @@ const rules = require('./rules');
 
 module.exports = {
   extends: ['spectral:oas'],
-  functionsDir: './rules',
-  functions: ['alex', 'sentencePunctuation'],
   rules: {
     'alex-component-description': rules.alexComponentDescription,
     'alex-component-summary': rules.alexComponentSummary,
