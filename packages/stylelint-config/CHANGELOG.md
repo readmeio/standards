@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.3](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.1.2...@readme/stylelint-config@3.1.3) (2022-11-04)
+
+**Note:** Version bump only for package @readme/stylelint-config
+
 ## [3.1.2](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.1.1...@readme/stylelint-config@3.1.2) (2022-11-01)
 
 **Note:** Version bump only for package @readme/stylelint-config
