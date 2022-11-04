@@ -16,7 +16,7 @@ npm install --save @readme/spectral-config
 
 Create a `.spectral.yml` file with the following contents:
 
-```js
+```yaml
 extends: '@readme/spectral-config'
 ```
 
