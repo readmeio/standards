@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
-    "alex": "^9.1.1"
+    "alex": "^11.0.0"
   },
   "peerDependencies": {
     "@stoplight/spectral-cli": "^6.6.0"
