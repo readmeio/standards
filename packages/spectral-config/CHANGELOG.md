@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.1...@readme/spectral-config@1.1.2) (2022-11-04)
+
+### Bug Fixes
+
+- spectral issues ([bc2ef94](https://github.com/readmeio/standards/commit/bc2ef94ecbe02afb33ffb72d1e7036bd9dfc93fb))
+
 ## [1.1.1](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.0...@readme/spectral-config@1.1.1) (2022-11-04)
 
 ### Bug Fixes
