@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
+    "@stoplight/spectral-rulesets": "^1.14.1",
     "alex": "^9.1.1"
   },
   "peerDependencies": {

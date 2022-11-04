@@ -1,7 +1,9 @@
+const { oas } = require('@stoplight/spectral-rulesets');
+
 const rules = require('./rules');
 
 module.exports = {
-  extends: ['spectral:oas'],
+  extends: oas,
   rules: {
     'alex-component-description': rules.alexComponentDescription,
     'alex-component-summary': rules.alexComponentSummary,
