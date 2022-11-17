@@ -28,6 +28,11 @@ module.exports = {
       },
     ],
 
+    // TS ESLint plugin disables this and they neither say why, or how to get warned about it.
+    // https://github.com/typescript-eslint/typescript-eslint/issues/3583
+    // https://github.com/typescript-eslint/typescript-eslint/issues/1041
+    'no-unreachable': 'error',
+
     // The stock `no-unused-vars` ESlint rule doesn't play with TS.
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
