@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.2.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.1.3...@readme/eslint-config@10.2.0) (2022-11-17)
+
+### Features
+
+- enabling no-unreachable in the TS config ([545d65c](https://github.com/readmeio/standards/commit/545d65c7410025ea73bc7649a8426197bcad76f9))
+
 ## [10.1.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.1.2...@readme/eslint-config@10.1.3) (2022-11-04)
 
 **Note:** Version bump only for package @readme/eslint-config
