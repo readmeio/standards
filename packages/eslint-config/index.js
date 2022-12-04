@@ -75,7 +75,6 @@ module.exports = {
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-useless-fallback-in-spread': 'error',
     'unicorn/no-useless-length-check': 'error',
-    'unicorn/no-useless-spread': 'error',
     // 'unicorn/no-useless-undefined': 'error',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-set-has': 'off',
