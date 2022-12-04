@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.3.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.3.0...@readme/eslint-config@10.3.1) (2022-12-04)
+
+
+### Bug Fixes
+
+* disabling the `no-useless-spread` rule ([677ceae](https://github.com/readmeio/standards/commit/677ceaeec3e43733b7799c7015c2be296e656693))
+
+
+
+
+
 # [10.3.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.2.0...@readme/eslint-config@10.3.0) (2022-12-04)
 
 
