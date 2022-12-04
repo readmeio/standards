@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/consistent-indexed-object-style': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': 'error',
 
     // Disable requiring return types because it's too easy to broaden them by accident.
