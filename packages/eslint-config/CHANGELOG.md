@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.2.0...@readme/eslint-config@10.3.0) (2022-12-04)
+
+
+### Features
+
+* enforcing consistent type definitions ([f62e80c](https://github.com/readmeio/standards/commit/f62e80c18ab2e4eae0a63ed218641cdbe8d8278c))
+
+
+
+
+
 # [10.2.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.1.3...@readme/eslint-config@10.2.0) (2022-11-17)
 
 ### Features
