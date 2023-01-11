@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.3.2...@readme/eslint-config@10.4.0) (2023-01-11)
+
+
+### Features
+
+* enabling `func-names` in `eslint-config/typescript` ([a421281](https://github.com/readmeio/standards/commit/a4212810bbd49432a848234b51c51ef038365d9b))
+
+
+
+
+
 ## [10.3.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.3.1...@readme/eslint-config@10.3.2) (2023-01-03)
 
 **Note:** Version bump only for package @readme/eslint-config
