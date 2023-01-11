@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.4.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.0...@readme/eslint-config@10.4.1) (2023-01-11)
+
+
+### Bug Fixes
+
+* renaming a deprecated react plugin rule ([274c740](https://github.com/readmeio/standards/commit/274c740a88007458341825e41c0d90cfeb9e0a5c))
+
+
+
+
+
 # [10.4.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.3.2...@readme/eslint-config@10.4.0) (2023-01-11)
 
 
