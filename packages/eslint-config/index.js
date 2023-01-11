@@ -18,6 +18,7 @@ module.exports = {
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
 
+    // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
     'func-names': 'off',
 
     'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
