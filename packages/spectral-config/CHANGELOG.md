@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.9](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.8...@readme/spectral-config@1.1.9) (2023-01-12)
+
+**Note:** Version bump only for package @readme/spectral-config
+
+
+
+
+
 ## [1.1.8](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.7...@readme/spectral-config@1.1.8) (2023-01-11)
 
 **Note:** Version bump only for package @readme/spectral-config
