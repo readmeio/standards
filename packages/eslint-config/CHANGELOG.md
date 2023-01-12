@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.4.4](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.3...@readme/eslint-config@10.4.4) (2023-01-12)
+
+
+### Bug Fixes
+
+* pinning eslint-plugin-import to 2.26 ([b16cd44](https://github.com/readmeio/standards/commit/b16cd44c4dddca2ef323aea5015525c2a25657e9))
+
+
+
+
+
 ## [10.4.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.2...@readme/eslint-config@10.4.3) (2023-01-12)
 
 

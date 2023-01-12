@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.11](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.10...@readme/spectral-config@1.1.11) (2023-01-12)
+
+
+### Bug Fixes
+
+* pinning eslint-plugin-import to 2.26 ([b16cd44](https://github.com/readmeio/standards/commit/b16cd44c4dddca2ef323aea5015525c2a25657e9))
+
+
+
+
+
 ## [1.1.10](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.9...@readme/spectral-config@1.1.10) (2023-01-12)
 
 
