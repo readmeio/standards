@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.10](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.9...@readme/spectral-config@1.1.10) (2023-01-12)
+
+
+### Bug Fixes
+
+* downgrading eslint-plugin-import, 2.27 has regressions ([a069a0b](https://github.com/readmeio/standards/commit/a069a0badaefbe17513a96be192f99936558d6ee))
+
+
+
+
+
 ## [1.1.9](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.8...@readme/spectral-config@1.1.9) (2023-01-12)
 
 **Note:** Version bump only for package @readme/spectral-config

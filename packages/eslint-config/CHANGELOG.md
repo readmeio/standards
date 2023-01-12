@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.4.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.2...@readme/eslint-config@10.4.3) (2023-01-12)
+
+
+### Bug Fixes
+
+* downgrading eslint-plugin-import, 2.27 has regressions ([a069a0b](https://github.com/readmeio/standards/commit/a069a0badaefbe17513a96be192f99936558d6ee))
+
+
+
+
+
 ## [10.4.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.1...@readme/eslint-config@10.4.2) (2023-01-12)
 
 **Note:** Version bump only for package @readme/eslint-config
