@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.5.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.5...@readme/eslint-config@10.5.0) (2023-01-23)
+
+
+### Features
+
+* turning `func-names` off in tests ([28d45f4](https://github.com/readmeio/standards/commit/28d45f4b1b5cb6e5716f7b77026eaf2a536f5893))
+
+
+
+
+
 ## [10.4.5](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.4.4...@readme/eslint-config@10.4.5) (2023-01-18)
 
 **Note:** Version bump only for package @readme/eslint-config
