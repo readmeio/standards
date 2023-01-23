@@ -2,6 +2,8 @@ module.exports = {
   extends: ['plugin:chai-expect/recommended', 'plugin:chai-friendly/recommended', 'plugin:mocha/recommended'],
   plugins: ['chai-expect', 'chai-friendly', 'import', 'mocha', 'node'],
   rules: {
+    'func-names': 'off',
+
     'import/no-extraneous-dependencies': 'off',
 
     'node/no-extraneous-require': 'off',

@@ -11,6 +11,8 @@ module.exports = {
     'jest/globals': true,
   },
   rules: {
+    'func-names': 'off',
+
     'import/no-extraneous-dependencies': 'off',
 
     'jest/consistent-test-it': ['warn', { fn: 'test', withinDescribe: 'it' }],
