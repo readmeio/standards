@@ -27,7 +27,7 @@
   "devDependencies": {
     "@ibm-cloud/openapi-ruleset": "^0.45.5",
     "@readme/eslint-config": "file:../eslint-config",
-    "@readme/oas-examples": "^5.9.0",
-    "jest": "^29.4.3"
+    "@readme/oas-examples": "^5.10.0",
+    "jest": "^29.5.0"
   }
 }
