@@ -3,10 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "description": "Core coding and style standards for all ReadMe technology.",
-  "engines": {
-    "node": ">=14.18",
-    "npm": "^7 || ^8"
-  },
   "scripts": {
     "lint": "npx lerna run lint --stream",
     "prepare": "husky install",
