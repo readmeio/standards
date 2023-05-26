@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.2...@readme/eslint-config@10.5.3) (2023-05-26)
+
+**Note:** Version bump only for package @readme/eslint-config
+
+
+
+
+
 ## [10.5.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.1...@readme/eslint-config@10.5.2) (2023-04-01)
 
 **Note:** Version bump only for package @readme/eslint-config

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.16](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.15...@readme/spectral-config@1.1.16) (2023-05-26)
+
+
+### Bug Fixes
+
+* case where `description` schemas would throw errors ([7168e1c](https://github.com/readmeio/standards/commit/7168e1c3985a4efc6b8368f5c622a6082da6c11e))
+
+
+
+
+
 ## [1.1.15](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.14...@readme/spectral-config@1.1.15) (2023-04-01)
 
 **Note:** Version bump only for package @readme/spectral-config
