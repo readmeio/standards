@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.4](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.3...@readme/eslint-config@10.5.4) (2023-06-01)
+
+
+### Bug Fixes
+
+* addressing minor performance concerns with the prettier plugin ([#684](https://github.com/readmeio/standards/issues/684)) ([d70712a](https://github.com/readmeio/standards/commit/d70712a0dda0616c9fbabe08f6489396c225cf89))
+
+
+
+
+
 ## [10.5.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.2...@readme/eslint-config@10.5.3) (2023-05-26)
 
 **Note:** Version bump only for package @readme/eslint-config
