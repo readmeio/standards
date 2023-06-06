@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.6.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.4...@readme/eslint-config@10.6.0) (2023-06-06)
+
+
+### Features
+
+* pulling in `eslint-plugin-typescript-sort-keys` ([#685](https://github.com/readmeio/standards/issues/685)) ([6648997](https://github.com/readmeio/standards/commit/66489970ea8af0957b9e949d7396f3f64b0d01b6))
+
+
+
+
+
 ## [10.5.4](https://github.com/readmeio/standards/compare/@readme/eslint-config@10.5.3...@readme/eslint-config@10.5.4) (2023-06-01)
 
 
