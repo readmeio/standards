@@ -17,6 +17,16 @@ module.exports = {
     'stylelint-prettier/recommended',
   ],
   rules: {
+    // Until we migrate *all* our repos away from legacy node-sass to dart sass,
+    // we must continue defining alpha values with decimal numbers. Node-sass
+    // has its own "rgb" and "rgba" funcitons. These get compiled and fails to
+    // parse percentage values appropriately, e.g. rgba(0,0,0,50%) gets compiled
+    // to rgb(0,0,0).
+    //
+    // This rule forces us to continue using decimal numbers for alpha value.
+    // e.g. rgba(0, 0, 0, 0.015)
+    'alpha-value-notation': 'number',
+
     // ReadMe relies on legacy color functions (e.g. rgba(0, 0, 0, 0.5))
     // everywhere in addition to Scss allowing this to be written with a color
     // name (e.g. rgba(black, 0.5)). Eventually, consider removing this rule to
@@ -27,8 +37,76 @@ module.exports = {
     // ReadMe still uses color names as values in many places.
     'color-named': null,
 
+    // Extend the existing rule for our custom CSS props and make an exception
+    // for legacy CSS names like "--lightGray" and "--minimumGray" since
+    // customers may still be defining these in their custom stylesheets.
+    'custom-property-pattern': [
+      '^(([A-Z]+)?([A-Z][a-z0-9]+)+|([a-z][a-z0-9]*))((-[a-z0-9]+)*|Gray)$',
+      {
+        message:
+          'Expected custom property name to be kebab-case and optionally prefixed with TitleCase or ALLCAPSTitleCase, e.g. "text-color", "MyComponent-text-color", "APIAuthInput-text-color.',
+      },
+    ],
+
     // ReadMe breaks this rule in many places.
     'max-nesting-depth': null,
+
+    // Allows us to write duplicate selectors in groups
+    // https://github.com/stylelint/stylelint/issues/3196
+    'no-descending-specificity': [
+      true,
+      {
+        ignore: ['selectors-within-list'],
+      },
+    ],
+
+    // Extend from existing rule to allow additional sections that are specific
+    // to our project such as dark-theme mixins, etc.
+    // https://github.com/bjankord/stylelint-config-sass-guidelines/blob/main/index.js#L50
+    'order/order': [
+      [
+        {
+          // Always place custom mixin definitions at the very top to ensure they
+          // are defined before any references below it.
+          type: 'at-rule',
+          name: 'mixin',
+        },
+        'custom-properties',
+        {
+          // Allow "@mixin {prefix}-dark-mode" directly after custom props
+          // section to support defining dark-mode styles inside a mixin that
+          // can be invoked in multiple places.
+          type: 'at-rule',
+          name: 'mixin',
+          parameter: '-dark-mode$',
+        },
+        {
+          // Allow "@include dark-mode" directly after custom props section to
+          // support our dark-mode pattern as documented here:
+          // https://next.readme.ninja/ui/#/Core/Themes
+          type: 'at-rule',
+          name: 'include',
+          parameter: '^dark-mode$',
+        },
+        'dollar-variables',
+        {
+          type: 'at-rule',
+          name: 'extend',
+        },
+        {
+          type: 'at-rule',
+          name: 'include',
+          hasBlock: false,
+        },
+        'declarations',
+        {
+          type: 'at-rule',
+          name: 'include',
+          hasBlock: true,
+        },
+        'rules',
+      ],
+    ],
 
     // Custom regex of ReadMe's current BEM selector class pattern.
     'selector-class-pattern': [

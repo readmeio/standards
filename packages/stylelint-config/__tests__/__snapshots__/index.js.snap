@@ -31,7 +31,7 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
 .selector-1,
 .selector-2,
 .selector-3[type="text"] {
-  background: linear-gradient(#fff, rgb(0 0 0 / 80%));
+  background: linear-gradient(#fff, rgb(0 0 0 / 0.8));
   box-sizing: border-box;
   display: block;
   color: var(--brand-red);
@@ -79,7 +79,7 @@ exports[`stylelint-config with an invalid file and auto-fix enabled matches the 
       -45deg,
       transparent,
       #fff 25px,
-      rgb(255 255 255 / 100%) 50px
+      rgb(255 255 255 / 1) 50px
     );
     margin: 10px;
     margin-bottom: 5px;
