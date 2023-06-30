@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.1.19...@readme/stylelint-config@3.2.0) (2023-06-30)
+
+
+### Features
+
+* **stylelint-config:** add rules from our main readme repo ([#686](https://github.com/readmeio/standards/issues/686)) ([556183e](https://github.com/readmeio/standards/commit/556183e8f0609b28cedef18e239c2e600718a702))
+
+
+
+
+
 ## [3.1.19](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.1.18...@readme/stylelint-config@3.1.19) (2023-06-06)
 
 **Note:** Version bump only for package @readme/stylelint-config
