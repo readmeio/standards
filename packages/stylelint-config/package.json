@@ -2,10 +2,7 @@
   "name": "@readme/stylelint-config",
   "version": "3.2.0",
   "description": "ReadMe coding standards for styles",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
     "test": "jest"
