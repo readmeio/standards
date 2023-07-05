@@ -1,6 +1,10 @@
 @import "x.css";
 @import "y.css";
 
+$one: "one";
+$two-kebab-case: "two";
+$media-query-width: 300px;
+
 /**
  * Multi-line comment
  */
@@ -45,6 +49,10 @@
 }
 
 /* Single-line comment */
+
+@media (min-width: $media-query-width) {
+  border: 1px solid black;
+}
 
 @media (width >= 60em) {
   .selector {

@@ -59,6 +59,11 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/media-feature-range-notation/
     'media-feature-range-notation': null,
 
+    // Rule is not appropriate when using SCSS variables with media queries.
+    // e.g. @media (max-width: $container-lg)
+    // https://stylelint.io/user-guide/rules/media-query-no-invalid/
+    'media-query-no-invalid': null,
+
     // Allows us to write duplicate selectors in groups
     // https://github.com/stylelint/stylelint/issues/3196
     'no-descending-specificity': [
@@ -130,7 +135,7 @@ module.exports = {
     'selector-id-pattern': [
       '^(([a-z][a-z0-9]*(-[a-z0-9]+)*)|([A-Z][a-z0-9]*)+)$',
       {
-        message: 'Expected id selector to be kebab-case or TitleCase',
+        message: 'Expected id selector to be kebab-case or TitleCase (selector-id-pattern)',
       },
     ],
 

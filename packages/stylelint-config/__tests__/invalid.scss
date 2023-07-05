@@ -1,6 +1,9 @@
 @import url("x.css");
 @import url("y.css");
 
+$one: "one";
+$twoCamelCase: "two";
+
 /**
  * Multi-line comment
  */
@@ -40,9 +43,15 @@
   top: calc(100% - 2rem);
 }
 
-.selector-x { width: 10%; }
-.selector-y { width: 20%; }
-.selector-z { width: 30%; }
+.selector-x {
+  width: 10%;
+}
+.selector-y {
+  width: 20%;
+}
+.selector-z {
+  width: 30%;
+}
 
 /* Single-line comment */
 
@@ -61,24 +70,18 @@
 }
 
 /* Flush single line comment */
-@media
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .selector {
     animation: 3s none fade-in;
-    background-image:
-      repeating-linear-gradient(
-        -45deg,
-        transparent,
-        #fff 25px,
-        rgb(255 255 255 / 100%) 50px
-      );
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      #fff 25px,
+      rgb(255 255 255 / 100%) 50px
+    );
     margin: 10px;
     margin-bottom: 5px;
-    box-shadow:
-      0 1px 1px #000,
-      0 1px 0 #fff,
-      2px 2px 1px 1px #ccc inset;
+    box-shadow: 0 1px 1px #000, 0 1px 0 #fff, 2px 2px 1px 1px #ccc inset;
     height: 10rem;
   }
 
@@ -90,8 +93,12 @@
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 // Prefer "simple" selector-not-notation

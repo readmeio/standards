@@ -48,7 +48,26 @@ describe('stylelint-config', () => {
     });
 
     it('flags warnings', () => {
-      expect(warnings).toHaveLength(6);
+      expect(warnings).toContainEqual(
+        expect.objectContaining({
+          text: expect.stringMatching(/scss\/dollar-variable-pattern/),
+        })
+      );
+      expect(warnings).toContainEqual(
+        expect.objectContaining({
+          text: expect.stringMatching(/color-function-notation/),
+        })
+      );
+      expect(warnings).toContainEqual(
+        expect.objectContaining({
+          text: expect.stringMatching(/selector-id-pattern/),
+        })
+      );
+      expect(warnings).toContainEqual(
+        expect.objectContaining({
+          text: expect.stringMatching(/selector-max-id/),
+        })
+      );
     });
 
     it('expects no more than 1 id selector', () => {
