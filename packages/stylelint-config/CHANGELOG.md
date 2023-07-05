@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.2](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.2.1...@readme/stylelint-config@3.2.2) (2023-07-05)
+
+
+### Bug Fixes
+
+* **stylelint-config:** disable media-query-no-invalid rule ([#700](https://github.com/readmeio/standards/issues/700)) ([c6cfebd](https://github.com/readmeio/standards/commit/c6cfebdacf63b5f8cc73ee06d79dcac8a66d945c))
+
+
+
+
+
 ## [3.2.1](https://github.com/readmeio/standards/compare/@readme/stylelint-config@3.2.0...@readme/stylelint-config@3.2.1) (2023-07-05)
 
 **Note:** Version bump only for package @readme/stylelint-config
