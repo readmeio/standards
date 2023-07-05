@@ -13,7 +13,6 @@ module.exports = {
     'stylelint-config-css-modules',
 
     // Enable prettier formatting for SCSS/CSS
-    'stylelint-config-prettier',
     'stylelint-prettier/recommended',
   ],
   plugins: [
@@ -54,6 +53,11 @@ module.exports = {
 
     // ReadMe breaks this rule in many places.
     'max-nesting-depth': null,
+
+    // Prefer neither "prefix" or "context" notations for media queries.
+    // e.g. "min-width: 400px" or "width >= 600px"
+    // https://stylelint.io/user-guide/rules/media-feature-range-notation/
+    'media-feature-range-notation': null,
 
     // Allows us to write duplicate selectors in groups
     // https://github.com/stylelint/stylelint/issues/3196
