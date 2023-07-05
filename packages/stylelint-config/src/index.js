@@ -16,6 +16,10 @@ module.exports = {
     'stylelint-config-prettier',
     'stylelint-prettier/recommended',
   ],
+  plugins: [
+    // Enable ordering rules for content within declaration blocks.
+    'stylelint-order',
+  ],
   rules: {
     // Until we migrate *all* our repos away from legacy node-sass to dart sass,
     // we must continue defining alpha values with decimal numbers. Node-sass
@@ -107,6 +111,7 @@ module.exports = {
         'rules',
       ],
     ],
+    'order/properties-alphabetical-order': true,
 
     // Custom regex of ReadMe's current BEM selector class pattern.
     'selector-class-pattern': [
