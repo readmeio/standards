@@ -51,22 +51,22 @@ describe('stylelint-config', () => {
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/scss\/dollar-variable-pattern/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/color-function-notation/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/selector-id-pattern/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/selector-max-id/),
-        })
+        }),
       );
     });
 
