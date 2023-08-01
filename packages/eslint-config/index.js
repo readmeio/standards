@@ -75,7 +75,6 @@ module.exports = {
     'unicorn/no-instanceof-array': 'error',
     'unicorn/no-nested-ternary': 'off', // See also: `no-nested-ternary`
     'unicorn/no-unreadable-array-destructuring': 'error',
-    'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-useless-fallback-in-spread': 'error',
     'unicorn/no-useless-length-check': 'error',
