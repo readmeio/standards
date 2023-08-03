@@ -1,11 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 
 const stylelint = require('stylelint');
 
 const config = require('..');
 
-const invalidScss = fs.readFileSync('./__tests__/invalid.scss', 'utf-8');
-const validScss = fs.readFileSync('./__tests__/valid.scss', 'utf-8');
+const invalidScss = fs.readFileSync(path.join(__dirname, './invalid.scss'), 'utf-8');
+const validScss = fs.readFileSync(path.join(__dirname, './valid.scss'), 'utf-8');
 
 describe('stylelint-config', () => {
   let data;
