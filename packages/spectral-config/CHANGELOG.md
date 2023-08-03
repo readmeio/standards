@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.20...@readme/spectral-config@2.0.0) (2023-08-03)
+
+
+### Features
+
+* **spectral:** migrate to ESM ([#718](https://github.com/readmeio/standards/issues/718)) ([b1a4ee5](https://github.com/readmeio/standards/commit/b1a4ee50c249e6652164dab58b2db7da13c28c65))
+
+
+
+
+
 ## [1.1.20](https://github.com/readmeio/standards/compare/@readme/spectral-config@1.1.19...@readme/spectral-config@1.1.20) (2023-07-05)
 
 **Note:** Version bump only for package @readme/spectral-config
