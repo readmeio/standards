@@ -1,4 +1,5 @@
 {
   "extends": "@readme/eslint-config",
+  // required for ESM
   "rules": { "import/extensions": ["error", "always"] }
 }
