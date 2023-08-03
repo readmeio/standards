@@ -1,9 +1,8 @@
-const { makeCopy, severityCodes, testRule } = require('@ibm-cloud/openapi-ruleset/test/utils');
-const readme = require('@readme/oas-examples/3.0/json/readme.json');
+import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils/index.js';
+import readme from '@readme/oas-examples/3.0/json/readme.json';
 
-const { alexComponentDescription } = require('../src/rules');
+import rule from '../src/rules/alex-component-description.js';
 
-const rule = alexComponentDescription;
 const ruleId = 'alex-component-description';
 const expectedSeverity = severityCodes.error;
 const expectedErrorMsg = 'Don’t use `fucking`, it’s profane';

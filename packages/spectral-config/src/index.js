@@ -1,19 +1,27 @@
-const { oas } = require('@stoplight/spectral-rulesets');
+import { oas } from '@stoplight/spectral-rulesets';
 
-const rules = require('./rules');
+import alexComponentDescription from './rules/alex-component-description.js';
+import alexComponentSummary from './rules/alex-component-summary.js';
+import alexOperationDescription from './rules/alex-operation-description.js';
+import alexOperationSummary from './rules/alex-operation-summary.js';
+import alexParameter from './rules/alex-parameter.js';
+import alexResponse from './rules/alex-response.js';
+import descriptionSentencePunctuation from './rules/description-sentence-punctuation.js';
 
-module.exports = {
+const config = {
   extends: oas,
   rules: {
-    'alex-component-description': rules.alexComponentDescription,
-    'alex-component-summary': rules.alexComponentSummary,
+    'alex-component-description': alexComponentDescription,
+    'alex-component-summary': alexComponentSummary,
 
-    'alex-operation-description': rules.alexComponentDescription,
-    'alex-operation-summary': rules.alexOperationSummary,
+    'alex-operation-description': alexOperationDescription,
+    'alex-operation-summary': alexOperationSummary,
 
-    'alex-parameter': rules.alexParameter,
-    'alex-response': rules.alexResponse,
+    'alex-parameter': alexParameter,
+    'alex-response': alexResponse,
 
-    'description-sentence-punctuation': rules.descriptionSentencePunctuation,
+    'description-sentence-punctuation': descriptionSentencePunctuation,
   },
 };
+
+export default config;

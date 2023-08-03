@@ -2,10 +2,14 @@
   "name": "@readme/spectral-config",
   "version": "1.1.20",
   "description": "ReadMe coding standards for API documentation",
-  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,7 @@
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
     "@stoplight/spectral-rulesets": "^1.15.0",
-    "alex": "^9.1.1"
+    "alex": "^11.0.0"
   },
   "peerDependencies": {
     "@stoplight/spectral-cli": "^6.6.0"
