@@ -1,5 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`stylelint-config prettier rules matches snapshot with all formatting errors fixed 1`] = `
+"$prettier: 'should be single quotes';
+"
+`;
+
 exports[`stylelint-config with an invalid file and auto-fix enabled matches the auto-fixed snapshot 1`] = `
 "@import 'x.css';
 @import 'y.css';
