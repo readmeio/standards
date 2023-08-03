@@ -1,10 +1,9 @@
-import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils';
+import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils/index.js';
 import readme from '@readme/oas-examples/3.0/json/readme.json';
 import { describe, it, expect } from 'vitest';
 
-const { descriptionSentencePunctuation } = require('../src/rules');
+import rule from '../src/rules/description-sentence-punctuation.js';
 
-const rule = descriptionSentencePunctuation;
 const ruleId = 'description-sentence-punctuation';
 const expectedSeverity = severityCodes.info;
 const expectedErrorMsg = 'Descriptions should have ending punctuation.';

@@ -2,7 +2,9 @@
   "name": "@readme/spectral-config",
   "version": "3.0.6",
   "description": "ReadMe coding standards for API documentation",
-  "main": "src/index.js",
+  "mail": "dist/index.js",
+  "exports": "./dist/index.js",
+  "type": "module",
   "engines": {
     "node": ">=16"
   },
@@ -24,7 +26,7 @@
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
     "@stoplight/spectral-rulesets": "^1.15.0",
-    "alex": "^9.1.1"
+    "alex": "^11.0.0"
   },
   "peerDependencies": {
     "@stoplight/spectral-cli": "^6.6.0"
