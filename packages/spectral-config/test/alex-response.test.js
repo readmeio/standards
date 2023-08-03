@@ -42,7 +42,7 @@ describe('rule: `alex-response`', () => {
       expect(results[0].message).toBe(expectedErrorMsg);
       expect(results[0].severity).toBe(expectedSeverity);
       expect(results[0].path.join('.')).toBe(
-        'paths./version.get.responses.200.content.application/json.schema.properties.name.description'
+        'paths./version.get.responses.200.content.application/json.schema.properties.name.description',
       );
     });
   });
