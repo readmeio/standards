@@ -1,8 +1,8 @@
-@import url("x.css");
-@import url("y.css");
+@import url('x.css');
+@import url('y.css');
 
-$one: "one";
-$twoCamelCase: "two";
+$one: 'one';
+$twoCamelCase: 'two';
 
 /**
  * Multi-line comment
@@ -30,7 +30,7 @@ $twoCamelCase: "two";
 
 .selector-1,
 .selector-2,
-.selector-3[type="text"] {
+.selector-3[type='text'] {
   background: linear-gradient(#fff, rgb(0 0 0 / 80%));
   box-sizing: border-box;
   display: block;
@@ -65,7 +65,7 @@ $twoCamelCase: "two";
 @media (orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: hsl(20deg 25% 33%);
-    font-family: Helvetica, "Arial Black", sans-serif;
+    font-family: Helvetica, 'Arial Black', sans-serif;
   }
 }
 
@@ -73,22 +73,20 @@ $twoCamelCase: "two";
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .selector {
     animation: 3s none fade-in;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      #fff 25px,
-      rgb(255 255 255 / 100%) 50px
-    );
+    background-image: repeating-linear-gradient(-45deg, transparent, #fff 25px, rgb(255 255 255 / 100%) 50px);
     margin: 10px;
     margin-bottom: 5px;
-    box-shadow: 0 1px 1px #000, 0 1px 0 #fff, 2px 2px 1px 1px #ccc inset;
+    box-shadow:
+      0 1px 1px #000,
+      0 1px 0 #fff,
+      2px 2px 1px 1px #ccc inset;
     height: 10rem;
   }
 
   /* Flush nested single line comment */
   .selector::after {
-    content: "→";
-    background-image: url("x.svg");
+    content: '→';
+    background-image: url('x.svg');
   }
 }
 

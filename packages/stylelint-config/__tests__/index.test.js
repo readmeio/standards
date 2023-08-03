@@ -1,11 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 
 const stylelint = require('stylelint');
 
 const config = require('..');
 
-const invalidScss = fs.readFileSync('./__tests__/invalid.scss', 'utf-8');
-const validScss = fs.readFileSync('./__tests__/valid.scss', 'utf-8');
+const invalidScss = fs.readFileSync(path.join(__dirname, './invalid.scss'), 'utf-8');
+const validScss = fs.readFileSync(path.join(__dirname, './valid.scss'), 'utf-8');
 
 describe('stylelint-config', () => {
   let data;
@@ -51,22 +52,22 @@ describe('stylelint-config', () => {
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/scss\/dollar-variable-pattern/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/color-function-notation/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/selector-id-pattern/),
-        })
+        }),
       );
       expect(warnings).toContainEqual(
         expect.objectContaining({
           text: expect.stringMatching(/selector-max-id/),
-        })
+        }),
       );
     });
 
@@ -80,6 +81,30 @@ describe('stylelint-config', () => {
 
     it('auto-fixes "selector-not-notation" to "simple" pattern', () => {
       expect(data.output).toContain('&:not(.one):not(.two):not(.three)');
+    });
+  });
+
+  describe('prettier rules', () => {
+    it('matches snapshot with all formatting errors fixed', async () => {
+      data = await stylelint.lint({
+        code: `
+$prettier: "should be single quotes";
+`,
+        config,
+        fix: true,
+      });
+      ({ warnings } = data.results[0]);
+      expect(data.output).toMatchSnapshot();
+    });
+
+    it('flags double quotes as an error', async () => {
+      data = await stylelint.lint({
+        code: '$prettier: "should be single quotes"',
+        config,
+      });
+      ({ warnings } = data.results[0]);
+      expect(warnings).toHaveLength(1);
+      expect(warnings[0].rule).toBe('prettier/prettier');
     });
   });
 });

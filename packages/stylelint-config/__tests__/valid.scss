@@ -1,8 +1,8 @@
-@import "x.css";
-@import "y.css";
+@import 'x.css';
+@import 'y.css';
 
-$one: "one";
-$two-kebab-case: "two";
+$one: 'one';
+$two-kebab-case: 'two';
 $media-query-width: 300px;
 
 /**
@@ -23,7 +23,7 @@ $media-query-width: 300px;
 
 .selector-1,
 .selector-2,
-.selector-3[type="text"] {
+.selector-3[type='text'] {
   background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
   box-sizing: border-box;
   color: var(--brand-red);
@@ -64,7 +64,7 @@ $media-query-width: 300px;
 @media (orientation: portrait), projection and (color) {
   .selector-i + .selector-ii {
     background: rgb(105, 77, 63);
-    font-family: Helvetica, "Arial Black", sans-serif;
+    font-family: Helvetica, 'Arial Black', sans-serif;
   }
 }
 
@@ -72,13 +72,11 @@ $media-query-width: 300px;
 @media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .selector {
     animation: 3s none fade-in;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      #fff 25px,
-      rgb(255, 255, 255, 1) 50px
-    );
-    box-shadow: 0 1px 1px #000, 0 1px 0 #fff, 2px 2px 1px 1px #ccc inset;
+    background-image: repeating-linear-gradient(-45deg, transparent, #fff 25px, rgb(255, 255, 255, 1) 50px);
+    box-shadow:
+      0 1px 1px #000,
+      0 1px 0 #fff,
+      2px 2px 1px 1px #ccc inset;
     height: 10rem;
     margin: 10px;
     margin-bottom: 5px;
@@ -86,8 +84,8 @@ $media-query-width: 300px;
 
   /* Flush nested single line comment */
   .selector::after {
-    background-image: url("x.svg");
-    content: "→";
+    background-image: url('x.svg');
+    content: '→';
   }
 }
 
