@@ -1,4 +1,4 @@
-const prettierConfig = require('./prettier');
+const prettierConfig = require('./prettier.config');
 
 module.exports = {
   extends: [
