@@ -79,7 +79,7 @@ describe('stylelint-config', () => {
     });
 
     it('auto-fixes "selector-not-notation" to "simple" pattern', () => {
-      expect(data.output).toContain('&:not(.one, .two, .three)');
+      expect(data.output).toContain('&:not(.one):not(.two):not(.three)');
     });
   });
 });
