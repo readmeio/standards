@@ -26,6 +26,7 @@ extends: '@readme/spectral-config'
 >
 > This ruleset extends the core `oas` ruleset in Spectral. All of these rules are enabled by default.
 
+<!-- prettier-ignore -->
 | Rule | Description |
 | :--- | :--- |
 | `alex-component-summary` | Component schema summaries should have inclusive and considerate language. |
