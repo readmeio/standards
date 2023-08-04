@@ -3,7 +3,7 @@
  *
  * @param {string} input
  */
-export default function sentencePunctuation(input) {
+module.exports = function sentencePunctuation(input) {
   if (!input) {
     // Minor protection for when we have a `description` property as part of an endpoint payload,
     // not a `description` of a schema entry.
@@ -19,4 +19,4 @@ export default function sentencePunctuation(input) {
   }
 
   return [];
-}
+};
