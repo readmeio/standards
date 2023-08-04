@@ -32,5 +32,6 @@
   "devDependencies": {
     "@readme/eslint-config": "file:../eslint-config",
     "jest": "^29.4.3"
-  }
+  },
+  "prettier": "@readme/eslint-config/prettier"
 }

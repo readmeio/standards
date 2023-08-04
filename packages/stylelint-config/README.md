@@ -33,7 +33,7 @@ Create a `stylelint.config.js` file with the following contents:
 
 ```js
 module.exports = {
-  extends: "@readme/stylelint-config",
+  extends: '@readme/stylelint-config',
 };
 ```
 
