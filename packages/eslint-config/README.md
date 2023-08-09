@@ -34,16 +34,20 @@ Create a `.eslintrc` file with the following contents:
 
 ## Configs
 
-> **Note:** `@readme/eslint-config/*` subconfigs must be loaded alongside `@readme/eslint-config`, or at least take advantage of a root `.eslintrc` config that has `root` set to `true`.
+| Config | Description |
+| :-- | :--- |
+| `@readme/eslint-config` | Rules for a pure JS codebase. |
+| `@readme/eslint-config/react` | Rules for codebases that use React. |
+| `@readme/eslint-config/typescript` | Rules for a TS codebase. |
 
-- `@readme/eslint-config`
-- `@readme/eslint-config/docs`
-  - Will enforce JSDoc blocks throughout a codebase.
-- `@readme/eslint-config/react`
-- `@readme/eslint-config/testing`
-  - This config assumes you're using [Jest](https://jestjs.io/), but if you're using [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) you should use `@readme/eslint-config/testing-mocha` instead.
-- `@readme/eslint-config/typescript`
-  - When using this you should tandem extend your config with `@readme/eslint-config` also.
+### Unit testing
+
+| Config | Description |
+| :-- | :--- |
+| `@readme/eslint-config/testing/jest` | Rules specific to the [Jest](https://jestjs.io/) test runner. |
+| `@readme/eslint-config/testing/jest-dom` | Jest-specific rules for when testing, and using [jest-dom](https://npm.im/jest-dom). _Automaticaly imports `@readme/eslint-config/testing/jest`_. |
+|`@readme/eslint-config/testing/react` | Rules specific to React codebases where you use [@testing-library/react](https://npm.im/@testing-library/react). Is specific to neither [Jest](https://jestjs.io/) or [Vitest](https://vitest.dev/).
+| `@readme/eslint-config/testing/vitest` | Rules specific  to the [Vitest](https://vitest.dev/) test runner.
 
 ### Prettier
 

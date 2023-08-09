@@ -1,9 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const stylelint = require('stylelint');
+import stylelint from 'stylelint';
+import { describe, beforeEach, it, expect } from 'vitest';
 
-const config = require('..');
+import config from '..';
 
 const invalidScss = fs.readFileSync(path.join(__dirname, './invalid.scss'), 'utf-8');
 const validScss = fs.readFileSync(path.join(__dirname, './valid.scss'), 'utf-8');
