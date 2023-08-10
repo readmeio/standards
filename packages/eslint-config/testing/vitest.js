@@ -9,6 +9,7 @@ module.exports = merge(common, {
     'vitest/no-conditional-in-test': 'off',
     'vitest/no-conditional-tests': 'off',
     'vitest/no-hooks': 'off',
+    'vitest/prefer-lowercase-title': 'off',
     'vitest/prefer-to-be-falsy': 'off',
     'vitest/prefer-to-be-truthy': 'off',
     'vitest/require-top-level-describe': 'off',
