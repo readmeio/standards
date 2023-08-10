@@ -13,6 +13,7 @@ module.exports = merge(common, {
     'vitest/prefer-lowercase-title': 'off',
     'vitest/prefer-to-be-falsy': 'off',
     'vitest/prefer-to-be-truthy': 'off',
+    'vitest/prefer-snapshot-hint': 'off',
     'vitest/prefer-spy-on': 'off',
     'vitest/require-top-level-describe': 'off',
   },
