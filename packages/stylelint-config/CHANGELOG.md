@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/readmeio/standards/compare/@readme/stylelint-config@4.0.1...@readme/stylelint-config@5.0.0) (2023-08-10)
+
+
+### Features
+
+* **eslint:** restructuring + vitest support + docs and mocha deprecation ([#723](https://github.com/readmeio/standards/issues/723)) ([dd69897](https://github.com/readmeio/standards/commit/dd6989752629417270f7cb6212dd359a6fa3ab2a))
+
+
+
+
+
 ## [4.0.1](https://github.com/readmeio/standards/compare/@readme/stylelint-config@4.0.0...@readme/stylelint-config@4.0.1) (2023-08-04)
 
 **Note:** Version bump only for package @readme/stylelint-config
