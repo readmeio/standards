@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.0...@readme/eslint-config@12.0.1) (2023-08-10)
+
+
+### Bug Fixes
+
+* **eslint:** disabling `vitest/prefer-snapshot-hint` ([b450642](https://github.com/readmeio/standards/commit/b450642901569c54c70101f63420f9cef0363f14))
+
+
+
+
+
 # [12.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@11.0.1...@readme/eslint-config@12.0.0) (2023-08-10)
 
 
