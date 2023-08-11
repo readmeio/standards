@@ -1,11 +1,11 @@
 {
   "name": "@readme/stylelint-config",
-  "version": "4.0.1",
+  "version": "5.0.1",
   "description": "ReadMe coding standards for styles",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@readme/eslint-config": "file:../eslint-config",
-    "jest": "^29.4.3"
+    "vitest": "^0.34.1"
   },
   "prettier": "@readme/eslint-config/prettier"
 }

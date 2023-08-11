@@ -1,6 +1,6 @@
 {
   "name": "@readme/eslint-config",
-  "version": "11.0.1",
+  "version": "12.0.1",
   "description": "ReadMe coding standards",
   "main": "index.js",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
@@ -26,16 +26,12 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.9.0",
     "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-chai-expect": "^3.0.0",
-    "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-dom": "^5.0.1",
     "eslint-plugin-jest-formatting": "^3.0.0",
-    "eslint-plugin-jsdoc": "^46.4.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-mocha": "10.1.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
@@ -43,7 +39,9 @@
     "eslint-plugin-testing-library": "^5.11.0",
     "eslint-plugin-typescript-sort-keys": "^2.3.0",
     "eslint-plugin-unicorn": "^48.0.1",
-    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0"
+    "eslint-plugin-vitest": "^0.2.8",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
+    "lodash.merge": "^4.6.2"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",

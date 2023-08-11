@@ -1,4 +1,8 @@
-module.exports = {
+const merge = require('lodash.merge');
+
+const stock = require('.');
+
+module.exports = merge(stock, {
   extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     browser: true,
@@ -38,4 +42,4 @@ module.exports = {
       },
     ],
   },
-};
+});

@@ -1,5 +1,6 @@
-const { makeCopy, severityCodes, testRule } = require('@ibm-cloud/openapi-ruleset/test/utils');
-const readme = require('@readme/oas-examples/3.0/json/readme.json');
+import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils/index.js';
+import readme from '@readme/oas-examples/3.0/json/readme.json';
+import { describe, it, expect } from 'vitest';
 
 const { alexParameter } = require('../src/rules');
 

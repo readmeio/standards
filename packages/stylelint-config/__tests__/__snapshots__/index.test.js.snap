@@ -1,11 +1,11 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`stylelint-config prettier rules matches snapshot with all formatting errors fixed 1`] = `
+exports[`stylelint-config > prettier rules > matches snapshot with all formatting errors fixed 1`] = `
 "$prettier: 'should be single quotes';
 "
 `;
 
-exports[`stylelint-config with an invalid file and auto-fix enabled matches the auto-fixed snapshot 1`] = `
+exports[`stylelint-config > with an invalid file and auto-fix enabled > matches the auto-fixed snapshot 1`] = `
 "@import 'x.css';
 @import 'y.css';
 
@@ -110,7 +110,7 @@ $twoCamelCase: 'two';
   }
 }
 
-// Prefer "simple" selector-not-notation
+// Prefer \\"simple\\" selector-not-notation
 .selector-not-notation {
   &:not(.one):not(.two):not(.three) {
     display: block;

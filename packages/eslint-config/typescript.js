@@ -1,4 +1,8 @@
-module.exports = {
+const merge = require('lodash.merge');
+
+const stock = require('.');
+
+module.exports = merge(stock, {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended'],
@@ -50,4 +54,4 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
   },
-};
+});

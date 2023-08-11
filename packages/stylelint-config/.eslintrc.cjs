@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@readme/eslint-config', '@readme/eslint-config/testing'],
+  extends: ['@readme/eslint-config', '@readme/eslint-config/testing/vitest'],
 };
