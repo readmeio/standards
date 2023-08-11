@@ -1,4 +1,4 @@
-import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils/index.js';
+import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/utils';
 import readme from '@readme/oas-examples/3.0/json/readme.json';
 import { describe, it, expect } from 'vitest';
 
