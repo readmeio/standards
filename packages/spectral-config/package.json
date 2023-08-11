@@ -3,6 +3,9 @@
   "version": "3.0.1",
   "description": "ReadMe coding standards for API documentation",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "vitest run"
