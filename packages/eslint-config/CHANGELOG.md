@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.1...@readme/eslint-config@12.0.2) (2023-08-12)
+
+
+### Bug Fixes
+
+* temporarily disabling `eslint-plugin-typescript-sort-keys` ([51af7b7](https://github.com/readmeio/standards/commit/51af7b7c45c6fa94e10210adb983433fd204d028))
+
+
+
+
+
 ## [12.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.0...@readme/eslint-config@12.0.1) (2023-08-10)
 
 
