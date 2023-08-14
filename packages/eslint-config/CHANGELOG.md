@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.2...@readme/eslint-config@12.0.3) (2023-08-14)
+
+
+### Bug Fixes
+
+* unbundling our core eslint config from react + typescript ([0ed7bad](https://github.com/readmeio/standards/commit/0ed7bad5c2535f07f344fcfabb5385a174fbfc8f))
+
+
+
+
+
 ## [12.0.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.1...@readme/eslint-config@12.0.2) (2023-08-12)
 
 
