@@ -5,7 +5,8 @@
  * @param {string} input
  */
 module.exports = async function alex(input, options, context) {
-  const { text } = await import('alex');
+  // eslint-disable-next-line import/extensions
+  const { text } = await import('alex/index.js');
   const errors = text(input, { profanitySureness: 1 }).messages;
 
   return errors
