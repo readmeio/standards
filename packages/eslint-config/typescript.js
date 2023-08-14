@@ -1,8 +1,4 @@
-const merge = require('lodash.merge');
-
-const stock = require('.');
-
-module.exports = merge(stock, {
+module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: [
@@ -64,4 +60,4 @@ module.exports = merge(stock, {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
   },
-});
+};

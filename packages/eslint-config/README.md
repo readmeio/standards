@@ -37,6 +37,14 @@ Create a `.eslintrc` file with the following contents:
 | Config | Description |
 | :-- | :--- |
 | `@readme/eslint-config` | Rules for a pure JS codebase. |
+
+### Specialties
+
+> **Note**
+> If you use one, or both of these, you should also extend `@readme/eslint-config`.
+
+| Config | Description |
+| :-- | :--- |
 | `@readme/eslint-config/react` | Rules for codebases that use React. |
 | `@readme/eslint-config/typescript` | Rules for a TS codebase. |
 
