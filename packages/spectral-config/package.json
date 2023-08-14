@@ -2,14 +2,13 @@
   "name": "@readme/spectral-config",
   "version": "3.0.2",
   "description": "ReadMe coding standards for API documentation",
-  "exports": "./src/index.js",
-  "type": "module",
+  "main": "src/index.js",
   "engines": {
     "node": ">=16"
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "NODE_OPTIONS='--no-deprecation' vitest run"
   },
   "repository": {
     "type": "git",

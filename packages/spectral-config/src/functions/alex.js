@@ -1,12 +1,11 @@
-import { text } from 'alex';
-
 /**
  * Ensure that a given string has considerate and inclusive language.
  *
  * @see {@link https://alexjs.com/}
  * @param {string} input
  */
-export default function alex(input, options, context) {
+module.exports = async function alex(input, options, context) {
+  const { text } = await import('alex');
   const errors = text(input, { profanitySureness: 1 }).messages;
 
   return errors
@@ -23,4 +22,4 @@ export default function alex(input, options, context) {
       };
     })
     .filter(Boolean);
-}
+};
