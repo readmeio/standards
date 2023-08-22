@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.3...@readme/eslint-config@12.1.0) (2023-08-22)
+
+
+### Features
+
+* **eslint:** shutting off `@typescript-eslint/no-empty-function` ([cdeee85](https://github.com/readmeio/standards/commit/cdeee85b8f4df7a7b4b6e1f7c267153d36a42f26))
+
+
+
+
+
 ## [12.0.3](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.2...@readme/eslint-config@12.0.3) (2023-08-14)
 
 
