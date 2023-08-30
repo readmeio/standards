@@ -1,6 +1,6 @@
 {
   "name": "@readme/spectral-config",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "ReadMe coding standards for API documentation",
   "main": "src/index.js",
   "engines": {

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.1.0...@readme/eslint-config@12.2.0) (2023-08-30)
+
+
+### Features
+
+* **eslint:** re-enabling typescript-sort-keys ([bebb773](https://github.com/readmeio/standards/commit/bebb773d329fa6fa3a1a969fe077c857be44cd53))
+
+
+
+
+
 # [12.1.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.0.3...@readme/eslint-config@12.1.0) (2023-08-22)
 
 
