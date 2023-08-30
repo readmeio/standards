@@ -37,6 +37,7 @@
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^5.11.0",
+    "eslint-plugin-typescript-sort-keys": "^3.0.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "eslint-plugin-vitest": "^0.2.8",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",

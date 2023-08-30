@@ -1,17 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-
-    /**
-     * Temporarily disabling this plugin as it does not support v6 of `@typescript-eslint`.
-     *
-     * @see {@link https://github.com/infctr/eslint-plugin-typescript-sort-keys/pull/64}
-     */
-    // 'plugin:typescript-sort-keys/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended'],
   settings: {
     'import/resolver': 'typescript',
   },
