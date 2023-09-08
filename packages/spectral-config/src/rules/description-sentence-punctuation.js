@@ -1,6 +1,6 @@
-import sentencePunctuation from '../functions/sentencePunctuation.js';
+const { sentencePunctuation } = require('../functions');
 
-const rule = {
+module.exports = {
   description: 'Descriptions should have ending punctuation.',
   message: '{{description}}',
   severity: 'info',
@@ -11,5 +11,3 @@ const rule = {
     function: sentencePunctuation,
   },
 };
-
-export default rule;
