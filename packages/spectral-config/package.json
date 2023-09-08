@@ -2,8 +2,8 @@
   "name": "@readme/spectral-config",
   "version": "3.0.6",
   "description": "ReadMe coding standards for API documentation",
-  "mail": "dist/index.js",
-  "exports": "./dist/index.js",
+  "main": "dist/index.cjs",
+  "module": "./dist/index.js",
   "type": "module",
   "engines": {
     "node": ">=16"

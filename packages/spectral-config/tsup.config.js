@@ -2,9 +2,9 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.js'],
   clean: true,
-  outDir: 'dist',
+  entry: ['src/index.js'],
+  format: ['cjs', 'esm'],
   noExternal: ['alex'],
-  format: 'esm',
+  outDir: 'dist',
 });
