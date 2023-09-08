@@ -1,3 +1,5 @@
+const { text } = require('alex');
+
 /**
  * Ensure that a given string has considerate and inclusive language.
  *
@@ -5,8 +7,6 @@
  * @param {string} input
  */
 module.exports = async function alex(input, options, context) {
-  // eslint-disable-next-line import/extensions
-  const { text } = await import('alex/index.js');
   const errors = text(input, { profanitySureness: 1 }).messages;
 
   return errors
