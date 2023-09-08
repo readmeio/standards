@@ -4,7 +4,9 @@
   "private": true,
   "description": "Core coding and style standards for all ReadMe technology.",
   "scripts": {
-    "lint": "npx lerna run lint --stream",
+    "lint": "npm run prettier && npm run lint:js",
+    "lint:js": "lerna run lint --stream",
+    "prettier": "prettier --check .",
     "prepare": "husky install",
     "version": "npm i && git add package-lock.json",
     "release": "npx lerna publish",
