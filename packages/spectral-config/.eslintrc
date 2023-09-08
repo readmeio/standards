@@ -1,4 +1,4 @@
 {
   "extends": "@readme/eslint-config",
-  "parserOptions": { "ecmaVersion": 2020 }
+  "rules": { "import/extensions": ["error", "always"] }
 }

@@ -1,4 +1,4 @@
-const { text } = require('alex');
+import { text } from 'alex';
 
 /**
  * Ensure that a given string has considerate and inclusive language.
@@ -6,7 +6,7 @@ const { text } = require('alex');
  * @see {@link https://alexjs.com/}
  * @param {string} input
  */
-module.exports = async function alex(input, options, context) {
+export default function alex(input, options, context) {
   const errors = text(input, { profanitySureness: 1 }).messages;
 
   return errors
@@ -23,4 +23,4 @@ module.exports = async function alex(input, options, context) {
       };
     })
     .filter(Boolean);
-};
+}
