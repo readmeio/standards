@@ -1,6 +1,6 @@
-import alex from '../functions/alex.js';
+const { alex } = require('../functions');
 
-const rule = {
+module.exports = {
   description: 'Component schema description should have inclusive and considerate language.',
   message: '{{error}}',
   severity: 'error',
@@ -11,5 +11,3 @@ const rule = {
     function: alex,
   },
 };
-
-export default rule;
