@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.0.6...@readme/spectral-config@3.1.0) (2023-09-08)
+
+
+### Features
+
+* **spectral:** esm again ([#746](https://github.com/readmeio/standards/issues/746)) ([bb437f8](https://github.com/readmeio/standards/commit/bb437f8c5d717e237a64f06420ea7aa81a08c32b))
+
+
+### Reverts
+
+* get spectral working again ([#744](https://github.com/readmeio/standards/issues/744)) ([2954899](https://github.com/readmeio/standards/commit/29548995495830a0b55d25d005f7de49ba452fd1))
+
+
+
+
+
 ## [3.0.6](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.0.5...@readme/spectral-config@3.0.6) (2023-08-30)
 
 **Note:** Version bump only for package @readme/spectral-config
