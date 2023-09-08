@@ -6,4 +6,5 @@ export default defineConfig({
   clean: true,
   outDir: 'dist',
   noExternal: ['alex'],
+  format: 'esm',
 });
