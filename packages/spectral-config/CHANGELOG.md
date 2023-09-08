@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.2](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.1.1...@readme/spectral-config@3.1.2) (2023-09-08)
+
+
+### Reverts
+
+* **again so sorry:** ESM take 3 ([#749](https://github.com/readmeio/standards/issues/749)) ([c35343c](https://github.com/readmeio/standards/commit/c35343c23fa5ffe5781a2eb2b073d41c770810fd)), closes [#746](https://github.com/readmeio/standards/issues/746) [#748](https://github.com/readmeio/standards/issues/748)
+
+
+
+
+
 ## [3.1.1](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.1.0...@readme/spectral-config@3.1.1) (2023-09-08)
 
 
