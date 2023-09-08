@@ -34,6 +34,7 @@ Create a `.eslintrc` file with the following contents:
 
 ## Configs
 
+<!-- prettier-ignore -->
 | Config | Description |
 | :-- | :--- |
 | `@readme/eslint-config` | Rules for a pure JS codebase. |
@@ -43,6 +44,7 @@ Create a `.eslintrc` file with the following contents:
 > **Note**
 > If you use one, or both of these, you should also extend `@readme/eslint-config`.
 
+<!-- prettier-ignore -->
 | Config | Description |
 | :-- | :--- |
 | `@readme/eslint-config/react` | Rules for codebases that use React. |
@@ -50,6 +52,7 @@ Create a `.eslintrc` file with the following contents:
 
 ### Unit testing
 
+<!-- prettier-ignore -->
 | Config | Description |
 | :-- | :--- |
 | `@readme/eslint-config/testing/jest` | Rules specific to the [Jest](https://jestjs.io/) test runner. |
