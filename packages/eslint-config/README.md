@@ -47,6 +47,7 @@ Create a `.eslintrc` file with the following contents:
 <!-- prettier-ignore -->
 | Config | Description |
 | :-- | :--- |
+| `@readme/eslint-config/esm` | Rules for ESM codebases. |
 | `@readme/eslint-config/react` | Rules for codebases that use React. |
 | `@readme/eslint-config/typescript` | Rules for a TS codebase. |
 
