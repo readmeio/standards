@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.1.2...@readme/spectral-config@4.0.0) (2023-09-12)
+
+
+### Features
+
+* dropping support for Node 14 and 16 ([293357d](https://github.com/readmeio/standards/commit/293357db47858481e01c94613d2f5727ad5e7f48))
+
+
+
+
+
 ## [3.1.2](https://github.com/readmeio/standards/compare/@readme/spectral-config@3.1.1...@readme/spectral-config@3.1.2) (2023-09-08)
 
 

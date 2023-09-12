@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.2.1...@readme/eslint-config@13.0.0) (2023-09-12)
+
+
+### Features
+
+* creation of a new `esm` config for esm codebases ([#751](https://github.com/readmeio/standards/issues/751)) ([021f881](https://github.com/readmeio/standards/commit/021f88183c0cb0e6d5b4f246db7811abd20829a2))
+* dropping support for Node 14 and 16 ([293357d](https://github.com/readmeio/standards/commit/293357db47858481e01c94613d2f5727ad5e7f48))
+
+
+
+
+
 ## [12.2.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.2.0...@readme/eslint-config@12.2.1) (2023-09-08)
 
 **Note:** Version bump only for package @readme/eslint-config
