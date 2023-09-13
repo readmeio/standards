@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended'],
@@ -53,3 +54,5 @@ module.exports = {
     '@typescript-eslint/no-shadow': ['error'],
   },
 };
+
+module.exports = config;

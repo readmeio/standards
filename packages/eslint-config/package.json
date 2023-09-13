@@ -15,7 +15,7 @@
   "scripts": {
     "prettier": "prettier --list-different --write \"./**/**.js\"",
     "lint": "eslint .",
-    "test": "eslint ."
+    "test": "tsc"
   },
   "publishConfig": {
     "access": "public"
@@ -47,5 +47,10 @@
   "peerDependencies": {
     "eslint": "^8.0.0",
     "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash.merge": "^4.6.7",
+    "eslint-define-config": "^1.23.0",
+    "typescript": "^5.2.2"
   }
 }

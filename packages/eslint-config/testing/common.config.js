@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = {
   plugins: ['import', 'node'],
   rules: {
     'func-names': 'off',
@@ -13,3 +14,5 @@ module.exports = {
     'require-await': 'error',
   },
 };
+
+module.exports = config;

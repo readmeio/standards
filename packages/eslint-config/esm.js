@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = {
   extends: ['plugin:require-extensions/recommended'],
   plugins: ['require-extensions', 'unicorn'],
   rules: {
@@ -6,3 +7,5 @@ module.exports = {
     'unicorn/prefer-node-protocol': 'error',
   },
 };
+
+module.exports = config;

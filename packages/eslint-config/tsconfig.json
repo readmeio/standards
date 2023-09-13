@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}
