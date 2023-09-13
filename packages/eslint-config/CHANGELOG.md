@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.0.0...@readme/eslint-config@13.0.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* **eslint/esm:** enable `import/no-commonjs` ([#752](https://github.com/readmeio/standards/issues/752)) ([31ac955](https://github.com/readmeio/standards/commit/31ac955716a0a8bd7ea625ff106cfd3bac19c2a3))
+
+
+
+
+
 # [13.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@12.2.1...@readme/eslint-config@13.0.0) (2023-09-12)
 
 
