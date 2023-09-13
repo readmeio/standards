@@ -1,6 +1,7 @@
 const prettierConfig = require('./prettier.config');
 
-module.exports = {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = {
   extends: [
     'airbnb-base',
     'eslint:recommended',
@@ -90,3 +91,5 @@ module.exports = {
     'you-dont-need-lodash-underscore/throttle': 'off',
   },
 };
+
+module.exports = config;

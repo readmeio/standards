@@ -2,7 +2,8 @@ const merge = require('lodash.merge');
 
 const common = require('./common.config');
 
-module.exports = merge(common, {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = merge(common, {
   extends: ['plugin:jest/recommended', 'plugin:jest/style', 'plugin:jest-formatting/recommended'],
   env: {
     'jest/globals': true,
@@ -19,3 +20,5 @@ module.exports = merge(common, {
     'jest/require-to-throw-message': 'error',
   },
 });
+
+module.exports = config;

@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = {
   extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: {
     browser: true,
@@ -39,3 +40,5 @@ module.exports = {
     ],
   },
 };
+
+module.exports = config;

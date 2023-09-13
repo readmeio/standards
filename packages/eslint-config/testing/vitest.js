@@ -2,7 +2,8 @@ const merge = require('lodash.merge');
 
 const common = require('./common.config');
 
-module.exports = merge(common, {
+/** @type {import("eslint-define-config").ESLintConfig} */
+const config = merge(common, {
   extends: ['plugin:vitest/all'],
   rules: {
     'vitest/max-expects': 'off',
@@ -18,3 +19,5 @@ module.exports = merge(common, {
     'vitest/require-top-level-describe': 'off',
   },
 });
+
+module.exports = config;
