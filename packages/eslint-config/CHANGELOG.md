@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.0.1...@readme/eslint-config@13.1.0) (2023-10-05)
+
+
+### Features
+
+* **eslint/esm:** enable more ESM rules ([#763](https://github.com/readmeio/standards/issues/763)) ([4a2c68e](https://github.com/readmeio/standards/commit/4a2c68ebfa49d552b1572cb6869f61f7e9c2e944))
+
+
+
+
+
 ## [13.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.0.0...@readme/eslint-config@13.0.1) (2023-09-13)
 
 
