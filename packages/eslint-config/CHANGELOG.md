@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.3.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.2.0...@readme/eslint-config@13.3.0) (2023-10-31)
+
+
+### Features
+
+* **eslint-plugin:** creation of a new custom eslint plugin ([#766](https://github.com/readmeio/standards/issues/766)) ([2b0422b](https://github.com/readmeio/standards/commit/2b0422b41e4d9b24c1b3d1be6bff5670d03d72c3))
+
+
+
+
+
 # [13.2.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.1.0...@readme/eslint-config@13.2.0) (2023-10-31)
 
 

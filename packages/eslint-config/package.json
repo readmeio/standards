@@ -1,6 +1,6 @@
 {
   "name": "@readme/eslint-config",
-  "version": "13.2.0",
+  "version": "13.3.0",
   "description": "ReadMe coding standards",
   "main": "index.js",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
