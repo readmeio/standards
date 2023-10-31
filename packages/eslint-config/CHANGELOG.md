@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.2.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.1.0...@readme/eslint-config@13.2.0) (2023-10-31)
+
+
+### Features
+
+* **eslint:** disabling default exports in ESM libraries ([#765](https://github.com/readmeio/standards/issues/765)) ([c4c3bc9](https://github.com/readmeio/standards/commit/c4c3bc9caa6980338bbaf7009cde047c7870cebe))
+
+
+
+
+
 # [13.1.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.0.1...@readme/eslint-config@13.1.0) (2023-10-05)
 
 
