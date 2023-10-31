@@ -15,7 +15,7 @@ const config = {
      *
      * @see {@link https://github.com/isaacs/tshy#handling-default-exports}
      */
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'warn',
 
     'node/no-extraneous-import': 'error',
     'unicorn/prefer-module': 'error',
