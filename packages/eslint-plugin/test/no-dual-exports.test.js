@@ -15,6 +15,15 @@ const errorMessage =
 ruleTester.run('no-dual-exports', rules['no-dual-exports'], {
   valid: [
     {
+      code: 'export class ReducerOptions {}',
+    },
+    {
+      code: 'export default class ReducerOptions {}',
+    },
+    {
+      code: 'export default function reducer(definition, opts) {}',
+    },
+    {
       code: `export class ReducerOptions {}
 
       export function reducer(definition, opts) {}`,

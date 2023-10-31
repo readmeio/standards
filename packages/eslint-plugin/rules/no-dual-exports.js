@@ -12,7 +12,9 @@ module.exports = {
   create: context => {
     return {
       ExportDefaultDeclaration: node => {
-        if (!node.parent.body.filter(n => n.type === 'ExportNamedDeclaration').length) {
+        if (!node?.parent?.body) {
+          return;
+        } else if (!node.parent.body.filter(n => n.type === 'ExportNamedDeclaration').length) {
           return;
         }
 
