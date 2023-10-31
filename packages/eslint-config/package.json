@@ -9,11 +9,14 @@
     "type": "git",
     "url": "git@github.com:readmeio/standards.git"
   },
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "homepage": "https://github.com/readmeio/standards#readme",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "prettier": "prettier --list-different --write \"./**/**.js\"",
     "lint": "eslint .",
     "test": "tsc"
   },
