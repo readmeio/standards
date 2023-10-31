@@ -31,6 +31,6 @@ plugins: ['@readme'],
 
 | Rule | Description | Config |
 | :--- | :--- | :--- |
-| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | revent cases of having a file with dual `default` and named exports. | `esm` |
+| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | `esm` |
 
 <!-- prettier-ignore-end -->
