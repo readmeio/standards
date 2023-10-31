@@ -1,5 +1,5 @@
 {
-  "name": "@readme/eslint-plugin",
+  "name": "eslint-plugin-readme",
   "version": "1.1.0",
   "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
   "main": "index.js",

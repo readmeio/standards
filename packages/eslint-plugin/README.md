@@ -4,15 +4,15 @@ Custom ESLint plugin for some ReadMe engineering guidelines and gotchas.
 
 [![](https://raw.githubusercontent.com/readmeio/.github/main/oss-header.png)](https://readme.io)
 
-[![npm](https://img.shields.io/npm/v/@readme/eslint-plugin)](https://npm.im/@readme/eslint-plugin) [![Build](https://github.com/readmeio/standards/workflows/CI/badge.svg)](https://github.com/readmeio/standards)
+[![npm](https://img.shields.io/npm/v/eslint-plugin-readme)](https://npm.im/eslint-plugin-readme) [![Build](https://github.com/readmeio/standards/workflows/CI/badge.svg)](https://github.com/readmeio/standards)
 
 ## Usage
 
 In `.eslintrc` file add the following line:
 
 ```js
-extends: ['plugin:@readme/<config>'],
-plugins: ['@readme'],
+extends: ['plugin:readme/<config>'],
+plugins: ['readme'],
 ```
 
 ## 🔖 Available Configs
