@@ -9,18 +9,19 @@
     "type": "git",
     "url": "git@github.com:readmeio/standards.git"
   },
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "homepage": "https://github.com/readmeio/standards#readme",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "prettier": "prettier --list-different --write \"./**/**.js\"",
     "lint": "eslint .",
     "test": "tsc"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
+    "@readme/eslint-plugin": "file:../eslint-plugin",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint-config-airbnb-base": "^15.0.0",

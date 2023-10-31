@@ -1,0 +1,6 @@
+{
+  "extends": "@readme/eslint-config",
+  "parserOptions": {
+    "ecmaVersion": 2022
+  }
+}

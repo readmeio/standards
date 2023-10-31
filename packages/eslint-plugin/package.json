@@ -1,0 +1,32 @@
+{
+  "name": "@readme/eslint-plugin",
+  "version": "1.0.0",
+  "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
+  "main": "index.js",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/readmeio/standards.git",
+    "directory": "packages/eslint-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "homepage": "https://github.com/readmeio/standards#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@readme/eslint-config": "file:../eslint-config",
+    "vitest": "^0.34.6"
+  }
+}
