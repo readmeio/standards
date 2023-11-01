@@ -25,7 +25,7 @@
     "./packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
+    "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "husky": "^8.0.3",
     "lerna": "^7.1.4"
