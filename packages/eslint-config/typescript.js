@@ -34,6 +34,9 @@ const config = {
       },
     ],
 
+    // Disabling this rule in TS code because TS handles this sort of error for us automatically.
+    'import/no-unresolved': 'off',
+
     // TS ESLint plugin disables this and they neither say why, or how to get warned about it.
     // https://github.com/typescript-eslint/typescript-eslint/issues/3583
     // https://github.com/typescript-eslint/typescript-eslint/issues/1041
