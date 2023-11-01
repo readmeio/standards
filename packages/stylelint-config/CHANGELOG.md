@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.6](https://github.com/readmeio/standards/compare/@readme/stylelint-config@6.0.5...@readme/stylelint-config@6.0.6) (2023-11-01)
+
+**Note:** Version bump only for package @readme/stylelint-config
+
+
+
+
+
 ## [6.0.5](https://github.com/readmeio/standards/compare/@readme/stylelint-config@6.0.4...@readme/stylelint-config@6.0.5) (2023-10-31)
 
 **Note:** Version bump only for package @readme/stylelint-config

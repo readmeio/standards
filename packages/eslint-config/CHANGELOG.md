@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.4.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.3.1...@readme/eslint-config@13.4.0) (2023-11-01)
+
+
+### Features
+
+* **eslint-config:** disabling `import/no-unresolved` in the TS config ([541d8c3](https://github.com/readmeio/standards/commit/541d8c35701a3e8c03bc8c1df22e706c09b10791))
+
+
+
+
+
 ## [13.3.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.3.0...@readme/eslint-config@13.3.1) (2023-10-31)
 
 
