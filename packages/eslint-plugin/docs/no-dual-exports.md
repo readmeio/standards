@@ -10,14 +10,11 @@ export interface ReducerOptions {
   tags?: string[];
 }
 
-export function reducer(definition: OASDocument, opts: ReducerOptions = {}) {
+export default function reducer(definition: OASDocument, opts: ReducerOptions = {}) {
   /** code here */
 }
 ```
 
-```js
-export default class SDK {}
-```
 
 ## Pass
 
@@ -27,7 +24,11 @@ export interface ReducerOptions {
   tags?: string[];
 }
 
-export default function reducer(definition: OASDocument, opts: ReducerOptions = {}) {
+export function reducer(definition: OASDocument, opts: ReducerOptions = {}) {
   /** code here */
 }
+```
+
+```js
+export default class SDK {}
 ```
