@@ -28,7 +28,7 @@
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "husky": "^8.0.3",
-    "lerna": "^7.1.4"
+    "lerna": "^8.0.0"
   },
   "commitlint": {
     "extends": [
