@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@types/lodash.merge": "^4.6.7",
-    "eslint-define-config": "^1.23.0",
+    "eslint-define-config": "^2.0.0",
     "typescript": "^5.2.2"
   }
 }
