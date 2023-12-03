@@ -7,7 +7,7 @@
     "lint": "npm run prettier && npm run lint:js",
     "lint:js": "lerna run lint --stream",
     "prettier": "prettier --check .",
-    "prettier:write": "prettier --list-different --write \"./**/**.js\"",
+    "prettier:write": "prettier --list-different --write .",
     "prepare": "husky install",
     "version": "npm i && git add package-lock.json",
     "release": "lerna publish",

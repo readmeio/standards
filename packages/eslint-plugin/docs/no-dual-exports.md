@@ -15,7 +15,6 @@ export default function reducer(definition: OASDocument, opts: ReducerOptions = 
 }
 ```
 
-
 ## Pass
 
 ```ts
