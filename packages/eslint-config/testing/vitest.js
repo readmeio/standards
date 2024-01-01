@@ -6,6 +6,7 @@ const common = require('./common.config');
 const config = merge(common, {
   extends: ['plugin:vitest/all'],
   rules: {
+    'vitest/prefer-expect-assertions': 'off',
     'vitest/max-expects': 'off',
     'vitest/no-conditional-in-test': 'off',
     'vitest/no-conditional-tests': 'off',

@@ -110,7 +110,7 @@ $twoCamelCase: 'two';
   }
 }
 
-// Prefer \\"simple\\" selector-not-notation
+// Prefer "simple" selector-not-notation
 .selector-not-notation {
   &:not(.one):not(.two):not(.three) {
     display: block;

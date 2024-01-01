@@ -30,6 +30,6 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@readme/eslint-config": "file:../eslint-config",
-    "vitest": "^0.34.6"
+    "vitest": "^1.1.1"
   }
 }
