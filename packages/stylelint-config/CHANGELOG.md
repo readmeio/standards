@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.7](https://github.com/readmeio/standards/compare/@readme/stylelint-config@6.0.6...@readme/stylelint-config@6.0.7) (2024-01-01)
+
+
+### Reverts
+
+* Revert "chore(deps): bump stylelint-config-sass-guidelines from 10.0.0 to 11.0.0 (#793)" (#803) ([dcc4ae5](https://github.com/readmeio/standards/commit/dcc4ae528767ef88230b8628bb725e91a95b6450)), closes [#793](https://github.com/readmeio/standards/issues/793) [#803](https://github.com/readmeio/standards/issues/803)
+* Revert "chore(deps): bump stylelint-config-standard-scss from 11.1.0 to 12.0.0 (#797)" (#802) ([04a6872](https://github.com/readmeio/standards/commit/04a6872652a4f969aa1a3a924c11eceb8cc45e29)), closes [#797](https://github.com/readmeio/standards/issues/797) [#802](https://github.com/readmeio/standards/issues/802)
+
+
+
+
+
 ## [6.0.6](https://github.com/readmeio/standards/compare/@readme/stylelint-config@6.0.5...@readme/stylelint-config@6.0.6) (2023-11-01)
 
 **Note:** Version bump only for package @readme/stylelint-config

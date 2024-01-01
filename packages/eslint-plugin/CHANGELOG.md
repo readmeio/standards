@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/readmeio/standards/compare/eslint-plugin-readme@1.2.1...eslint-plugin-readme@1.2.2) (2024-01-01)
+
+
+### Bug Fixes
+
+* linting issue in our no-dual-exports docs ([b973729](https://github.com/readmeio/standards/commit/b973729a324f1fa7d42f892a9ed4a1eb84ee4504))
+
+
+
+
+
 ## [1.2.1](https://github.com/readmeio/standards/compare/eslint-plugin-readme@1.2.0...eslint-plugin-readme@1.2.1) (2023-11-01)
 
 **Note:** Version bump only for package eslint-plugin-readme
