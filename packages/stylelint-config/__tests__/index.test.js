@@ -42,7 +42,7 @@ describe('stylelint-config', () => {
     });
 
     it('matches the auto-fixed snapshot', () => {
-      expect(data.output).toMatchSnapshot();
+      expect(data.code).toMatchSnapshot();
     });
 
     it('has errors', () => {
@@ -81,7 +81,7 @@ describe('stylelint-config', () => {
     });
 
     it('auto-fixes "selector-not-notation" to "simple" pattern', () => {
-      expect(data.output).toContain('&:not(.one):not(.two):not(.three)');
+      expect(data.code).toContain('&:not(.one):not(.two):not(.three)');
     });
   });
 
@@ -95,7 +95,7 @@ $prettier: "should be single quotes";
         fix: true,
       });
       ({ warnings } = data.results[0]);
-      expect(data.output).toMatchSnapshot();
+      expect(data.code).toMatchSnapshot();
     });
 
     it('flags double quotes as an error', async () => {
