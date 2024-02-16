@@ -34,7 +34,7 @@
     "@ibm-cloud/openapi-ruleset": "^1.1.1",
     "@readme/eslint-config": "file:../eslint-config",
     "@readme/oas-examples": "^5.12.0",
-    "tsup": "^8.0.1",
+    "tsup": "^8.0.2",
     "vitest": "^1.1.1"
   },
   "prettier": "@readme/eslint-config/prettier"
