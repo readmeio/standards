@@ -21,6 +21,8 @@ const config = {
 
     '@typescript-eslint/no-empty-function': 'off',
 
+    '@typescript-eslint/sort-type-constituents': 'error',
+
     'func-names': 'error',
 
     'import/extensions': [
