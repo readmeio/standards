@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.5.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.4.1...@readme/eslint-config@13.5.0) (2024-02-16)
+
+
+### Features
+
+* **eslint-config:** enabling `sort-type-constituents` on TS code ([68ab547](https://github.com/readmeio/standards/commit/68ab547d6ae67f3995cfb8fa274d8dd9bfb530b2))
+
+
+
+
+
 ## [13.4.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.4.0...@readme/eslint-config@13.4.1) (2024-01-01)
 
 **Note:** Version bump only for package @readme/eslint-config
