@@ -51,6 +51,18 @@ module.exports = {
       },
     ],
 
+    // Allows zero length units when defined by custom CSS properties. There are
+    // cases where we often use the "calc" function to perform operations on CSS
+    // properties, e.g. `calc(100% - var(--sponge) - var(--bob))`. Those always
+    // require units to work properly, including 0 values.
+    // https://stylelint.io/user-guide/rules/length-zero-no-unit
+    'length-zero-no-unit': [
+      true,
+      {
+        ignore: ['custom-properties'],
+      },
+    ],
+
     // ReadMe breaks this rule in many places.
     'max-nesting-depth': null,
 
