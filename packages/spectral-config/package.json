@@ -31,9 +31,9 @@
     "@stoplight/spectral-cli": "^6.6.0"
   },
   "devDependencies": {
-    "@ibm-cloud/openapi-ruleset": "^1.1.1",
+    "@ibm-cloud/openapi-ruleset": "^1.15.6",
     "@readme/eslint-config": "file:../eslint-config",
-    "@readme/oas-examples": "^5.12.0",
+    "@readme/oas-examples": "^5.13.0",
     "tsup": "^8.0.2",
     "vitest": "^1.1.1"
   },

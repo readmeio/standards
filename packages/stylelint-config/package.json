@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
-    "stylelint": "^16.2.1",
+    "stylelint": "^16.3.1",
     "stylelint-config-css-modules": "^4.3.0",
-    "stylelint-config-sass-guidelines": "^11.0.0",
+    "stylelint-config-sass-guidelines": "^11.1.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-order": "^6.0.3",
