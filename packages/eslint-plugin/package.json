@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-readme",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
   "main": "index.js",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
