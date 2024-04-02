@@ -1,5 +1,3 @@
-const prettierConfig = require('./prettier.config');
-
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
   extends: [
@@ -9,10 +7,12 @@ const config = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:you-dont-need-lodash-underscore/compatible',
-    'plugin:prettier/recommended', // This has to be the last rule added.
+    'prettier',
   ],
   plugins: ['node', 'unicorn'],
   rules: {
+    'arrow-body-style': 'off', // This rule clashes with our Prettier config.
+
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
 
@@ -45,22 +45,16 @@ const config = {
 
     'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
-    // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable.
+    // Disallow shadowing of any variable that isn't "err" as this is a common case that is
+    // acceptable.
     'no-shadow': ['error', { allow: ['err'] }],
 
     'node/no-deprecated-api': 'error',
     'node/no-exports-assign': 'error',
     'node/no-extraneous-require': 'error',
 
+    'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
     'prefer-destructuring': 'off',
-
-    'prettier/prettier': [
-      'error',
-      prettierConfig,
-      {
-        usePrettierrc: false,
-      },
-    ],
 
     // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
     // templated strings that aren't templates.
@@ -86,7 +80,8 @@ const config = {
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',
 
-    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with something else.
+    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with
+    // something else.
     'you-dont-need-lodash-underscore/debounce': 'off',
     'you-dont-need-lodash-underscore/throttle': 'off',
   },
