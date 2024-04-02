@@ -1,13 +1,3 @@
-// The following are ESLint rules that collide with our Prettier config. If we don't disable these
-// then code formatted by Prettier will cause ESLint to throw errors.
-const prettierOverrides = {
-  'arrow-body-style': 'off',
-  'arrow-parens': 'off',
-  'object-curly-newline': 'off',
-  'operator-linebreak': 'off',
-  'prefer-arrow-callback': 'off',
-};
-
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
   extends: [
@@ -17,11 +7,11 @@ const config = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:you-dont-need-lodash-underscore/compatible',
+    'prettier',
   ],
   plugins: ['node', 'unicorn'],
-  // @ts-ignore `prettierOverrides` is compatible with `rules` this isn't TS for us to type that.
   rules: {
-    ...prettierOverrides,
+    'arrow-body-style': 'off', // This rule is handled by our Prettier config.
 
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
@@ -63,6 +53,7 @@ const config = {
     'node/no-exports-assign': 'error',
     'node/no-extraneous-require': 'error',
 
+    'prefer-arrow-callback': 'off', // This rule is handled by our Prettier config.
     'prefer-destructuring': 'off',
 
     // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
