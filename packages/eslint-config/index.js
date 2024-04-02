@@ -11,7 +11,7 @@ const config = {
   ],
   plugins: ['node', 'unicorn'],
   rules: {
-    'arrow-body-style': 'off', // This rule is handled by our Prettier config.
+    'arrow-body-style': 'off', // This rule clashes with our Prettier config.
 
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
@@ -53,7 +53,7 @@ const config = {
     'node/no-exports-assign': 'error',
     'node/no-extraneous-require': 'error',
 
-    'prefer-arrow-callback': 'off', // This rule is handled by our Prettier config.
+    'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
     'prefer-destructuring': 'off',
 
     // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
