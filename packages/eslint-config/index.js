@@ -1,4 +1,11 @@
-const prettierConfig = require('./prettier.config');
+// The following are ESLint rules that collide with our Prettier config. If we don't disable these
+// then code formatted by Prettier will cause ESLint to throw errors.
+const prettierOverrides = {
+  'arrow-body-style': 'off',
+  'arrow-parens': 'off',
+  'operator-linebreak': 'off',
+  'prefer-arrow-callback': 'off',
+};
 
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
@@ -9,10 +16,11 @@ const config = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:you-dont-need-lodash-underscore/compatible',
-    'plugin:prettier/recommended', // This has to be the last rule added.
   ],
   plugins: ['node', 'unicorn'],
   rules: {
+    ...prettierOverrides,
+
     'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
     'eslint-comments/no-unused-disable': 'error',
 
@@ -45,7 +53,8 @@ const config = {
 
     'no-restricted-imports': ['error', { paths: ['lodash'] }],
 
-    // Disallow shadowing of any variable that isn't "err" as this is a common case that is acceptable.
+    // Disallow shadowing of any variable that isn't "err" as this is a common case that is
+    // acceptable.
     'no-shadow': ['error', { allow: ['err'] }],
 
     'node/no-deprecated-api': 'error',
@@ -78,7 +87,8 @@ const config = {
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',
 
-    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with something else.
+    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with
+    // something else.
     'you-dont-need-lodash-underscore/debounce': 'off',
     'you-dont-need-lodash-underscore/throttle': 'off',
   },
