@@ -19,6 +19,7 @@ const config = {
     'plugin:you-dont-need-lodash-underscore/compatible',
   ],
   plugins: ['node', 'unicorn'],
+  // @ts-ignore `prettierOverrides` is compatible with `rules` this isn't TS for us to type that.
   rules: {
     ...prettierOverrides,
 
