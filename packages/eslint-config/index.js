@@ -3,6 +3,7 @@
 const prettierOverrides = {
   'arrow-body-style': 'off',
   'arrow-parens': 'off',
+  'object-curly-newline': 'off',
   'operator-linebreak': 'off',
   'prefer-arrow-callback': 'off',
 };

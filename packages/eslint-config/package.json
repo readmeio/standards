@@ -45,7 +45,8 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.0",
