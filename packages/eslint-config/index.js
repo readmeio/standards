@@ -54,14 +54,6 @@ const config = {
 
     'prefer-destructuring': 'off',
 
-    'prettier/prettier': [
-      'error',
-      prettierConfig,
-      {
-        usePrettierrc: false,
-      },
-    ],
-
     // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
     // templated strings that aren't templates.
     quotes: ['error', 'single', { avoidEscape: true }],
