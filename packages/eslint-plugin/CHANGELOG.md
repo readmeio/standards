@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/readmeio/standards/compare/eslint-plugin-readme@1.2.5...eslint-plugin-readme@2.0.0) (2024-04-03)
+
+**Note:** Version bump only for package eslint-plugin-readme
+
+
+
+
+
 ## [1.2.5](https://github.com/readmeio/standards/compare/eslint-plugin-readme@1.2.4...eslint-plugin-readme@1.2.5) (2024-04-01)
 
 **Note:** Version bump only for package eslint-plugin-readme

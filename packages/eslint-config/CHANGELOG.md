@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.5.2...@readme/eslint-config@14.0.0) (2024-04-03)
+
+
+### Features
+
+* **eslint-config:** dropping use of `eslint-plugin-prettier` ([#832](https://github.com/readmeio/standards/issues/832)) ([42a3ee9](https://github.com/readmeio/standards/commit/42a3ee9707454daa8f96a3b0b30869d367055e76))
+* **eslint:** enabling `unicorn/no-unnecessary-polyfills` ([4957f12](https://github.com/readmeio/standards/commit/4957f127972516704cf09e0ccb7f54cfeea801a3))
+
+
+
+
+
 ## [13.5.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.5.1...@readme/eslint-config@13.5.2) (2024-04-01)
 
 **Note:** Version bump only for package @readme/eslint-config
