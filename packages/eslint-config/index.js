@@ -69,6 +69,7 @@ const config = {
     // 'unicorn/no-array-method-this-argument': 'error', // Maybe?
     'unicorn/no-instanceof-array': 'error',
     'unicorn/no-nested-ternary': 'off', // See also: `no-nested-ternary`
+    'unicorn/no-unnecessary-polyfills': 'error',
     'unicorn/no-unreadable-array-destructuring': 'error',
     'unicorn/no-unused-properties': 'error',
     'unicorn/no-useless-fallback-in-spread': 'error',
