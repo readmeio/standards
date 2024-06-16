@@ -28,8 +28,8 @@
     "eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.24.1",
+    "@babel/eslint-parser": "^7.24.7",
     "@readme/eslint-config": "file:../eslint-config",
-    "vitest": "^1.4.0"
+    "vitest": "^1.6.0"
   }
 }
