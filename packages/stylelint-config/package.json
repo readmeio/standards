@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@readme/eslint-config": "file:../eslint-config",
-    "vitest": "^1.1.1"
+    "vitest": "^2.0.3"
   },
   "prettier": "@readme/eslint-config/prettier"
 }

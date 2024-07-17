@@ -35,7 +35,7 @@
     "@readme/eslint-config": "file:../eslint-config",
     "@readme/oas-examples": "^5.13.0",
     "tsup": "^8.0.2",
-    "vitest": "^1.1.1"
+    "vitest": "^2.0.3"
   },
   "prettier": "@readme/eslint-config/prettier"
 }
