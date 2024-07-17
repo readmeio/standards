@@ -4,7 +4,7 @@ const common = require('./common.config');
 
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = merge(common, {
-  extends: ['plugin:vitest/all'],
+  extends: ['plugin:vitest/legacy-all'],
   rules: {
     'vitest/prefer-expect-assertions': 'off',
     'vitest/max-expects': 'off',
