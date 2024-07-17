@@ -12,7 +12,6 @@ const config = merge(common, {
     'jest/consistent-test-it': ['warn', { fn: 'test', withinDescribe: 'it' }],
     'jest/no-disabled-tests': 'off',
     'jest/no-duplicate-hooks': 'warn',
-    'jest/no-if': 'error',
     'jest/prefer-expect-resolves': 'warn',
     'jest/prefer-hooks-on-top': 'warn',
     'jest/prefer-strict-equal': 'error',
