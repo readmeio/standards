@@ -8,7 +8,6 @@
     "lint:js": "lerna run lint --stream",
     "prettier": "prettier --check .",
     "prettier:write": "prettier --list-different --write .",
-    "prepare": "husky",
     "version": "npm i && git add package-lock.json",
     "release": "lerna publish",
     "test": "lerna run test --stream"
@@ -25,15 +24,7 @@
     "./packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
-    "husky": "^9.0.11",
     "lerna": "^8.1.2",
     "prettier": "^3.2.5"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   }
 }

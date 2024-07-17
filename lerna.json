@@ -1,17 +1,13 @@
 {
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "command": {
     "publish": {
-      "conventionalCommits": true,
-      "ignoreChanges": ["*.md"],
       "message": "chore(release): publish"
     },
     "version": {
-      "conventionalCommits": true,
-      "ignoreChanges": ["*.md"],
       "message": "chore(release): publish"
     }
   },
   "packages": ["packages/*"],
-  "version": "independent",
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
+  "version": "independent"
 }
