@@ -10,6 +10,18 @@ const config = merge(common, {
     'vitest/max-expects': 'off',
     'vitest/no-conditional-in-test': 'off',
     'vitest/no-conditional-tests': 'off',
+
+    'vitest/no-focused-tests': [
+      'warn',
+      {
+        // This rule defaults to fixing issues by default but if we have VSCode configured to
+        // automatically fix all fixable issues on save any `.only` in a test will be removed every
+        // time -- essentially making `.only` impossible to use unless you explicitly save with
+        // "save without formatting". Very annoying!
+        fixable: false,
+      },
+    ],
+
     'vitest/no-hooks': 'off',
     'vitest/no-test-return-statement': 'off',
     'vitest/prefer-lowercase-title': 'off',
