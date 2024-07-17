@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/readmeio/standards/compare/eslint-plugin-readme@2.0.0...eslint-plugin-readme@2.0.1) (2024-07-17)
+
+
+### Reverts
+
+* Revert "chore(deps): bumping out of date deps" ([3e119e7](https://github.com/readmeio/standards/commit/3e119e7fe3b3ef305fd2372f5ac742be051e2072))
+
+
+
+
+
 # [2.0.0](https://github.com/readmeio/standards/compare/eslint-plugin-readme@1.2.5...eslint-plugin-readme@2.0.0) (2024-04-03)
 
 **Note:** Version bump only for package eslint-plugin-readme

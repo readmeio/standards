@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/readmeio/standards/compare/@readme/stylelint-config@7.0.0...@readme/stylelint-config@7.0.1) (2024-07-17)
+
+
+### Reverts
+
+* Revert "chore(deps): bumping out of date deps" ([3e119e7](https://github.com/readmeio/standards/commit/3e119e7fe3b3ef305fd2372f5ac742be051e2072))
+
+
+
+
+
 # [7.0.0](https://github.com/readmeio/standards/compare/@readme/stylelint-config@6.1.2...@readme/stylelint-config@7.0.0) (2024-04-03)
 
 **Note:** Version bump only for package @readme/stylelint-config

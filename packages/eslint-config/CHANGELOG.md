@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@14.0.0...@readme/eslint-config@14.0.1) (2024-07-17)
+
+
+### Reverts
+
+* Revert "chore(deps): bumping out of date deps" ([3e119e7](https://github.com/readmeio/standards/commit/3e119e7fe3b3ef305fd2372f5ac742be051e2072))
+
+
+
+
+
 # [14.0.0](https://github.com/readmeio/standards/compare/@readme/eslint-config@13.5.2...@readme/eslint-config@14.0.0) (2024-04-03)
 
 
