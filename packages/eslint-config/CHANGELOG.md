@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.2](https://github.com/readmeio/standards/compare/@readme/eslint-config@14.0.1...@readme/eslint-config@14.0.2) (2024-07-17)
+
+
+### Bug Fixes
+
+* disabling autofixing in `vitest/no-focused-tests` ([7d30504](https://github.com/readmeio/standards/commit/7d3050478a0f3a98d92405dde918d9e4a387b0ec))
+
+
+
+
+
 ## [14.0.1](https://github.com/readmeio/standards/compare/@readme/eslint-config@14.0.0...@readme/eslint-config@14.0.1) (2024-07-17)
 
 
