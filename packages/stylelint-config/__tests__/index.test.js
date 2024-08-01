@@ -100,12 +100,15 @@ $prettier: "should be single quotes";
 
     it('flags double quotes as an error', async () => {
       data = await stylelint.lint({
-        code: '$prettier: "should be single quotes"',
+        code: `
+$prettier: "should be single quotes";
+`,
         config,
       });
       ({ warnings } = data.results[0]);
-      expect(warnings).toHaveLength(1);
-      expect(warnings[0].rule).toBe('prettier/prettier');
+      expect(warnings).toHaveLength(2);
+      expect(warnings[0].rule).toBe('@stylistic/string-quotes');
+      expect(warnings[1].rule).toBe('prettier/prettier');
     });
   });
 });
