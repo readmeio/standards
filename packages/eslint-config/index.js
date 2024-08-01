@@ -6,6 +6,7 @@ const config = {
     'plugin:eslint-comments/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:try-catch-failsafe/default',
     'plugin:you-dont-need-lodash-underscore/compatible',
     'prettier',
   ],
