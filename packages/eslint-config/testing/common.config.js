@@ -2,6 +2,9 @@
 const config = {
   plugins: ['import', 'node'],
   rules: {
+    // A failing `JSON.parse()` will fail the unit test it's in so it's safe to ignore.
+    'try-catch-failsafe/json-parse': 'off',
+
     'func-names': 'off',
 
     'import/no-extraneous-dependencies': 'off',
