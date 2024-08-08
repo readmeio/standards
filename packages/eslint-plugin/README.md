@@ -1,6 +1,6 @@
 # eslint-plugin-readme
 
-Custom ESLint plugin for some ReadMe engineering guidelines and gotchas.
+A custom ESLint plugin for ReadMe engineering guidelines and gotchas.
 
 [![](https://raw.githubusercontent.com/readmeio/.github/main/oss-header.png)](https://readme.io)
 
@@ -22,6 +22,7 @@ plugins: ['readme'],
 | Config | Description |
 | :--- | :--- |
 | `esm` | Rules specific to ESM libraries. |
+| `typescript` | Rules specific to TypeScript libraries. |
 
 <!-- prettier-ignore-end -->
 
@@ -31,6 +32,7 @@ plugins: ['readme'],
 
 | Rule | Description | Config |
 | :--- | :--- | :--- |
+| [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-decorators-on-private-properties.md) | Prevent the use of decorators on private properties as they cannot be introspected. | `typescript` |
 | [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | `esm` |
 
 <!-- prettier-ignore-end -->

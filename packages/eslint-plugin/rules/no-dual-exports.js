@@ -6,7 +6,7 @@ module.exports = {
     category: 'ESM',
     docs: {
       description: 'Prevent cases of having a file with dual `default` and named exports.',
-      url: getDocURL('no-dual-exports'),
+      url: getDocURL(__filename),
     },
   },
   create: context => {
