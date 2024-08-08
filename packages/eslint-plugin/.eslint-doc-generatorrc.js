@@ -3,7 +3,7 @@ const config = {
   configEmoji: [
     ['esm', '📁'],
     ['typescript', '🧠'],
-    ['react', '🏡'],
+    ['react', '⚛️'],
   ],
   urlRuleDoc(name, page) {
     if (page === 'README.md') {
