@@ -1,6 +1,11 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended', 'plugin:readme/typescript'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:typescript-sort-keys/recommended',
+    'plugin:readme/typescript',
+  ],
   plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   settings: {

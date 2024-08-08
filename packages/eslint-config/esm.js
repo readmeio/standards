@@ -8,7 +8,6 @@ const config = {
     'import/no-commonjs': 'error',
 
     'node/no-extraneous-import': 'error',
-
     'unicorn/prefer-module': 'error',
     'unicorn/prefer-node-protocol': 'error',
   },
