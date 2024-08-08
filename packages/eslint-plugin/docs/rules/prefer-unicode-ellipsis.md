@@ -1,6 +1,6 @@
 # Prefer using a unicode ellipsis (`…`) instead of three periods (`...`) (`readme/prefer-unicode-ellipsis`)
 
-⚠️ This rule _warns_ in the 🏡 `react` config.
+⚠️ This rule _warns_ in the ⚛️ `react` config.
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
