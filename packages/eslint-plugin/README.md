@@ -15,30 +15,22 @@ extends: ['plugin:readme/<config>'],
 plugins: ['readme'],
 ```
 
-## 🔖 Available Configs
-
-<!-- prettier-ignore-start -->
-
-| Config | Description |
-| :--- | :--- |
-| `esm` | Rules specific to ESM libraries. |
-| `typescript` | Rules specific to TypeScript libraries. |
-| `react` | Rules specific to React. |
-
-<!-- prettier-ignore-end -->
-
 ## 📖 Rules
 
-<!-- prettier-ignore-start -->
+<!-- begin auto-generated rules list -->
 
-🔧 Automatically fixable by the [--fix CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).\
-💡 Manually fixable by [editor suggestions](https://eslint.org/docs/latest/use/core-concepts#rule-suggestions).
+💼 Configurations enabled in.\
+⚠️ Configurations set to warn in.\
+📁 Set in the `esm` configuration.\
+🏡 Set in the `react` configuration.\
+🧠 Set in the `typescript` configuration.\
+🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
 
-| Rule | Description | Category | 🔧 | 💡 |
-| :--- | :--- | :--- | :--- | :--- |
-| [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-decorators-on-private-properties.md) | Prevent the use of [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) on [private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) as they cannot be introspected. | TypeScript | |
-| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | ESM | |
-| [prefer-typescript](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-typescript.md) | Prefer using TypeScript within a codebase. | TypeScript | |
-| [prefer-unicode-ellipsis](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-unicode-ellipsis.md) | Prefer using a unicode ellipsis (`…`) instead of three periods (`...`). | React | 🔧 | 💡 |
+| Name                                                                                                                                                            | Description                                                                         | 💼  | ⚠️  | 🔧  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :-- | :-- | :-- |
+| [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/rules/no-decorators-on-private-properties.md) | Prevent the use of decorators on private properties as they cannot be introspected. | 🧠  |     |     |
+| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/rules/no-dual-exports.md)                                         | Prevent cases of having a file with dual `default` and named exports.               | 📁  |     |     |
+| [prefer-typescript](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/rules/prefer-typescript.md)                                     | Prefer using TypeScript within a codebase.                                          |     |     |     |
+| [prefer-unicode-ellipsis](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/rules/prefer-unicode-ellipsis.md)                         | Prefer using a unicode ellipsis (`…`) instead of three periods (`...`).             |     | 🏡  | 🔧  |
 
-<!-- prettier-ignore-end -->
+<!-- end auto-generated rules list -->

@@ -1,4 +1,8 @@
-# Prevent the use of decorators on private properties
+# Prevent the use of decorators on private properties as they cannot be introspected (`readme/no-decorators-on-private-properties`)
+
+💼 This rule is enabled in the 🧠 `typescript` config.
+
+<!-- end auto-generated rule header -->
 
 This rule aims to prevent you from introducing edge cases when using [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) on [private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) as they're fully private and can't be introspected upon -- which is a general use-case for decorators.
 
