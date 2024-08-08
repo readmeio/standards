@@ -1,7 +1,7 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'readme'],
   extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended'],
   settings: {
     'import/resolver': 'typescript',
@@ -57,6 +57,8 @@ const config = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/2483
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+
+    'readme/no-decorators-on-private-properties': 'error',
   },
 };
 

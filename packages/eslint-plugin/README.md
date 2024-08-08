@@ -1,6 +1,6 @@
 # eslint-plugin-readme
 
-A custom ESLint plugin for ReadMe engineering guidelines and gotchas.
+An ESLint plugin providing custom rules for ReadMe's coding standards.
 
 [![](https://raw.githubusercontent.com/readmeio/.github/main/oss-header.png)](https://readme.io)
 
@@ -11,28 +11,20 @@ A custom ESLint plugin for ReadMe engineering guidelines and gotchas.
 In `.eslintrc` file add the following line:
 
 ```js
-extends: ['plugin:readme/<config>'],
 plugins: ['readme'],
+rules: {
+  'readme/<rule>': 'error',
+}
 ```
-
-## 🔖 Available Configs
-
-<!-- prettier-ignore-start -->
-
-| Config | Description |
-| :--- | :--- |
-| `esm` | Rules specific to ESM libraries. |
-| `typescript` | Rules specific to TypeScript libraries. |
-
-<!-- prettier-ignore-end -->
 
 ## 📖 Rules
 
 <!-- prettier-ignore-start -->
 
-| Rule | Description | Config |
-| :--- | :--- | :--- |
-| [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-decorators-on-private-properties.md) | Prevent the use of decorators on private properties as they cannot be introspected. | `typescript` |
-| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | `esm` |
+| Rule | Description | Category | Fixable? |
+| :--- | :--- | :--- | :--- |
+| [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-decorators-on-private-properties.md) | Prevent the use of [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) on [private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) as they cannot be introspected. | TypeScript | |
+| [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | ESM | |
+| [prefer-unicode-ellipsis](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-unicode-ellipsis.md) | Prefer using a unicode ellipsis (`…`) instead of three periods (`...`). | Frontend | ✅ |
 
 <!-- prettier-ignore-end -->
