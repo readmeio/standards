@@ -11,11 +11,21 @@ An ESLint plugin providing custom rules for ReadMe's coding standards.
 In `.eslintrc` file add the following line:
 
 ```js
+extends: ['plugin:readme/<config>'],
 plugins: ['readme'],
-rules: {
-  'readme/<rule>': 'error',
-}
 ```
+
+## 🔖 Available Configs
+
+<!-- prettier-ignore-start -->
+
+| Config | Description |
+| :--- | :--- |
+| `esm` | Rules specific to ESM libraries. |
+| `typescript` | Rules specific to TypeScript libraries. |
+| `react` | Rules specific to React. |
+
+<!-- prettier-ignore-end -->
 
 ## 📖 Rules
 
@@ -29,6 +39,6 @@ rules: {
 | [no-decorators-on-private-properties](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-decorators-on-private-properties.md) | Prevent the use of [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) on [private properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) as they cannot be introspected. | TypeScript | |
 | [no-dual-exports](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/no-dual-exports.md) | Prevent cases of having a file with dual `default` and named exports. | ESM | |
 | [prefer-typescript](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-typescript.md) | Prefer using TypeScript within a codebase. | TypeScript | |
-| [prefer-unicode-ellipsis](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-unicode-ellipsis.md) | Prefer using a unicode ellipsis (`…`) instead of three periods (`...`). | Frontend | 🔧 | 💡 |
+| [prefer-unicode-ellipsis](https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/prefer-unicode-ellipsis.md) | Prefer using a unicode ellipsis (`…`) instead of three periods (`...`). | React | 🔧 | 💡 |
 
 <!-- prettier-ignore-end -->

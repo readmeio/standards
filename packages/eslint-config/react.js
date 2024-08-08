@@ -1,6 +1,6 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
-  extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+  extends: ['plugin:jsx-a11y/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:readme/react'],
   plugins: ['readme'],
   env: {
     browser: true,
@@ -39,8 +39,6 @@ const config = {
         sortShapeProp: true,
       },
     ],
-
-    'readme/prefer-unicode-ellipsis': 'warn',
   },
 };
 

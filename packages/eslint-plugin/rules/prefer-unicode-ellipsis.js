@@ -1,9 +1,9 @@
 const { getDocURL } = require('../lib/utils');
 
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
   meta: {
-    type: 'problem',
-    category: 'Frontend',
+    type: 'suggestion',
     docs: {
       description: 'Prefer using a unicode ellipsis (`…`) instead of three periods (`...`).',
       url: getDocURL(__filename),

@@ -1,9 +1,9 @@
 const { getDocURL } = require('../lib/utils');
 
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
   meta: {
     type: 'problem',
-    category: 'TypeScript',
     docs: {
       description: 'Prevent the use of decorators on private properties as they cannot be introspected.',
       url: getDocURL(__filename),

@@ -1,9 +1,9 @@
 const { getDocURL } = require('../lib/utils');
 
+/** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
   meta: {
     type: 'problem',
-    category: 'ESM',
     docs: {
       description: 'Prevent cases of having a file with dual `default` and named exports.',
       url: getDocURL(__filename),
