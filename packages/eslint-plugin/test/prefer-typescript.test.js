@@ -14,12 +14,12 @@ const errorMessage = 'TypeScript is preferred within this codebase.';
 
 ruleTester.run('prefer-typescript', rules['prefer-typescript'], {
   valid: [
-    { filename: 'buster.ts', code: '/** this is a TS file */' },
-    { filename: 'buster.tsx', code: '/** this is a TSX file */' },
-    { filename: 'buster.cts', code: '/** this is a CTS file */' },
-    { filename: 'buster.ctsx', code: '/** this is a CTSX file */' },
-    { filename: 'buster.mts', code: '/** this is a MTS file */' },
-    { filename: 'buster.mtsx', code: '/** this is a MTSX file */' },
+    { filename: 'file.ts', code: '/** this is a TS file */' },
+    { filename: 'file.tsx', code: '/** this is a TSX file */' },
+    { filename: 'file.cts', code: '/** this is a CTS file */' },
+    { filename: 'file.ctsx', code: '/** this is a CTSX file */' },
+    { filename: 'file.mts', code: '/** this is a MTS file */' },
+    { filename: 'file.mtsx', code: '/** this is a MTSX file */' },
   ],
   invalid: [
     {
