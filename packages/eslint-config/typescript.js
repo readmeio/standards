@@ -1,8 +1,13 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
-  parser: '@typescript-eslint/parser',
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:typescript-sort-keys/recommended',
+    'plugin:readme/typescript',
+  ],
   plugins: ['@typescript-eslint'],
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:typescript-sort-keys/recommended'],
+  parser: '@typescript-eslint/parser',
   settings: {
     'import/resolver': 'typescript',
   },

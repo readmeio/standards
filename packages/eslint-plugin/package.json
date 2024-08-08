@@ -22,7 +22,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "update:docs": "eslint-doc-generator && npx prettier --write docs/rules/*.md *.md"
   },
   "peerDependencies": {
     "eslint": "^8.0.0"
@@ -30,6 +31,8 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.8",
     "@readme/eslint-config": "file:../eslint-config",
+    "@typescript-eslint/parser": "^8.0.1",
+    "eslint-doc-generator": "^1.7.1",
     "vitest": "^2.0.3"
   }
 }
