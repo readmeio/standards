@@ -29,6 +29,7 @@ module.exports = {
   rules: {
     'no-decorators-on-private-properties': require('./rules/no-decorators-on-private-properties'),
     'no-dual-exports': require('./rules/no-dual-exports'),
+    'prefer-javascript': require('./rules/prefer-javascript'),
     'prefer-typescript': require('./rules/prefer-typescript'),
     'prefer-unicode-ellipsis': require('./rules/prefer-unicode-ellipsis'),
   },
