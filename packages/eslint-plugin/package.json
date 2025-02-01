@@ -33,6 +33,6 @@
     "@readme/eslint-config": "file:../eslint-config",
     "@typescript-eslint/parser": "^8.0.1",
     "eslint-doc-generator": "^2.0.2",
-    "vitest": "^2.0.3"
+    "vitest": "^3.0.4"
   }
 }
