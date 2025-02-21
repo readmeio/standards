@@ -8,10 +8,11 @@ const ruleId = 'alex-component-description';
 const expectedSeverity = severityCodes.error;
 const expectedErrorMsg = 'Don’t use `fucking`, it’s profane';
 
-describe('rule: `alex-component-description`', () => {
+describe('rule: `alex-component-description`', { timeout: 10000 }, () => {
   describe('pass', () => {
     it('should have no errors on a passing spec', async () => {
       const results = await testRule(ruleId, rule, readme);
+
       expect(results).toHaveLength(0);
     });
   });
@@ -29,6 +30,7 @@ describe('rule: `alex-component-description`', () => {
       };
 
       const results = await testRule(ruleId, rule, spec);
+
       expect(results).toHaveLength(1);
       expect(results[0].code).toBe(ruleId);
       expect(results[0].message).toBe(expectedErrorMsg);
