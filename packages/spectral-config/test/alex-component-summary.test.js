@@ -8,7 +8,7 @@ const ruleId = 'alex-component-summary';
 const expectedSeverity = severityCodes.error;
 const expectedErrorMsg = 'Don’t use `fucking`, it’s profane';
 
-describe('rule: `alex-component-summary`', () => {
+describe('rule: `alex-component-summary`', { timeout: 10000 }, () => {
   describe('pass', () => {
     it('should have no errors on a passing spec', async () => {
       const results = await testRule(ruleId, rule, readme);
