@@ -12,6 +12,7 @@ describe('rule: `alex-component-description`', () => {
   describe('pass', () => {
     it('should have no errors on a passing spec', async () => {
       const results = await testRule(ruleId, rule, readme);
+
       expect(results).toHaveLength(0);
     });
   });
@@ -29,6 +30,7 @@ describe('rule: `alex-component-description`', () => {
       };
 
       const results = await testRule(ruleId, rule, spec);
+
       expect(results).toHaveLength(1);
       expect(results[0].code).toBe(ruleId);
       expect(results[0].message).toBe(expectedErrorMsg);

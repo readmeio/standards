@@ -23,7 +23,7 @@ describe('stylelint-config', () => {
     });
 
     it('has no errors', () => {
-      expect(data.errored).toBeFalsy();
+      expect(data.errored).toBe(false);
     });
 
     it('flags no warnings', () => {
@@ -46,7 +46,7 @@ describe('stylelint-config', () => {
     });
 
     it('has errors', () => {
-      expect(data.errored).toBeTruthy();
+      expect(data.errored).toBe(true);
     });
 
     it('flags warnings', () => {
@@ -73,11 +73,11 @@ describe('stylelint-config', () => {
     });
 
     it('expects no more than 1 id selector', () => {
-      expect(warnings.some(w => w.rule === 'selector-max-id')).toBeTruthy();
+      expect(warnings.some(w => w.rule === 'selector-max-id')).toBe(true);
     });
 
     it('expects id pattern to be either kebab-case or TitleCase', () => {
-      expect(warnings.some(w => w.rule === 'selector-id-pattern')).toBeTruthy();
+      expect(warnings.some(w => w.rule === 'selector-id-pattern')).toBe(true);
     });
 
     it('auto-fixes "selector-not-notation" to "simple" pattern', () => {
@@ -95,6 +95,7 @@ $prettier: "should be single quotes";
         fix: true,
       });
       ({ warnings } = data.results[0]);
+
       expect(data.code).toMatchSnapshot();
     });
 
@@ -106,6 +107,7 @@ $prettier: "should be single quotes";
         config,
       });
       ({ warnings } = data.results[0]);
+
       expect(warnings).toHaveLength(2);
       expect(warnings[0].rule).toBe('@stylistic/string-quotes');
       expect(warnings[1].rule).toBe('prettier/prettier');
