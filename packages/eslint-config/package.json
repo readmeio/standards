@@ -21,8 +21,8 @@
     "test": "tsc"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
     "@typescript-eslint/utils": "^8.24.1",
     "@vitest/eslint-plugin": "^1.1.32-beta.3",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -53,6 +53,6 @@
   "devDependencies": {
     "@types/lodash": "^4.17.7",
     "eslint-define-config": "^2.0.0",
-    "typescript": "^5.5.3"
+    "typescript": "^5.7.3"
   }
 }
