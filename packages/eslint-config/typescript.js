@@ -1,12 +1,7 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:typescript-sort-keys/recommended',
-    'plugin:readme/typescript',
-  ],
-  plugins: ['@typescript-eslint'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:readme/typescript'],
+  plugins: ['@typescript-eslint', 'perfectionist'],
   parser: '@typescript-eslint/parser',
   settings: {
     'import/resolver': 'typescript',
@@ -62,6 +57,9 @@ const config = {
     // https://github.com/typescript-eslint/typescript-eslint/issues/2483
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
+
+    'perfectionist/sort-enums': ['error', { type: 'alphabetical', order: 'asc' }],
+    'perfectionist/sort-interfaces': ['error', { type: 'alphabetical', order: 'asc' }],
   },
 };
 
