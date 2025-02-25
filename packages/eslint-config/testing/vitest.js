@@ -7,7 +7,6 @@ const config = merge(common, {
   extends: ['plugin:@vitest/legacy-all'],
   plugins: ['@vitest'],
   rules: {
-    '@vitest/prefer-expect-assertions': 'off',
     '@vitest/max-expects': 'off',
     '@vitest/no-conditional-in-test': 'off',
     '@vitest/no-conditional-tests': 'off',
@@ -25,6 +24,11 @@ const config = merge(common, {
 
     '@vitest/no-hooks': 'off',
     '@vitest/no-test-return-statement': 'off',
+
+    '@vitest/padding-around-all': 'off',
+    '@vitest/padding-around-expect-groups': 'off',
+
+    '@vitest/prefer-expect-assertions': 'off',
     '@vitest/prefer-lowercase-title': 'off',
     '@vitest/prefer-to-be-falsy': 'off',
     '@vitest/prefer-to-be-truthy': 'off',
