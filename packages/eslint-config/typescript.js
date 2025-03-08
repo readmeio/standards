@@ -46,7 +46,13 @@ const config = {
 
     // The stock `no-unused-vars` ESlint rule doesn't play with TS.
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        // Not flagging on `catch(err)` is fine because it's common to not use the caught error.
+        caughtErrors: 'none',
+      },
+    ],
 
     // The stock `no-use-before-define` ESLint rule throws errors when TS interfaces, types, and
     // enums are used before they're defined -- eventhough in TS that's OK.
