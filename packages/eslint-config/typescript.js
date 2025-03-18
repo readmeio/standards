@@ -9,6 +9,7 @@ const config = {
   rules: {
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/consistent-indexed-object-style': 'error',
+    '@typescript-eslint/consistent-type-assertions': ['warn'],
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/consistent-type-imports': 'error',
 
