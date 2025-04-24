@@ -11,12 +11,14 @@ module.exports = {
       plugins: ['readme'],
       rules: {
         'readme/no-dual-exports': 'error',
+        'readme/no-wildcard-imports': 'error',
       },
     },
     react: {
       plugins: ['readme'],
       rules: {
         'readme/prefer-unicode-ellipsis': 'warn',
+        'readme/no-wildcard-imports': 'error',
       },
     },
     typescript: {
@@ -32,5 +34,6 @@ module.exports = {
     'prefer-javascript': require('./rules/prefer-javascript'),
     'prefer-typescript': require('./rules/prefer-typescript'),
     'prefer-unicode-ellipsis': require('./rules/prefer-unicode-ellipsis'),
+    'no-wildcard-imports': require('./rules/no-wildcard-imports'),
   },
 };
