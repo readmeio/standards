@@ -24,16 +24,16 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
-    "@stoplight/spectral-rulesets": "^1.15.0",
+    "@stoplight/spectral-rulesets": "^1.22.0",
     "alex": "^11.0.1"
   },
   "peerDependencies": {
     "@stoplight/spectral-cli": "^6.6.0"
   },
   "devDependencies": {
-    "@ibm-cloud/openapi-ruleset": "^1.15.6",
+    "@ibm-cloud/openapi-ruleset": "^1.31.0",
     "@readme/eslint-config": "file:../eslint-config",
-    "@readme/oas-examples": "^5.13.0",
+    "@readme/oas-examples": "^6.0.0",
     "tsup": "^8.1.2",
     "vitest": "^3.0.5"
   },

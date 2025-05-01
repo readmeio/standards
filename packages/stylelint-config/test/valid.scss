@@ -25,7 +25,7 @@ $media-query-width: 300px;
 .selector-1,
 .selector-2,
 .selector-3[type='text'] {
-  background: linear-gradient(#fff, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(#fff, rgb(0, 0, 0, 0.8));
   box-sizing: border-box;
   color: var(--brand-red);
   display: block;
@@ -58,7 +58,7 @@ $media-query-width: 300px;
 @media (width >= 60em) {
   .selector {
     /* Flush to parent comment */
-    transform: translate(1, 1) scale(3);
+    transform: translate(1em, 1em) scale(3);
   }
 }
 

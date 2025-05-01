@@ -1,4 +1,4 @@
-import { makeCopy, severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/test-utils/index.js';
+import { severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/test-utils/index.js';
 import readme from '@readme/oas-examples/3.0/json/readme.json';
 import { describe, it, expect } from 'vitest';
 
@@ -19,7 +19,7 @@ describe('rule: `alex-operation-summary`', { timeout: 10000 }, () => {
 
   describe('fail', () => {
     it('should throw errors', async () => {
-      const spec = makeCopy(readme);
+      const spec = structuredClone(readme);
 
       spec.paths['/version/{versionId}'].get.summary = 'Return the fucking version.';
 
