@@ -17,6 +17,9 @@ module.exports = {
             type: 'array',
             uniqueItems: true,
           },
+          message: {
+            type: 'string',
+          },
         },
       },
     ],
@@ -24,12 +27,10 @@ module.exports = {
   create: context => {
     const options = {
       allow: [],
+      message:
+        'Loading everything out of a library should be avoided because it makes treeshaking difficult and leads to larger bundle sizes.',
       ...context.options[0],
     };
-
-    if (!options.allow) {
-      options.allow = [];
-    }
 
     return {
       /**
@@ -42,8 +43,7 @@ module.exports = {
         if (!isAllowed) {
           context.report({
             node,
-            message:
-              'Loading everything out of a library should be avoided because it makes treeshaking difficult and leads to larger bundle sizes.',
+            message: options.message,
           });
         }
       },

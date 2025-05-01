@@ -36,3 +36,20 @@ You can exempt specific libraries like this:
   }
 ]
 ```
+
+### `message`
+
+Type: `string`
+
+You can customize the default error message like this:
+
+You can exempt specific libraries like this:
+
+```js
+'readme/no-wildcard-imports': [
+  'error',
+  {
+    message: 'You should avoid wildcard imports because it can impact overall performance and memory usage.',
+  },
+],
+```
