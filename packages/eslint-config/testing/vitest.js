@@ -28,6 +28,7 @@ const config = merge(common, {
     '@vitest/padding-around-all': 'off',
     '@vitest/padding-around-expect-groups': 'off',
 
+    '@vitest/prefer-describe-function-title': 'off',
     '@vitest/prefer-expect-assertions': 'off',
     '@vitest/prefer-lowercase-title': 'off',
     '@vitest/prefer-to-be-falsy': 'off',
