@@ -42,7 +42,7 @@ module.exports = {
         const isAllowed = options.allow.some(moduleName => node.parent.source.value === moduleName);
         if (!isAllowed) {
           context.report({
-            node,
+            node: node.parent,
             message: options.message,
           });
         }
