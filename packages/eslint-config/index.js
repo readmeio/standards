@@ -3,7 +3,7 @@ const config = {
   extends: [
     'airbnb-base',
     'eslint:recommended',
-    'plugin:eslint-comments/recommended',
+    'plugin:@eslint-community/eslint-comments/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:try-catch-failsafe/default',
@@ -12,10 +12,10 @@ const config = {
   ],
   plugins: ['n', 'unicorn'],
   rules: {
-    'arrow-body-style': 'off', // This rule clashes with our Prettier config.
+    '@eslint-community/eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+    '@eslint-community/eslint-comments/no-unused-disable': 'error',
 
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
-    'eslint-comments/no-unused-disable': 'error',
+    'arrow-body-style': 'off', // This rule clashes with our Prettier config.
 
     // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
     'func-names': 'off',
