@@ -1,6 +1,6 @@
 /** @type {import("eslint-define-config").ESLintConfig} */
 const config = {
-  plugins: ['import', 'node'],
+  plugins: ['import', 'n'],
   rules: {
     // A failing `JSON.parse()` will fail the unit test it's in so it's safe to ignore.
     'try-catch-failsafe/json-parse': 'off',
@@ -9,7 +9,7 @@ const config = {
 
     'import/no-extraneous-dependencies': 'off',
 
-    'node/no-extraneous-require': 'off',
+    'n/no-extraneous-require': 'off',
 
     // Sniff out tests that have useless `async` declarations. Since there's valid usecases for
     // having a function be async and not return or await a Promise, we're only running this rule
