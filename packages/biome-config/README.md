@@ -11,7 +11,7 @@ Core coding standards for ReadMe projects using [Biome](https://biomejs.dev/).
 You'll need to install [Biome](https://biomejs.dev/) into your project. Use this shortcut to install them alongside the config:
 
 ```sh
-npx install --dev @biomejs/biome
+npm install --save-dev @biomejs/biome
 ```
 
 If you already have Biome installed in your project you run this command to install the config:
