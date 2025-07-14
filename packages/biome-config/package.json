@@ -1,0 +1,26 @@
+{
+  "name": "@readme/biome-config",
+  "version": "1.0.0",
+  "description": "ReadMe coding standards",
+  "main": "biome.jsonc",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:readmeio/standards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "homepage": "https://github.com/readmeio/standards#readme",
+  "scripts": {
+    "lint": "biome check",
+    "lint:fix": "biome check --write ."
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "^2.1.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1"
+  }
+}

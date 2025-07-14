@@ -1,0 +1,68 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+  "formatter": {
+    "enabled": false,
+    "indentStyle": "space",
+    "lineWidth": 120,
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "project": "all",
+      "test": "all",
+    },
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedFunctionParameters": "off",
+        "noUnusedVariables": {
+          // Disabling this for now because we have a lot of unused variables in `catch` statements
+          // and Biome doesn't yet have an option for ignoring these.
+          "level": "off",
+          "options": {
+            "ignoreRestSiblings": true,
+          },
+        },
+      },
+      "nursery": {
+        // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
+        // be the case. https://biomejs.dev/linter/domains/#project-rules
+        "noFloatingPromises": "error",
+      },
+      "style": {
+        "noParameterAssign": "error",
+      },
+    },
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "quoteStyle": "single",
+    },
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            // Import order: `type` -> Node builtins -> URL -> Package -> Local paths
+            "groups": [
+              { "type": true, "source": null },
+              ":BLANK_LINE:", // We add blank lines between the groups to improve readability.
+              { "type": null, "source": [":BUN:", ":NODE:"] },
+              ":BLANK_LINE:",
+              {
+                "type": null,
+                "source": [":URL", ":PACKAGE:", ":PACKAGE_WITH_PROTOCOL:"],
+              },
+              ":BLANK_LINE:",
+              ":PATH:",
+            ],
+          },
+        },
+      },
+    },
+  },
+}
