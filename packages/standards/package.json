@@ -4,6 +4,7 @@
   "description": "ReadMe coding standards",
   "main": "biome.jsonc",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "type": "module",
   "exports": {
     "./biome": "./biome.jsonc",
     "./prettier": "./prettier.js"
