@@ -1,9 +1,13 @@
 {
-  "name": "@readme/biome-config",
+  "name": "@readme/standards",
   "version": "1.0.0",
   "description": "ReadMe coding standards",
   "main": "biome.jsonc",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "exports": {
+    "./biome": "./biome.jsonc",
+    "./prettier": "./prettier.js"
+  },
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -17,8 +21,9 @@
     "lint": "biome check",
     "lint:fix": "biome check --write ."
   },
-  "peerDependencies": {
-    "@biomejs/biome": "^2.1.1"
+  "optionalDependencies": {
+    "@biomejs/biome": "^2.1.1",
+    "prettier": "^3.6.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.1"
