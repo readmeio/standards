@@ -2,7 +2,6 @@
   "name": "@readme/standards",
   "version": "1.0.0",
   "description": "ReadMe coding standards",
-  "main": "biome.jsonc",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "type": "module",
   "exports": {
