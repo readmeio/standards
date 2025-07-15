@@ -11,8 +11,8 @@ Core coding standards for ReadMe projects.
 <!-- prettier-ignore -->
 | Config | Description |
 | :-- | :--- |
-| `@readme/eslint-config/biome` | For projects that use [Biome](https://biomejs.dev/). |
-| `@readme/eslint-config/prettier` | For projects that use [Prettier](https://prettier.io/). |
+| `@readme/standards/biome` | For projects that use [Biome](https://biomejs.dev/). |
+| `@readme/standards/prettier` | For projects that use [Prettier](https://prettier.io/). |
 
 ### Biome
 
