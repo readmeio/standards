@@ -42,7 +42,7 @@ By default this config does **not** enable auto-formatting. If you need that ena
 }
 ```
 
-> ![NOTE]
+> [!NOTE]
 > If you do use auto-formatting with Biome we recommend **not** also using `@readme/standards/prettier` as they two may collide.
 
 ### Prettier
