@@ -61,5 +61,5 @@ Add the following into your `package.json`:
 "prettier": "@readme/standards/prettier"
 ```
 
-> ![NOTE]
+> [!NOTE]
 > If you use Biome and Prettier we recommend disabling Biome's auto-formatting by setting `formatter.enabled` to `false` as the two may collide.
