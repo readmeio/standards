@@ -25,12 +25,21 @@
         },
       },
       "nursery": {
+        "noAwaitInLoop": "error",
+        "useIterableCallbackReturn": "error",
+
         // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
         // be the case. https://biomejs.dev/linter/domains/#project-rules
         "noFloatingPromises": "error",
+
+        "noShadow": "error",
+      },
+      "performance": {
+        "noBarrelFile": "error",
       },
       "style": {
         "noParameterAssign": "error",
+        "useDefaultSwitchClause": "error",
       },
     },
   },
