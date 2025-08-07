@@ -15,14 +15,6 @@
       "recommended": true,
       "correctness": {
         "noUnusedFunctionParameters": "off",
-        "noUnusedVariables": {
-          // Disabling this for now because we have a lot of unused variables in `catch` statements
-          // and Biome doesn't yet have an option for ignoring these.
-          "level": "off",
-          "options": {
-            "ignoreRestSiblings": true,
-          },
-        },
       },
       "nursery": {
         "noAwaitInLoop": "error",
@@ -41,6 +33,9 @@
       "style": {
         "noParameterAssign": "error",
         "useDefaultSwitchClause": "error",
+      },
+      "suspicious": {
+        "noConsole": "warn",
       },
     },
   },
