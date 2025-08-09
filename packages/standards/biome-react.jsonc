@@ -6,6 +6,12 @@
     },
     "rules": {
       "performance": {
+        // Namespace imports (`import * as foo from 'foo'`) can severely impact performance and
+        // tree-shaking capabilities in various bundlers. We had a prior rule within our
+        // `@readme/eslint-plugin` package, `readme/no-wildcard-imports`, that enforced this. This
+        // is the Biome equivalent.
+        //
+        // https://biomejs.dev/linter/rules/no-namespace-import/
         "noNamespaceImport": "error",
       },
       "nursery": {
