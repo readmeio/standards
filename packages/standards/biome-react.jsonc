@@ -5,10 +5,6 @@
       "react": "all",
     },
     "rules": {
-      "correctness": {
-        "useExhaustiveDependencies": "warn",
-        "useHookAtTopLevel": "error",
-      },
       "performance": {
         "noNamespaceImport": "error",
       },
