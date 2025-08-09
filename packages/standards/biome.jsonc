@@ -33,6 +33,7 @@
         // be the case. https://biomejs.dev/linter/domains/#project-rules
         "noFloatingPromises": "error",
 
+        "noSecrets": "error",
         "noShadow": "error",
       },
       "performance": {
@@ -40,10 +41,14 @@
       },
       "style": {
         "noParameterAssign": "error",
+        "useConsistentArrayType": "error",
+        "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+        "useThrowNewError": "error",
       },
       "suspicious": {
         "noConsole": "warn",
+        "useErrorMessage": "warn",
       },
     },
   },
