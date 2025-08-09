@@ -19,6 +19,14 @@
       "nursery": {
         "noAwaitInLoop": "error",
         "noTsIgnore": "error",
+
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "interface",
+          },
+        },
+
         "useIterableCallbackReturn": "error",
 
         // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
