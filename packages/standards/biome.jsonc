@@ -15,16 +15,6 @@
       "recommended": true,
       "correctness": {
         "noUnusedFunctionParameters": "off",
-        "noUndeclaredDependencies": {
-          "level": "error",
-          "options": {
-            "devDependencies": [
-              "**/__tests__/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
-              "**/tests/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
-              "**/test/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
-            ],
-          },
-        },
       },
       "nursery": {
         "noAwaitInLoop": "error",
