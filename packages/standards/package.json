@@ -6,6 +6,8 @@
   "type": "module",
   "exports": {
     "./biome": "./biome.jsonc",
+    "./biome/esm": "./biome-esm.jsonc",
+    "./biome/react": "./biome-react.jsonc",
     "./prettier": "./prettier.js"
   },
   "license": "ISC",

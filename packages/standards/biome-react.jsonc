@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "linter": {
+    "rules": {
+      "correctness": {
+        "useExhaustiveDependencies": "warn",
+        "useHookAtTopLevel": "error",
+      },
+      "performance": {
+        "noNamespaceImport": "error",
+      },
+      "nursery": {
+        "noNoninteractiveElementInteractions": "error",
+      },
+    },
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "useSortedAttributes": "on",
+      },
+    },
+  },
+}

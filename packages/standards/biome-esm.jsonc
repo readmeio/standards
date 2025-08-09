@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "linter": {
+    "domains": {
+      "react": "all",
+    },
+    "rules": {
+      "nursery": {
+        "noGlobalDirnameFilename": "error",
+      },
+      "performance": {
+        // Namespace imports (`import * as foo from 'foo'`) can severely impact performance and
+        // tree-shaking capabilities in various bundlers. We had a prior rule within our
+        // `@readme/eslint-plugin` package, `readme/no-wildcard-imports`, that enforced this. This
+        // is the Biome equivalent.
+        //
+        // https://biomejs.dev/linter/rules/no-namespace-import/
+        "noNamespaceImport": "error",
+      },
+      "style": {
+        "noCommonJs": "error",
+
+        // In libraries that support CJS and ESM environments, having a file that has a `default`
+        // **and** a named export makes that file incompatible with CJS environments due to the way
+        // that CJS resolution works in that case.
+        //
+        // Within our `@readme/eslint-plugin` package we had a rule, `readme/no-default-exports`,
+        // to enforce this and though `noDefaultExport` is more of an aggressive alternative of
+        // this enforcement, spurring the transition away from default exports entirely will help
+        // us avoid this issue altogether.
+        //
+        // https://biomejs.dev/linter/rules/no-default-export/
+        "noDefaultExport": "error",
+      },
+    },
+  },
+}

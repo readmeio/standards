@@ -15,6 +15,16 @@
       "recommended": true,
       "correctness": {
         "noUnusedFunctionParameters": "off",
+        "noUndeclaredDependencies": {
+          "level": "error",
+          "options": {
+            "devDependencies": [
+              "**/__tests__/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
+              "**/tests/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
+              "**/test/**/*.test.{mjs,cjs,js,ts,jsx,tsx}",
+            ],
+          },
+        },
       },
       "nursery": {
         "noAwaitInLoop": "error",
@@ -33,6 +43,7 @@
         // be the case. https://biomejs.dev/linter/domains/#project-rules
         "noFloatingPromises": "error",
 
+        "noSecrets": "error",
         "noShadow": "error",
       },
       "performance": {
@@ -40,10 +51,14 @@
       },
       "style": {
         "noParameterAssign": "error",
+        "useConsistentArrayType": "error",
+        "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+        "useThrowNewError": "error",
       },
       "suspicious": {
         "noConsole": "warn",
+        "useErrorMessage": "warn",
       },
     },
   },
