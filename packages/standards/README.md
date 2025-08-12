@@ -12,7 +12,13 @@ Core coding standards for ReadMe projects.
 | Config | Description |
 | :-- | :--- |
 | `@readme/standards/biome` | For projects that use [Biome](https://biomejs.dev/). |
+| `@readme/standards/biome/esm` | &mdash; addon for ESM-only repositories.<sup>†</sup>  |
+| `@readme/standards/biome/react` | &mdash; addon for React codebases.<sup>†‡</sup>  |
 | `@readme/standards/prettier` | For projects that use [Prettier](https://prettier.io/). |
+
+<sub>† This requires also using `@readme/standards/biome`.</sub>
+
+<sub>‡ Though Biome supports linting React and JSX by default this supplemental is for additional rules that should apply **only** within React packages.</sub>
 
 ### Biome
 
@@ -28,7 +34,10 @@ Create a `biome.jsonc` file with the following contents:
 
 ```json
 {
-  "extends": ["@readme/standards/biome"]
+  "extends": [
+    "@readme/standards/biome"
+    // "@readme/standards/biome/<supplemental>"
+  ]
 }
 ```
 
