@@ -17,7 +17,8 @@ Core coding standards for ReadMe projects.
 | `@readme/standards/prettier` | For projects that use [Prettier](https://prettier.io/). |
 
 <sub>† This requires also using `@readme/standards/biome`.</sub>
-<sub>‡ Though Biome supports linting React and JSX by default this supplemental is for additional rules that should apply **only** within those codebases.</sub>
+
+<sub>‡ Though Biome supports linting React and JSX by default this supplemental is for additional rules that should apply **only** within React packages.</sub>
 
 ### Biome
 
