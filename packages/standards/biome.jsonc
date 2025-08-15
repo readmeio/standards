@@ -23,17 +23,12 @@
         },
       },
       "nursery": {
-        "noAwaitInLoop": "error",
-        "noTsIgnore": "error",
-
         "useConsistentTypeDefinitions": {
           "level": "error",
           "options": {
             "style": "interface",
           },
         },
-
-        "useIterableCallbackReturn": "error",
 
         // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
         // be the case. https://biomejs.dev/linter/domains/#project-rules
@@ -47,22 +42,24 @@
         // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
         // be the case. https://biomejs.dev/linter/domains/#project-rules
         "noUnnecessaryConditions": "error",
-
-        "useConsistentObjectDefinition": "error",
       },
       "performance": {
+        "noAwaitInLoops": "error",
         "noBarrelFile": "error",
       },
       "style": {
         "noParameterAssign": "error",
         "useConsistentArrayType": "error",
+        "useConsistentObjectDefinitions": "error",
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
         "useThrowNewError": "error",
       },
       "suspicious": {
         "noConsole": "warn",
+        "noTsIgnore": "error",
         "useErrorMessage": "warn",
+        "useIterableCallbackReturn": "error",
       },
     },
   },

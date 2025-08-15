@@ -5,6 +5,9 @@
       "react": "all",
     },
     "rules": {
+      "a11y": {
+        "noNoninteractiveElementInteractions": "error",
+      },
       "performance": {
         // Namespace imports (`import * as foo from 'foo'`) can severely impact performance and
         // tree-shaking capabilities in various bundlers. We had a prior rule within our
@@ -13,9 +16,6 @@
         //
         // https://biomejs.dev/linter/rules/no-namespace-import/
         "noNamespaceImport": "error",
-      },
-      "nursery": {
-        "noNoninteractiveElementInteractions": "error",
       },
     },
   },
