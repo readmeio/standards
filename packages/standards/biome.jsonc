@@ -50,7 +50,15 @@
       "style": {
         "noParameterAssign": "error",
         "useConsistentArrayType": "error",
-        "useConsistentObjectDefinitions": "error",
+
+        // This rule is currently too aggressive on function definitions and we're disabling it
+        // for the time being until it becomes more inline with ESLint's behavior and its
+        // `ignoreConstructors` option.
+        //
+        // https://eslint.org/docs/latest/rules/object-shorthand
+        // https://biomejs.dev/linter/rules/use-consistent-object-definitions/
+        "useConsistentObjectDefinitions": "off",
+
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
         "useThrowNewError": "error",
