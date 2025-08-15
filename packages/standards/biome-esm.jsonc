@@ -4,6 +4,7 @@
     "rules": {
       "correctness": {
         "noGlobalDirnameFilename": "error",
+        "useImportExtensions": "error",
       },
       "performance": {
         // Namespace imports (`import * as foo from 'foo'`) can severely impact performance and
