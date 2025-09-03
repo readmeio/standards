@@ -39,9 +39,11 @@
         "noSecrets": "off",
         "noShadow": "error",
 
-        // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
-        // be the case. https://biomejs.dev/linter/domains/#project-rules
-        "noUnnecessaryConditions": "error",
+        // Disabling this rule for now because it's still a work in progress and picks up a lot
+        // of false positives.
+        // https://biomejs.dev/linter/rules/no-unnecessary-conditions/
+        // https://github.com/biomejs/biome/issues/6611
+        "noUnnecessaryConditions": "off",
       },
       "performance": {
         "noAwaitInLoops": "error",
