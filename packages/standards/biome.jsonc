@@ -63,6 +63,14 @@
 
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
+
+        "useImportType": {
+          "level": "error",
+          "options": {
+            "style": "separatedType",
+          },
+        },
+
         "useThrowNewError": "error",
       },
       "suspicious": {
