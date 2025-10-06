@@ -13,6 +13,10 @@
     },
     "rules": {
       "recommended": true,
+      "complexity": {
+        // By default `noUselessCatch` is reported as an `info` and doesn't cause failures.
+        "noUselessCatch": "error",
+      },
       "correctness": {
         "noUnusedFunctionParameters": "off",
         "noUnusedVariables": {
