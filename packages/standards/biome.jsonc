@@ -43,22 +43,9 @@
         "noAwaitInLoops": "error",
         "noBarrelFile": "error",
       },
-      "security": {
-        // Temporarily disabling this because it has some serious issues with its entropy level
-        // and picks up too many false positives. https://github.com/biomejs/biome/issues/4113
-        "noSecrets": "off",
-      },
       "style": {
         "noParameterAssign": "error",
         "useConsistentArrayType": "error",
-
-        // This rule is currently too aggressive on function definitions and we're disabling it
-        // for the time being until it becomes more inline with ESLint's behavior and its
-        // `ignoreConstructors` option.
-        //
-        // https://eslint.org/docs/latest/rules/object-shorthand
-        // https://biomejs.dev/linter/rules/use-consistent-object-definitions/
-        "useConsistentObjectDefinitions": "off",
 
         "useConsistentTypeDefinitions": {
           "level": "error",
