@@ -27,20 +27,10 @@
         },
       },
       "nursery": {
-        "useConsistentTypeDefinitions": {
-          "level": "error",
-          "options": {
-            "style": "interface",
-          },
-        },
-
         // Biome's docs say that this is enabled in the `project` domain but that doesn't seem to
         // be the case. https://biomejs.dev/linter/domains/#project-rules
         "noFloatingPromises": "error",
 
-        // Temporarily disabling this because it has some serious issues with its entropy level
-        // and picks up too many false positives. https://github.com/biomejs/biome/issues/4113
-        "noSecrets": "off",
         "noShadow": "error",
 
         // Disabling this rule for now because it's still a work in progress and picks up a lot
@@ -53,6 +43,11 @@
         "noAwaitInLoops": "error",
         "noBarrelFile": "error",
       },
+      "security": {
+        // Temporarily disabling this because it has some serious issues with its entropy level
+        // and picks up too many false positives. https://github.com/biomejs/biome/issues/4113
+        "noSecrets": "off",
+      },
       "style": {
         "noParameterAssign": "error",
         "useConsistentArrayType": "error",
@@ -64,6 +59,13 @@
         // https://eslint.org/docs/latest/rules/object-shorthand
         // https://biomejs.dev/linter/rules/use-consistent-object-definitions/
         "useConsistentObjectDefinitions": "off",
+
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "interface",
+          },
+        },
 
         "useDefaultParameterLast": "error",
         "useDefaultSwitchClause": "error",
