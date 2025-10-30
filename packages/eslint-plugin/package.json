@@ -32,7 +32,7 @@
     "@babel/eslint-parser": "^7.27.1",
     "@readme/eslint-config": "file:../eslint-config",
     "@typescript-eslint/parser": "^8.24.1",
-    "eslint-doc-generator": "^2.3.0",
-    "vitest": "^4.0.5"
+    "eslint-doc-generator": "^2.0.2",
+    "vitest": "^3.1.2"
   }
 }
