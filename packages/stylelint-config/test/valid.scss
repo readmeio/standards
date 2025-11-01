@@ -52,7 +52,9 @@ $media-query-width: 300px;
 /* Single-line comment */
 
 @media (min-width: $media-query-width) {
-  border: 1px solid black;
+  .selector {
+    border: 1px solid black;
+  }
 }
 
 @media (width >= 60em) {
@@ -62,7 +64,7 @@ $media-query-width: 300px;
   }
 }
 
-@media (orientation: portrait), projection and (color) {
+@media (orientation: portrait) and (color) {
   .selector-i + .selector-ii {
     background: rgb(105, 77, 63);
     font-family: Helvetica, 'Arial Black', sans-serif;
