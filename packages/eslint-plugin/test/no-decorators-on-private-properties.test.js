@@ -3,10 +3,10 @@ const { RuleTester } = require('eslint');
 const { rules } = require('..');
 
 const ruleTester = new RuleTester({
-  parser: require.resolve('@typescript-eslint/parser'),
-  parserOptions: {
+  languageOptions: {
+    parser: require('@typescript-eslint/parser'),
     ecmaVersion: 2022,
-    requireConfigFile: false,
+    sourceType: 'module',
   },
 });
 

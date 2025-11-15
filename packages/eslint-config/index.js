@@ -10,7 +10,7 @@ const config = {
     'plugin:you-dont-need-lodash-underscore/compatible',
     'prettier',
   ],
-  plugins: ['node', 'unicorn'],
+  plugins: ['n', 'unicorn'],
   rules: {
     'arrow-body-style': 'off', // This rule clashes with our Prettier config.
 
@@ -50,9 +50,9 @@ const config = {
     // acceptable.
     'no-shadow': ['error', { allow: ['err'] }],
 
-    'node/no-deprecated-api': 'error',
-    'node/no-exports-assign': 'error',
-    'node/no-extraneous-require': 'error',
+    'n/no-deprecated-api': 'error',
+    'n/no-exports-assign': 'error',
+    'n/no-extraneous-require': 'error',
 
     'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
     'prefer-destructuring': 'off',
