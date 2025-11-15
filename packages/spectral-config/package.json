@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "lint": "eslint .",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
     "prepack": "npm run build",
     "test": "vitest run"
   },
@@ -31,11 +32,12 @@
     "@stoplight/spectral-cli": "^6.6.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.3.2",
     "@ibm-cloud/openapi-ruleset": "^1.31.0",
-    "@readme/eslint-config": "file:../eslint-config",
     "@readme/oas-examples": "^7.0.3",
+    "@readme/standards": "file:../standards",
     "tsup": "^8.1.2",
     "vitest": "^4.0.6"
   },
-  "prettier": "@readme/eslint-config/prettier"
+  "prettier": "@readme/standards/prettier"
 }
