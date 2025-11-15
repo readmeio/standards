@@ -6,7 +6,7 @@ import { text } from 'alex';
  * @see {@link https://alexjs.com/}
  * @param {string} input
  */
-export default function alex(input, options, context) {
+export default function alex(input, _options, context) {
   const errors = text(input, { profanitySureness: 1 }).messages;
 
   return errors

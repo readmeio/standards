@@ -1,4 +1,0 @@
-{
-  "extends": "@readme/eslint-config",
-  "rules": { "import/extensions": ["error", "always"] }
-}
