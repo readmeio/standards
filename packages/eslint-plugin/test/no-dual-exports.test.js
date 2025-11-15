@@ -3,9 +3,13 @@ const { RuleTester } = require('eslint');
 const { rules } = require('..');
 
 const ruleTester = new RuleTester({
-  parser: require.resolve('@babel/eslint-parser'),
-  parserOptions: {
-    requireConfigFile: false,
+  languageOptions: {
+    parser: require('@babel/eslint-parser'),
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    parserOptions: {
+      requireConfigFile: false,
+    },
   },
 });
 
