@@ -12,6 +12,11 @@ updates:
         update-types:
           - minor
           - patch
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
@@ -29,6 +34,11 @@ updates:
         update-types:
           - minor
           - patch
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
@@ -43,6 +53,11 @@ updates:
     groups:
       minor-development-deps:
         dependency-type: 'development'
+        update-types:
+          - minor
+          - patch
+      minor-production-deps:
+        dependency-type: 'production'
         update-types:
           - minor
           - patch
@@ -80,6 +95,11 @@ updates:
         update-types:
           - minor
           - patch
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
@@ -94,6 +114,11 @@ updates:
     groups:
       minor-development-deps:
         dependency-type: 'development'
+        update-types:
+          - minor
+          - patch
+      minor-production-deps:
+        dependency-type: 'production'
         update-types:
           - minor
           - patch
