@@ -65,7 +65,7 @@ const config = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
 
-    'perfectionist/sort-enums': ['error', { type: 'natural', order: 'asc', sortByValue: true }],
+    'perfectionist/sort-enums': ['error', { type: 'natural', order: 'asc', sortByValue: 'always' }],
     'perfectionist/sort-interfaces': ['error', { type: 'natural', order: 'asc' }],
   },
 };
