@@ -44,6 +44,15 @@ const config = {
         sortShapeProp: true,
       },
     ],
+
+    /**
+     * These rules should be disabled as of React 17 since JSX transforms no
+     * longer require `React` to be imported. See links for more info:
+     * @link https://github.com/readmeio/readme/pull/14488/changes#r2108893073
+     * @link https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#eslint
+     */
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
 };
 
