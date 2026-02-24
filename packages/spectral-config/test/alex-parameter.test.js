@@ -1,5 +1,5 @@
 import { severityCodes, testRule } from '@ibm-cloud/openapi-ruleset/test/test-utils/index.js';
-import readme from '@readme/oas-examples/3.0/json/readme-legacy.json';
+import readme from '@readme/oas-examples/3.0/json/readme-legacy.json' with { type: 'json' };
 import { describe, expect, it } from 'vitest';
 
 import rule from '../src/rules/alex-parameter.js';
