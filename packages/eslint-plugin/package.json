@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.1",
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.22.0",
     "@readme/eslint-config": "file:../eslint-config",
     "@typescript-eslint/parser": "^8.24.1",

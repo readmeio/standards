@@ -1,6 +1,5 @@
-/** @type {import("eslint-define-config").ESLintConfig} */
-const config = {
-  extends: ['plugin:testing-library/react'],
-};
+const testingLibraryPlugin = require('eslint-plugin-testing-library');
 
-module.exports = config;
+module.exports = [
+  testingLibraryPlugin.configs['flat/react'],
+];

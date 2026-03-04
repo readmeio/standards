@@ -1,10 +1,8 @@
-const merge = require('lodash/merge');
+const jestDomPlugin = require('eslint-plugin-jest-dom');
 
 const jest = require('./jest');
 
-/** @type {import("eslint-define-config").ESLintConfig} */
-const config = merge(jest, {
-  extends: ['plugin:jest-dom/recommended'],
-});
-
-module.exports = config;
+module.exports = [
+  ...jest,
+  jestDomPlugin.configs['flat/recommended'],
+];
