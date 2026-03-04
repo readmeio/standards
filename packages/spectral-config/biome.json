@@ -1,0 +1,20 @@
+{
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["@readme/standards/biome", "@readme/standards/biome/esm"],
+  "files": {
+    "ignoreUnknown": false,
+    "includes": ["**/*.js", "!coverage", "!dist"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noDefaultExport": "off"
+      },
+      "suspicious": {
+        "noThenProperty": "off"
+      }
+    }
+  }
+}

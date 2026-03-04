@@ -1,0 +1,9 @@
+{
+  "extends": ["@readme/standards/biome"],
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  }
+}

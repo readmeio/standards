@@ -12,6 +12,11 @@ updates:
         update-types:
           - minor
           - patch
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
@@ -26,6 +31,11 @@ updates:
     groups:
       minor-development-deps:
         dependency-type: 'development'
+        update-types:
+          - minor
+          - patch
+      minor-production-deps:
+        dependency-type: 'production'
         update-types:
           - minor
           - patch
@@ -46,12 +56,34 @@ updates:
         update-types:
           - minor
           - patch
+      minor-production-deps:
+        dependency-type: 'production'
+        update-types:
+          - minor
+          - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
 
+  # - package-ecosystem: npm
+  #   directory: '/packages/spectral-config'
+  #   schedule:
+  #     interval: monthly
+  #   open-pull-requests-limit: 10
+  #   labels:
+  #     - dependencies
+  #   groups:
+  #     minor-development-deps:
+  #       dependency-type: 'development'
+  #       update-types:
+  #         - minor
+  #         - patch
+  #   commit-message:
+  #     prefix: chore(deps)
+  #     prefix-development: chore(deps-dev)
+
   - package-ecosystem: npm
-    directory: '/packages/spectral-config'
+    directory: '/packages/standards'
     schedule:
       interval: monthly
     open-pull-requests-limit: 10
@@ -63,23 +95,33 @@ updates:
         update-types:
           - minor
           - patch
-    commit-message:
-      prefix: chore(deps)
-      prefix-development: chore(deps-dev)
-
-  - package-ecosystem: npm
-    directory: '/packages/stylelint-config'
-    schedule:
-      interval: monthly
-    open-pull-requests-limit: 10
-    labels:
-      - dependencies
-    groups:
-      minor-development-deps:
-        dependency-type: 'development'
+      minor-production-deps:
+        dependency-type: 'production'
         update-types:
           - minor
           - patch
     commit-message:
       prefix: chore(deps)
       prefix-development: chore(deps-dev)
+
+  # - package-ecosystem: npm
+  #   directory: '/packages/stylelint-config'
+  #   schedule:
+  #     interval: monthly
+  #   open-pull-requests-limit: 10
+  #   labels:
+  #     - dependencies
+  #   groups:
+  #     minor-development-deps:
+  #       dependency-type: 'development'
+  #       update-types:
+  #         - minor
+  #         - patch
+  #     minor-production-deps:
+  #       dependency-type: 'production'
+  #       update-types:
+  #         - minor
+  #         - patch
+  #   commit-message:
+  #     prefix: chore(deps)
+  #     prefix-development: chore(deps-dev)

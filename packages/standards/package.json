@@ -1,0 +1,33 @@
+{
+  "name": "@readme/standards",
+  "version": "2.4.0",
+  "description": "ReadMe coding standards",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "type": "module",
+  "exports": {
+    "./biome": "./biome.jsonc",
+    "./biome/esm": "./biome-esm.jsonc",
+    "./biome/react": "./biome-react.jsonc",
+    "./prettier": "./prettier.js"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:readmeio/standards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "homepage": "https://github.com/readmeio/standards#readme",
+  "scripts": {
+    "lint": "biome check",
+    "lint:fix": "biome check --write ."
+  },
+  "optionalDependencies": {
+    "@biomejs/biome": "^2.2.3",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.2"
+  }
+}
