@@ -20,10 +20,8 @@ module.exports = [
     rules: { 'import/no-extraneous-dependencies': 'off' },
   },
   {
-    files: ['test/**/*.test.js'],
     rules: {
-      'global-require': 'off',
-      'import/no-unresolved': 'off',
+      'import/no-unresolved': ['error', { ignore: ['@typescript-eslint/parser'] }],
     },
   },
 ];

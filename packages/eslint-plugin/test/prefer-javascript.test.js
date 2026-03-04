@@ -1,10 +1,11 @@
+const tsParser = require('@typescript-eslint/parser');
 const { RuleTester } = require('eslint');
 
 const { rules } = require('..');
 
 const ruleTester = new RuleTester({
   languageOptions: {
-    parser: require('@typescript-eslint/parser'),
+    parser: tsParser,
     parserOptions: {
       ecmaVersion: 2022,
     },

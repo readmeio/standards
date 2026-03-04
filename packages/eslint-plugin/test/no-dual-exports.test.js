@@ -1,10 +1,11 @@
+const babelParser = require('@babel/eslint-parser');
 const { RuleTester } = require('eslint');
 
 const { rules } = require('..');
 
 const ruleTester = new RuleTester({
   languageOptions: {
-    parser: require('@babel/eslint-parser'),
+    parser: babelParser,
     parserOptions: {
       requireConfigFile: false,
     },
