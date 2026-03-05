@@ -2,7 +2,7 @@ const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
 const prettier = require('eslint-config-prettier');
-const importPlugin = require('eslint-plugin-import');
+const importPlugin = require('eslint-plugin-import-x');
 const nPlugin = require('eslint-plugin-n');
 const tryCatchFailsafePlugin = require('eslint-plugin-try-catch-failsafe');
 const unicornPlugin = require('eslint-plugin-unicorn');
@@ -21,10 +21,10 @@ module.exports = [
   // (later entries win on conflicts, e.g. no-constant-condition stays "error" not "warn").
   js.configs.recommended,
 
-  // import errors/warnings rules are already included via airbnb-base, so we only add the rules
-  // (not the plugin registration) to avoid "Cannot redefine plugin" errors.
-  { rules: importPlugin.flatConfigs.errors.rules },
-  { rules: importPlugin.flatConfigs.warnings.rules },
+  // import-x is a separate plugin from the legacy `import` plugin that airbnb-base registers,
+  // so we spread the full flatConfigs (including plugin registration).
+  importPlugin.flatConfigs.errors,
+  importPlugin.flatConfigs.warnings,
 
   // Plugins without flat configs — manual wiring
   {
@@ -64,9 +64,9 @@ module.exports = [
       // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
       'func-names': 'off',
 
-      'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
+      'import-x/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
 
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           alphabetize: {
@@ -79,7 +79,8 @@ module.exports = [
         },
       ],
 
-      'import/prefer-default-export': 'off',
+      'import/prefer-default-export': 'off', // override airbnb-base
+      'import-x/prefer-default-export': 'off',
 
       'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
       'no-constructor-return': 'error',

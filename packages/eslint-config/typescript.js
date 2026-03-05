@@ -21,7 +21,7 @@ module.exports = [
       parser: tsParser,
     },
     settings: {
-      'import/resolver': 'typescript',
+      'import-x/resolver': 'typescript',
     },
     rules: {
       '@typescript-eslint/array-type': 'error',
@@ -43,7 +43,8 @@ module.exports = [
 
       'func-names': 'error',
 
-      'import/extensions': [
+      'import/extensions': 'off', // override airbnb-base; import-x/extensions below handles this
+      'import-x/extensions': [
         'error',
         'ignorePackages',
         {
@@ -55,7 +56,8 @@ module.exports = [
       ],
 
       // Disabling this rule in TS code because TS handles this sort of error for us automatically.
-      'import/no-unresolved': 'off',
+      'import/no-unresolved': 'off', // override airbnb-base
+      'import-x/no-unresolved': 'off',
 
       // TS ESLint plugin disables this and they neither say why, or how to get warned about it.
       // https://github.com/typescript-eslint/typescript-eslint/issues/3583
