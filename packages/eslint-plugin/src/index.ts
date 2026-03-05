@@ -1,4 +1,4 @@
-import type { ESLint } from 'eslint';
+import type { ESLint, Linter } from 'eslint';
 
 import noDecoratorsOnPrivateProperties from './rules/no-decorators-on-private-properties';
 import noDualExports from './rules/no-dual-exports';
@@ -13,12 +13,14 @@ const { name: packageName, version: packageVersion } = require('../package.json'
   version: string;
 };
 
-const plugin: ESLint.Plugin = {
+const configs: Record<string, Linter.Config> = {};
+
+const plugin = {
   meta: {
     name: packageName,
     version: packageVersion,
   },
-  configs: {},
+  configs,
   rules: {
     'no-decorators-on-private-properties': noDecoratorsOnPrivateProperties,
     'no-dual-exports': noDualExports,
@@ -27,11 +29,11 @@ const plugin: ESLint.Plugin = {
     'prefer-unicode-ellipsis': preferUnicodeEllipsis,
     'no-wildcard-imports': noWildcardImports,
   },
-};
+} satisfies ESLint.Plugin;
 
 // Configs are defined after the plugin object so they can reference it directly
 // in the `plugins` map (flat config requires plugin objects, not strings).
-plugin.configs!.esm = {
+plugin.configs.esm = {
   plugins: { readme: plugin },
   rules: {
     'readme/no-dual-exports': 'error',
@@ -39,7 +41,7 @@ plugin.configs!.esm = {
   },
 };
 
-plugin.configs!.react = {
+plugin.configs.react = {
   plugins: { readme: plugin },
   rules: {
     'readme/prefer-unicode-ellipsis': 'warn',
@@ -47,7 +49,7 @@ plugin.configs!.react = {
   },
 };
 
-plugin.configs!.typescript = {
+plugin.configs.typescript = {
   plugins: { readme: plugin },
   rules: {
     'readme/no-decorators-on-private-properties': 'error',
