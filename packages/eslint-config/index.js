@@ -1,30 +1,20 @@
-const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
 const prettier = require('eslint-config-prettier');
-const importPlugin = require('eslint-plugin-import-x');
 const nPlugin = require('eslint-plugin-n');
 const tryCatchFailsafePlugin = require('eslint-plugin-try-catch-failsafe');
 const unicornPlugin = require('eslint-plugin-unicorn');
 const youDontNeedLodashPlugin = require('eslint-plugin-you-dont-need-lodash-underscore');
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-});
+const baseRules = require('./rules/base');
 
 module.exports = [
-  // airbnb-base has no flat config, so we still need FlatCompat for it.
-  ...compat.extends('airbnb-base'),
+  // Base rules inlined from eslint-config-airbnb-base (includes import-x plugin registration).
+  ...baseRules,
 
-  // eslint:recommended comes after airbnb-base to match the original extends order
+  // eslint:recommended comes after base rules to match the original extends order
   // (later entries win on conflicts, e.g. no-constant-condition stays "error" not "warn").
   js.configs.recommended,
-
-  // import-x is a separate plugin from the legacy `import` plugin that airbnb-base registers,
-  // so we spread the full flatConfigs (including plugin registration).
-  importPlugin.flatConfigs.errors,
-  importPlugin.flatConfigs.warnings,
 
   // Plugins without flat configs — manual wiring
   {
@@ -79,21 +69,11 @@ module.exports = [
         },
       ],
 
-      'import/prefer-default-export': 'off', // override airbnb-base
       'import-x/prefer-default-export': 'off',
-
-      'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
-      'no-constructor-return': 'error',
-      'no-dupe-else-if': 'error',
-      'no-else-return': ['error', { allowElseIf: true }],
 
       'no-nested-ternary': 'off', // See also: `unicorn/no-nested-ternary`
 
       'no-restricted-imports': ['error', { paths: ['lodash'] }],
-
-      // Disallow shadowing of any variable that isn't "err" as this is a common case that is
-      // acceptable.
-      'no-shadow': ['error', { allow: ['err'] }],
 
       'n/no-deprecated-api': 'error',
       'n/no-exports-assign': 'error',
@@ -101,10 +81,6 @@ module.exports = [
 
       'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
       'prefer-destructuring': 'off',
-
-      // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
-      // templated strings that aren't templates.
-      quotes: ['error', 'single', { avoidEscape: true }],
 
       'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
       // "unicorn/consistent-function-scoping": "error", // Maybe?

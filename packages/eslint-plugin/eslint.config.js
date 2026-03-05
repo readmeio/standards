@@ -13,14 +13,14 @@ module.exports = [
     files: ['eslint.config.js', '.eslint-doc-generatorrc.js'],
     rules: {
       '@typescript-eslint/no-require-imports': 'off',
-      'import/no-extraneous-dependencies': 'off',
+      'import-x/no-extraneous-dependencies': 'off',
       'readme/prefer-typescript': 'off',
     },
   },
   {
     files: ['vitest.config.mts'],
     rules: {
-      'import/no-extraneous-dependencies': 'off',
+      'import-x/no-extraneous-dependencies': 'off',
     },
   },
 ];

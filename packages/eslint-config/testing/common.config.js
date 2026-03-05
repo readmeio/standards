@@ -9,7 +9,7 @@ module.exports = [
 
       'func-names': 'off',
 
-      'import/no-extraneous-dependencies': 'off',
+      'import-x/no-extraneous-dependencies': 'off',
 
       'n/no-extraneous-require': 'off',
 
