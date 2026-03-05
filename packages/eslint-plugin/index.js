@@ -19,7 +19,7 @@ const plugin = {
 
 // Configs are defined after the plugin object so they can reference it directly
 // in the `plugins` map (flat config requires plugin objects, not strings).
-// @ts-ignore — TS infers `configs` as `{}` so it doesn't recognize dynamic properties.
+// @ts-expect-error — TS infers `configs` as `{}` so it doesn't recognize dynamic properties.
 // These can't be defined inline because each config needs a reference back to the plugin object.
 plugin.configs.esm = {
   plugins: { readme: plugin },
@@ -29,7 +29,7 @@ plugin.configs.esm = {
   },
 };
 
-// @ts-ignore — same as above
+// @ts-expect-error — same as above
 plugin.configs.react = {
   plugins: { readme: plugin },
   rules: {
@@ -38,7 +38,7 @@ plugin.configs.react = {
   },
 };
 
-// @ts-ignore — same as above
+// @ts-expect-error — same as above
 plugin.configs.typescript = {
   plugins: { readme: plugin },
   rules: {

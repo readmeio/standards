@@ -21,11 +21,7 @@ declare module 'eslint-plugin-readme' {
   import type { Linter } from 'eslint';
 
   const plugin: {
-    configs: {
-      esm: Linter.Config;
-      react: Linter.Config;
-      typescript: Linter.Config;
-    };
+    configs: Record<string, Linter.Config>;
     rules: Record<string, unknown>;
   };
 
