@@ -1,15 +1,16 @@
-const { getDocURL } = require('../lib/utils');
+import type { Rule } from 'eslint';
 
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { getDocURL } from '../lib/utils';
+
+const rule: Rule.RuleModule = {
   meta: {
     type: 'problem',
     docs: {
       description: 'Prevent the use of decorators on private properties as they cannot be introspected.',
-      url: getDocURL(__filename),
+      url: getDocURL('no-decorators-on-private-properties'),
     },
   },
-  create: context => {
+  create(context) {
     return {
       /**
        * Checking for class-level decorators that exist on a class that contains private properties
@@ -22,8 +23,9 @@ module.exports = {
        *  }
        * }
        */
-      'ClassDeclaration[decorators.length>0] PrivateIdentifier': node => {
-        const decorators = node.parent.parent.parent.decorators;
+      'ClassDeclaration[decorators.length>0] PrivateIdentifier': (node: Rule.Node) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- ESLint's Rule.Node doesn't type deep parent chains or decorators
+        const decorators = (node as any).parent.parent.parent.decorators as any[];
 
         decorators.forEach(dnode => {
           const decorator = dnode.expression.callee.name;
@@ -46,8 +48,9 @@ module.exports = {
        *  }
        * }
        */
-      'Decorator[parent.key.type=PrivateIdentifier]': node => {
-        const decorator = node.expression.callee.name;
+      'Decorator[parent.key.type=PrivateIdentifier]': (node: Rule.Node) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Decorator nodes aren't typed in Rule.Node
+        const decorator = (node as any).expression.callee.name as string;
 
         context.report({
           node,
@@ -57,3 +60,5 @@ module.exports = {
     };
   },
 };
+
+export default rule;

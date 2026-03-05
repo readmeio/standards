@@ -1,20 +1,23 @@
-const { getDocURL } = require('../lib/utils');
+import type { Rule } from 'eslint';
 
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { getDocURL } from '../lib/utils';
+
+const rule: Rule.RuleModule = {
   meta: {
     type: 'problem',
     docs: {
       description: 'Prevent cases of having a file with dual `default` and named exports.',
-      url: getDocURL(__filename),
+      url: getDocURL('no-dual-exports'),
     },
   },
-  create: context => {
+  create(context) {
     return {
-      ExportDefaultDeclaration: node => {
-        if (!node?.parent?.body) {
+      ExportDefaultDeclaration(node) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Program.body isn't typed on Rule.Node parent
+        const parent = node.parent as any;
+        if (!parent?.body) {
           return;
-        } else if (!node.parent.body.filter(n => n.type === 'ExportNamedDeclaration').length) {
+        } else if (!parent.body.filter((n: { type: string }) => n.type === 'ExportNamedDeclaration').length) {
           return;
         }
 
@@ -27,3 +30,5 @@ module.exports = {
     };
   },
 };
+
+export default rule;
