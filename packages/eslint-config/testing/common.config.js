@@ -5,7 +5,7 @@ module.exports = [
   {
     rules: {
       // A failing `JSON.parse()` will fail the unit test it's in so it's safe to ignore.
-      'try-catch-failsafe/json-parse': 'off',
+      'readme/json-parse-try-catch': 'off',
 
       'func-names': 'off',
 

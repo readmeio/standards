@@ -2,7 +2,7 @@ const js = require('@eslint/js');
 const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
 const prettier = require('eslint-config-prettier');
 const nPlugin = require('eslint-plugin-n');
-const tryCatchFailsafePlugin = require('eslint-plugin-try-catch-failsafe');
+const readmePlugin = require('eslint-plugin-readme');
 const unicornPlugin = require('eslint-plugin-unicorn');
 const youDontNeedLodashPlugin = require('eslint-plugin-you-dont-need-lodash-underscore');
 
@@ -25,9 +25,11 @@ module.exports = [
   },
   {
     plugins: {
-      'try-catch-failsafe': tryCatchFailsafePlugin,
+      readme: readmePlugin,
     },
-    rules: tryCatchFailsafePlugin.configs.default.rules,
+    rules: {
+      'readme/json-parse-try-catch': 'error',
+    },
   },
   {
     plugins: {
