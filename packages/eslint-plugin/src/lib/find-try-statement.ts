@@ -1,9 +1,10 @@
 import type { Rule } from 'eslint';
 
 /**
- * Walks up the AST from `node` looking for an enclosing `TryStatement` whose
- * try-block range covers the node. Returns `null` if the node is unwrapped or
- * sits inside a catch/finally block (those blocks can also throw).
+ * Walks up the AST from `node` looking for an enclosing `TryStatement`.
+ * Returns the range of the try-block's direct child that contains `node`,
+ * or `null` if the node is unwrapped or sits inside a catch/finally block
+ * (those blocks can also throw).
  */
 export function findTryStatementRange(node: Rule.Node): [number, number] | null {
   if (!node.parent) {

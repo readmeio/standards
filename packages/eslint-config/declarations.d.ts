@@ -2,7 +2,6 @@ declare module '@eslint-community/eslint-plugin-eslint-comments';
 declare module '@typescript-eslint/parser';
 declare module 'eslint-plugin-jsx-a11y';
 declare module 'eslint-plugin-require-extensions';
-declare module 'eslint-plugin-try-catch-failsafe';
 declare module 'eslint-plugin-you-dont-need-lodash-underscore';
 
 declare module '@vitest/eslint-plugin' {
