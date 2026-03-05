@@ -28,6 +28,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
+    "prepare": "npm run build",
     "test": "vitest run",
     "update:docs": "npm run build && eslint-doc-generator && npx prettier --write docs/rules/*.md *.md"
   },
