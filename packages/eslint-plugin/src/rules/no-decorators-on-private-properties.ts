@@ -1,6 +1,14 @@
 import type { Rule } from 'eslint';
+import type * as ESTree from 'estree';
 
 import { getDocURL } from '../lib/utils';
+
+// Decorators are not part of the ESTree spec, so we define the shape we expect from the AST.
+interface DecoratorNode {
+  expression: {
+    callee: ESTree.Identifier;
+  };
+}
 
 const rule: Rule.RuleModule = {
   meta: {
@@ -24,10 +32,11 @@ const rule: Rule.RuleModule = {
        * }
        */
       'ClassDeclaration[decorators.length>0] PrivateIdentifier': (node: Rule.Node) => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- ESLint's Rule.Node doesn't type deep parent chains or decorators
-        const decorators = (node as any).parent.parent.parent.decorators as any[];
+        // Selector guarantees: PrivateIdentifier → MethodDefinition → ClassBody → ClassDeclaration
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Rule.Node doesn't type deep parent chains
+        const classDecl = (node as any).parent.parent.parent as { decorators: DecoratorNode[] };
 
-        decorators.forEach(dnode => {
+        classDecl.decorators.forEach(dnode => {
           const decorator = dnode.expression.callee.name;
 
           context.report({
@@ -49,8 +58,7 @@ const rule: Rule.RuleModule = {
        * }
        */
       'Decorator[parent.key.type=PrivateIdentifier]': (node: Rule.Node) => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Decorator nodes aren't typed in Rule.Node
-        const decorator = (node as any).expression.callee.name as string;
+        const decorator = (node as unknown as DecoratorNode).expression.callee.name;
 
         context.report({
           node,

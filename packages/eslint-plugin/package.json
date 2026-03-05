@@ -2,7 +2,7 @@
   "name": "eslint-plugin-readme",
   "version": "3.0.0-alpha.0",
   "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "license": "ISC",
@@ -22,14 +22,12 @@
     "access": "public"
   },
   "files": [
-    "index.js",
     "dist/",
     "docs/"
   ],
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "pretest": "npm run build",
     "test": "vitest run",
     "update:docs": "npm run build && eslint-doc-generator && npx prettier --write docs/rules/*.md *.md"
   },

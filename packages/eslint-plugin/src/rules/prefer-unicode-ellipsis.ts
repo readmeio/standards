@@ -1,4 +1,5 @@
 import type { Rule } from 'eslint';
+import type * as ESTree from 'estree';
 
 import { getDocURL } from '../lib/utils';
 
@@ -21,8 +22,7 @@ const rule: Rule.RuleModule = {
           node,
           message: 'Ellipsis should be written as `…`.',
           fix(fixer) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Literal.raw isn't on Rule.Node
-            return fixer.replaceText(node, (node as any).raw.replace('...', '…'));
+            return fixer.replaceText(node, (node as ESTree.SimpleLiteral).raw!.replace('...', '…'));
           },
         });
       },
@@ -35,8 +35,8 @@ const rule: Rule.RuleModule = {
           node,
           message: 'Ellipsis should be written as `…`.',
           fix(fixer) {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any -- JSXText.raw isn't on Rule.Node
-            return fixer.replaceText(node, (node as any).raw.replace('...', '…'));
+            // JSXText isn't part of the ESTree spec so there's no type for it
+            return fixer.replaceText(node, (node as unknown as { raw: string }).raw.replace('...', '…'));
           },
         });
       },

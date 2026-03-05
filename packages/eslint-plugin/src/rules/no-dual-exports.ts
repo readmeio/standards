@@ -1,4 +1,5 @@
 import type { Rule } from 'eslint';
+import type * as ESTree from 'estree';
 
 import { getDocURL } from '../lib/utils';
 
@@ -13,11 +14,10 @@ const rule: Rule.RuleModule = {
   create(context) {
     return {
       ExportDefaultDeclaration(node) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Program.body isn't typed on Rule.Node parent
-        const parent = node.parent as any;
+        const parent = node.parent as ESTree.Program;
         if (!parent?.body) {
           return;
-        } else if (!parent.body.filter((n: { type: string }) => n.type === 'ExportNamedDeclaration').length) {
+        } else if (!parent.body.filter(n => n.type === 'ExportNamedDeclaration').length) {
           return;
         }
 

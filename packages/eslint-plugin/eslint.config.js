@@ -10,7 +10,7 @@ module.exports = [
     },
   },
   {
-    files: ['eslint.config.js', '.eslint-doc-generatorrc.js', 'index.js'],
+    files: ['eslint.config.js', '.eslint-doc-generatorrc.js'],
     rules: {
       '@typescript-eslint/no-require-imports': 'off',
       'import/no-extraneous-dependencies': 'off',

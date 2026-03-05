@@ -1,4 +1,5 @@
 import type { Rule } from 'eslint';
+import type * as ESTree from 'estree';
 
 import { getDocURL } from '../lib/utils';
 
@@ -45,8 +46,9 @@ const rule: Rule.RuleModule = {
        * @example import * as dateFns from 'date-fns';
        */
       ImportNamespaceSpecifier(node) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- ImportDeclaration.source isn't typed on Rule.Node parent
-        const isAllowed = options.allow.some(moduleName => (node.parent as any).source.value === moduleName);
+        const isAllowed = options.allow.some(
+          moduleName => (node.parent as ESTree.ImportDeclaration).source.value === moduleName,
+        );
         if (!isAllowed) {
           context.report({
             node: node.parent,
