@@ -1,4 +1,4 @@
-import type { Linter, Rule } from 'eslint';
+import type { ESLint } from 'eslint';
 
 import noDecoratorsOnPrivateProperties from './rules/no-decorators-on-private-properties';
 import noDualExports from './rules/no-dual-exports';
@@ -13,13 +13,7 @@ const { name: packageName, version: packageVersion } = require('../package.json'
   version: string;
 };
 
-interface Plugin {
-  configs: Record<string, Linter.Config>;
-  meta: { name: string; version: string };
-  rules: Record<string, Rule.RuleModule>;
-}
-
-const plugin: Plugin = {
+const plugin: ESLint.Plugin = {
   meta: {
     name: packageName,
     version: packageVersion,
@@ -37,24 +31,24 @@ const plugin: Plugin = {
 
 // Configs are defined after the plugin object so they can reference it directly
 // in the `plugins` map (flat config requires plugin objects, not strings).
-plugin.configs.esm = {
-  plugins: { readme: plugin as unknown as Record<string, unknown> },
+plugin.configs!.esm = {
+  plugins: { readme: plugin },
   rules: {
     'readme/no-dual-exports': 'error',
     'readme/no-wildcard-imports': 'error',
   },
 };
 
-plugin.configs.react = {
-  plugins: { readme: plugin as unknown as Record<string, unknown> },
+plugin.configs!.react = {
+  plugins: { readme: plugin },
   rules: {
     'readme/prefer-unicode-ellipsis': 'warn',
     'readme/no-wildcard-imports': 'error',
   },
 };
 
-plugin.configs.typescript = {
-  plugins: { readme: plugin as unknown as Record<string, unknown> },
+plugin.configs!.typescript = {
+  plugins: { readme: plugin },
   rules: {
     'readme/no-decorators-on-private-properties': 'error',
   },
