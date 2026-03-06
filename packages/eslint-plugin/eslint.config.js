@@ -1,5 +1,7 @@
 module.exports = [
+  { ignores: ['dist/'] },
   ...require('@readme/eslint-config'), // eslint-disable-line global-require
+  ...require('@readme/eslint-config/typescript'), // eslint-disable-line global-require
   {
     languageOptions: {
       parserOptions: {
@@ -8,13 +10,17 @@ module.exports = [
     },
   },
   {
-    files: ['eslint.config.js'],
-    rules: { 'import/no-extraneous-dependencies': 'off' },
+    files: ['eslint.config.js', '.eslint-doc-generatorrc.js'],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+      'import/no-extraneous-dependencies': 'off',
+      'readme/prefer-typescript': 'off',
+    },
   },
   {
-    files: ['test/**'],
+    files: ['vitest.config.mts'],
     rules: {
-      'import/no-unresolved': ['error', { ignore: ['@typescript-eslint/parser'] }],
+      'import/no-extraneous-dependencies': 'off',
     },
   },
 ];

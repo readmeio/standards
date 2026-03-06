@@ -1,7 +1,7 @@
-const tsParser = require('@typescript-eslint/parser');
-const { RuleTester } = require('eslint');
+import tsParser from '@typescript-eslint/parser';
+import { RuleTester } from 'eslint';
 
-const { rules } = require('..');
+import plugin from '../src';
 
 const ruleTester = new RuleTester({
   languageOptions: {
@@ -14,7 +14,7 @@ const ruleTester = new RuleTester({
 
 const errorMessage = 'TypeScript is preferred within this codebase.';
 
-ruleTester.run('prefer-typescript', rules['prefer-typescript'], {
+ruleTester.run('prefer-typescript', plugin.rules['prefer-typescript'], {
   valid: [
     { filename: 'file.ts', code: '/** this is a TS file */' },
     { filename: 'file.tsx', code: '/** this is a TSX file */' },

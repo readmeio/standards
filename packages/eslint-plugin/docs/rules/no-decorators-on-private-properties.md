@@ -1,4 +1,6 @@
-# Prevent the use of decorators on private properties as they cannot be introspected (`readme/no-decorators-on-private-properties`)
+# readme/no-decorators-on-private-properties
+
+📝 Prevent the use of decorators on private properties as they cannot be introspected.
 
 💼 This rule is enabled in the 🧠 `typescript` config.
 

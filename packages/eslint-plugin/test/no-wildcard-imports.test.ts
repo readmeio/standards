@@ -1,7 +1,7 @@
-const babelParser = require('@babel/eslint-parser');
-const { RuleTester } = require('eslint');
+import babelParser from '@babel/eslint-parser';
+import { RuleTester } from 'eslint';
 
-const { rules } = require('..');
+import plugin from '../src';
 
 const ruleTester = new RuleTester({
   languageOptions: {
@@ -13,7 +13,7 @@ const ruleTester = new RuleTester({
   },
 });
 
-ruleTester.run('no-wildcard-imports', rules['no-wildcard-imports'], {
+ruleTester.run('no-wildcard-imports', plugin.rules['no-wildcard-imports'], {
   valid: [
     { name: 'allow default import', code: "import lodash from 'lodash';" },
     { name: 'allow default import (explicit)', code: "import { default as lodash } from 'lodash';" },
