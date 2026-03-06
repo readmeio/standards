@@ -3,7 +3,10 @@
     "checkJs": true,
     "module": "CommonJS",
     "noEmit": true,
+    "preserveSymlinks": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+  "include": ["."]
 }

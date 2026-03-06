@@ -1,4 +1,6 @@
-# Prefer using pure Javascript within a codebase (`readme/prefer-javascript`)
+# readme/prefer-javascript
+
+📝 Prefer using pure Javascript within a codebase.
 
 <!-- end auto-generated rule header -->
 

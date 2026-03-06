@@ -1,92 +1,113 @@
-/** @type {import("eslint-define-config").ESLintConfig} */
-const config = {
-  extends: [
-    'airbnb-base',
-    'eslint:recommended',
-    'plugin:eslint-comments/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:try-catch-failsafe/default',
-    'plugin:you-dont-need-lodash-underscore/compatible',
-    'prettier',
-  ],
-  plugins: ['node', 'unicorn'],
-  rules: {
-    'arrow-body-style': 'off', // This rule clashes with our Prettier config.
+const js = require('@eslint/js');
+const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
+const prettier = require('eslint-config-prettier');
+const nPlugin = require('eslint-plugin-n');
+const readmePlugin = require('eslint-plugin-readme');
+const unicornPlugin = require('eslint-plugin-unicorn');
+const youDontNeedLodashPlugin = require('eslint-plugin-you-dont-need-lodash-underscore');
 
-    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
-    'eslint-comments/no-unused-disable': 'error',
+const baseRules = require('./rules/base');
 
-    // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
-    'func-names': 'off',
+module.exports = [
+  // eslint:recommended first, then airbnb-base overrides — matching the original extends order.
+  js.configs.recommended,
 
-    'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
+  // Base rules inlined from eslint-config-airbnb-base (includes import-x plugin registration).
+  ...baseRules,
 
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-        groups: ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
-        'newlines-between': 'always',
-        warnOnUnassignedImports: true,
-      },
-    ],
-
-    'import/prefer-default-export': 'off',
-
-    'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
-    'no-constructor-return': 'error',
-    'no-dupe-else-if': 'error',
-    'no-else-return': ['error', { allowElseIf: true }],
-
-    'no-nested-ternary': 'off', // See also: `unicorn/no-nested-ternary`
-
-    'no-restricted-imports': ['error', { paths: ['lodash'] }],
-
-    // Disallow shadowing of any variable that isn't "err" as this is a common case that is
-    // acceptable.
-    'no-shadow': ['error', { allow: ['err'] }],
-
-    'node/no-deprecated-api': 'error',
-    'node/no-exports-assign': 'error',
-    'node/no-extraneous-require': 'error',
-
-    'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
-    'prefer-destructuring': 'off',
-
-    // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
-    // templated strings that aren't templates.
-    quotes: ['error', 'single', { avoidEscape: true }],
-
-    'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
-    // "unicorn/consistent-function-scoping": "error", // Maybe?
-    'unicorn/custom-error-definition': 'error',
-    'unicorn/error-message': 'error',
-    'unicorn/import-style': 'error',
-    'unicorn/new-for-builtins': 'error',
-    // 'unicorn/no-array-method-this-argument': 'error', // Maybe?
-    'unicorn/no-instanceof-array': 'error',
-    'unicorn/no-nested-ternary': 'off', // See also: `no-nested-ternary`
-    'unicorn/no-unnecessary-polyfills': 'error',
-    'unicorn/no-unreadable-array-destructuring': 'error',
-    'unicorn/no-unused-properties': 'error',
-    'unicorn/no-useless-fallback-in-spread': 'error',
-    'unicorn/no-useless-length-check': 'error',
-    // 'unicorn/no-useless-undefined': 'error',
-    'unicorn/prefer-array-find': 'error',
-    'unicorn/prefer-set-has': 'off',
-    'unicorn/prefer-number-properties': 'off',
-    'unicorn/prefer-type-error': 'error',
-    'unicorn/throw-new-error': 'error',
-
-    // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with
-    // something else.
-    'you-dont-need-lodash-underscore/debounce': 'off',
-    'you-dont-need-lodash-underscore/throttle': 'off',
+  // Plugins without flat configs — manual wiring
+  {
+    plugins: {
+      '@eslint-community/eslint-comments': eslintCommentsPlugin,
+    },
+    rules: eslintCommentsPlugin.configs.recommended.rules,
   },
-};
+  {
+    plugins: {
+      readme: readmePlugin,
+    },
+    rules: {
+      'readme/json-parse-try-catch': 'error',
+    },
+  },
+  {
+    plugins: {
+      'you-dont-need-lodash-underscore': youDontNeedLodashPlugin,
+    },
+    rules: youDontNeedLodashPlugin.configs.compatible.rules,
+  },
 
-module.exports = config;
+  // prettier — just rules, spread directly
+  { rules: prettier.rules },
+
+  // Our custom rules
+  {
+    plugins: {
+      n: nPlugin,
+      unicorn: unicornPlugin,
+    },
+    rules: {
+      '@eslint-community/eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+      '@eslint-community/eslint-comments/no-unused-disable': 'error',
+
+      'arrow-body-style': 'off', // This rule clashes with our Prettier config.
+
+      // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
+      'func-names': 'off',
+
+      'import-x/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
+
+      'import-x/order': [
+        'error',
+        {
+          alphabetize: {
+            order: 'asc',
+            caseInsensitive: true,
+          },
+          groups: ['type', 'builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+          'newlines-between': 'always',
+          warnOnUnassignedImports: true,
+        },
+      ],
+
+      'import-x/prefer-default-export': 'off',
+
+      'no-nested-ternary': 'off', // See also: `unicorn/no-nested-ternary`
+
+      'no-restricted-imports': ['error', { paths: ['lodash'] }],
+
+      'n/no-deprecated-api': 'error',
+      'n/no-exports-assign': 'error',
+      'n/no-extraneous-require': 'error',
+
+      'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
+      'prefer-destructuring': 'off',
+
+      'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
+      // "unicorn/consistent-function-scoping": "error", // Maybe?
+      'unicorn/custom-error-definition': 'error',
+      'unicorn/error-message': 'error',
+      'unicorn/import-style': 'error',
+      'unicorn/new-for-builtins': 'error',
+      // 'unicorn/no-array-method-this-argument': 'error', // Maybe?
+      'unicorn/no-instanceof-array': 'error',
+      'unicorn/no-nested-ternary': 'off', // See also: `no-nested-ternary`
+      'unicorn/no-unnecessary-polyfills': 'error',
+      'unicorn/no-unreadable-array-destructuring': 'error',
+      'unicorn/no-unused-properties': 'error',
+      'unicorn/no-useless-fallback-in-spread': 'error',
+      'unicorn/no-useless-length-check': 'error',
+      // 'unicorn/no-useless-undefined': 'error',
+      'unicorn/prefer-array-find': 'error',
+      'unicorn/prefer-set-has': 'off',
+      'unicorn/prefer-number-properties': 'off',
+      'unicorn/prefer-type-error': 'error',
+      'unicorn/throw-new-error': 'error',
+
+      // We're comfortable using throttle and debounce out of Lodash instead of polyfilling them with
+      // something else.
+      'you-dont-need-lodash-underscore/debounce': 'off',
+      'you-dont-need-lodash-underscore/throttle': 'off',
+    },
+  },
+];

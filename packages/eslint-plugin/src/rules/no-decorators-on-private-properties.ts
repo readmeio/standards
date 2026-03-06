@@ -1,15 +1,28 @@
-const { getDocURL } = require('../lib/utils');
+import type { Rule } from 'eslint';
+import type * as ESTree from 'estree';
 
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { getDocURL } from '../lib/utils';
+
+// Decorators are not part of the ESTree spec, so we define the shapes we expect from the AST.
+interface DecoratorNode {
+  expression: {
+    callee: ESTree.Identifier;
+  };
+}
+
+interface DecoratedClassDeclaration {
+  decorators: DecoratorNode[];
+}
+
+const rule: Rule.RuleModule = {
   meta: {
     type: 'problem',
     docs: {
       description: 'Prevent the use of decorators on private properties as they cannot be introspected.',
-      url: getDocURL(__filename),
+      url: getDocURL('no-decorators-on-private-properties'),
     },
   },
-  create: context => {
+  create(context) {
     return {
       /**
        * Checking for class-level decorators that exist on a class that contains private properties
@@ -22,10 +35,11 @@ module.exports = {
        *  }
        * }
        */
-      'ClassDeclaration[decorators.length>0] PrivateIdentifier': node => {
-        const decorators = node.parent.parent.parent.decorators;
+      'ClassDeclaration[decorators.length>0] PrivateIdentifier': (node: Rule.Node) => {
+        // Selector guarantees: PrivateIdentifier → MethodDefinition → ClassBody → ClassDeclaration
+        const classDecl = node.parent!.parent!.parent as unknown as DecoratedClassDeclaration;
 
-        decorators.forEach(dnode => {
+        classDecl.decorators.forEach(dnode => {
           const decorator = dnode.expression.callee.name;
 
           context.report({
@@ -46,8 +60,8 @@ module.exports = {
        *  }
        * }
        */
-      'Decorator[parent.key.type=PrivateIdentifier]': node => {
-        const decorator = node.expression.callee.name;
+      'Decorator[parent.key.type=PrivateIdentifier]': (node: Rule.Node) => {
+        const decorator = (node as unknown as DecoratorNode).expression.callee.name;
 
         context.report({
           node,
@@ -57,3 +71,5 @@ module.exports = {
     };
   },
 };
+
+export default rule;

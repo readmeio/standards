@@ -1,16 +1,18 @@
-const { RuleTester } = require('eslint');
+import { RuleTester } from 'eslint';
 
-const { rules } = require('..');
+import plugin from '../src';
 
 const ruleTester = new RuleTester({
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  languageOptions: {
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true,
+      },
     },
   },
 });
 
-ruleTester.run('prefer-unicode-ellipsis', rules['prefer-unicode-ellipsis'], {
+ruleTester.run('prefer-unicode-ellipsis', plugin.rules['prefer-unicode-ellipsis'], {
   valid: [
     {
       code: 'console.log("buster…");',

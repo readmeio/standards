@@ -1,18 +1,21 @@
-const { RuleTester } = require('eslint');
+import babelParser from '@babel/eslint-parser';
+import { RuleTester } from 'eslint';
 
-const { rules } = require('..');
+import plugin from '../src';
 
 const ruleTester = new RuleTester({
-  parser: require.resolve('@babel/eslint-parser'),
-  parserOptions: {
-    requireConfigFile: false,
+  languageOptions: {
+    parser: babelParser,
+    parserOptions: {
+      requireConfigFile: false,
+    },
   },
 });
 
 const errorMessage =
   'In a dual package world you cannot ship a file for CJS environments that has a mix of `default` and named exports. This export should either be made a named export or refactor this file to have just one default export.';
 
-ruleTester.run('no-dual-exports', rules['no-dual-exports'], {
+ruleTester.run('no-dual-exports', plugin.rules['no-dual-exports'], {
   valid: [
     {
       code: 'export class ReducerOptions {}',

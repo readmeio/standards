@@ -1,26 +1,29 @@
-const path = require('node:path');
+import type { Rule } from 'eslint';
 
-const { getDocURL } = require('../lib/utils');
+import path from 'node:path';
 
-/** @type {import('eslint').Rule.RuleModule} */
-module.exports = {
+import { getDocURL } from '../lib/utils';
+
+const rule: Rule.RuleModule = {
   meta: {
     type: 'suggestion',
     docs: {
       description: 'Prefer using pure Javascript within a codebase.',
-      url: getDocURL(__filename),
+      url: getDocURL('prefer-javascript'),
     },
   },
-  create: context => {
+  create(context) {
     return {
       Program(node) {
         const filename = context.physicalFilename;
         const extension = path.extname(filename);
 
         if (extension.match(/\.(c|m)?tsx?$/)) {
-          context.report(node, 'Pure Javascript is preferred within this codebase.');
+          context.report({ node, message: 'Pure Javascript is preferred within this codebase.' });
         }
       },
     };
   },
 };
+
+export default rule;

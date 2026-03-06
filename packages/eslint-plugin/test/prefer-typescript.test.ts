@@ -1,18 +1,20 @@
-const { RuleTester } = require('eslint');
+import tsParser from '@typescript-eslint/parser';
+import { RuleTester } from 'eslint';
 
-const { rules } = require('..');
+import plugin from '../src';
 
 const ruleTester = new RuleTester({
-  parser: require.resolve('@typescript-eslint/parser'),
-  parserOptions: {
-    ecmaVersion: 2022,
-    requireConfigFile: false,
+  languageOptions: {
+    parser: tsParser,
+    parserOptions: {
+      ecmaVersion: 2022,
+    },
   },
 });
 
 const errorMessage = 'TypeScript is preferred within this codebase.';
 
-ruleTester.run('prefer-typescript', rules['prefer-typescript'], {
+ruleTester.run('prefer-typescript', plugin.rules['prefer-typescript'], {
   valid: [
     { filename: 'file.ts', code: '/** this is a TS file */' },
     { filename: 'file.tsx', code: '/** this is a TSX file */' },
@@ -26,37 +28,31 @@ ruleTester.run('prefer-typescript', rules['prefer-typescript'], {
       filename: 'file.js',
       code: '/** this is a JS file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a JS file */',
     },
     {
       filename: 'file.jsx',
       code: '/** this is a JSX file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a JSX file */',
     },
     {
       filename: 'file.cjs',
       code: '/** this is a CJS file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a CJS file */',
     },
     {
       filename: 'file.cjsx',
       code: '/** this is a CJSX file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a CJSX file */',
     },
     {
       filename: 'file.mjs',
       code: '/** this is a MJS file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a MJS file */',
     },
     {
       filename: 'file.mjsx',
       code: '/** this is a MJSX file */',
       errors: [{ message: errorMessage }],
-      output: '/** this is a MJSX file */',
     },
   ],
 });

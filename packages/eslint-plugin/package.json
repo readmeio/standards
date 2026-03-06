@@ -1,8 +1,9 @@
 {
   "name": "eslint-plugin-readme",
-  "version": "2.2.4",
+  "version": "3.0.0-alpha.0",
   "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Jon Ursenbach <jon@ursenba.ch>",
   "license": "ISC",
   "repository": {
@@ -15,23 +16,32 @@
   },
   "homepage": "https://github.com/readmeio/standards#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/",
+    "docs/"
+  ],
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
+    "prepare": "npm run build",
     "test": "vitest run",
-    "update:docs": "eslint-doc-generator && npx prettier --write docs/rules/*.md *.md"
+    "update:docs": "npm run build && eslint-doc-generator && npx prettier --write docs/rules/*.md *.md"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^9.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.27.1",
+    "@eslint/js": "^9.22.0",
     "@readme/eslint-config": "file:../eslint-config",
     "@typescript-eslint/parser": "^8.24.1",
-    "eslint-doc-generator": "^3.0.2"
+    "eslint": "^9.22.0",
+    "eslint-doc-generator": "^3.0.2",
+    "typescript": "^5.8.3"
   }
 }
