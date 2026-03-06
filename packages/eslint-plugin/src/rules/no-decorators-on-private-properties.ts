@@ -3,11 +3,15 @@ import type * as ESTree from 'estree';
 
 import { getDocURL } from '../lib/utils';
 
-// Decorators are not part of the ESTree spec, so we define the shape we expect from the AST.
+// Decorators are not part of the ESTree spec, so we define the shapes we expect from the AST.
 interface DecoratorNode {
   expression: {
     callee: ESTree.Identifier;
   };
+}
+
+interface DecoratedClassDeclaration {
+  decorators: DecoratorNode[];
 }
 
 const rule: Rule.RuleModule = {
@@ -33,8 +37,7 @@ const rule: Rule.RuleModule = {
        */
       'ClassDeclaration[decorators.length>0] PrivateIdentifier': (node: Rule.Node) => {
         // Selector guarantees: PrivateIdentifier → MethodDefinition → ClassBody → ClassDeclaration
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Rule.Node doesn't type deep parent chains
-        const classDecl = (node as any).parent.parent.parent as { decorators: DecoratorNode[] };
+        const classDecl = node.parent!.parent!.parent as unknown as DecoratedClassDeclaration;
 
         classDecl.decorators.forEach(dnode => {
           const decorator = dnode.expression.callee.name;

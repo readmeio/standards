@@ -8,6 +8,8 @@ import preferJavascript from './rules/prefer-javascript';
 import preferTypescript from './rules/prefer-typescript';
 import preferUnicodeEllipsis from './rules/prefer-unicode-ellipsis';
 
+// `require` is used here because `export =` (CommonJS) is incompatible with
+// top-level ESM `import` of JSON modules in TypeScript.
 // eslint-disable-next-line @typescript-eslint/no-require-imports, global-require
 const { name: packageName, version: packageVersion } = require('../package.json') as {
   name: string;
