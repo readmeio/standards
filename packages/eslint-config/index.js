@@ -9,12 +9,11 @@ const youDontNeedLodashPlugin = require('eslint-plugin-you-dont-need-lodash-unde
 const baseRules = require('./rules/base');
 
 module.exports = [
+  // eslint:recommended first, then airbnb-base overrides — matching the original extends order.
+  js.configs.recommended,
+
   // Base rules inlined from eslint-config-airbnb-base (includes import-x plugin registration).
   ...baseRules,
-
-  // eslint:recommended comes after base rules to match the original extends order
-  // (later entries win on conflicts, e.g. no-constant-condition stays "error" not "warn").
-  js.configs.recommended,
 
   // Plugins without flat configs — manual wiring
   {
