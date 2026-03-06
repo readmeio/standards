@@ -1,12 +1,15 @@
+const babelParser = require('@babel/eslint-parser');
 const { RuleTester } = require('eslint');
 
 const { rules } = require('..');
 
 const ruleTester = new RuleTester({
-  parser: require.resolve('@babel/eslint-parser'),
-  parserOptions: {
-    ecmaVersion: 2022,
-    requireConfigFile: false,
+  languageOptions: {
+    parser: babelParser,
+    parserOptions: {
+      ecmaVersion: 2022,
+      requireConfigFile: false,
+    },
   },
 });
 

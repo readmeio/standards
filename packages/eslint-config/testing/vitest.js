@@ -1,42 +1,43 @@
-const merge = require('lodash/merge');
+const vitestPlugin = require('@vitest/eslint-plugin');
 
 const common = require('./common.config');
 
-/** @type {import("eslint-define-config").ESLintConfig} */
-const config = merge(common, {
-  extends: ['plugin:@vitest/legacy-all'],
-  plugins: ['@vitest'],
-  rules: {
-    '@vitest/max-expects': 'off',
-    '@vitest/no-conditional-in-test': 'off',
-    '@vitest/no-conditional-tests': 'off',
+module.exports = [
+  ...common,
 
-    '@vitest/no-focused-tests': [
-      'warn',
-      {
-        // This rule defaults to fixing issues by default but if we have VSCode configured to
-        // automatically fix all fixable issues on save any `.only` in a test will be removed every
-        // time -- essentially making `.only` impossible to use unless you explicitly save with
-        // "save without formatting". Very annoying!
-        fixable: false,
-      },
-    ],
+  vitestPlugin.configs.all,
 
-    '@vitest/no-hooks': 'off',
-    '@vitest/no-test-return-statement': 'off',
+  {
+    rules: {
+      '@vitest/max-expects': 'off',
+      '@vitest/no-conditional-in-test': 'off',
+      '@vitest/no-conditional-tests': 'off',
 
-    '@vitest/padding-around-all': 'off',
-    '@vitest/padding-around-expect-groups': 'off',
+      '@vitest/no-focused-tests': [
+        'warn',
+        {
+          // This rule defaults to fixing issues by default but if we have VSCode configured to
+          // automatically fix all fixable issues on save any `.only` in a test will be removed every
+          // time -- essentially making `.only` impossible to use unless you explicitly save with
+          // "save without formatting". Very annoying!
+          fixable: false,
+        },
+      ],
 
-    '@vitest/prefer-describe-function-title': 'off',
-    '@vitest/prefer-expect-assertions': 'off',
-    '@vitest/prefer-lowercase-title': 'off',
-    '@vitest/prefer-to-be-falsy': 'off',
-    '@vitest/prefer-to-be-truthy': 'off',
-    '@vitest/prefer-snapshot-hint': 'off',
-    '@vitest/prefer-spy-on': 'off',
-    '@vitest/require-top-level-describe': 'off',
+      '@vitest/no-hooks': 'off',
+      '@vitest/no-test-return-statement': 'off',
+
+      '@vitest/padding-around-all': 'off',
+      '@vitest/padding-around-expect-groups': 'off',
+
+      '@vitest/prefer-describe-function-title': 'off',
+      '@vitest/prefer-expect-assertions': 'off',
+      '@vitest/prefer-lowercase-title': 'off',
+      '@vitest/prefer-to-be-falsy': 'off',
+      '@vitest/prefer-to-be-truthy': 'off',
+      '@vitest/prefer-snapshot-hint': 'off',
+      '@vitest/prefer-spy-on': 'off',
+      '@vitest/require-top-level-describe': 'off',
+    },
   },
-});
-
-module.exports = config;
+];
