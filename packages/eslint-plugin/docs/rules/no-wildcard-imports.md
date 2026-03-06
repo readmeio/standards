@@ -1,4 +1,6 @@
-# Ban wildcard imports (`import * as something`) from libraries (`readme/no-wildcard-imports`)
+# readme/no-wildcard-imports
+
+📝 Ban wildcard imports (`import * as something`) from libraries.
 
 💼 This rule is enabled in the following configs: 📁 `esm`, ⚛️ `react`.
 

@@ -1,4 +1,6 @@
-# Prefer using a unicode ellipsis (`…`) instead of three periods (`...`) (`readme/prefer-unicode-ellipsis`)
+# readme/prefer-unicode-ellipsis
+
+📝 Prefer using a unicode ellipsis (`…`) instead of three periods (`...`).
 
 ⚠️ This rule _warns_ in the ⚛️ `react` config.
 
