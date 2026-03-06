@@ -1,4 +1,6 @@
-# Prefer using TypeScript within a codebase (`readme/prefer-typescript`)
+# readme/prefer-typescript
+
+📝 Prefer using TypeScript within a codebase.
 
 <!-- end auto-generated rule header -->
 

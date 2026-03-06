@@ -1,4 +1,6 @@
-# Prevent cases of having a file with dual `default` and named exports (`readme/no-dual-exports`)
+# readme/no-dual-exports
+
+📝 Prevent cases of having a file with dual `default` and named exports.
 
 💼 This rule is enabled in the 📁 `esm` config.
 
