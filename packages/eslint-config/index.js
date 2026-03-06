@@ -1,30 +1,19 @@
-const { FlatCompat } = require('@eslint/eslintrc');
 const js = require('@eslint/js');
 const eslintCommentsPlugin = require('@eslint-community/eslint-plugin-eslint-comments');
 const prettier = require('eslint-config-prettier');
-const importPlugin = require('eslint-plugin-import');
 const nPlugin = require('eslint-plugin-n');
-const tryCatchFailsafePlugin = require('eslint-plugin-try-catch-failsafe');
+const readmePlugin = require('eslint-plugin-readme');
 const unicornPlugin = require('eslint-plugin-unicorn');
 const youDontNeedLodashPlugin = require('eslint-plugin-you-dont-need-lodash-underscore');
 
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-});
+const baseRules = require('./rules/base');
 
 module.exports = [
-  // airbnb-base has no flat config, so we still need FlatCompat for it.
-  ...compat.extends('airbnb-base'),
-
-  // eslint:recommended comes after airbnb-base to match the original extends order
-  // (later entries win on conflicts, e.g. no-constant-condition stays "error" not "warn").
+  // eslint:recommended first, then airbnb-base overrides — matching the original extends order.
   js.configs.recommended,
 
-  // import errors/warnings rules are already included via airbnb-base, so we only add the rules
-  // (not the plugin registration) to avoid "Cannot redefine plugin" errors.
-  { rules: importPlugin.flatConfigs.errors.rules },
-  { rules: importPlugin.flatConfigs.warnings.rules },
+  // Base rules inlined from eslint-config-airbnb-base (includes import-x plugin registration).
+  ...baseRules,
 
   // Plugins without flat configs — manual wiring
   {
@@ -35,9 +24,11 @@ module.exports = [
   },
   {
     plugins: {
-      'try-catch-failsafe': tryCatchFailsafePlugin,
+      readme: readmePlugin,
     },
-    rules: tryCatchFailsafePlugin.configs.default.rules,
+    rules: {
+      'readme/json-parse-try-catch': 'error',
+    },
   },
   {
     plugins: {
@@ -64,9 +55,9 @@ module.exports = [
       // This rule is enabled in our `typescript` config, eventually it will be enabled here as well.
       'func-names': 'off',
 
-      'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
+      'import-x/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
 
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           alphabetize: {
@@ -79,20 +70,11 @@ module.exports = [
         },
       ],
 
-      'import/prefer-default-export': 'off',
-
-      'no-cond-assign': ['error', 'except-parens'], // airbnb-base overrides the default
-      'no-constructor-return': 'error',
-      'no-dupe-else-if': 'error',
-      'no-else-return': ['error', { allowElseIf: true }],
+      'import-x/prefer-default-export': 'off',
 
       'no-nested-ternary': 'off', // See also: `unicorn/no-nested-ternary`
 
       'no-restricted-imports': ['error', { paths: ['lodash'] }],
-
-      // Disallow shadowing of any variable that isn't "err" as this is a common case that is
-      // acceptable.
-      'no-shadow': ['error', { allow: ['err'] }],
 
       'n/no-deprecated-api': 'error',
       'n/no-exports-assign': 'error',
@@ -100,10 +82,6 @@ module.exports = [
 
       'prefer-arrow-callback': 'off', // This rule clashes with our Prettier config.
       'prefer-destructuring': 'off',
-
-      // The `eslint-config-airbnb-base` that we extend off of doesn't have any rules for catching for
-      // templated strings that aren't templates.
-      quotes: ['error', 'single', { avoidEscape: true }],
 
       'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
       // "unicorn/consistent-function-scoping": "error", // Maybe?

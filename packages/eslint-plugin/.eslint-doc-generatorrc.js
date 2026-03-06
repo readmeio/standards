@@ -9,7 +9,6 @@ const config = {
     if (page === 'README.md') {
       return `https://github.com/readmeio/standards/tree/main/packages/eslint-plugin/docs/rules/${name}.md`;
     }
-
     return undefined;
   },
 };

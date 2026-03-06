@@ -21,7 +21,7 @@ module.exports = [
     rules: {
       // see here for more rules to possibly enable in the future:
       // https://gist.github.com/Jaid/164668c0151ae09d2bc81be78a203dd5
-      'import/no-commonjs': 'error',
+      'import-x/no-commonjs': 'error',
 
       'n/no-extraneous-import': 'error',
       'unicorn/prefer-module': 'error',

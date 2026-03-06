@@ -1,5 +1,6 @@
 import type { ESLint, Linter } from 'eslint';
 
+import jsonParseTryCatch from './rules/json-parse-try-catch';
 import noDecoratorsOnPrivateProperties from './rules/no-decorators-on-private-properties';
 import noDualExports from './rules/no-dual-exports';
 import noWildcardImports from './rules/no-wildcard-imports';
@@ -24,6 +25,7 @@ const plugin = {
   },
   configs,
   rules: {
+    'json-parse-try-catch': jsonParseTryCatch,
     'no-decorators-on-private-properties': noDecoratorsOnPrivateProperties,
     'no-dual-exports': noDualExports,
     'prefer-javascript': preferJavascript,
@@ -55,6 +57,13 @@ plugin.configs.typescript = {
   plugins: { readme: plugin },
   rules: {
     'readme/no-decorators-on-private-properties': 'error',
+  },
+};
+
+plugin.configs.node = {
+  plugins: { readme: plugin },
+  rules: {
+    'readme/json-parse-try-catch': 'error',
   },
 };
 

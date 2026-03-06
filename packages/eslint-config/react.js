@@ -17,7 +17,7 @@ module.exports = [
       globals: globals.browser,
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         node: {
           extensions: ['.js', '.jsx'],
         },
