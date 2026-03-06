@@ -4,8 +4,11 @@
   "private": true,
   "description": "Core coding and style standards for all ReadMe technology.",
   "scripts": {
+    "build": "lerna run build --stream",
     "lint": "npm run prettier && npm run lint:js",
     "lint:js": "lerna run lint --stream",
+    "prelint": "npm run build",
+    "pretest": "npm run build",
     "prettier": "prettier --check .",
     "prettier:write": "prettier --list-different --write .",
     "version": "npm i && git add package-lock.json",
