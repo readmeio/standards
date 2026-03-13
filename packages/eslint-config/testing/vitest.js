@@ -9,11 +9,11 @@ module.exports = [
 
   {
     rules: {
-      '@vitest/max-expects': 'off',
-      '@vitest/no-conditional-in-test': 'off',
-      '@vitest/no-conditional-tests': 'off',
+      'vitest/max-expects': 'off',
+      'vitest/no-conditional-in-test': 'off',
+      'vitest/no-conditional-tests': 'off',
 
-      '@vitest/no-focused-tests': [
+      'vitest/no-focused-tests': [
         'warn',
         {
           // This rule defaults to fixing issues by default but if we have VSCode configured to
@@ -24,20 +24,20 @@ module.exports = [
         },
       ],
 
-      '@vitest/no-hooks': 'off',
-      '@vitest/no-test-return-statement': 'off',
+      'vitest/no-hooks': 'off',
+      'vitest/no-test-return-statement': 'off',
 
-      '@vitest/padding-around-all': 'off',
-      '@vitest/padding-around-expect-groups': 'off',
+      'vitest/padding-around-all': 'off',
+      'vitest/padding-around-expect-groups': 'off',
 
-      '@vitest/prefer-describe-function-title': 'off',
-      '@vitest/prefer-expect-assertions': 'off',
-      '@vitest/prefer-lowercase-title': 'off',
-      '@vitest/prefer-to-be-falsy': 'off',
-      '@vitest/prefer-to-be-truthy': 'off',
-      '@vitest/prefer-snapshot-hint': 'off',
-      '@vitest/prefer-spy-on': 'off',
-      '@vitest/require-top-level-describe': 'off',
+      'vitest/prefer-describe-function-title': 'off',
+      'vitest/prefer-expect-assertions': 'off',
+      'vitest/prefer-lowercase-title': 'off',
+      'vitest/prefer-to-be-falsy': 'off',
+      'vitest/prefer-to-be-truthy': 'off',
+      'vitest/prefer-snapshot-hint': 'off',
+      'vitest/prefer-spy-on': 'off',
+      'vitest/require-top-level-describe': 'off',
     },
   },
 ];
