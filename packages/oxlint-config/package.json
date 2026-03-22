@@ -1,0 +1,33 @@
+{
+  "name": "@readme/oxlint-config",
+  "version": "0.0.0",
+  "description": "ReadMe coding standards for projects with Oxlint",
+  "homepage": "https://github.com/readmeio/standards#readme",
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "license": "MIT",
+  "author": "Jon Ursenbach <jon@ursenba.ch>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:readmeio/standards.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/core.js",
+    "./typescript": "./src/typescript.js",
+    "./testing/jest": "./src/testing/jest.js",
+    "./testing/vitest": "./src/testing/vitest.js"
+  },
+  "scripts": {
+    "format": "oxfmt",
+    "lint": "oxlint ."
+  },
+  "dependencies": {
+    "eslint-plugin-perfectionist": "^5.7.0",
+    "eslint-plugin-readme": "file:../eslint-plugin",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.14.0",
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0"
+  }
+}
