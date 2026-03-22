@@ -5,7 +5,6 @@ import { defineConfig } from 'oxlint';
  *
  */
 export default defineConfig({
-  plugins: ['eslint'],
   rules: {
     // ── Best Practices ──────────────────────────────────────────────────
     'array-callback-return': ['error', { allowImplicit: true }],

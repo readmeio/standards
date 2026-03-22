@@ -14,7 +14,8 @@
   },
   "type": "module",
   "exports": {
-    ".": "./src/core.js",
+    ".": "./src/index.js",
+    "./oxfmt": "./src/formatter.js",
     "./typescript": "./src/typescript.js",
     "./testing/jest": "./src/testing/jest.js",
     "./testing/vitest": "./src/testing/vitest.js"

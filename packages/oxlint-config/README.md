@@ -31,7 +31,7 @@ npm install --save-dev oxlint @readme/oxlint-config
 
 ### Usage
 
-Create a `oxlint.config.ts` file with the following contents:
+Create an `oxlint.config.ts` file with the following contents:
 
 ```ts
 import oxlintConfig from '@readme/oxlint-config';
@@ -39,5 +39,18 @@ import { defineConfig } from 'oxlint';
 
 export default defineConfig({
   extends: [oxlintConfig],
+});
+```
+
+#### Formatting
+
+Create an `oxfmt.config.ts` file with the following contents:
+
+```ts
+import oxfmtConfig from '@readme/oxlint-config/oxfmt';
+import { defineConfig } from 'oxfmt';
+
+export default defineConfig({
+  ...oxfmtConfig,
 });
 ```
