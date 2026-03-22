@@ -1,9 +1,0 @@
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": [
-    "./src/airbnb.jsonc",
-    "./src/core.jsonc",
-    "./src/react.jsonc",
-    "./src/typescript.jsonc"
-  ]
-}
