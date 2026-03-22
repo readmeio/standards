@@ -8,10 +8,10 @@ ReadMe coding standards for projects with [Oxlint](https://oxc.rs).
 
 ## Configs
 
-| Config                             | Description                                                   |
-| :--------------------------------- | :------------------------------------------------------------ |
-| `@readme/oxlint-config`            | For projects that use [Oxlint](https://oxc.rs).               |
-| `@readme/oxlint-config/typescript` | &mdash; Oxlint addon for TypeScript repositories.<sup>†</sup> |
+| Config                             | Description                                            |
+| :--------------------------------- | :----------------------------------------------------- |
+| `@readme/oxlint-config`            | For projects that use [Oxlint](https://oxc.rs).        |
+| `@readme/oxlint-config/typescript` | &mdash; addon for TypeScript repositories.<sup>†</sup> |
 
 <sub>† This requires also using `@readme/oxlint-config`.</sub>
 
