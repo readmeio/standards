@@ -8,10 +8,10 @@ ReadMe coding standards for projects with [Oxlint](https://oxc.rs).
 
 ## Configs
 
-| Config                             | Description                                            |
-| :--------------------------------- | :----------------------------------------------------- |
-| `@readme/oxlint-config`            | For projects that use [Oxlint](https://oxc.rs).        |
-| `@readme/oxlint-config/typescript` | &mdash; addon for TypeScript repositories.<sup>†</sup> |
+| Config                             | Description                                                   |
+| :--------------------------------- | :------------------------------------------------------------ |
+| `@readme/oxlint-config`            | For projects that use [Oxlint](https://oxc.rs).               |
+| `@readme/oxlint-config/typescript` | &mdash; Oxlint addon for TypeScript repositories.<sup>†</sup> |
 
 <sub>† This requires also using `@readme/oxlint-config`.</sub>
 
@@ -31,7 +31,7 @@ npm install --save-dev oxlint @readme/oxlint-config
 
 ### Usage
 
-Create a `oxlint.config.ts` file with the following contents:
+Create an `oxlint.config.ts` file with the following contents:
 
 ```ts
 import oxlintConfig from '@readme/oxlint-config';
@@ -39,5 +39,18 @@ import { defineConfig } from 'oxlint';
 
 export default defineConfig({
   extends: [oxlintConfig],
+});
+```
+
+#### Formatting
+
+Create an `oxfmt.config.ts` file with the following contents:
+
+```ts
+import oxfmtConfig from '@readme/oxlint-config/oxfmt';
+import { defineConfig } from 'oxfmt';
+
+export default defineConfig({
+  ...oxfmtConfig,
 });
 ```
