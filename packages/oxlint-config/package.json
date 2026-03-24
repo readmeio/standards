@@ -1,6 +1,6 @@
 {
   "name": "@readme/oxlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReadMe coding standards for projects with Oxlint",
   "homepage": "https://github.com/readmeio/standards#readme",
   "bugs": {
