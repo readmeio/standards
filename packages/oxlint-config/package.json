@@ -22,13 +22,14 @@
   },
   "scripts": {
     "format": "oxfmt",
-    "lint": "oxlint ."
+    "lint": "oxlint .",
+    "test": "npm run lint && npm run format"
   },
   "dependencies": {
     "eslint-plugin-perfectionist": "^5.7.0",
     "eslint-plugin-readme": "file:../eslint-plugin",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.14.0",
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0"
+    "oxfmt": "^0.42.0",
+    "oxlint": "^1.57.0"
   }
 }
