@@ -109,7 +109,7 @@ export default defineConfig({
     'vitest/no-conditional-in-test': 'off',
     'vitest/no-conditional-tests': 'off',
 
-    // This rule is autofixable by defualt and does not give you a way to disable that like
+    // This rule is autofixable by default and does not give you a way to disable that like
     // `eslint-plugin-vitest` does. If we leave this enabled as a `warn` then anytime you change a
     // test to be focused and save it'll be autofixed and undone every time.
     'vitest/no-focused-tests': 'off',
