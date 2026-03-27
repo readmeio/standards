@@ -63,7 +63,7 @@ export default defineConfig({
     // This rule is autofixable by default and does not give you a way to disable that like
     // `eslint-plugin-jest` does. If we leave this enabled as a `warn` then anytime you change a
     // test to be focused and save it'll be autofixed and undone every time.
-    'jest/no-focused-tests': 'error',
+    'jest/no-focused-tests': 'off',
 
     'jest/no-mocks-import': 'off',
 
