@@ -24,7 +24,7 @@
     "lint:fix": "biome check --write ."
   },
   "optionalDependencies": {
-    "@biomejs/biome": "^2.2.3",
+    "@biomejs/biome": "^2.4.10",
     "prettier": "^3.6.2"
   },
   "devDependencies": {
