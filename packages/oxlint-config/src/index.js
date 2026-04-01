@@ -39,6 +39,9 @@ export default defineConfig({
       },
     ],
 
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/493 */
+    // 'node/no-deprecated-api': 'error',
+
     'node/no-exports-assign': 'error',
 
     'prefer-destructuring': 'off',
@@ -48,15 +51,24 @@ export default defineConfig({
     'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
-    'unicorn/import-style': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/684 */
+    // 'unicorn/import-style': 'error',
+
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-instanceof-array': 'error',
-    'unicorn/no-unnecessary-polyfills': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/684 */
+    // 'unicorn/no-unnecessary-polyfills': 'error',
+
     'unicorn/no-unreadable-array-destructuring': 'error',
-    'unicorn/no-unused-properties': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/684 */
+    // 'unicorn/no-unused-properties': 'error',
+
     'unicorn/no-useless-fallback-in-spread': 'error',
     'unicorn/no-useless-length-check': 'error',
-    'unicorn/no-useless-undefined': 'off' /** @todo we should enable this */,
+    'unicorn/no-useless-undefined': 'warn',
     'unicorn/prefer-array-find': 'error',
     'unicorn/prefer-type-error': 'error',
     'unicorn/throw-new-error': 'error',

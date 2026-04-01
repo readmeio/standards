@@ -36,14 +36,17 @@ const eslintPluginViestRules = {
     'vitest/no-test-prefixes': 'warn',
     'vitest/no-test-return-statement': 'warn',
     'vitest/no-unneeded-async-expect-function': 'warn',
-    'vitest/padding-around-after-all-blocks': 'warn',
-    'vitest/padding-around-after-each-blocks': 'warn',
-    'vitest/padding-around-all': 'warn',
-    'vitest/padding-around-before-all-blocks': 'warn',
-    'vitest/padding-around-before-each-blocks': 'warn',
-    'vitest/padding-around-describe-blocks': 'warn',
-    'vitest/padding-around-expect-groups': 'warn',
-    'vitest/padding-around-test-blocks': 'warn',
+
+    /** @fixme Oxlint doesn't support these `padding-*` rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/padding-around-after-all-blocks': 'warn',
+    // 'vitest/padding-around-after-each-blocks': 'warn',
+    // 'vitest/padding-around-all': 'warn',
+    // 'vitest/padding-around-before-all-blocks': 'warn',
+    // 'vitest/padding-around-before-each-blocks': 'warn',
+    // 'vitest/padding-around-describe-blocks': 'warn',
+    // 'vitest/padding-around-expect-groups': 'warn',
+    // 'vitest/padding-around-test-blocks': 'warn',
+
     'vitest/prefer-called-exactly-once-with': 'warn',
     'vitest/prefer-called-once': 'off',
     'vitest/prefer-called-times': 'warn',
@@ -52,16 +55,25 @@ const eslintPluginViestRules = {
     'vitest/prefer-describe-function-title': 'warn',
     'vitest/prefer-each': 'warn',
     'vitest/prefer-equality-matcher': 'warn',
-    'vitest/prefer-expect-assertions': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-expect-assertions': 'warn',
+
     'vitest/prefer-expect-resolves': 'warn',
     'vitest/prefer-expect-type-of': 'warn',
     'vitest/prefer-hooks-in-order': 'warn',
     'vitest/prefer-hooks-on-top': 'warn',
     'vitest/prefer-import-in-mock': 'warn',
-    'vitest/prefer-importing-vitest-globals': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-importing-vitest-globals': 'warn',
+
     'vitest/prefer-lowercase-title': 'warn',
     'vitest/prefer-mock-promise-shorthand': 'warn',
-    'vitest/prefer-snapshot-hint': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-snapshot-hint': 'warn',
+
     'vitest/prefer-spy-on': 'warn',
     'vitest/prefer-strict-boolean-matchers': 'warn',
     'vitest/prefer-strict-equal': 'warn',
@@ -73,7 +85,10 @@ const eslintPluginViestRules = {
     'vitest/prefer-to-have-been-called-times': 'warn',
     'vitest/prefer-to-have-length': 'warn',
     'vitest/prefer-todo': 'warn',
-    'vitest/prefer-vi-mocked': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-vi-mocked': 'warn',
+
     'vitest/require-awaited-expect-poll': 'warn',
     'vitest/require-hook': 'warn',
     'vitest/require-local-test-context-for-concurrent-snapshots': 'warn',
@@ -81,9 +96,15 @@ const eslintPluginViestRules = {
     'vitest/require-test-timeout': 'off',
     'vitest/require-to-throw-message': 'warn',
     'vitest/require-top-level-describe': 'warn',
-    'vitest/unbound-method': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/unbound-method': 'warn',
+
     'vitest/valid-describe-callback': 'warn',
-    'vitest/valid-expect-in-promise': 'warn',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/valid-expect-in-promise': 'warn',
+
     'vitest/valid-expect': 'warn',
     'vitest/valid-title': 'warn',
   },
@@ -117,15 +138,22 @@ export default defineConfig({
     'vitest/no-hooks': 'off',
     'vitest/no-test-return-statement': 'off',
 
-    'vitest/padding-around-all': 'off',
-    'vitest/padding-around-expect-groups': 'off',
+    /** @fixme Oxlint doesn't support these `padding-*` rules yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/padding-around-all': 'off',
+    // 'vitest/padding-around-expect-groups': 'off',
 
     'vitest/prefer-describe-function-title': 'off',
-    'vitest/prefer-expect-assertions': 'off',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-expect-assertions': 'off',
+
     'vitest/prefer-lowercase-title': 'off',
     'vitest/prefer-to-be-falsy': 'off',
     'vitest/prefer-to-be-truthy': 'off',
-    'vitest/prefer-snapshot-hint': 'off',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
+    // 'vitest/prefer-snapshot-hint': 'off',
+
     'vitest/prefer-spy-on': 'off',
     'vitest/require-top-level-describe': 'off',
   },
