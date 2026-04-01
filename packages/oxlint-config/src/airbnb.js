@@ -43,8 +43,6 @@ export default defineConfig({
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
     'no-nonoctal-decimal-escape': 'error',
-    'no-octal': 'error',
-    'no-octal-escape': 'error',
     'no-param-reassign': [
       'error',
       {
@@ -66,31 +64,34 @@ export default defineConfig({
     ],
     'no-proto': 'error',
     'no-redeclare': 'error',
-    'no-restricted-properties': [
-      'error',
-      { object: 'arguments', property: 'callee', message: 'arguments.callee is deprecated' },
-      {
-        object: 'global',
-        property: 'isFinite',
-        message: 'Please use Number.isFinite instead',
-      },
-      { object: 'self', property: 'isFinite', message: 'Please use Number.isFinite instead' },
-      {
-        object: 'window',
-        property: 'isFinite',
-        message: 'Please use Number.isFinite instead',
-      },
-      { object: 'global', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-      { object: 'self', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-      { object: 'window', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-      { property: '__defineGetter__', message: 'Please use Object.defineProperty instead.' },
-      { property: '__defineSetter__', message: 'Please use Object.defineProperty instead.' },
-      {
-        object: 'Math',
-        property: 'pow',
-        message: 'Use the exponentiation operator (**) instead.',
-      },
-    ],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'no-restricted-properties': [
+    //   'error',
+    //   { object: 'arguments', property: 'callee', message: 'arguments.callee is deprecated' },
+    //   {
+    //     object: 'global',
+    //     property: 'isFinite',
+    //     message: 'Please use Number.isFinite instead',
+    //   },
+    //   { object: 'self', property: 'isFinite', message: 'Please use Number.isFinite instead' },
+    //   {
+    //     object: 'window',
+    //     property: 'isFinite',
+    //     message: 'Please use Number.isFinite instead',
+    //   },
+    //   { object: 'global', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+    //   { object: 'self', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+    //   { object: 'window', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+    //   { property: '__defineGetter__', message: 'Please use Object.defineProperty instead.' },
+    //   { property: '__defineSetter__', message: 'Please use Object.defineProperty instead.' },
+    //   {
+    //     object: 'Math',
+    //     property: 'pow',
+    //     message: 'Use the exponentiation operator (**) instead.',
+    //   },
+    // ],
+
     'no-return-assign': ['error', 'always'],
     'no-script-url': 'error',
     'no-self-assign': ['error', { props: true }],
@@ -113,7 +114,10 @@ export default defineConfig({
     'no-void': 'error',
     'no-with': 'error',
     'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
-    'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
+
     radix: 'error',
     'vars-on-top': 'error',
     yoda: 'error',
@@ -129,7 +133,6 @@ export default defineConfig({
     'no-constant-condition': 'warn',
     'no-control-regex': 'error',
     'no-debugger': 'error',
-    'no-dupe-args': 'error',
     'no-dupe-else-if': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
@@ -152,7 +155,10 @@ export default defineConfig({
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'error',
     'no-unreachable': 'error',
-    'no-unreachable-loop': ['error', { ignore: [] }],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'no-unreachable-loop': ['error', { ignore: [] }],
+
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
@@ -166,13 +172,16 @@ export default defineConfig({
     'no-class-assign': 'error',
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
-    'no-new-symbol': 'error',
-    'no-restricted-exports': [
-      'error',
-      {
-        restrictedNamedExports: ['default', 'then'],
-      },
-    ],
+    'no-new-native-nonconstructor': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'no-restricted-exports': [
+    //   'error',
+    //   {
+    //     restrictedNamedExports: ['default', 'then'],
+    //   },
+    // ],
+
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
@@ -185,8 +194,13 @@ export default defineConfig({
       },
     ],
     'no-var': 'error',
-    'object-shorthand': ['error', 'always', { ignoreConstructors: false, avoidQuotes: true }],
-    'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'object-shorthand': ['error', 'always', { ignoreConstructors: false, avoidQuotes: true }],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
+
     'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
     'prefer-destructuring': [
       'error',
@@ -208,9 +222,17 @@ export default defineConfig({
     // ── Style ───────────────────────────────────────────────────────────
     // Most formatting rules below are overridden by eslint-config-prettier.
     // They are kept here for completeness and for consumers not using Prettier.
-    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+    /**
+     * `camelcase` has been deprecated for `@typescript-eslint/naming-convention` but Oxlint
+     * doesn't support that rule yet.
+     *
+     * @see {@link https://github.com/oxc-project/oxc/issues/479}
+     * @see {@link https://github.com/oxc-project/oxc/issues/2180}
+     * @fixme
+     */
+    // camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+
     'func-names': 'warn',
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
     'new-cap': [
       'error',
       {
@@ -224,86 +246,62 @@ export default defineConfig({
     'no-bitwise': 'error',
     'no-continue': 'error',
     'no-lonely-if': 'error',
-    'no-mixed-operators': [
-      'error',
-      {
-        groups: [
-          ['%', '**'],
-          ['%', '+'],
-          ['%', '-'],
-          ['%', '*'],
-          ['%', '/'],
-          ['/', '*'],
-          ['&', '|', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!=='],
-          ['&&', '||'],
-        ],
-        allowSamePrecedence: false,
-      },
-    ],
     'no-multi-assign': ['error'],
     // 'no-nested-ternary': 'error',
-    'no-new-object': 'error',
+    'no-object-constructor': 'error',
     'no-plusplus': 'error',
-    'no-restricted-syntax': [
-      'error',
-      {
-        selector: 'ForInStatement',
-        message:
-          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-      },
-      {
-        selector: 'ForOfStatement',
-        message:
-          'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
-      },
-      {
-        selector: 'LabeledStatement',
-        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
-      },
-      {
-        selector: 'WithStatement',
-        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-      },
-    ],
-    'no-underscore-dangle': [
-      'error',
-      {
-        allow: [],
-        allowAfterThis: false,
-        allowAfterSuper: false,
-        enforceInMethodNames: true,
-      },
-    ],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'no-restricted-syntax': [
+    //   'error',
+    //   {
+    //     selector: 'ForInStatement',
+    //     message:
+    //       'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+    //   },
+    //   {
+    //     selector: 'ForOfStatement',
+    //     message:
+    //       'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+    //   },
+    //   {
+    //     selector: 'LabeledStatement',
+    //     message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+    //   },
+    //   {
+    //     selector: 'WithStatement',
+    //     message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+    //   },
+    // ],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'no-underscore-dangle': [
+    //   'error',
+    //   {
+    //     allow: [],
+    //     allowAfterThis: false,
+    //     allowAfterSuper: false,
+    //     enforceInMethodNames: true,
+    //   },
+    // ],
+
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
-    'one-var': ['error', 'never'],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // 'one-var': ['error', 'never'],
+
     'operator-assignment': ['error', 'always'],
     'prefer-exponentiation-operator': 'error',
     'prefer-object-spread': 'error',
-    'spaced-comment': [
-      'error',
-      'always',
-      {
-        line: {
-          exceptions: ['-', '+'],
-          markers: ['=', '!', '/'],
-        },
-        block: {
-          exceptions: ['-', '+'],
-          markers: ['=', '!', ':', '::'],
-          balanced: true,
-        },
-      },
-    ],
 
     // ── Node ────────────────────────────────────────────────────────────
     'global-require': 'error',
-    'no-buffer-constructor': 'error',
     'no-new-require': 'error',
     'no-path-concat': 'error',
 
     // ── Strict ──────────────────────────────────────────────────────────
-    strict: ['error', 'never'],
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
+    // strict: ['error', 'never'],
 
     // ── Variables ───────────────────────────────────────────────────────
     'no-delete-var': 'error',
@@ -382,7 +380,6 @@ export default defineConfig({
     'no-shadow': ['error', { allow: ['err'] }], // ReadMe override (airbnb: plain "error")
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
-    'no-undef-init': 'error',
     // 'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
   },

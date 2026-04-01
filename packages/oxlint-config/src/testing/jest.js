@@ -24,7 +24,10 @@ const eslintPluginJestRules = {
     'jest/no-test-prefixes': 'error',
     'jest/valid-describe-callback': 'error',
     'jest/valid-expect': 'error',
-    'jest/valid-expect-in-promise': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/492 */
+    // 'jest/valid-expect-in-promise': 'error',
+
     'jest/valid-title': 'error',
   },
 
@@ -67,12 +70,13 @@ export default defineConfig({
 
     'jest/no-mocks-import': 'off',
 
-    'jest/padding-around-after-all-blocks': 'warn',
-    'jest/padding-around-after-each-blocks': 'warn',
-    'jest/padding-around-before-all-blocks': 'warn',
-    'jest/padding-around-before-each-blocks': 'warn',
-    'jest/padding-around-describe-blocks': 'warn',
-    'jest/padding-around-test-blocks': 'warn',
+    /** @fixme Oxlint doesn't support these `padding-*` rules yet. https://github.com/oxc-project/oxc/issues/492 */
+    // 'jest/padding-around-after-all-blocks': 'warn',
+    // 'jest/padding-around-after-each-blocks': 'warn',
+    // 'jest/padding-around-before-all-blocks': 'warn',
+    // 'jest/padding-around-before-each-blocks': 'warn',
+    // 'jest/padding-around-describe-blocks': 'warn',
+    // 'jest/padding-around-test-blocks': 'warn',
 
     'jest/prefer-expect-resolves': 'warn',
     'jest/prefer-hooks-on-top': 'warn',
