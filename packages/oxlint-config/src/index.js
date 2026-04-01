@@ -13,7 +13,70 @@ export default defineConfig({
     'arrow-body-style': 'off' /** @todo we should enable this */,
     'func-names': 'off',
 
+    'import/export': 'error',
+    'import/first': 'error',
+    'import/named': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
+    // 'import/newline-after-import': 'error',
+
+    'import/no-absolute-path': 'error',
+    'import/no-amd': 'error',
     'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
+    'import/no-cycle': ['error'],
+    'import/no-duplicates': 'error',
+    'import/no-dynamic-require': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
+    // 'import/no-extraneous-dependencies': [
+    //   'error',
+    //   {
+    //     devDependencies: [
+    //       'test/**',
+    //       'tests/**',
+    //       'spec/**',
+    //       '**/__tests__/**',
+    //       '**/__mocks__/**',
+    //       'test.{js,jsx}',
+    //       'test-*.{js,jsx}',
+    //       '**/*{.,_}{test,spec}.{js,jsx}',
+    //       '**/jest.config.js',
+    //       '**/jest.setup.js',
+    //       '**/vue.config.js',
+    //       '**/webpack.config.js',
+    //       '**/webpack.config.*.js',
+    //       '**/rollup.config.js',
+    //       '**/rollup.config.*.js',
+    //       '**/gulpfile.js',
+    //       '**/gulpfile.*.js',
+    //       '**/Gruntfile{,.js}',
+    //       '**/protractor.conf.js',
+    //       '**/protractor.conf.*.js',
+    //       '**/karma.conf.js',
+    //       '**/.eslintrc.js',
+    //       '**/eslint.config.js',
+    //     ],
+    //     optionalDependencies: false,
+    //   },
+    // ],
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
+    // 'import/no-import-module-exports': ['error', { exceptions: [] }],
+
+    'import/no-named-as-default': 'error',
+    'import/no-named-as-default-member': 'error',
+    'import/no-named-default': 'error',
+    'import/no-mutable-exports': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
+    // 'import/no-relative-packages': 'error',
+
+    'import/no-self-import': 'error',
+
+    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
+    // 'import/no-useless-path-segments': ['error', { commonjs: true }],
+
+    'import/no-webpack-loader-syntax': 'error',
     'import/prefer-default-export': 'off',
 
     'no-restricted-imports': [
