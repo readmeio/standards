@@ -4,7 +4,7 @@ import path from 'node:path';
 import stylelint from 'stylelint';
 import { beforeEach, describe, expect, it } from 'vitest';
 
-import config from '..';
+import * as config from '../src';
 
 const invalidScss = fs.readFileSync(path.join(__dirname, './invalid.scss'), 'utf-8');
 const validScss = fs.readFileSync(path.join(__dirname, './valid.scss'), 'utf-8');
