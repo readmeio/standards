@@ -38,8 +38,5 @@
     "@readme/standards": "file:../standards",
     "vitest": "^4.1.2"
   },
-  "prettier": "@readme/standards/prettier",
-  "optionalDependencies": {
-    "@biomejs/biome": "^2.4.10"
-  }
+  "prettier": "@readme/standards/prettier"
 }
