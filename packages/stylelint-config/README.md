@@ -57,4 +57,3 @@ We've adopted the following list of shared configs that remain actively maintain
 - [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss) - The standard shareable SCSS config for Stylelint.
 - [stylelint-config-sass-guidelines](https://github.com/bjankord/stylelint-config-sass-guidelines) - A stylelint config inspired by [sass-guidelin.es](https://sass-guidelin.es/).
 - [stylelint-config-css-modules](https://github.com/pascalduez/stylelint-config-css-modules) - CSS modules shareable config for stylelint. Tweaks stylelint rules to accept [css modules](https://github.com/css-modules/css-modules) specific syntax.
-- [stylelint-prettier/recommended](https://github.com/prettier/stylelint-prettier) - Runs Prettier as a Stylelint rule and reports differences as individual Stylelint issues.

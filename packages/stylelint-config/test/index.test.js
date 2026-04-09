@@ -84,33 +84,4 @@ describe('stylelint-config', () => {
       expect(data.code).toContain('&:not(.one):not(.two):not(.three)');
     });
   });
-
-  describe('prettier rules', () => {
-    it('matches snapshot with all formatting errors fixed', async () => {
-      data = await stylelint.lint({
-        code: `
-$prettier: "should be single quotes";
-`,
-        config,
-        fix: true,
-      });
-      ({ warnings } = data.results[0]);
-
-      expect(data.code).toMatchSnapshot();
-    });
-
-    it('flags double quotes as an error', async () => {
-      data = await stylelint.lint({
-        code: `
-$prettier: "should be single quotes";
-`,
-        config,
-      });
-      ({ warnings } = data.results[0]);
-
-      expect(warnings).toHaveLength(2);
-      expect(warnings[0].rule).toBe('@stylistic/string-quotes');
-      expect(warnings[1].rule).toBe('prettier/prettier');
-    });
-  });
 });
