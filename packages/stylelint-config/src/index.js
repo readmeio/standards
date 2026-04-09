@@ -11,9 +11,6 @@ module.exports = {
 
     // Support CSS modules syntax
     'stylelint-config-css-modules',
-
-    // Enable prettier formatting for SCSS/CSS
-    'stylelint-prettier/recommended',
   ],
   plugins: [
     // Enable ordering rules for content within declaration blocks.
