@@ -173,14 +173,12 @@ export default defineConfig({
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     'no-new-native-nonconstructor': 'error',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'no-restricted-exports': [
-    //   'error',
-    //   {
-    //     restrictedNamedExports: ['default', 'then'],
-    //   },
-    // ],
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictedNamedExports: ['default', 'then'],
+      },
+    ],
 
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
@@ -194,9 +192,7 @@ export default defineConfig({
       },
     ],
     'no-var': 'error',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'object-shorthand': ['error', 'always', { ignoreConstructors: false, avoidQuotes: true }],
+    'object-shorthand': ['error', 'always', { ignoreConstructors: false, avoidQuotes: true }],
 
     /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
     // 'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
@@ -274,16 +270,15 @@ export default defineConfig({
     //   },
     // ],
 
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'no-underscore-dangle': [
-    //   'error',
-    //   {
-    //     allow: [],
-    //     allowAfterThis: false,
-    //     allowAfterSuper: false,
-    //     enforceInMethodNames: true,
-    //   },
-    // ],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: [],
+        allowAfterThis: false,
+        allowAfterSuper: false,
+        enforceInMethodNames: true,
+      },
+    ],
 
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
 

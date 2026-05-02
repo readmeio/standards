@@ -55,25 +55,16 @@ const eslintPluginViestRules = {
     'vitest/prefer-describe-function-title': 'warn',
     'vitest/prefer-each': 'warn',
     'vitest/prefer-equality-matcher': 'warn',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/prefer-expect-assertions': 'warn',
-
+    'vitest/prefer-expect-assertions': 'warn',
     'vitest/prefer-expect-resolves': 'warn',
     'vitest/prefer-expect-type-of': 'warn',
     'vitest/prefer-hooks-in-order': 'warn',
     'vitest/prefer-hooks-on-top': 'warn',
     'vitest/prefer-import-in-mock': 'warn',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/prefer-importing-vitest-globals': 'warn',
-
+    'vitest/prefer-importing-vitest-globals': 'warn',
     'vitest/prefer-lowercase-title': 'warn',
     'vitest/prefer-mock-promise-shorthand': 'warn',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/prefer-snapshot-hint': 'warn',
-
+    'vitest/prefer-snapshot-hint': 'warn',
     'vitest/prefer-spy-on': 'warn',
     'vitest/prefer-strict-boolean-matchers': 'warn',
     'vitest/prefer-strict-equal': 'warn',
@@ -101,10 +92,7 @@ const eslintPluginViestRules = {
     // 'vitest/unbound-method': 'warn',
 
     'vitest/valid-describe-callback': 'warn',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/valid-expect-in-promise': 'warn',
-
+    'vitest/valid-expect-in-promise': 'warn',
     'vitest/valid-expect': 'warn',
     'vitest/valid-title': 'warn',
   },
@@ -143,17 +131,11 @@ export default defineConfig({
     // 'vitest/padding-around-expect-groups': 'off',
 
     'vitest/prefer-describe-function-title': 'off',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/prefer-expect-assertions': 'off',
-
+    'vitest/prefer-expect-assertions': 'off',
     'vitest/prefer-lowercase-title': 'off',
     'vitest/prefer-to-be-falsy': 'off',
     'vitest/prefer-to-be-truthy': 'off',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/prefer-snapshot-hint': 'off',
-
+    'vitest/prefer-snapshot-hint': 'off',
     'vitest/prefer-spy-on': 'off',
     'vitest/require-top-level-describe': 'off',
   },

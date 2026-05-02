@@ -24,10 +24,7 @@ const eslintPluginJestRules = {
     'jest/no-test-prefixes': 'error',
     'jest/valid-describe-callback': 'error',
     'jest/valid-expect': 'error',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/492 */
-    // 'jest/valid-expect-in-promise': 'error',
-
+    'jest/valid-expect-in-promise': 'error',
     'jest/valid-title': 'error',
   },
 
