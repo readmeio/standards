@@ -273,7 +273,7 @@ export default defineConfig({
     'no-underscore-dangle': [
       'error',
       {
-        allow: [],
+        allow: ['__dirname', '__filename'],
         allowAfterThis: false,
         allowAfterSuper: false,
         enforceInMethodNames: true,
