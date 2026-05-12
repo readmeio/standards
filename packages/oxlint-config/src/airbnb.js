@@ -65,32 +65,31 @@ export default defineConfig({
     'no-proto': 'error',
     'no-redeclare': 'error',
 
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'no-restricted-properties': [
-    //   'error',
-    //   { object: 'arguments', property: 'callee', message: 'arguments.callee is deprecated' },
-    //   {
-    //     object: 'global',
-    //     property: 'isFinite',
-    //     message: 'Please use Number.isFinite instead',
-    //   },
-    //   { object: 'self', property: 'isFinite', message: 'Please use Number.isFinite instead' },
-    //   {
-    //     object: 'window',
-    //     property: 'isFinite',
-    //     message: 'Please use Number.isFinite instead',
-    //   },
-    //   { object: 'global', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-    //   { object: 'self', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-    //   { object: 'window', property: 'isNaN', message: 'Please use Number.isNaN instead' },
-    //   { property: '__defineGetter__', message: 'Please use Object.defineProperty instead.' },
-    //   { property: '__defineSetter__', message: 'Please use Object.defineProperty instead.' },
-    //   {
-    //     object: 'Math',
-    //     property: 'pow',
-    //     message: 'Use the exponentiation operator (**) instead.',
-    //   },
-    // ],
+    'no-restricted-properties': [
+      'error',
+      { object: 'arguments', property: 'callee', message: 'arguments.callee is deprecated' },
+      {
+        object: 'global',
+        property: 'isFinite',
+        message: 'Please use Number.isFinite instead',
+      },
+      { object: 'self', property: 'isFinite', message: 'Please use Number.isFinite instead' },
+      {
+        object: 'window',
+        property: 'isFinite',
+        message: 'Please use Number.isFinite instead',
+      },
+      { object: 'global', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+      { object: 'self', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+      { object: 'window', property: 'isNaN', message: 'Please use Number.isNaN instead' },
+      { property: '__defineGetter__', message: 'Please use Object.defineProperty instead.' },
+      { property: '__defineSetter__', message: 'Please use Object.defineProperty instead.' },
+      {
+        object: 'Math',
+        property: 'pow',
+        message: 'Use the exponentiation operator (**) instead.',
+      },
+    ],
 
     'no-return-assign': ['error', 'always'],
     'no-script-url': 'error',
@@ -114,10 +113,7 @@ export default defineConfig({
     'no-void': 'error',
     'no-with': 'error',
     'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
-
+    'prefer-regex-literals': ['error', { disallowRedundantWrapping: true }],
     radix: 'error',
     'vars-on-top': 'error',
     yoda: 'error',
