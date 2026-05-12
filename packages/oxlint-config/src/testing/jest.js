@@ -77,6 +77,7 @@ export default defineConfig({
 
     'jest/prefer-expect-resolves': 'warn',
     'jest/prefer-hooks-on-top': 'warn',
+    'jest/prefer-snapshot-hint': 'off',
     'jest/prefer-strict-equal': 'error',
     'jest/prefer-todo': 'warn',
 
