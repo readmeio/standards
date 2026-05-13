@@ -11,6 +11,7 @@ export default defineConfig({
   },
   rules: {
     'arrow-body-style': 'off' /** @todo we should enable this */,
+    'class-methods-use-this': 'off',
     'func-names': 'off',
 
     'import/export': 'error',
