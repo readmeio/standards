@@ -189,10 +189,7 @@ export default defineConfig({
     ],
     'no-var': 'error',
     'object-shorthand': ['error', 'always', { ignoreConstructors: false, avoidQuotes: true }],
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/479 */
-    // 'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
-
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
     'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
     'prefer-destructuring': [
       'error',
