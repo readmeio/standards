@@ -115,10 +115,7 @@ export default defineConfig({
     'unicorn/catch-error-name': ['error', { ignore: ['^(error|err|e)$'] }],
     'unicorn/custom-error-definition': 'error',
     'unicorn/error-message': 'error',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/684 */
-    // 'unicorn/import-style': 'error',
-
+    'unicorn/import-style': 'error',
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-instanceof-array': 'error',
 
