@@ -36,13 +36,13 @@
     "eslint": "^9.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.27.1",
+    "@babel/eslint-parser": "^7.29.7",
     "@eslint/js": "^9.22.0",
     "@readme/eslint-config": "file:../eslint-config",
-    "@types/estree": "^1.0.8",
+    "@types/estree": "^1.0.9",
     "@typescript-eslint/parser": "^8.24.1",
     "eslint": "^9.22.0",
-    "eslint-doc-generator": "^3.3.2",
+    "eslint-doc-generator": "^3.6.0",
     "typescript": "^5.8.3"
   }
 }
