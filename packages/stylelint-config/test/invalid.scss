@@ -14,10 +14,12 @@ $twoCamelCase: 'two';
 
 #id-selector {
   color: blue;
+}
 
-  #another-id {
-    border: 0;
-  }
+/* Two ids in one selector violates selector-max-id: 1 (stylelint 17 no longer
+   resolves nested selectors for selector-max-*, so this must be flat). */
+#id-selector #another-id {
+  border: 0;
 }
 
 #ValidIdSelector {
