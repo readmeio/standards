@@ -9,7 +9,7 @@
     "test": "vitest run"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20.19.0"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,11 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
-    "stylelint": "^16.25.0",
-    "stylelint-config-css-modules": "^4.5.1",
+    "stylelint": "^17.13.0",
+    "stylelint-config-css-modules": "^4.6.0",
     "stylelint-config-sass-guidelines": "^13.0.0",
-    "stylelint-config-standard": "^39.0.1",
-    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard-scss": "^17.0.0",
     "stylelint-order": "^8.1.1"
   },
   "peerDependencies": {

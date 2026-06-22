@@ -73,6 +73,15 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/media-query-no-invalid/
     'media-query-no-invalid': null,
 
+    // This rule (enabled by the standard configs) false-positives on
+    // declarations placed directly inside SCSS `@mixin` / `@include` blocks,
+    // which have no selector context but are valid SCSS. Stylelint 17 added
+    // `ignoreAtRules`, so exempt those at-rules instead of disabling the rule.
+    // https://stylelint.io/user-guide/rules/no-invalid-position-declaration/
+    // Replaces the disable + TODO in the readme repo's Superhub config:
+    // https://github.com/readmeio/readme/blob/bda811f976c6ab07375eee8bdbbc0d095a27102a/packages/react/.stylelintrc.js#L13-L15
+    'no-invalid-position-declaration': [true, { ignoreAtRules: ['mixin', 'include'] }],
+
     // Allows us to write duplicate selectors in groups
     // https://github.com/stylelint/stylelint/issues/3196
     'no-descending-specificity': [
