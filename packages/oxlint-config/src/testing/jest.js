@@ -68,12 +68,12 @@ export default defineConfig({
     'jest/no-mocks-import': 'off',
 
     /** @fixme Oxlint doesn't support these `padding-*` rules yet. https://github.com/oxc-project/oxc/issues/492 */
-    // 'jest/padding-around-after-all-blocks': 'warn',
+    'jest/padding-around-after-all-blocks': 'warn',
     // 'jest/padding-around-after-each-blocks': 'warn',
     // 'jest/padding-around-before-all-blocks': 'warn',
     // 'jest/padding-around-before-each-blocks': 'warn',
     // 'jest/padding-around-describe-blocks': 'warn',
-    // 'jest/padding-around-test-blocks': 'warn',
+    'jest/padding-around-test-blocks': 'warn',
 
     'jest/prefer-expect-resolves': 'warn',
     'jest/prefer-hooks-on-top': 'warn',

@@ -38,7 +38,7 @@ const eslintPluginViestRules = {
     'vitest/no-unneeded-async-expect-function': 'warn',
 
     /** @fixme Oxlint doesn't support these `padding-*` rule yet. https://github.com/oxc-project/oxc/issues/4656 */
-    // 'vitest/padding-around-after-all-blocks': 'warn',
+    'vitest/padding-around-after-all-blocks': 'warn',
     // 'vitest/padding-around-after-each-blocks': 'warn',
     // 'vitest/padding-around-all': 'warn',
     // 'vitest/padding-around-before-all-blocks': 'warn',
