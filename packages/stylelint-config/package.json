@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/readmeio/standards",
   "dependencies": {
-    "stylelint": "^17.13.0",
+    "stylelint": "^17.14.0",
     "stylelint-config-css-modules": "^4.6.0",
     "stylelint-config-sass-guidelines": "^13.0.0",
     "stylelint-config-standard": "^40.0.0",
@@ -39,6 +39,6 @@
   },
   "prettier": "@readme/standards/prettier",
   "optionalDependencies": {
-    "@biomejs/biome": "^2.4.14"
+    "@biomejs/biome": "^2.5.2"
   }
 }
