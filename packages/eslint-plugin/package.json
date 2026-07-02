@@ -36,7 +36,7 @@
     "eslint": "^9.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.27.1",
+    "@babel/eslint-parser": "^8.0.1",
     "@eslint/js": "^9.22.0",
     "@readme/eslint-config": "file:../eslint-config",
     "@types/estree": "^1.0.9",
