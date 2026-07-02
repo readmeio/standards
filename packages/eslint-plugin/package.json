@@ -41,7 +41,7 @@
     "@readme/eslint-config": "file:../eslint-config",
     "@types/estree": "^1.0.9",
     "@typescript-eslint/parser": "^8.24.1",
-    "eslint": "^9.22.0",
+    "eslint": "^10.6.0",
     "eslint-doc-generator": "^3.6.0",
     "typescript": "^5.8.3"
   }
