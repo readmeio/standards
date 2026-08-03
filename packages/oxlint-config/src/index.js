@@ -17,10 +17,7 @@ export default defineConfig({
     'import/export': 'error',
     'import/first': 'error',
     'import/named': 'error',
-
-    /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/1117 */
-    // 'import/newline-after-import': 'error',
-
+    'import/newline-after-import': 'error',
     'import/no-absolute-path': 'error',
     'import/no-amd': 'error',
     'import/no-anonymous-default-export': ['error', { allowArray: true, allowObject: true }],
