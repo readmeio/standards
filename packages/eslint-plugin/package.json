@@ -42,7 +42,7 @@
     "@types/estree": "^1.0.9",
     "@typescript-eslint/parser": "^8.24.1",
     "eslint": "^9.22.0",
-    "eslint-doc-generator": "^3.7.0",
+    "eslint-doc-generator": "^3.7.1",
     "typescript": "^5.8.3"
   }
 }
