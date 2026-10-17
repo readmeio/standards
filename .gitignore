@@ -1,3 +1,4 @@
+**/.turbo/
 node_modules/
 packages/eslint-plugin/dist/
 .DS_Store
