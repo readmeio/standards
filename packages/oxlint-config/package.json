@@ -1,6 +1,6 @@
 {
   "name": "@readme/oxlint-config",
-  "version": "1.9.0",
+  "version": "15.0.9",
   "description": "ReadMe coding standards for projects with Oxlint",
   "homepage": "https://github.com/readmeio/standards#readme",
   "bugs": {
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "eslint-plugin-perfectionist": "^5.7.0",
-    "eslint-plugin-readme": "^3.0.7",
+    "eslint-plugin-readme": "^15.0.9",
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.14.0",
     "oxfmt": "^0.73.0",
     "oxlint": "^1.88.0"

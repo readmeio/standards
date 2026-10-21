@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-readme",
-  "version": "3.0.7",
+  "version": "15.0.9",
   "description": "ESLint plugin providing custom rules for ReadMe's coding standards",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^8.0.7",
     "@eslint/js": "^9.22.0",
-    "@readme/eslint-config": "^15.0.8",
+    "@readme/eslint-config": "^15.0.9",
     "@types/estree": "^1.0.9",
     "@types/node": "^26.6.5",
     "@typescript-eslint/parser": "^8.24.1",

@@ -1,6 +1,6 @@
 {
   "name": "@readme/stylelint-config",
-  "version": "9.0.3",
+  "version": "9.0.4",
   "description": "ReadMe coding standards for styles",
   "main": "src/index.js",
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
-    "@readme/standards": "^2.4.5",
+    "@readme/standards": "^2.4.6",
     "vitest": "^5.0.5"
   },
   "prettier": "@readme/standards/prettier",
