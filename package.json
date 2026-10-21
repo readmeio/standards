@@ -3,37 +3,37 @@
   "version": "0.0.0",
   "private": true,
   "description": "Core coding and style standards for all ReadMe technology.",
+  "homepage": "https://github.com/readmeio/standards#readme",
+  "bugs": {
+    "url": "https://github.com/readmeio/standards/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/readmeio/standards.git"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "changeset": "changeset",
+    "format": "prettier --list-different --write .",
     "lint": "npm run prettier && npm run lint:js",
     "lint:js": "turbo run lint",
     "prelint": "npm run build",
     "prettier": "prettier --check .",
-    "prettier:write": "prettier --list-different --write .",
     "prerelease": "npm run build",
     "pretest": "npm run build",
     "release": "changeset publish",
     "test": "turbo run test",
     "version-packages": "changeset version"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/readmeio/standards.git"
-  },
-  "bugs": {
-    "url": "https://github.com/readmeio/standards/issues"
-  },
-  "homepage": "https://github.com/readmeio/standards#readme",
-  "workspaces": [
-    "./packages/*"
-  ],
-  "packageManager": "npm@10.9.9",
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
     "eslint": "^9.0.0",
     "eslint-plugin-perfectionist": "^5.4.0",
     "prettier": "^3.2.5",
     "turbo": "^2.11.10"
-  }
+  },
+  "packageManager": "npm@10.9.9"
 }
