@@ -91,6 +91,8 @@ const eslintPluginViestRules = {
     /** @fixme Oxlint doesn't support this rule yet. https://github.com/oxc-project/oxc/issues/4656 */
     // 'vitest/unbound-method': 'warn',
 
+    'vitest/warn-todo': 'off',
+
     'vitest/valid-describe-callback': 'warn',
     'vitest/valid-expect-in-promise': 'warn',
     'vitest/valid-expect': 'warn',
