@@ -14,11 +14,26 @@
   },
   "type": "module",
   "exports": {
-    ".": "./src/index.js",
-    "./oxfmt": "./src/formatter.js",
-    "./typescript": "./src/typescript.js",
-    "./testing/jest": "./src/testing/jest.js",
-    "./testing/vitest": "./src/testing/vitest.js"
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./oxfmt": {
+      "types": "./src/formatter.d.ts",
+      "default": "./src/formatter.js"
+    },
+    "./typescript": {
+      "types": "./src/typescript.d.ts",
+      "default": "./src/typescript.js"
+    },
+    "./testing/jest": {
+      "types": "./src/testing/jest.d.ts",
+      "default": "./src/testing/jest.js"
+    },
+    "./testing/vitest": {
+      "types": "./src/testing/vitest.d.ts",
+      "default": "./src/testing/vitest.js"
+    }
   },
   "scripts": {
     "format": "oxfmt",
