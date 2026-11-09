@@ -1,5 +1,11 @@
 # @readme/stylelint-config
 
+## 9.0.5
+
+### Patch Changes
+
+- ea4fce7: chore(deps): bump the minor-production-deps group with 8 updates
+
 ## 9.0.4
 
 ### Patch Changes
